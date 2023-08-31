@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  height: 1725px;
+  height: 100vw;
   background-image: url(../assets/PAPER_fun_ASSETS_8_back.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,21 +26,57 @@
   width: 100%;
 }
 
-.Cloud1 {
-  background-image: url(../assets/Clouds1.png);
+.Title {
+  position: absolute;
+  font-size: 10em;
+  color: #f0f0f0;
+  text-align: center;
+  width: 100%;
+  margin-top: 15%;
+  letter-spacing: 1.75px;
+}
+
+.Cloud1,
+.Cloud2,
+.Cloud3,
+.Cloud4,
+.Cloud5 {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  top: -500px;
   height: 100%;
   width: 100%;
-  left: -100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  animation-fill-mode: forwards;
+}
 
-  left: -100%;
-  animation: slide 120s infinite;
+.Cloud1 {
+  background-image: url(../assets/Clouds1.png);
+  animation: slide 40s;
+  top: -500px;
+}
+
+.Cloud2 {
+  top: 0;
+  background-image: url(../assets/Clouds2.png);
+}
+
+.Cloud3 {
+  top: 0;
+  background-image: url(../assets/Clouds3.png);
+}
+
+.Cloud4 {
+  top: -500px;
+  background-image: url(../assets/Clouds4.png);
+  animation: slide 40s;
+}
+
+.Cloud5 {
+  top: 0;
+  background-image: url(../assets/Clouds5.png);
 }
 
 .Foreground {
@@ -83,16 +119,10 @@
 
 @keyframes slide {
   0% {
-    left: -120%;
-  }
-  35% {
-    left: 50%;
-  }
-  65% {
-    left: 50%;
+    left: -100%;
   }
   100% {
-    left: 180%;
+    left: 0%;
   }
 }
 

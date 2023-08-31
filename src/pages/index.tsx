@@ -1,9 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import styles from "@/styles/Home.module.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+const myFont = localFont({
+  src: "../assets/chunky_heart_solid.otf",
+  display: "swap",
+});
 
 export default function Home() {
   return (
@@ -17,10 +20,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.Main} ${inter.className}`}>
+      <main className={`${styles.Main} ${myFont.className}`}>
         <div className={styles.Sky}>
+          {/* <h1 className={styles.Title}>Wicked Woods</h1> */}
           <div className={styles.Sun}></div>
+          <div className={styles.Cloud2}></div>
           <div className={styles.Cloud1}></div>
+          <div className={styles.Cloud4}></div>
+
+          <div className={styles.Cloud3}></div>
+
+          <div className={styles.Cloud5}></div>
         </div>
         <div className={styles.Foreground}>
           <div className={styles.Mountains}></div>
