@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import styles from "@/styles/Home.module.scss";
-
+import sky from "../assets/PAPER_fun_ASSETS_8_back.png";
 export default function Home() {
   return (
     <>
@@ -18,6 +18,7 @@ export default function Home() {
       </Head>
       <main className={styles.Main}>
         <div className={styles.ArtContainer}>
+          <Image src={sky} fill alt="Blue sky" priority />
           <div className={styles.Sky}>
             {/* <h1 className={styles.Title}>Wicked Woods</h1> */}
             <div className={styles.Sun}></div>
