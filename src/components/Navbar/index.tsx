@@ -6,7 +6,6 @@ import Image from "next/image";
 
 import burger from "../../assets/burger_menu_icon.png";
 import close from "../../assets/X_menu_icon.png";
-import home from "../../assets/ww-logo-100.png";
 
 export const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);

@@ -7,17 +7,118 @@
   background-image: url(../../assets/backgrounds/wicked_black.png);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
-.Description {
-  padding: 140px 24px 0;
+.Description,
+.Description2,
+.Contact {
+  padding: 140px 24px;
+  background-image: url(../../assets/backgrounds/sandy_brown.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  color: $wickedWhite;
+}
+
+.Description2 {
+  background-image: url(../../assets/backgrounds/wicked_white.png);
+}
+
+.Bullets {
+  color: $wickedBlack;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  margin: 60px auto;
+  gap: 50px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: $wickedBlack;
+  }
+}
+
+.Contact {
+  background-image: url(../../assets/backgrounds/green_haze.png);
+  color: $wickedWhite;
+  text-align: center;
+
+  margin: 0 auto;
+
+  h2 {
+    margin-bottom: 24px;
+  }
+
+  ul {
+    list-style: none;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+
+    span {
+      display: block;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+  }
+
+  li {
+    margin-top: 10px;
+    margin-bottom: 24px;
+  }
+
+  a {
+    position: relative;
+    text-decoration: none;
+    outline: none;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $wickedWhite;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  a:hover::before,
+  a:focus::before {
+    transform: scaleX(1);
+  }
+}
+
+.Value {
+  text-align: center;
+  max-width: 900px;
+  margin: 100px auto 0;
 }
 
 .Text {
   color: $wickedWhite;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.Gallery {
+  margin: 20px 20px 0;
+  padding-bottom: 20px;
 }
 
 .Bear {
-  display: flex;
-  justify-content: flex-end;
+  min-height: 100vw;
+  width: 100vw;
+  position: relative;
 }

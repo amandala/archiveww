@@ -1,8 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
+import cx from "classnames";
 import { Navbar } from "@/components/Navbar";
 import styles from "@/styles/Home.module.scss";
 import sky from "../assets/PAPER_fun_ASSETS_8_back.png";
+
+import localFont from "next/font/local";
+
+const chunkyHeart = localFont({
+  src: "../styles/chunky_heart_solid.otf",
+  display: "swap",
+});
+
 export default function Home() {
   return (
     <>
@@ -20,7 +29,15 @@ export default function Home() {
         <div className={styles.ArtContainer}>
           <Image src={sky} fill alt="Blue sky" priority />
           <div className={styles.Sky}>
-            {/* <h1 className={styles.Title}>Wicked Woods</h1> */}
+            <div className={styles.Overlay}>
+              <h1 className={cx(chunkyHeart.className)}>Wicked Woods</h1>
+              <h2 className={styles.TicketInfo}>
+                August 30 - September 2, 2024
+              </h2>
+              <h2 className={styles.TicketInfo}>
+                Tickets on Sale October 15, 2023
+              </h2>
+            </div>
             <div className={styles.Sun}></div>
             <div className={styles.CloudsContainer}>
               <div className={styles.Cloud2}></div>

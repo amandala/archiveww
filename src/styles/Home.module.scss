@@ -1,3 +1,5 @@
+@import "../styles/variables.module.scss";
+
 .Main {
   align-items: center;
   min-height: 100vh;
@@ -26,14 +28,18 @@
   width: 100%;
 }
 
-.Title {
+.Overlay {
   position: absolute;
-  font-size: 5;
+  font-size: 75px;
   color: #f0f0f0;
   text-align: center;
   width: 100%;
   margin-top: 15%;
   letter-spacing: 1.75px;
+}
+
+.TicketInfo {
+  font-size: 30px;
 }
 
 .CloudsContainer {
@@ -139,5 +145,7 @@
 }
 
 .Footer {
-  margin: 20px;
+  color: $wickedWhite;
+  padding: 20px;
+  background-image: url(../assets/backgrounds/orient_blue.png);
 }
