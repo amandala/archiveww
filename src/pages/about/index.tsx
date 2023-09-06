@@ -24,6 +24,9 @@ export default function About() {
               objectFit: "cover",
             }}
             fill
+            loading="eager"
+            priority
+            placeholder="blur"
           />
           <Image
             alt="Wicked Woods Music Festival Wordmark Logo"
