@@ -6,6 +6,7 @@ import Gallery from "@/components/Gallery";
 
 import wordmark from "@/assets/FONT_WITH_MF.png";
 import bear from "@/assets/paper_bear_alpha.png";
+import bananaPhone from "@/assets/bananaPhone.jpg";
 import hallowNights from "@/assets/hallow-nights-min.jpg";
 
 import styles from "./index.module.scss";
@@ -70,7 +71,16 @@ export default function About() {
             <Gallery />
           </div>
           <div className={styles.Contact}>
-            <h2>Contact Us</h2>
+            <div>
+              <h2>Contact Directory</h2>
+              <Image
+                src={bananaPhone}
+                width={370}
+                height={370}
+                alt="Man holding a giant inflatable banana as a phone"
+                style={{ borderRadius: "200px", border: "20px solid #141313" }}
+              />
+            </div>
             <ul>
               <li>
                 <span className={cx(styles.DirectoryName, dinBold.className)}>
