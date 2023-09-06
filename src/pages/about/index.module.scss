@@ -10,39 +10,21 @@
   position: relative;
 }
 
+.Hero {
+  width: 100vw;
+  height: 400px;
+  position: relative;
+}
+
 .Description,
-.Description2,
 .Contact {
-  padding: 140px 24px;
-  background-image: url(../../assets/backgrounds/sandy_brown.png);
+  padding: 70px 24px;
+  background-image: url(../../assets/backgrounds/orient_blue.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   color: $wickedWhite;
-}
-
-.Description2 {
-  background-image: url(../../assets/backgrounds/wicked_white.png);
-}
-
-.Bullets {
-  color: $wickedBlack;
-  max-width: 900px;
-  display: flex;
-  flex-direction: row;
-  max-width: 900px;
-  margin: 60px auto;
-  gap: 50px;
-
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  p {
-    color: $wickedBlack;
-  }
 }
 
 .Contact {
@@ -100,16 +82,22 @@
   }
 }
 
+.DirectoryName {
+  font-size: 24px;
+}
+
 .Value {
   text-align: center;
   max-width: 900px;
-  margin: 100px auto 0;
+  margin: 40px auto 40px;
+  color: $wickedWhite;
 }
 
 .Text {
   color: $wickedWhite;
   max-width: 900px;
   margin: 0 auto;
+  margin-bottom: 24px;
 }
 
 .Gallery {
@@ -121,4 +109,10 @@
   min-height: 100vw;
   width: 100vw;
   position: relative;
+}
+
+@media screen and (min-width: 500px) {
+  .Hero {
+    height: 600px;
+  }
 }

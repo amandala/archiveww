@@ -39,9 +39,6 @@ export const Navbar = () => {
             <Link className={styles.items} href="/about">
               About
             </Link>
-            <Link className={styles.items} href="/about">
-              Contact
-            </Link>
           </ul>
         )}
         <button onClick={toggleNav} className={styles.btn}>

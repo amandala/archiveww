@@ -6,6 +6,19 @@
   height: 100vw;
 }
 
+.WordmarkWrapper {
+  margin: 0 auto;
+  height: 150px;
+  position: relative;
+}
+
+.DatestampWrapper {
+  margin: 0 auto;
+  height: 70px;
+  max-width: 300px;
+  position: relative;
+}
+
 .ArtContainer {
   position: relative;
   height: 100%;
@@ -30,7 +43,7 @@
 
 .Overlay {
   position: absolute;
-  font-size: 75px;
+  font-size: 3rem;
   color: #f0f0f0;
   text-align: center;
   width: 100%;
@@ -148,4 +161,22 @@
   color: $wickedWhite;
   padding: 20px;
   background-image: url(../assets/backgrounds/orient_blue.png);
+}
+
+@media screen and (min-width: 500px) {
+  .DatestampWrapper {
+    margin: 0 auto;
+    height: 120px;
+    max-width: 400px;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .DatestampWrapper {
+    margin: 0 auto;
+    height: 150px;
+    max-width: 500px;
+    position: relative;
+  }
 }
