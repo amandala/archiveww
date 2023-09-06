@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import cx from "classnames";
 
 import styles from "./index.module.scss";
 import Image from "next/image";
+
+import { dinBlack } from "@/styles/fonts";
 
 import burger from "../../assets/burger_menu_icon.png";
 import close from "../../assets/X_menu_icon.png";
@@ -30,7 +33,7 @@ export const Navbar = () => {
 
   return (
     <div className={styles.NavWrapper}>
-      <nav className={styles.Nav}>
+      <nav className={cx(styles.Nav, dinBlack.className)}>
         {(toggleMenu || screenWidth > 500) && (
           <ul className={styles.list}>
             <Link className={styles.items} href="/">

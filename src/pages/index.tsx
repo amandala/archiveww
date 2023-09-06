@@ -26,7 +26,7 @@ export default function Home() {
             <div className={styles.Overlay}>
               <div className={styles.WordmarkWrapper}>
                 <Image
-                  alt="Wicked Woods Music Festival Wordmark Logo"
+                  alt="Wicked Woods Music Festival"
                   src={wordmark}
                   style={{
                     objectFit: "contain",
@@ -41,7 +41,7 @@ export default function Home() {
               </div>
               <div className={styles.DatestampWrapper}>
                 <Image
-                  alt="Wicked Woods Music Festival Wordmark Logo"
+                  alt="August 29 to September 1 2024"
                   src={datestamp}
                   style={{
                     objectFit: "contain",
