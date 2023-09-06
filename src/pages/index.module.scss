@@ -67,7 +67,8 @@
 .Cloud2,
 .Cloud3,
 .Cloud4,
-.Cloud5 {
+.Cloud5,
+.CloudTop {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -78,6 +79,14 @@
   align-items: center;
   justify-content: center;
   animation-fill-mode: forwards;
+}
+
+.CloudTop {
+  background-image: url(../assets/cloudlayer_B.png);
+  animation: slideOff 50s;
+  top: -450px;
+  top: -230px;
+  background-size: contain;
 }
 
 .Cloud1 {
@@ -157,6 +166,15 @@
   }
 }
 
+@keyframes slideOff {
+  0% {
+    left: -90%;
+  }
+  100% {
+    left: -10%;
+  }
+}
+
 .Footer {
   color: $wickedWhite;
   padding: 20px;
@@ -178,5 +196,9 @@
     height: 150px;
     max-width: 500px;
     position: relative;
+  }
+
+  .CloudTop {
+    top: -700px;
   }
 }

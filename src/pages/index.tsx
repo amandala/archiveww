@@ -55,6 +55,7 @@ export default function Home() {
             </div>
             <div className={styles.Sun}></div>
             <div className={styles.CloudsContainer}>
+              <div className={styles.CloudTop}></div>
               <div className={styles.Cloud1}></div>
               <div className={styles.Cloud4}></div>
               <div className={styles.Cloud3}></div>
