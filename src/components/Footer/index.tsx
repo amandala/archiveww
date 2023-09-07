@@ -20,19 +20,19 @@ export default function Footer() {
           <H4>Festival</H4>
           <ul className={styles.List}>
             <li>
-              <TextLink href="/">Tickets</TextLink>
+              <TextLink href="/tickets">Tickets</TextLink>
             </li>
             <li>
-              <TextLink href="/">Camping</TextLink>
+              <TextLink href="/camping">Camping</TextLink>
             </li>
             <li>
-              <TextLink href="/">Volunteer</TextLink>
+              <TextLink href="/volunteer">Volunteer</TextLink>
             </li>
             <li>
-              <TextLink href="/">Jobs</TextLink>
+              <TextLink href="/jobs">Jobs</TextLink>
             </li>
             <li>
-              <TextLink href="/">FAQ</TextLink>
+              <TextLink href="/faq">FAQ</TextLink>
             </li>
           </ul>
         </div>
@@ -40,19 +40,19 @@ export default function Footer() {
           <H4>Experience</H4>
           <ul className={styles.List}>
             <li>
-              <TextLink href="/">Stages</TextLink>
+              <TextLink href="/stages">Stages</TextLink>
             </li>
             <li>
-              <TextLink href="/">Vendors</TextLink>
+              <TextLink href="/vendors">Vendors</TextLink>
             </li>
             <li>
-              <TextLink href="/">Workshops</TextLink>
+              <TextLink href="/workshops">Workshops</TextLink>
             </li>
             <li>
-              <TextLink href="/">Art Installations</TextLink>
+              <TextLink href="/art">Art Installations</TextLink>
             </li>
             <li>
-              <TextLink href="/">Past Lineups</TextLink>
+              <TextLink href="/past-events">Past Lineups</TextLink>
             </li>
           </ul>
         </div>
@@ -109,10 +109,10 @@ export default function Footer() {
               <TextLink href="/about#directory">Directory</TextLink>
             </li>
             <li>
-              <TextLink href="/">Code of Conduct</TextLink>
+              <TextLink href="/code-of-conduct">Code of Conduct</TextLink>
             </li>
             <li>
-              <TextLink href="/">Terms & Conditions</TextLink>
+              <TextLink href="/terms">Terms & Conditions</TextLink>
             </li>
           </ul>
         </div>
