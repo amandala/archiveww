@@ -11,15 +11,21 @@ import burger from "../../assets/burger_menu_icon.png";
 import close from "../../assets/X_menu_icon.png";
 
 export const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [screenWidth, setScreenWidth] = useState(0);
 
   const toggleNav = () => {
-    setToggleMenu(!toggleMenu);
+    setMenuOpen(!menuOpen);
   };
 
   const changeWidth = () => {
     setScreenWidth(window.innerWidth);
+  };
+
+  const closeNav = () => {
+    if (menuOpen) {
+      toggleNav();
+    }
   };
 
   useEffect(() => {
@@ -34,18 +40,18 @@ export const Navbar = () => {
   return (
     <div className={styles.NavWrapper}>
       <nav className={cx(styles.Nav, dinBlack.className)}>
-        {(toggleMenu || screenWidth > 500) && (
+        {(menuOpen || screenWidth > 500) && (
           <ul className={styles.list}>
-            <Link className={styles.items} href="/">
+            <Link className={styles.items} href="/" onClick={closeNav}>
               Home
             </Link>
-            <Link className={styles.items} href="/about">
+            <Link className={styles.items} href="/about" onClick={closeNav}>
               About
             </Link>
           </ul>
         )}
         <button onClick={toggleNav} className={styles.btn}>
-          {toggleMenu ? (
+          {menuOpen ? (
             <Image src={close} width={40} height={40} alt="open menu" />
           ) : (
             <Image src={burger} width={40} height={40} alt="open menu" />

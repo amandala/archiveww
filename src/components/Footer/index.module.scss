@@ -1,0 +1,70 @@
+@import "@/styles/variables.module.scss";
+
+.Footer {
+  color: $wickedWhite;
+  padding: 20px;
+  background-image: url(../../assets/backgrounds/orient_blue.png);
+  position: relative;
+}
+
+.Content {
+  position: relative;
+  z-index: 20;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.Column {
+  text-align: center;
+}
+
+.List {
+  list-style: none;
+  align-self: flex-start;
+  margin-bottom: 32px;
+}
+
+.Trees {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.TreesRelative {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.Tree {
+  object-fit: "contain";
+}
+
+@media screen and (min-width: 500px) {
+  .Content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .Column {
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .Content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .Tree {
+    object-fit: "cover";
+  }
+}

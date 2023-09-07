@@ -1,0 +1,27 @@
+@import "../../styles/variables.module.scss";
+
+.Link {
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  color: $wickedWhite;
+  font-size: 1rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $wickedWhite;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    transform: scaleX(1);
+  }
+}

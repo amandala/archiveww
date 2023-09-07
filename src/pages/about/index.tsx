@@ -5,13 +5,14 @@ import cx from "classnames";
 import Gallery from "@/components/Gallery";
 
 import wordmark from "@/assets/FONT_WITH_MF.png";
-import bear from "@/assets/paper_bear_alpha.png";
 import bananaPhone from "@/assets/bananaPhone.jpg";
 import hallowNights from "@/assets/hallow-nights-min.jpg";
 
 import styles from "./index.module.scss";
 
 import { dinBold } from "@/styles/fonts";
+import TextLink from "@/components/TextLink";
+import { H4 } from "@/components/Typography";
 
 export default function About() {
   return (
@@ -48,83 +49,81 @@ export default function About() {
             <p className={styles.Text}>
               Held on traditional unceded territory of the Akisqnuk First
               Nation, Wicked Woods Music and Arts Festival is is an annual
-              celebration of life through sight & sound. Our intimate festival
-              is nestled on the edge of the Canadian Rockies, just minutes from
-              Fairmont Hot Springs BC, overlooking the Colombia Valley. This
-              Kootenay location’s limitless views and comfortable surroundings
-              makes Wicked Woods a precious environment for all imaginations.
+              celebration of life through sight & sound.
+            </p>
+            <p className={styles.Text}>
+              Nestled on the edge of the Canadian Rockies, our intimate festival
+              is just minutes from Fairmont Hot Springs BC overlooking the
+              Colombia Valley.
             </p>
 
             <p className={styles.Text}>
-              Inspired by our intimate and sacred venue, we provide a safe and
-              welcoming space for all individuals to express their individuality
-              alongside diverse performances, awe-inspiring art installations,
-              and educational workshops, all curated to create a sense of
-              discovery and wonder.
+              This Kootenay location’s limitless views and comfortable
+              surroundings makes Wicked Woods a precious environment for all
+              imaginations.
             </p>
-            <h3 className={styles.Value}>
+
+            <p className={styles.Text}>
+              We aim to provide a safe and welcoming space for all individuals
+              to express their individuality alongside diverse performances,
+              awe-inspiring art installations, and educational workshops, all
+              curated to create a sense of discovery and wonder.
+            </p>
+            <p className={styles.Text}>
               We strongly value community, expression, and connection both with
               our fellow humans and the land on which we gather.
-            </h3>
+            </p>
           </div>
           <div className={styles.Gallery}>
             <Gallery />
           </div>
-          <div className={styles.Contact}>
+          <div className={styles.Contact} id="directory">
             <div>
               <h2>Contact Directory</h2>
               <Image
                 src={bananaPhone}
-                width={370}
-                height={370}
+                width={330}
+                height={330}
                 alt="Man holding a giant inflatable banana as a phone"
                 style={{ borderRadius: "200px", border: "20px solid #141313" }}
               />
             </div>
             <ul>
               <li>
-                <span className={cx(styles.DirectoryName, dinBold.className)}>
-                  General Inquiries
-                </span>
-                <a href="mailto:info@wickedwoods.ca">info@wickedwoods.ca</a>
+                <H4>General Inquiries</H4>
+                <TextLink href="mailto:info@wickedwoods.ca">
+                  info@wickedwoods.ca
+                </TextLink>
               </li>
               <li>
-                <span className={cx(styles.DirectoryName, dinBold.className)}>
-                  Marketing
-                </span>
-                <a href="mailto:marketing@wickedwoods.ca">
+                <H4>Marketing</H4>
+                <TextLink href="mailto:marketing@wickedwoods.ca">
                   marketing@wickedwoods.ca
-                </a>
+                </TextLink>
               </li>
               <li>
-                <span className={cx(styles.DirectoryName, dinBold.className)}>
-                  Volunteers
-                </span>
-                <a href="mailto:volunteers@wickedwoods.ca">
+                <H4>Volunteers</H4>
+                <TextLink href="mailto:volunteers@wickedwoods.ca">
                   volunteers@wickedwoods.ca
-                </a>
+                </TextLink>
               </li>
               <li>
-                <span className={cx(styles.DirectoryName, dinBold.className)}>
-                  Vendors
-                </span>
-                <a href="mailto:vendors@wickedwoods.ca">
+                <H4>Vendors</H4>
+                <TextLink href="mailto:vendors@wickedwoods.ca">
                   vendors@wickedwoods.ca
-                </a>
+                </TextLink>
               </li>
               <li>
-                <span className={cx(styles.DirectoryName, dinBold.className)}>
-                  Health & Safety / Harm Reduction Services
-                </span>
-                <a href="mailto:healthandsafety@wickedwoods.ca">
+                <H4>Health & Safety / Harm Reduction Services</H4>
+                <TextLink href="mailto:healthandsafety@wickedwoods.ca">
                   healthandsafety@wickedwoods.ca
-                </a>
+                </TextLink>
               </li>
               <li>
-                <span className={cx(styles.DirectoryName, dinBold.className)}>
-                  Media
-                </span>
-                <a href="mailto:media@wickedwoods.ca">media@wickedwoods.ca</a>
+                <H4>Media</H4>
+                <TextLink href="mailto:media@wickedwoods.ca">
+                  media@wickedwoods.ca
+                </TextLink>
               </li>
             </ul>
           </div>

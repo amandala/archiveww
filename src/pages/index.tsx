@@ -28,6 +28,7 @@ export default function Home() {
                 <Image
                   alt="Wicked Woods Music Festival"
                   src={wordmark}
+                  priority
                   style={{
                     objectFit: "contain",
                     zIndex: 20,
@@ -70,7 +71,6 @@ export default function Home() {
             <div className={styles.Valley}></div>
             <div className={styles.FrontMountains}></div>
           </div>
-          {/* <div className={styles.Footer}>HI</div> */}
         </div>
       </main>
     </>
