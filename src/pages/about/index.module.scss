@@ -16,15 +16,31 @@
   position: relative;
 }
 
+.Description {
+  position: relative;
+}
+
+.TextWrapper {
+  z-index: 80;
+}
+
 .Description,
 .Contact {
   padding: 70px 24px;
-  background-image: url(../../assets/backgrounds/orient_blue.png);
+  background-image: url(../../assets/backgrounds/curious_blue.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   color: $wickedWhite;
+}
+
+.EagleContainer {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: 0;
+  top: -14%;
 }
 
 .Contact {
@@ -60,13 +76,6 @@
   color: $wickedWhite;
 }
 
-.Text {
-  color: $wickedWhite;
-  max-width: 900px;
-  margin: 0 auto;
-  margin-bottom: 24px;
-}
-
 .Gallery {
   margin: 20px 20px 0;
   padding-bottom: 20px;
@@ -94,5 +103,18 @@
       text-align: left;
       margin: 0;
     }
+  }
+
+  .EagleContainer {
+    top: -25%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .EagleContainer {
+    top: 0;
+    right: 0%;
+    width: 400px;
+    height: 400px;
   }
 }

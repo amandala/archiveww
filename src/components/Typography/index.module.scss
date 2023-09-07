@@ -1,6 +1,16 @@
+@import "@/styles/variables.module.scss";
+
 .Four {
   display: block;
   font-weight: 400;
   font-size: 1.2rem;
   margin-bottom: 8px;
+}
+
+.Text {
+  color: $wickedWhite;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  font-size: 1.2rem;
 }

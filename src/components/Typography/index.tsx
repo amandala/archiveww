@@ -5,3 +5,7 @@ import cx from "classnames";
 export function H4({ children }: { children: React.ReactNode }) {
   return <h4 className={cx(dinBold.className, styles.Four)}>{children}</h4>;
 }
+
+export function Paragraph({ children }: { children: React.ReactNode }) {
+  return <p className={styles.Text}>{children}</p>;
+}

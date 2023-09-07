@@ -7,12 +7,13 @@ import Gallery from "@/components/Gallery";
 import wordmark from "@/assets/FONT_WITH_MF.png";
 import bananaPhone from "@/assets/bananaPhone.jpg";
 import hallowNights from "@/assets/hallow-nights-min.jpg";
+import eagle from "@/assets/this_is_eagull.png";
 
 import styles from "./index.module.scss";
 
 import { dinBold } from "@/styles/fonts";
 import TextLink from "@/components/TextLink";
-import { H4 } from "@/components/Typography";
+import { H4, Paragraph } from "@/components/Typography";
 
 export default function About() {
   return (
@@ -46,33 +47,44 @@ export default function About() {
         </div>
         <div>
           <div className={styles.Description}>
-            <p className={styles.Text}>
-              Held on traditional unceded territory of the Akisqnuk First
-              Nation, Wicked Woods Music and Arts Festival is is an annual
-              celebration of life through sight & sound.
-            </p>
-            <p className={styles.Text}>
-              Nestled on the edge of the Canadian Rockies, our intimate festival
-              is just minutes from Fairmont Hot Springs BC overlooking the
-              Colombia Valley.
-            </p>
+            <div className={styles.TextWrapper}>
+              <Paragraph>
+                Held on traditional unceded territory of the Akisqnuk First
+                Nation, Wicked Woods Music and Arts Festival is is an annual
+                celebration of life through sight & sound.
+              </Paragraph>
+              <Paragraph>
+                Nestled on the edge of the Canadian Rockies, our intimate
+                festival is just minutes from Fairmont Hot Springs BC
+                overlooking the Colombia Valley.
+              </Paragraph>
 
-            <p className={styles.Text}>
-              This Kootenay location’s limitless views and comfortable
-              surroundings makes Wicked Woods a precious environment for all
-              imaginations.
-            </p>
-
-            <p className={styles.Text}>
-              We aim to provide a safe and welcoming space for all individuals
-              to express their individuality alongside diverse performances,
-              awe-inspiring art installations, and educational workshops, all
-              curated to create a sense of discovery and wonder.
-            </p>
-            <p className={styles.Text}>
-              We strongly value community, expression, and connection both with
-              our fellow humans and the land on which we gather.
-            </p>
+              <Paragraph>
+                We aim to provide a safe and welcoming space for all individuals
+                to express their individuality alongside diverse performances,
+                awe-inspiring art installations, and educational workshops, all
+                curated to create a sense of discovery and wonder.
+              </Paragraph>
+              <Paragraph>
+                We strongly value community, expression, and connection both
+                with our fellow humans and the land on which we gather.
+              </Paragraph>
+            </div>
+            <div className={styles.EagleContainer}>
+              <Image
+                alt="Eagle"
+                src={eagle}
+                fill
+                style={{
+                  objectFit: "contain",
+                  zIndex: 20,
+                  paddingLeft: 20,
+                  paddingRight: 20,
+                  maxWidth: 800,
+                  margin: "0 auto",
+                }}
+              />
+            </div>
           </div>
           <div className={styles.Gallery}>
             <Gallery />
