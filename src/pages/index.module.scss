@@ -3,7 +3,6 @@
 .Main {
   align-items: center;
   min-height: 100vh;
-  height: 100vw;
 }
 
 .WordmarkWrapper {
@@ -21,7 +20,7 @@
 
 .ArtContainer {
   position: relative;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 
@@ -84,8 +83,7 @@
 .CloudTop {
   background-image: url(../assets/cloudlayer_B.png);
   animation: slideOff 50s;
-  top: -450px;
-  top: -230px;
+  top: -250px;
   background-size: contain;
 }
 
@@ -193,6 +191,6 @@
   }
 
   .CloudTop {
-    top: -700px;
+    top: -500px;
   }
 }
