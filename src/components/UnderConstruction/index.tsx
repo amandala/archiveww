@@ -13,7 +13,8 @@ export default function UnderConstruction() {
           Under Construction
         </h1>
         <Paragraph>
-          We're rebuilding our website and haven't completed this page yet.
+          We&apos;re rebuilding our website and haven&apos;t completed this page
+          yet.
         </Paragraph>
         <Paragraph>Check back often for updates!</Paragraph>
         <div className={styles.ButtonWrapper}>
