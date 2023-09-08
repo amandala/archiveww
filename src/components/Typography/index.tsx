@@ -1,6 +1,6 @@
 import React from "react";
 
-import { dinBold, chunkyHeart, dinBlack } from "@/styles/fonts";
+import { dinBold, dinBlack } from "@/styles/fonts";
 import styles from "./index.module.scss";
 import cx from "classnames";
 
