@@ -3,6 +3,7 @@
 .Main {
   align-items: center;
   min-height: 100vh;
+  height: 100vw;
 }
 
 .WordmarkWrapper {
@@ -20,7 +21,7 @@
 
 .ArtContainer {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -33,7 +34,6 @@
 }
 
 .Sun {
-  background-image: url(../assets/PAPER_fun_ASSETS_Sun.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -78,42 +78,25 @@
   align-items: center;
   justify-content: center;
   animation-fill-mode: forwards;
+  top: 0;
 }
 
 .CloudTop {
-  background-image: url(../assets/cloudlayer_B.png);
   animation: slideOff 50s;
-  top: -250px;
+  top: -450px;
+  top: -230px;
   background-size: contain;
 }
 
 .Cloud1 {
   background-image: url(../assets/Clouds1.png);
   animation: slide 30s;
-  top: 0;
   background-size: contain;
-}
-
-.Cloud2 {
-  top: 0;
-  background-image: url(../assets/Clouds2.png);
-}
-
-.Cloud3 {
-  top: 0;
-  background-image: url(../assets/Clouds3.png);
 }
 
 .Cloud4 {
-  top: 0;
-  background-image: url(../assets/Clouds4.png);
   animation: slide 30s;
   background-size: contain;
-}
-
-.Cloud5 {
-  top: 0;
-  background-image: url(../assets/Clouds5.png);
 }
 
 .Foreground {
@@ -133,26 +116,6 @@
   position: absolute;
   height: 100%;
   width: 100%;
-}
-
-.FrontMountains {
-  background-image: url(../assets/PAPER_fun_ASSETS_foreground.png);
-}
-
-.Valley {
-  background-image: url(../assets/PAPER_fun_ASSETS_valley.png);
-}
-
-.Hills {
-  background-image: url(../assets/PAPER_fun_ASSETS_rollinghills.png);
-}
-
-.Grasses {
-  background-image: url(../assets/PAPER_fun_ASSETS_grasses.png);
-}
-
-.Mountains {
-  background-image: url(../assets/PAPER_fun_ASSETS_mountains.png);
 }
 
 @keyframes slide {
@@ -191,6 +154,6 @@
   }
 
   .CloudTop {
-    top: -500px;
+    top: -700px;
   }
 }

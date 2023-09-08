@@ -14,3 +14,15 @@
   margin-bottom: 24px;
   font-size: 1.2rem;
 }
+
+.Jumbo {
+  font-size: 3rem;
+  color: $wickedWhite;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .Jumbo {
+    font-size: 5rem;
+  }
+}

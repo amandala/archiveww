@@ -9,12 +9,16 @@ import { useWindowSize } from "@/helpers/useWindowSize";
 import tree1 from "@/assets/Tree_1.png";
 import tree2 from "@/assets/Tree_2.png";
 import tree3 from "@/assets/Tree_3.png";
+import pageBackground from "@/assets/backgrounds/orient_blue.png";
 
 export default function Footer() {
   const windowSize = useWindowSize();
 
   return (
-    <div className={styles.Footer}>
+    <div
+      className={styles.Footer}
+      style={{ backgroundImage: `url(${pageBackground.src})` }}
+    >
       <div className={styles.Content}>
         <div className={styles.Column}>
           <H4>Festival</H4>
@@ -129,7 +133,6 @@ export default function Footer() {
               objectFit: windowSize.width <= 500 ? "cover" : "contain",
             }}
           />
-
           <Image
             alt="A tree"
             src={tree3}
