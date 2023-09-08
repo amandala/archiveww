@@ -8,6 +8,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   flex-direction: column;
   padding: 90px 24px 0;
 }
@@ -26,12 +27,16 @@
   margin-top: 36px;
 }
 
+.LogoWrapper {
+  margin-bottom: 24px;
+}
+
 .Content {
   z-index: 20;
 }
 
 @media screen and (min-width: 500px) {
   .Wrapper {
-    padding-top: 190px;
+    // padding-top: 190px;
   }
 }

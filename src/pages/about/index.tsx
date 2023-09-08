@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import Gallery from "@/components/Gallery";
 
+import blackBackground from "@/assets/backgrounds/wicked_black.png";
 import curiousBlue from "@/assets/backgrounds/curious_blue.png";
 import hazyGreen from "@/assets/backgrounds/green_haze.png";
 import wordmark from "@/assets/FONT_WITH_MF.png";
@@ -18,7 +19,10 @@ import { H4, Paragraph } from "@/components/Typography";
 export default function About() {
   return (
     <div>
-      <div className={styles.Container}>
+      <div
+        className={styles.Container}
+        style={{ backgroundImage: `url(${blackBackground.src})` }}
+      >
         <div className={styles.Hero}>
           <Image
             alt="Hallow stage at night with lasers"

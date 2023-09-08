@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import styles from "./index.module.scss";
 import greenHazeBackground from "@/assets/backgrounds/green_haze.png";
+import ww from "@/assets/WW_ALPHA.png";
 import { JumboHeading, Paragraph } from "../Typography";
 
 import beaver from "@/assets/Beavz3.png";
@@ -14,12 +15,17 @@ export default function UnderConstruction() {
         style={{ backgroundImage: `url(${greenHazeBackground.src})` }}
       >
         <div className={styles.Content}>
+          <div className={styles.LogoWrapper}>
+            <Image src={ww} alt="wicked woods logo" width={200} />
+          </div>
           <JumboHeading>Under Construction</JumboHeading>
           <Paragraph>
             We&apos;re rebuilding our website and haven&apos;t completed this
             page yet.
           </Paragraph>
-          <Paragraph>Follow us on Social Media for updates!</Paragraph>
+          <Paragraph>
+            Follow us on Social Media for exciting updates very soon!
+          </Paragraph>
           {/* <div className={styles.ButtonWrapper}>
           <Button href="/">Go back home</Button>
         </div> */}

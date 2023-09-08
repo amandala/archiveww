@@ -44,7 +44,7 @@ export const Navbar = () => {
         {(menuOpen || screenWidth > 500) && (
           <ul
             className={styles.list}
-            style={{ backgroundImage: `url(${background.src})` }}
+            // style={{ backgroundImage: `url(${background.src})` }}
           >
             <Link className={styles.items} href="/" onClick={closeNav}>
               Home
