@@ -9,6 +9,7 @@ import { dinBlack } from "@/styles/fonts";
 
 import burger from "../../assets/burger_menu_icon.png";
 import close from "../../assets/X_menu_icon.png";
+import background from "@/assets/PAPER_fun_ASSETS_8_back.png";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,7 +42,10 @@ export const Navbar = () => {
     <div className={styles.NavWrapper}>
       <nav className={cx(styles.Nav, dinBlack.className)}>
         {(menuOpen || screenWidth > 500) && (
-          <ul className={styles.list}>
+          <ul
+            className={styles.list}
+            style={{ backgroundImage: `url(${background.src})` }}
+          >
             <Link className={styles.items} href="/" onClick={closeNav}>
               Home
             </Link>
