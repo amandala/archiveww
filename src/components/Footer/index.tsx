@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styles from "./index.module.scss";
 import TextLink from "../TextLink";
 import { H4 } from "../Typography";

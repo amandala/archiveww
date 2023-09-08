@@ -1,16 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  images:{
+  images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'drive.google.com',
+        protocol: "https",
+        hostname: "drive.google.com",
         // port: '',
         // pathname: '/account123/**',
       },
     ],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

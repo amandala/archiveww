@@ -1,8 +1,6 @@
-import cx from "classnames";
 import Image from "next/image";
 
 import styles from "./index.module.scss";
-import Button from "@/components/Button";
 import greenHazeBackground from "@/assets/backgrounds/green_haze.png";
 import { JumboHeading, Paragraph } from "../Typography";
 

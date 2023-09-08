@@ -1,6 +1,6 @@
 const breakpoints = [4320, 2160, 1080, 640, 384, 256, 128];
 
-const googleLink = (id: string, width: number, height: number) =>
+const googleLink = (id: string) =>
   `https://drive.google.com/uc?export=view&id=${id}`;
 
 const localPhotos = [

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import cx from "classnames";
 
 import Gallery from "@/components/Gallery";
 
@@ -11,7 +10,6 @@ import eagle from "@/assets/this_is_eagull.png";
 
 import styles from "./index.module.scss";
 
-import { dinBold } from "@/styles/fonts";
 import TextLink from "@/components/TextLink";
 import { H4, Paragraph } from "@/components/Typography";
 
