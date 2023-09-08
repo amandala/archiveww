@@ -1,7 +1,5 @@
 import UnderConstruction from "@/components/UnderConstruction";
 
-import background from "@/assets/backgrounds/curious_blue.png";
-
 // export default function FourOhFour() {
 //   return (
 //     <>
