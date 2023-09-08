@@ -30,13 +30,13 @@ export const slides = localPhotos.map((photo) => {
   const width = photo.width * 4;
   const height = photo.height * 4;
   return {
-    src: googleLink(photo.id, width, height),
+    src: googleLink(photo.id),
     width,
     height,
     srcSet: breakpoints.map((breakpoint) => {
       const breakpointHeight = Math.round((height / width) * breakpoint);
       return {
-        src: googleLink(photo.id, breakpoint, breakpointHeight),
+        src: googleLink(photo.id),
         width: breakpoint,
         height: breakpointHeight,
       };
