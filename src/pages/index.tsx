@@ -3,21 +3,22 @@ import Image from "next/image";
 
 import styles from "./index.module.scss";
 
-import sky from "@/assets/PAPER_fun_ASSETS_8_back.png";
 import wordmark from "@/assets/FONT_WITH_MF.png";
 import datestamp from "@/assets/DATE_STAMP2.png";
-import sun from "@/assets/PAPER_fun_ASSETS_Sun.png";
-import frontMountains from "@/assets/PAPER_fun_ASSETS_foreground.png";
-import valley from "@/assets/PAPER_fun_ASSETS_valley.png";
-import hills from "@/assets/PAPER_fun_ASSETS_rollinghills.png";
-import grasses from "@/assets/PAPER_fun_ASSETS_grasses.png";
-import mountains from "@/assets/PAPER_fun_ASSETS_mountains.png";
-import cloudTop from "@/assets/cloudlayer_B.png";
-import cloud1 from "@/assets/Clouds1.png";
-import cloud2 from "@/assets/Clouds2.png";
-import cloud3 from "@/assets/Clouds3.png";
-import cloud4 from "@/assets/Clouds4.png";
-import cloud5 from "@/assets/Clouds5.png";
+
+import sky from "@/assets/sunsetScene/PAPER_fun_ASSETS_8_back.png";
+import sun from "@/assets/sunsetScene/PAPER_fun_ASSETS_Sun.png";
+import frontMountains from "@/assets/sunsetScene/PAPER_fun_ASSETS_foreground.png";
+import valley from "@/assets/sunsetScene/PAPER_fun_ASSETS_valley.png";
+import hills from "@/assets/sunsetScene/PAPER_fun_ASSETS_rollinghills.png";
+import grasses from "@/assets/sunsetScene/PAPER_fun_ASSETS_grasses.png";
+import mountains from "@/assets/sunsetScene/PAPER_fun_ASSETS_mountains.png";
+import cloudTop from "@/assets/sunsetScene/cloudlayer_B.png";
+import cloud1 from "@/assets/sunsetScene/Clouds1.png";
+import cloud2 from "@/assets/sunsetScene/Clouds2.png";
+import cloud3 from "@/assets/sunsetScene/Clouds3.png";
+import cloud4 from "@/assets/sunsetScene/Clouds4.png";
+import cloud5 from "@/assets/sunsetScene/Clouds5.png";
 
 export default function Home() {
   return (

@@ -3,6 +3,8 @@ import Image from "next/image";
 
 import Gallery from "@/components/Gallery";
 
+import curiousBlue from "@/assets/backgrounds/curious_blue.png";
+import hazyGreen from "@/assets/backgrounds/green_haze.png";
 import wordmark from "@/assets/FONT_WITH_MF.png";
 import bananaPhone from "@/assets/bananaPhone.jpg";
 import hallowNights from "@/assets/hallow-nights-min.jpg";
@@ -44,7 +46,10 @@ export default function About() {
           />
         </div>
         <div>
-          <div className={styles.Description}>
+          <div
+            className={styles.Description}
+            style={{ backgroundImage: `url(${curiousBlue.src})` }}
+          >
             <div className={styles.TextWrapper}>
               <Paragraph>
                 Held on traditional unceded territory of the Akisqnuk First
@@ -87,14 +92,19 @@ export default function About() {
           <div className={styles.Gallery}>
             <Gallery />
           </div>
-          <div className={styles.Contact} id="directory">
+          <div
+            className={styles.Contact}
+            id="directory"
+            style={{ backgroundImage: `url(${hazyGreen.src})` }}
+          >
             <div>
               <h2>Contact Directory</h2>
               <Image
                 src={bananaPhone}
                 width={330}
                 height={330}
-                alt="Man holding a giant inflatable banana as a phone"
+                placeholder="blur"
+                alt="DJ Benanas holding a giant inflatable banana as a phone"
                 style={{ borderRadius: "200px", border: "20px solid #141313" }}
               />
             </div>

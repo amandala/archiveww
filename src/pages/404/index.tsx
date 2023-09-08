@@ -1,9 +1,11 @@
 import UnderConstruction from "@/components/UnderConstruction";
 
+import background from "@/assets/backgrounds/curious_blue.png";
+
 // export default function FourOhFour() {
 //   return (
 //     <>
-//       <div className={styles.Wrapper}>
+//       <div className={styles.Wrapper} style={{backgroundImage: `url(${background.src})`}}>
 //         <h1 className={cx(chunkyHeart.className, styles.Number)}>404</h1>
 //         <h2 className={cx(dinCondensed.className, styles.Heading)}>
 //           Nothing to see here!
