@@ -1,4 +1,5 @@
 import "@/styles/globals.scss";
+import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
 import { dinCondensed } from "@/styles/fonts";
 import cx from "classnames";
@@ -11,6 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Navbar />
       <Component {...pageProps} />
       <Footer />
+      <Analytics />
     </div>
   );
 }

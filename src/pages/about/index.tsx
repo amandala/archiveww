@@ -4,6 +4,7 @@ import Image from "next/image";
 import Gallery from "@/components/Gallery";
 
 import curiousBlue from "@/assets/backgrounds/curious_blue.png";
+import backgroundBlack from "@/assets/backgrounds/wicked_black.png";
 import hazyGreen from "@/assets/backgrounds/green_haze.png";
 import wordmark from "@/assets/FONT_WITH_MF.png";
 import bananaPhone from "@/assets/bananaPhone.jpg";
@@ -63,10 +64,9 @@ export default function About() {
               </Paragraph>
 
               <Paragraph>
-                We aim to provide a safe and welcoming space for all individuals
-                to express their individuality alongside diverse performances,
-                awe-inspiring art installations, and educational workshops, all
-                curated to create a sense of discovery and wonder.
+                We aim to provide a safe and welcoming space for all, curating
+                diverse performances, awe-inspiring art installations, and
+                educational workshops.
               </Paragraph>
               <Paragraph>
                 We strongly value community, expression, and connection both
@@ -89,7 +89,10 @@ export default function About() {
               />
             </div>
           </div>
-          <div className={styles.Gallery}>
+          <div
+            className={styles.Gallery}
+            style={{ backgroundImage: `url(${backgroundBlack.src})` }}
+          >
             <Gallery />
           </div>
           <div
