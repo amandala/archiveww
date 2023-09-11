@@ -19,6 +19,12 @@
   position: relative;
 }
 
+.VideoWrapper {
+  background-color: $wickedBlack;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
 .TextWrapper {
   z-index: 80;
 }

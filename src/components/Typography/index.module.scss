@@ -5,6 +5,7 @@
   font-weight: 400;
   font-size: 1.2rem;
   margin-bottom: 8px;
+  color: $wickedWhite;
 }
 
 .Text {
@@ -18,6 +19,19 @@
 .Jumbo {
   font-size: 3rem;
   color: $wickedWhite;
+  margin-bottom: 24px;
+}
+
+.H1 {
+  font-size: 1.5rem;
+  color: $wickedWhite;
+  margin-bottom: 24px;
+}
+
+.H2 {
+  font-size: 1.3rem;
+  color: $wickedWhite;
+  font-weight: 400;
   margin-bottom: 24px;
 }
 

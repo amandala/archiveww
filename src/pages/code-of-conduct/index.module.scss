@@ -1,0 +1,12 @@
+@import "@/styles/variables.module.scss";
+
+.Wrapper {
+  position: relative;
+  padding: 90px 24px;
+  background-color: $orientBlue;
+}
+
+.Content {
+  max-width: 900px;
+  margin: 0 auto;
+}

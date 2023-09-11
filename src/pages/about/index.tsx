@@ -15,8 +15,20 @@ import styles from "./index.module.scss";
 
 import TextLink from "@/components/TextLink";
 import { H4, Paragraph } from "@/components/Typography";
+import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function About() {
+  const opts = {
+    height: "500",
+    width: "100%",
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 0,
+    },
+    listType: "playlist",
+    list: "PL2ww8u3Xjlpyr-ckPRH42OpZ7fGRrG8XQ",
+    controls: 0,
+  };
   return (
     <div>
       <div className={styles.Container}>
@@ -46,6 +58,7 @@ export default function About() {
             fill
           />
         </div>
+
         <div>
           <div
             className={styles.Description}
@@ -89,11 +102,18 @@ export default function About() {
               />
             </div>
           </div>
+
           <div
             className={styles.Gallery}
             style={{ backgroundImage: `url(${backgroundBlack.src})` }}
           >
             <Gallery />
+          </div>
+          <div
+            className={styles.VideoWrapper}
+            style={{ backgroundImage: `url(${backgroundBlack.src})` }}
+          >
+            <YouTubePlayer opts={opts} videoId="ILrbq_WnkCk" />
           </div>
           <div
             className={styles.Contact}
