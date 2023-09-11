@@ -10,13 +10,16 @@ import beaver from "@/assets/Beavz3.png";
 export default function UnderConstruction() {
   return (
     <>
-      <div
-        className={styles.Wrapper}
-        style={{ backgroundImage: `url(${greenHazeBackground.src})` }}
-      >
+      <div className={styles.Wrapper}>
+        <Image
+          src={greenHazeBackground}
+          priority
+          alt="Green construction paper background"
+          fill
+        />
         <div className={styles.Content}>
           <div className={styles.LogoWrapper}>
-            <Image src={ww} alt="wicked woods logo" width={200} />
+            <Image src={ww} alt="wicked woods logo" priority width={200} />
           </div>
           <JumboHeading>Under Construction</JumboHeading>
           <Paragraph>
@@ -35,7 +38,6 @@ export default function UnderConstruction() {
             alt="Beaver in a yellow hard hat"
             src={beaver}
             priority
-            // fill
             style={{
               objectFit: "contain",
               paddingLeft: 20,
