@@ -154,7 +154,14 @@ export default function CodeOfConduct() {
           assisting those experiencing harassment to feel safe during their time
           at WWMF.
         </Paragraph>
-
+        <Paragraph>
+          Wicked Woods Music Festival reserves the right to non-disclosure of
+          any concerns received within an incident report. This is to ensure the
+          privacy and confidentiality of those involved. As such, any actions
+          taken to keep Wicked Woods crew members, vendors and/or patrons safe
+          and in alignment with our values will be carried out at our
+          discretion.
+        </Paragraph>
         <H2>Dismissal and Banning of Offenders</H2>
         <Paragraph>
           Unacceptable behaviour and failure to comply with the code of conduct
