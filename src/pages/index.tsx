@@ -42,6 +42,7 @@ export default function Home() {
                   alt="Wicked Woods Music Festival"
                   src={wordmark}
                   priority
+                  placeholder="blur"
                   style={{
                     objectFit: "contain",
                     zIndex: 20,
@@ -57,6 +58,8 @@ export default function Home() {
                 <Image
                   alt="August 29 to September 1 2024"
                   src={datestamp}
+                  priority
+                  placeholder="blur"
                   style={{
                     objectFit: "contain",
                     zIndex: 20,
@@ -67,58 +70,156 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div
-              className={styles.Sun}
-              style={{ backgroundImage: `url(${sun.src})` }}
-            ></div>
+            <div className={styles.Sun}>
+              <Image
+                src={sun}
+                alt="Blue sky"
+                priority
+                style={{
+                  objectFit: "cover",
+                  width: "auto",
+                  height: "100%",
+                }}
+              />
+            </div>
             <div className={styles.CloudsContainer}>
               <div
                 className={styles.CloudTop}
                 style={{ backgroundImage: `url(${cloudTop.src})` }}
-              ></div>
-              <div
-                className={styles.Cloud1}
-                style={{ backgroundImage: `url(${cloud1.src})` }}
-              ></div>
-              <div
-                className={styles.Cloud4}
-                style={{ backgroundImage: `url(${cloud4.src})` }}
-              ></div>
-              <div
-                className={styles.Cloud3}
-                style={{ backgroundImage: `url(${cloud3.src})` }}
-              ></div>
-              <div
-                className={styles.Cloud2}
-                style={{ backgroundImage: `url(${cloud2.src})` }}
-              ></div>
-              <div
-                className={styles.Cloud5}
-                style={{ backgroundImage: `url(${cloud5.src})` }}
-              ></div>
+              >
+                <Image
+                  src={cloudTop}
+                  alt="Blue sky"
+                  priority
+                  fill
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+              <div className={styles.Cloud1}>
+                <Image
+                  placeholder="blur"
+                  src={cloud1}
+                  alt="Clouds"
+                  fill
+                  priority
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+              <div className={styles.Cloud4}>
+                <Image
+                  placeholder="blur"
+                  src={cloud4}
+                  alt="Clouds"
+                  fill
+                  priority
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+              <div className={styles.Cloud3}>
+                <Image
+                  placeholder="blur"
+                  src={cloud3}
+                  alt="Clouds"
+                  fill
+                  priority
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+              <div className={styles.Cloud2}>
+                <Image
+                  placeholder="blur"
+                  src={cloud2}
+                  alt="Clouds"
+                  fill
+                  priority
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+              <div className={styles.Cloud5}>
+                <Image
+                  placeholder="blur"
+                  src={cloud5}
+                  alt="Clouds"
+                  fill
+                  priority
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
             </div>
           </div>
           <div className={styles.Foreground}>
-            <div
-              className={styles.Mountains}
-              style={{ backgroundImage: `url(${mountains.src})` }}
-            ></div>
-            <div
-              className={styles.Grasses}
-              style={{ backgroundImage: `url(${grasses.src})` }}
-            ></div>
-            <div
-              className={styles.Hills}
-              style={{ backgroundImage: `url(${hills.src})` }}
-            ></div>
-            <div
-              className={styles.Valley}
-              style={{ backgroundImage: `url(${valley.src})` }}
-            ></div>
-            <div
-              className={styles.FrontMountains}
-              style={{ backgroundImage: `url(${frontMountains.src})` }}
-            ></div>
+            <div className={styles.Mountains}>
+              <Image
+                placeholder="blur"
+                src={mountains}
+                alt="Mountains"
+                fill
+                priority
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <div className={styles.Grasses}>
+              <Image
+                placeholder="blur"
+                src={grasses}
+                alt="Grasses"
+                fill
+                priority
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <div className={styles.Hills}>
+              <Image
+                placeholder="blur"
+                src={hills}
+                alt="Hills"
+                fill
+                priority
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <div className={styles.Valley}>
+              <Image
+                placeholder="blur"
+                src={valley}
+                alt="Valley"
+                fill
+                priority
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <div className={styles.FrontMountains}>
+              <Image
+                placeholder="blur"
+                src={frontMountains}
+                alt="Front Mountains"
+                fill
+                priority
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
           </div>
         </div>
       </main>
