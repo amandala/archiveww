@@ -87,41 +87,38 @@ export default function Home() {
               >
                 <Image
                   src={cloudTop}
-                  alt="Blue sky"
+                  alt="Animated clouds"
                   priority
                   fill
                   style={{
-                    objectFit: "cover",
+                    objectFit: "contain",
                   }}
                 />
               </div>
               <div className={styles.Cloud1}>
                 <Image
-                  placeholder="blur"
                   src={cloud1}
-                  alt="Clouds"
+                  alt="Animated Clouds"
                   fill
                   priority
                   style={{
-                    objectFit: "cover",
+                    objectFit: "contain",
                   }}
                 />
               </div>
               <div className={styles.Cloud4}>
                 <Image
-                  placeholder="blur"
                   src={cloud4}
                   alt="Clouds"
                   fill
                   priority
                   style={{
-                    objectFit: "cover",
+                    objectFit: "contain",
                   }}
                 />
               </div>
               <div className={styles.Cloud3}>
                 <Image
-                  placeholder="blur"
                   src={cloud3}
                   alt="Clouds"
                   fill
