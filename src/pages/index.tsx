@@ -42,7 +42,6 @@ export default function Home() {
                   alt="Wicked Woods Music Festival"
                   src={wordmark}
                   priority
-                  placeholder="blur"
                   style={{
                     objectFit: "contain",
                     zIndex: 20,
@@ -59,7 +58,6 @@ export default function Home() {
                   alt="August 29 to September 1 2024"
                   src={datestamp}
                   priority
-                  placeholder="blur"
                   style={{
                     objectFit: "contain",
                     zIndex: 20,
