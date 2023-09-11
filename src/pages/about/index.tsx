@@ -21,13 +21,9 @@ export default function About() {
   const opts = {
     height: "500",
     width: "100%",
-    playerVars: {
-      // https://developers.google.com/youtube/player_parameters
-      autoplay: 0,
-    },
+    autoplay: 1,
     listType: "playlist",
     list: "PL2ww8u3Xjlpyr-ckPRH42OpZ7fGRrG8XQ",
-    controls: 0,
   };
   return (
     <div>
