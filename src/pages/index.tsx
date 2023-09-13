@@ -22,7 +22,7 @@ export default function Home() {
 
         <meta
           property="og:image"
-          content="https://drive.google.com/uc?export=view&id=1nBKHUD5G6Ftm_SHBA0SZ5shg-59AvN1E"
+          content="https://drive.google.com/uc?export=view&id=1tu5gOcH9hPoUD0chnC1H_7aI00DrJmi3"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
