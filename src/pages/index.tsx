@@ -12,20 +12,28 @@ export default function Home() {
         <meta
           id="description"
           name="description"
-          content="Join us in the woods for a three day music and arts festival in the heart of the Colombia Valley, just outside of Fairmont BC."
-        />
-        <meta
-          id="title"
-          property="og:title"
-          content="Wicked Woods Music Festival"
+          content="A three day arts and music festival located in the Colombia Valley just outside Fairmont BC, Canada."
         />
 
+        <meta name="description" content="undefined" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Wicked Woods Music Festival" />
+        <meta property="og:description" content="undefined" />
         <meta
           property="og:image"
           content="https://drive.google.com/uc?export=view&id=1tu5gOcH9hPoUD0chnC1H_7aI00DrJmi3"
         />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="wickedwoods.ca" />
+        <meta property="twitter:url" content="https://wickedwoods.ca" />
+        <meta name="twitter:title" content="Wicked Woods Music Festival" />
+        <meta name="twitter:description" content="undefined" />
+        <meta
+          name="twitter:image"
+          content="https://drive.google.com/uc?export=view&id=1tu5gOcH9hPoUD0chnC1H_7aI00DrJmi3"
+        />
       </Head>
       <main>
         <SunsetScene />
