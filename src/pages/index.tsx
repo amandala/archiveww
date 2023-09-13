@@ -15,11 +15,17 @@ export default function Home() {
           content="A three day arts and music festival located in the Colombia Valley just outside Fairmont BC, Canada."
         />
 
-        <meta name="description" content="undefined" />
+        <meta
+          name="description"
+          content="A three day arts and music festival located in the Colombia Valley just outside Fairmont BC, Canada."
+        />
 
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Wicked Woods Music Festival" />
-        <meta property="og:description" content="undefined" />
+        <meta
+          property="og:description"
+          content="A three day arts and music festival located in the Colombia Valley just outside Fairmont BC, Canada."
+        />
         <meta
           property="og:image"
           content="https://drive.google.com/uc?export=view&id=1tu5gOcH9hPoUD0chnC1H_7aI00DrJmi3"
@@ -29,7 +35,10 @@ export default function Home() {
         <meta property="twitter:domain" content="wickedwoods.ca" />
         <meta property="twitter:url" content="https://wickedwoods.ca" />
         <meta name="twitter:title" content="Wicked Woods Music Festival" />
-        <meta name="twitter:description" content="undefined" />
+        <meta
+          name="twitter:description"
+          content="A three day arts and music festival located in the Colombia Valley just outside Fairmont BC, Canada."
+        />
         <meta
           name="twitter:image"
           content="https://drive.google.com/uc?export=view&id=1tu5gOcH9hPoUD0chnC1H_7aI00DrJmi3"
