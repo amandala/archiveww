@@ -22,7 +22,7 @@
 .VideoWrapper {
   background-color: $wickedBlack;
   margin: 0 auto;
-  padding: 24px 0;
+  padding: 24px;
 }
 
 .TextWrapper {
@@ -111,6 +111,10 @@
 
   .EagleContainer {
     top: -25%;
+  }
+
+  .VideoWrapper {
+    padding: 100px 24px;
   }
 }
 

@@ -6,7 +6,7 @@ import Gallery from "@/components/Gallery";
 import curiousBlue from "@/assets/backgrounds/curious_blue.png";
 import backgroundBlack from "@/assets/backgrounds/wicked_black.png";
 import hazyGreen from "@/assets/backgrounds/green_haze.png";
-import wordmark from "@/assets/FONT_WITH_MF.png";
+import wordmark from "@/assets/FONT_WITH_MF_2024.png";
 import bananaPhone from "@/assets/bananaPhone.jpg";
 import hallowNights from "@/assets/hallow-nights-min.jpg";
 import eagle from "@/assets/this_is_eagull.png";
@@ -18,13 +18,6 @@ import { H4, Paragraph } from "@/components/Typography";
 import YouTubePlayer from "@/components/YoutubePlayer";
 
 export default function About() {
-  const opts = {
-    height: "500",
-    width: "100%",
-    autoplay: 1,
-    listType: "playlist",
-    list: "PL2ww8u3Xjlpyr-ckPRH42OpZ7fGRrG8XQ",
-  };
   return (
     <div>
       <div className={styles.Container}>
@@ -54,7 +47,12 @@ export default function About() {
             fill
           />
         </div>
-
+        <div
+          className={styles.Gallery}
+          style={{ backgroundImage: `url(${backgroundBlack.src})` }}
+        >
+          <Gallery />
+        </div>
         <div>
           <div
             className={styles.Description}
@@ -70,12 +68,6 @@ export default function About() {
                 Nestled on the edge of the Canadian Rockies, our intimate
                 festival is just minutes from Fairmont Hot Springs BC
                 overlooking the Colombia Valley.
-              </Paragraph>
-
-              <Paragraph>
-                We aim to provide a safe and welcoming space for all, curating
-                diverse performances, awe-inspiring art installations, and
-                educational workshops.
               </Paragraph>
               <Paragraph>
                 We strongly value community, expression, and connection both
@@ -100,16 +92,10 @@ export default function About() {
           </div>
 
           <div
-            className={styles.Gallery}
-            style={{ backgroundImage: `url(${backgroundBlack.src})` }}
-          >
-            <Gallery />
-          </div>
-          <div
             className={styles.VideoWrapper}
             style={{ backgroundImage: `url(${backgroundBlack.src})` }}
           >
-            <YouTubePlayer opts={opts} videoId="ILrbq_WnkCk" />
+            <YouTubePlayer videoId="rDy_c3OvYxE" />
           </div>
           <div
             className={styles.Contact}

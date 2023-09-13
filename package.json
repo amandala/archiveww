@@ -12,6 +12,7 @@
     "format:staged": "prettier --write $(git diff --staged --name-only --diff-filter d | xargs)"
   },
   "dependencies": {
+    "@codesweetly/react-youtube-playlist": "^1.0.16",
     "@types/node": "20.5.7",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
