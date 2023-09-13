@@ -1,3 +1,4 @@
+import PageHead from "@/components/PageHead";
 import UnderConstruction from "@/components/UnderConstruction";
 
 // export default function FourOhFour() {
@@ -19,6 +20,12 @@ import UnderConstruction from "@/components/UnderConstruction";
 export default function FourOhFour() {
   return (
     <>
+      <PageHead
+        page="404"
+        image="https://drive.google.com/uc?export=view&id=1tu5gOcH9hPoUD0chnC1H_7aI00DrJmi3"
+        description="Page not found."
+        url="wickedwoods.ca"
+      />
       <UnderConstruction />
     </>
   );

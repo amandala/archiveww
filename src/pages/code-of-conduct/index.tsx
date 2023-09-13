@@ -2,10 +2,20 @@ import { H1, H2, H4, Paragraph } from "@/components/Typography";
 
 import styles from "./index.module.scss";
 import Link from "next/link";
+import PageHead from "@/components/PageHead";
 
 export default function CodeOfConduct() {
   return (
     <div className={styles.Wrapper}>
+      <PageHead
+        page="Code of Conduct"
+        image="https://drive.google.com/uc?export=view&id=1tu5gOcH9hPoUD0chnC1H_7aI00DrJmi3"
+        description="Wicked Woods Music Festival is committed to providing a safe,
+          respectful and welcoming environment for all, regardless of race,
+          national or ethnic origin, colour, religion, sex, gender identity or
+          expression, sexual orientation, age or mental or physical disability."
+        url="wickedwoods.ca/code-of-conduct"
+      />
       <div className={styles.Content}>
         <H1>Wicked Woods Music Festival Code of Conduct</H1>
         <Paragraph>

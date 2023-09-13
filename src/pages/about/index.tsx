@@ -16,10 +16,17 @@ import styles from "./index.module.scss";
 import TextLink from "@/components/TextLink";
 import { H4, Paragraph } from "@/components/Typography";
 import YouTubePlayer from "@/components/YoutubePlayer";
+import PageHead from "@/components/PageHead";
 
 export default function About() {
   return (
     <div>
+      <PageHead
+        page="About"
+        image="https://drive.google.com/uc?export=view&id=1tu5gOcH9hPoUD0chnC1H_7aI00DrJmi3"
+        description="Learn more about Wicked Woods Music Festival"
+        url="wickedwoods.ca/about"
+      />
       <div className={styles.Container}>
         <div className={styles.Hero}>
           <Image
