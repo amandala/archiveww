@@ -17,6 +17,8 @@ export default function PageHead({
       <link rel="icon" href="/favicon.ico" />
       <title>{page ? `${page} - ` : null} - Wicked Woods Music Festival</title>
       <meta id="description" name="description" content={description} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
 
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Wicked Woods Music Festival" />
