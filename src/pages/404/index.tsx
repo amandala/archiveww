@@ -22,7 +22,7 @@ export default function FourOhFour() {
     <>
       <PageHead
         page="404"
-        image="https://drive.google.com/uc?export=view&id=1tu5gOcH9hPoUD0chnC1H_7aI00DrJmi3"
+        image="https://drive.google.com/uc?export=view&id=1tu5gOcH9hPoUD0chnC1H_7aI00DrJmi3&v=2"
         description="Page not found."
         url="wickedwoods.ca"
       />
