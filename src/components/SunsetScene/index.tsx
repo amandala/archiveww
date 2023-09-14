@@ -36,7 +36,7 @@ export default function SunsetScene() {
     <>
       <div className={styles.Main}>
         <div className={styles.ArtContainer}>
-          <Image src={sky} fill alt="Blue sky" priority />
+          <Image src={sky} fill alt="Blue sky" priority unoptimized />
           <div className={styles.Sky}>
             <div className={styles.Overlay}>
               <div className={styles.WordmarkWrapper}>
@@ -156,7 +156,6 @@ export default function SunsetScene() {
                   onLoadingComplete={() =>
                     setImageLoadedCount(imageLoadedCount + 1)
                   }
-                  placeholder="blur"
                   src={cloud2}
                   alt="Clouds"
                   fill
@@ -171,7 +170,6 @@ export default function SunsetScene() {
                   onLoadingComplete={() =>
                     setImageLoadedCount(imageLoadedCount + 1)
                   }
-                  placeholder="blur"
                   src={cloud5}
                   alt="Clouds"
                   fill
@@ -186,7 +184,6 @@ export default function SunsetScene() {
           <div className={styles.Foreground}>
             <div className={styles.Mountains}>
               <Image
-                placeholder="blur"
                 src={mountains}
                 alt="Mountains"
                 fill
@@ -198,7 +195,6 @@ export default function SunsetScene() {
             </div>
             <div className={styles.Grasses}>
               <Image
-                placeholder="blur"
                 src={grasses}
                 alt="Grasses"
                 fill
@@ -210,7 +206,6 @@ export default function SunsetScene() {
             </div>
             <div className={styles.Hills}>
               <Image
-                placeholder="blur"
                 src={hills}
                 alt="Hills"
                 fill
@@ -222,7 +217,6 @@ export default function SunsetScene() {
             </div>
             <div className={styles.Valley}>
               <Image
-                placeholder="blur"
                 src={valley}
                 alt="Valley"
                 fill
@@ -234,7 +228,6 @@ export default function SunsetScene() {
             </div>
             <div className={styles.FrontMountains}>
               <Image
-                placeholder="blur"
                 src={frontMountains}
                 alt="Front Mountains"
                 fill
