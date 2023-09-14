@@ -1,25 +1,37 @@
+import { useState } from "react";
 import Image from "next/image";
+
+// import cx from "classnames";
 
 import styles from "./index.module.scss";
 
 import wordmark from "@/assets/FONT_WITH_MF_2024.png";
 import datestamp from "@/assets/DATE_STAMP2024.png";
 
-import sky from "@/assets/sunsetScene/PAPER_fun_ASSETS_8_back.png";
-import sun from "@/assets/sunsetScene/PAPER_fun_ASSETS_Sun.png";
-import frontMountains from "@/assets/sunsetScene/PAPER_fun_ASSETS_foreground.png";
-import valley from "@/assets/sunsetScene/PAPER_fun_ASSETS_valley.png";
-import hills from "@/assets/sunsetScene/PAPER_fun_ASSETS_rollinghills.png";
-import grasses from "@/assets/sunsetScene/PAPER_fun_ASSETS_grasses.png";
-import mountains from "@/assets/sunsetScene/PAPER_fun_ASSETS_mountains.png";
-import cloudTop from "@/assets/sunsetScene/cloudlayer_B.png";
-import cloud1 from "@/assets/sunsetScene/Clouds1.png";
-import cloud2 from "@/assets/sunsetScene/Clouds2.png";
-import cloud3 from "@/assets/sunsetScene/Clouds3.png";
-import cloud4 from "@/assets/sunsetScene/Clouds4.png";
-import cloud5 from "@/assets/sunsetScene/Clouds5.png";
+import sky from "@/assets/sunsetScene/PAPER_fun_ASSETS_8_back-min.png";
+import sun from "@/assets/sunsetScene/PAPER_fun_ASSETS_Sun-min.png";
+import frontMountains from "@/assets/sunsetScene/PAPER_fun_ASSETS_foreground-min.png";
+import valley from "@/assets/sunsetScene/PAPER_fun_ASSETS_valley-min.png";
+import hills from "@/assets/sunsetScene/PAPER_fun_ASSETS_rollinghills-min.png";
+import grasses from "@/assets/sunsetScene/PAPER_fun_ASSETS_grasses-min.png";
+import mountains from "@/assets/sunsetScene/PAPER_fun_ASSETS_mountains-min.png";
+// import cloudTop from "@/assets/sunsetScene/cloudlayer_B-min.png";
+import cloud1 from "@/assets/sunsetScene/Clouds1-min.png";
+import cloud2 from "@/assets/sunsetScene/Clouds2-min.png";
+import cloud3 from "@/assets/sunsetScene/Clouds3-min.png";
+import cloud4 from "@/assets/sunsetScene/Clouds4-min.png";
+import cloud5 from "@/assets/sunsetScene/Clouds5-min.png";
 
 export default function SunsetScene() {
+  const [imageLoadedCount, setImageLoadedCount] = useState(0);
+
+  // const totalImages = 15;
+
+  // if (imageLoadedCount < totalImages) {
+  // }
+
+  // console.log("loaded images", imageLoadedCount);
+
   return (
     <>
       <div className={styles.Main}>
@@ -29,6 +41,9 @@ export default function SunsetScene() {
             <div className={styles.Overlay}>
               <div className={styles.WordmarkWrapper}>
                 <Image
+                  onLoadingComplete={() => {
+                    setImageLoadedCount(imageLoadedCount + 1);
+                  }}
                   alt="Wicked Woods Music Festival"
                   src={wordmark}
                   priority
@@ -45,6 +60,9 @@ export default function SunsetScene() {
               </div>
               <div className={styles.DatestampWrapper}>
                 <Image
+                  onLoadingComplete={() =>
+                    setImageLoadedCount(imageLoadedCount + 1)
+                  }
                   alt="August 29 to September 1 2024"
                   src={datestamp}
                   priority
@@ -60,6 +78,9 @@ export default function SunsetScene() {
             </div>
             <div className={styles.Sun}>
               <Image
+                onLoadingComplete={() =>
+                  setImageLoadedCount(imageLoadedCount + 1)
+                }
                 src={sun}
                 alt="Blue sky"
                 priority
@@ -73,10 +94,13 @@ export default function SunsetScene() {
             <div className={styles.CloudsContainer}>
               <div
                 className={styles.CloudTop}
-                style={{ backgroundImage: `url(${cloudTop.src})` }}
+                style={{ backgroundImage: `url(${cloud1.src})` }}
               >
                 <Image
-                  src={cloudTop}
+                  onLoadingComplete={() =>
+                    setImageLoadedCount(imageLoadedCount + 1)
+                  }
+                  src={cloud1}
                   alt="Animated clouds"
                   priority
                   fill
@@ -87,6 +111,9 @@ export default function SunsetScene() {
               </div>
               <div className={styles.Cloud1}>
                 <Image
+                  onLoadingComplete={() =>
+                    setImageLoadedCount(imageLoadedCount + 1)
+                  }
                   src={cloud1}
                   alt="Animated Clouds"
                   fill
@@ -98,6 +125,9 @@ export default function SunsetScene() {
               </div>
               <div className={styles.Cloud4}>
                 <Image
+                  onLoadingComplete={() =>
+                    setImageLoadedCount(imageLoadedCount + 1)
+                  }
                   src={cloud4}
                   alt="Clouds"
                   fill
@@ -109,6 +139,9 @@ export default function SunsetScene() {
               </div>
               <div className={styles.Cloud3}>
                 <Image
+                  onLoadingComplete={() =>
+                    setImageLoadedCount(imageLoadedCount + 1)
+                  }
                   src={cloud3}
                   alt="Clouds"
                   fill
@@ -120,6 +153,9 @@ export default function SunsetScene() {
               </div>
               <div className={styles.Cloud2}>
                 <Image
+                  onLoadingComplete={() =>
+                    setImageLoadedCount(imageLoadedCount + 1)
+                  }
                   placeholder="blur"
                   src={cloud2}
                   alt="Clouds"
@@ -132,6 +168,9 @@ export default function SunsetScene() {
               </div>
               <div className={styles.Cloud5}>
                 <Image
+                  onLoadingComplete={() =>
+                    setImageLoadedCount(imageLoadedCount + 1)
+                  }
                   placeholder="blur"
                   src={cloud5}
                   alt="Clouds"
@@ -208,6 +247,11 @@ export default function SunsetScene() {
           </div>
         </div>
       </div>
+      {/* <div
+        className={cx(styles.Loading, {
+          // [styles.LoadingActive]: imageLoadedCount < 5,
+        })}
+      /> */}
     </>
   );
 }

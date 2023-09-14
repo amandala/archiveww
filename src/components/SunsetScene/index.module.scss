@@ -1,5 +1,20 @@
 @import "../../styles/variables.module.scss";
 
+.Loading {
+  z-index: -1;
+  visibility: hidden;
+
+  &Active {
+    visibility: visible;
+    position: absolute;
+    z-index: 50;
+    background-color: limegreen;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+  }
+}
+
 .Main {
   align-items: center;
   min-height: 100vh;
@@ -85,6 +100,7 @@
   top: -450px;
   top: -230px;
   background-size: contain;
+  transform: scaleX(-1);
 }
 
 .Cloud1 {

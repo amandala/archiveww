@@ -9,7 +9,7 @@ import { dinBlack } from "@/styles/fonts";
 
 import burger from "@/assets/burger_menu_icon.png";
 import close from "@/assets/X_menu_icon.png";
-import background from "@/assets/sunsetScene/PAPER_fun_ASSETS_8_back.png";
+import background from "@/assets/sunsetScene/PAPER_fun_ASSETS_8_back-min.png";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
