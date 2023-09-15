@@ -23,7 +23,7 @@ export default function About() {
     <div>
       <PageHead
         page="About"
-        image="https://drive.google.com/uc?export=view&id=1tu5gOcH9hPoUD0chnC1H_7aI00DrJmi3&v=2"
+        image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
         description="Learn more about Wicked Woods Music Festival"
         url="wickedwoods.ca/about"
       />

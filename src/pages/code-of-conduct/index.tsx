@@ -11,7 +11,7 @@ export default function CodeOfConduct() {
     <div className={styles.Wrapper}>
       <PageHead
         page="Code of Conduct"
-        image="https://drive.google.com/uc?export=view&id=1tu5gOcH9hPoUD0chnC1H_7aI00DrJmi3&v=2"
+        image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
         description="Wicked Woods Music Festival is committed to providing a safe,
           respectful and welcoming environment for all, regardless of race,
           national or ethnic origin, colour, religion, sex, gender identity or

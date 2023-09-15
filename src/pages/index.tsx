@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <PageHead
         page="Home"
-        image="https://drive.google.com/uc?export=view&id=1tu5gOcH9hPoUD0chnC1H_7aI00DrJmi3&v=2"
+        image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
         description="A three day arts and music festival located in the Colombia Valley just outside Fairmont BC, Canada."
         url="wickedwoods.ca"
       />
