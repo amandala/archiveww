@@ -3,13 +3,13 @@ import Image from "next/image";
 
 import Gallery from "@/components/Gallery";
 
-import curiousBlue from "@/assets/backgrounds/curious_blue-min.png";
-import backgroundBlack from "@/assets/backgrounds/wicked_black-min.png";
-import hazyGreen from "@/assets/backgrounds/green_haze-min.png";
-import wordmark from "@/assets/FONT_WITH_MF_2024.png";
-import bananaPhone from "@/assets/bananaPhone.jpg";
-import hallowNights from "@/assets/hallow-nights-min.jpg";
-import eagle from "@/assets/this_is_eagull.png";
+import curiousBlue from "/public/assets/backgrounds/curious_blue-min.png";
+import backgroundBlack from "/public/assets/backgrounds/wicked_black-min.png";
+import hazyGreen from "/public/assets/backgrounds/green_haze-min.png";
+import wordmark from "/public/assets/FONT_WITH_MF_2024.png";
+import bananaPhone from "/public/assets/bananaPhone.jpg";
+import hallowNights from "/public/assets/hallow-nights-min.jpg";
+import eagle from "/public/assets/this_is_eagull.png";
 
 import styles from "./index.module.scss";
 

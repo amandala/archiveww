@@ -13,7 +13,7 @@
     right: 0;
     position: absolute;
     z-index: -1;
-    background: url(../../assets/sunsetScene/PAPER_fun_ASSETS_8_back-min.png);
+    background: url(/assets/sunsetScene/PAPER_fun_ASSETS_8_back-min.png);
   }
 }
 
@@ -56,10 +56,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  .Nav {
-    // height: 100%;
-  }
-
   .NavWrapper {
     ::after {
       content: "";

@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 import styles from "./index.module.scss";
-import greenHazeBackground from "@/assets/backgrounds/green_haze-min.png";
+import greenHazeBackground from "/public/assets/backgrounds/green_haze-min.png";
 import { JumboHeading, Paragraph } from "../Typography";
 
-import beaver from "@/assets/Beavz3.png";
+import beaver from "/public/assets/Beavz3.png";
 import Button from "../Button";
 
 export default function UnderConstruction() {

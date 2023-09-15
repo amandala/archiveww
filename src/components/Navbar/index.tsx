@@ -7,9 +7,9 @@ import Image from "next/image";
 
 import { dinBlack } from "@/styles/fonts";
 
-import burger from "@/assets/burger_menu_icon.png";
-import close from "@/assets/X_menu_icon.png";
-import background from "@/assets/sunsetScene/PAPER_fun_ASSETS_8_back-min.png";
+import burger from "/public/assets/burger_menu_icon.png";
+import close from "/public/assets/X_menu_icon.png";
+import background from "/public/assets/sunsetScene/PAPER_fun_ASSETS_8_back-min.png";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

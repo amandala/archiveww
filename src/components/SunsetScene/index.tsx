@@ -5,22 +5,22 @@ import Image from "next/image";
 
 import styles from "./index.module.scss";
 
-import wordmark from "@/assets/FONT_WITH_MF_2024.png";
-import datestamp from "@/assets/DATE_STAMP2024.png";
+import wordmark from "/public/assets/FONT_WITH_MF_2024.png";
+import datestamp from "/public/assets/DATE_STAMP2024.png";
 
-import sky from "@/assets/sunsetScene/PAPER_fun_ASSETS_8_back-min.png";
-import sun from "@/assets/sunsetScene/PAPER_fun_ASSETS_Sun-min.png";
-import frontMountains from "@/assets/sunsetScene/PAPER_fun_ASSETS_foreground-min.png";
-import valley from "@/assets/sunsetScene/PAPER_fun_ASSETS_valley-min.png";
-import hills from "@/assets/sunsetScene/PAPER_fun_ASSETS_rollinghills-min.png";
-import grasses from "@/assets/sunsetScene/PAPER_fun_ASSETS_grasses-min.png";
-import mountains from "@/assets/sunsetScene/PAPER_fun_ASSETS_mountains-min.png";
-// import cloudTop from "@/assets/sunsetScene/cloudlayer_B-min.png";
-import cloud1 from "@/assets/sunsetScene/Clouds1-min.png";
-import cloud2 from "@/assets/sunsetScene/Clouds2-min.png";
-import cloud3 from "@/assets/sunsetScene/Clouds3-min.png";
-import cloud4 from "@/assets/sunsetScene/Clouds4-min.png";
-import cloud5 from "@/assets/sunsetScene/Clouds5-min.png";
+import sky from "/public/assets/sunsetScene/PAPER_fun_ASSETS_8_back-min.png";
+import sun from "/public/assets/sunsetScene/PAPER_fun_ASSETS_Sun-min.png";
+import frontMountains from "/public/assets/sunsetScene/PAPER_fun_ASSETS_foreground-min.png";
+import valley from "/public/assets/sunsetScene/PAPER_fun_ASSETS_valley-min.png";
+import hills from "/public/assets/sunsetScene/PAPER_fun_ASSETS_rollinghills-min.png";
+import grasses from "/public/assets/sunsetScene/PAPER_fun_ASSETS_grasses-min.png";
+import mountains from "/public/assets/sunsetScene/PAPER_fun_ASSETS_mountains-min.png";
+// import cloudTop from "/public/assets/sunsetScene/cloudlayer_B-min.png";
+import cloud1 from "/public/assets/sunsetScene/Clouds1-min.png";
+import cloud2 from "/public/assets/sunsetScene/Clouds2-min.png";
+import cloud3 from "/public/assets/sunsetScene/Clouds3-min.png";
+import cloud4 from "/public/assets/sunsetScene/Clouds4-min.png";
+import cloud5 from "/public/assets/sunsetScene/Clouds5-min.png";
 
 export default function SunsetScene() {
   const [imageLoadedCount, setImageLoadedCount] = useState(0);

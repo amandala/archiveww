@@ -32,6 +32,17 @@ export default function PageHead({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+
+      <link
+        rel="preload"
+        href="/assets/sunsetScene/PAPER_fun_ASSETS_8_back-min.png"
+        as="image"
+      />
+      <link
+        rel="preload"
+        href="/assets/sunsetScene/PAPER_fun_ASSETS_Sun-min.png"
+        as="image"
+      />
     </Head>
   );
 }

@@ -5,10 +5,10 @@ import Image from "next/image";
 
 import { useWindowSize } from "@/helpers/useWindowSize";
 
-import tree1 from "@/assets/Tree_1.png";
-import tree2 from "@/assets/Tree_2.png";
-import tree3 from "@/assets/Tree_3.png";
-import pageBackground from "@/assets/backgrounds/orient_blue-min.png";
+import tree1 from "/public/assets/Tree_1.png";
+import tree2 from "/public/assets/Tree_2.png";
+import tree3 from "/public/assets/Tree_3.png";
+import pageBackground from "/public/assets/backgrounds/orient_blue-min.png";
 
 export default function Footer() {
   const windowSize = useWindowSize();

@@ -3,8 +3,8 @@ import Image from "next/image";
 import styles from "./index.module.scss";
 import Link from "next/link";
 import PageHead from "@/components/PageHead";
-import background from "@/assets/backgrounds/prussian_blue-min.png";
-import WW_Sandy_Brown from "@/assets/WW -sandy brown.png";
+import background from "/public/assets/backgrounds/prussian_blue-min.png";
+import WW_Sandy_Brown from "/public/assets/WW -sandy brown.png";
 
 export default function CodeOfConduct() {
   return (
