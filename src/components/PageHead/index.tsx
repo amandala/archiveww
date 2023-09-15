@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function PageHead({
   page,
-  image = "https://staging.wickedwoods.ca/assets/openGraph/Default_OG.png",
+  image = "https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3",
   description,
   url,
 }: {
