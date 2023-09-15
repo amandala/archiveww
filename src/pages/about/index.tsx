@@ -3,9 +3,9 @@ import Image from "next/image";
 
 import Gallery from "@/components/Gallery";
 
-import curiousBlue from "@/assets/backgrounds/curious_blue.png";
-import backgroundBlack from "@/assets/backgrounds/wicked_black.png";
-import hazyGreen from "@/assets/backgrounds/green_haze.png";
+import curiousBlue from "@/assets/backgrounds/curious_blue-min.png";
+import backgroundBlack from "@/assets/backgrounds/wicked_black-min.png";
+import hazyGreen from "@/assets/backgrounds/green_haze-min.png";
 import wordmark from "@/assets/FONT_WITH_MF_2024.png";
 import bananaPhone from "@/assets/bananaPhone.jpg";
 import hallowNights from "@/assets/hallow-nights-min.jpg";
@@ -34,6 +34,7 @@ export default function About() {
             src={hallowNights}
             style={{
               objectFit: "cover",
+              objectPosition: "bottom",
             }}
             fill
             loading="eager"

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import styles from "./index.module.scss";
-import greenHazeBackground from "@/assets/backgrounds/green_haze.png";
+import greenHazeBackground from "@/assets/backgrounds/green_haze-min.png";
 import { JumboHeading, Paragraph } from "../Typography";
 
 import beaver from "@/assets/Beavz3.png";

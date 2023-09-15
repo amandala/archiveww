@@ -1,8 +1,10 @@
 import { H1, H2, H4, Paragraph } from "@/components/Typography";
-
+import Image from "next/image";
 import styles from "./index.module.scss";
 import Link from "next/link";
 import PageHead from "@/components/PageHead";
+import background from "@/assets/backgrounds/prussian_blue-min.png";
+import WW_Sandy_Brown from "@/assets/WW -sandy brown.png";
 
 export default function CodeOfConduct() {
   return (
@@ -17,6 +19,18 @@ export default function CodeOfConduct() {
         url="wickedwoods.ca/code-of-conduct"
       />
       <div className={styles.Content}>
+        <Image
+          src={WW_Sandy_Brown}
+          alt="Sandy Brown Wicked Woods Logo"
+          priority
+          style={{
+            margin: "0 auto",
+            maxWidth: "300px",
+            height: "auto",
+            display: "block",
+            padding: "20px",
+          }}
+        />
         <H1>Wicked Woods Music Festival Code of Conduct</H1>
         <Paragraph>
           Wicked Woods Music Festival is committed to providing a safe,
@@ -209,6 +223,14 @@ export default function CodeOfConduct() {
           WICKED WOODS MUSIC FESTIVAL AND ALL ASSOCIATED EVENTS.
         </H4>
       </div>
+      <Image
+        src={background}
+        fill
+        alt="Blue sky"
+        priority
+        unoptimized
+        style={{ zIndex: 0 }}
+      />
     </div>
   );
 }
