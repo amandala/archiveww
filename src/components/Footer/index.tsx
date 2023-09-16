@@ -46,6 +46,9 @@ export default function Footer() {
           <H4>Experience</H4>
           <ul className={styles.List}>
             <li>
+              <TextLink href="/lineup">Lineup</TextLink>
+            </li>
+            <li>
               <TextLink href="/stages">Stages</TextLink>
             </li>
             <li>

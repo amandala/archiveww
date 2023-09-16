@@ -57,7 +57,6 @@ export default function CodeOfConduct() {
           <form
             onSubmit={(event) => {
               event.preventDefault();
-              console.log(event);
               setSearchQuery(searchQuery);
             }}
           >
