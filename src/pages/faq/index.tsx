@@ -54,7 +54,13 @@ export default function CodeOfConduct() {
           <JumboHeading>Frequently Asked Questions</JumboHeading>
         </div>
         <div className={styles.SearchWrapper}>
-          <form>
+          <form
+            onSubmit={(event) => {
+              event.preventDefault();
+              console.log(event);
+              setSearchQuery(searchQuery);
+            }}
+          >
             <label>
               <input
                 placeholder="Enter a search term"
