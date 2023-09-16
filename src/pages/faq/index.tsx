@@ -19,8 +19,10 @@ export default function CodeOfConduct() {
     } else {
       const filteredItems = faqs.filter(
         (faq) =>
-          faq.question.toLowerCase().includes(searchQuery) ||
-          faq.answer.toLowerCase().includes(searchQuery)
+          faq.question
+            .toLowerCase()
+            .includes(searchQuery.toLocaleLowerCase()) ||
+          faq.answer.toLowerCase().includes(searchQuery.toLocaleLowerCase())
       );
 
       setFilteredFaqs(filteredItems);
