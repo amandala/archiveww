@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { JumboHeading, Paragraph, H2 } from "@/components/Typography";
 import Image from "next/image";
 import PageHead from "@/components/PageHead";
-import background from "/public/assets/backgrounds/curious_blue-min.png";
+// import background from "/public/assets/backgrounds/curious_blue-min.png";
 import WW_Sandy_Brown from "/public/assets/WW -sandy brown.png";
 
 import faqs from "./questions.json";
@@ -90,14 +90,13 @@ export default function CodeOfConduct() {
           })}
         </div>
       </div>
-      <Image
+      {/* <Image
         src={background}
         fill
         alt="Blue sky"
         priority
-        unoptimized
-        style={{ zIndex: 0 }}
-      />
+        style={{ zIndex: 0, backgroundPosition: "contain" }}
+      /> */}
     </div>
   );
 }
