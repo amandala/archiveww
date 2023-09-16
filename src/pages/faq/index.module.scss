@@ -1,0 +1,40 @@
+@import "@/styles/variables.module.scss";
+
+.Wrapper {
+  position: relative;
+  padding: 90px 24px;
+  background-color: $orientBlue;
+}
+
+.Content {
+  max-width: 900px;
+  margin: 0 auto;
+  z-index: 5;
+  position: relative;
+}
+
+.SearchInput {
+  font-size: 30px;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+}
+
+.SearchWrapper {
+  margin: 36px 0;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $wickedWhite;
+}
+
+.Question {
+  margin-bottom: 24px;
+  border-bottom: 1px solid $wickedWhite;
+}
+
+.SearchTermNote {
+  padding: 24px 0;
+
+  p {
+    margin-bottom: 0;
+  }
+}
