@@ -4,6 +4,8 @@
   position: relative;
   padding: 90px 24px;
   background-color: $orientBlue;
+  -webkit-mask-image: url("https://ucarecdn.com/9514f9b1-3bf9-4b7c-b31d-9fb8cd6af8bf/");
+  mask-image: url("https://ucarecdn.com/9514f9b1-3bf9-4b7c-b31d-9fb8cd6af8bf/");
 }
 
 .Content {
@@ -18,6 +20,21 @@
   height: 50px;
   margin: 0 auto;
   display: block;
+  background-color: $wickedWhite;
+  color: $sandyBrown;
+  padding: 4px;
+  outline-color: $sandyBrown;
+
+  &:active,
+  &:hover {
+    border: none;
+  }
+
+  &::placeholder {
+    color: $wickedBlack;
+    opacity: 0.2;
+    text-align: center;
+  }
 }
 
 .SearchWrapper {

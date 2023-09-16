@@ -37,7 +37,7 @@ export default function PastLineups() {
             <div className={styles.PlaylistEmbed}>
               <iframe
                 style={{ borderRadius: "12px" }}
-                src="https://open.spotify.com/embed/playlist/5y2G5vi0HxJNld0wOLBRY0?utm_source=generator"
+                src="https://open.spotify.com/embed/playlist/5y2G5vi0HxJNld0wOLBRY0?utm_source=generator&theme=0"
                 width="100%"
                 height="352"
                 frameBorder="0"
@@ -48,7 +48,7 @@ export default function PastLineups() {
             <div className={styles.PlaylistEmbed}>
               <iframe
                 style={{ borderRadius: "12px" }}
-                src="https://open.spotify.com/embed/playlist/6c7Lj31UKxfH7I8Nlr72VX?utm_source=generator"
+                src="https://open.spotify.com/embed/playlist/6c7Lj31UKxfH7I8Nlr72VX?utm_source=generator&theme=0"
                 width="100%"
                 height="352"
                 frameBorder="0"
@@ -59,7 +59,7 @@ export default function PastLineups() {
             <div className={styles.PlaylistEmbed}>
               <iframe
                 style={{ borderRadius: "12px" }}
-                src="https://open.spotify.com/embed/playlist/3WjcAPgYZeebqqDqtmYuHs?utm_source=generator"
+                src="https://open.spotify.com/embed/playlist/3WjcAPgYZeebqqDqtmYuHs?utm_source=generator&theme=0"
                 width="100%"
                 height="352"
                 frameBorder="0"
@@ -70,7 +70,7 @@ export default function PastLineups() {
             <div className={styles.PlaylistEmbed}>
               <iframe
                 style={{ borderRadius: "12px" }}
-                src="https://open.spotify.com/embed/playlist/5Ar8ZGtML9KMthcQUGg9rm?utm_source=generator"
+                src="https://open.spotify.com/embed/playlist/5Ar8ZGtML9KMthcQUGg9rm?utm_source=generator&theme=0"
                 width="100%"
                 height="352"
                 frameBorder="0"

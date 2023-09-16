@@ -1,9 +1,8 @@
-import { H1, H2, H4, Paragraph } from "@/components/Typography";
+import { H2, H4, JumboHeading, Paragraph } from "@/components/Typography";
 import Image from "next/image";
 import styles from "./index.module.scss";
 import Link from "next/link";
 import PageHead from "@/components/PageHead";
-import background from "/public/assets/backgrounds/prussian_blue-min.png";
 import WW_Sandy_Brown from "/public/assets/WW -sandy brown.png";
 
 export default function CodeOfConduct() {
@@ -31,7 +30,9 @@ export default function CodeOfConduct() {
             padding: "20px",
           }}
         />
-        <H1>Wicked Woods Music Festival Code of Conduct</H1>
+        <div className={styles.HeaderWrapper}>
+          <JumboHeading>Code of Conduct</JumboHeading>
+        </div>
         <Paragraph>
           Wicked Woods Music Festival is committed to providing a safe,
           respectful and welcoming environment for all, regardless of race,
@@ -223,14 +224,6 @@ export default function CodeOfConduct() {
           WICKED WOODS MUSIC FESTIVAL AND ALL ASSOCIATED EVENTS.
         </H4>
       </div>
-      <Image
-        src={background}
-        fill
-        alt="Blue sky"
-        priority
-        unoptimized
-        style={{ zIndex: 0 }}
-      />
     </div>
   );
 }
