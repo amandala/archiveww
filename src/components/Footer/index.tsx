@@ -29,7 +29,7 @@ export default function Footer() {
               <TextLink href="/camping">Camping</TextLink>
             </li>
             <li>
-              <TextLink href="/inf-hub">Info Hub</TextLink>
+              <TextLink href="/info-hub">Info Hub</TextLink>
             </li>
             <li>
               <TextLink href="/volunteer">Volunteer</TextLink>

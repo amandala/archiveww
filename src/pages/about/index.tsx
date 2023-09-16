@@ -13,6 +13,8 @@ import eagle from "/public/assets/this_is_eagull.png";
 
 import styles from "./index.module.scss";
 
+import slides from "../../data/aboutImages";
+
 import TextLink from "@/components/TextLink";
 import { H4, Paragraph } from "@/components/Typography";
 import YouTubePlayer from "@/components/YoutubePlayer";
@@ -59,7 +61,7 @@ export default function About() {
           className={styles.Gallery}
           style={{ backgroundImage: `url(${backgroundBlack.src})` }}
         >
-          <Gallery />
+          <Gallery images={slides} targetRowHeight={300} />
         </div>
         <div>
           <div
