@@ -29,8 +29,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     closeNav();
-    // eslint-disable-line react-hooks/exhaustive-deps
-  }, [router]);
+  }, [router]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className={styles.NavWrapper}>
