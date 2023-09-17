@@ -105,7 +105,7 @@ export default function About() {
             className={styles.VideoWrapper}
             style={{ backgroundImage: `url(${backgroundBlack.src})` }}
           >
-            <YouTubePlayer videoId="rDy_c3OvYxE" />
+            <YouTubePlayer videoId="v1bZlwG434Y" opts={{ loop: 1 }} />
           </div>
           <div
             className={styles.Contact}
