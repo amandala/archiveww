@@ -43,6 +43,11 @@ export default function PageHead({
         href="/assets/sunsetScene/PAPER_fun_ASSETS_Sun-min.png"
         as="image"
       />
+      <link
+        rel="preload"
+        href="/assets/backgrounds/moonshotbanner-min.png"
+        as="image"
+      />
     </Head>
   );
 }

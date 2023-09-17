@@ -9,7 +9,7 @@ import Image from "next/image";
 import ww from "/public/assets/WW-off_white.png";
 import burger from "/public/assets/burger_menu_icon.png";
 import close from "/public/assets/X_menu_icon.png";
-import background from "/public/assets/backgrounds/mooonshotbanner.png";
+import background from "/public/assets/backgrounds/mooonshotbanner-min.png";
 import { ExperienceNav, FestivalNav, ContactNav } from "..";
 
 export const Navbar = () => {
