@@ -1,0 +1,88 @@
+@import "@/styles/variables.module.scss";
+
+.NavWrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 98;
+}
+
+.MainNavLogo {
+  padding: 0 20px;
+  margin-top: 5px;
+  height: 100%;
+  display: inline-block;
+}
+
+.HomeLink {
+  z-index: 99;
+}
+
+.Nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &Open {
+    height: 100%;
+  }
+}
+
+.list {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  position: relative;
+  background-position: center top;
+  padding-top: 25%;
+  background-color: $wickedBlack;
+}
+
+.items {
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: #f1f1f1;
+  cursor: pointer;
+  text-shadow: black 1px 0 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  color: #000;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+}
+
+.HomeSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .list {
+    flex-direction: column;
+    height: 100vh;
+    background-position: right;
+    padding-left: 20%;
+  }
+  .items:nth-child(1) {
+    margin-top: 90px;
+  }
+  .items {
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+    padding: 0;
+    margin: 16px 0;
+  }
+  .btn {
+    display: block;
+  }
+}

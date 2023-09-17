@@ -1,0 +1,59 @@
+@import "@/styles/variables.module.scss";
+
+.Wrapper {
+  position: relative;
+  padding: 90px 24px;
+  background-color: $wickedBlack;
+}
+
+.ImageWrapper {
+  position: relative;
+}
+
+.TextWrapper {
+  margin-bottom: 50px;
+}
+
+.Content {
+  margin: 0 auto;
+  z-index: 5;
+  position: relative;
+  z-index: 30;
+}
+
+.TitleWrapper {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 24px;
+  margin-bottom: 24px;
+}
+
+.Playlists {
+  margin-top: 50px;
+}
+
+.PlaylistsGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+}
+
+.PlaylistEmbed {
+  max-width: 800px;
+}
+
+@media screen and (min-width: 900px) {
+  .PlaylistsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Playlists {
+    margin-top: 80px;
+  }
+
+  .TitleWrapper {
+    margin-bottom: 40px;
+  }
+}

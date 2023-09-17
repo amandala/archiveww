@@ -3,32 +3,40 @@ import Image from "next/image";
 
 import Gallery from "@/components/Gallery";
 
-import blackBackground from "@/assets/backgrounds/wicked_black.png";
-import curiousBlue from "@/assets/backgrounds/curious_blue.png";
-import hazyGreen from "@/assets/backgrounds/green_haze.png";
-import wordmark from "@/assets/FONT_WITH_MF.png";
-import bananaPhone from "@/assets/bananaPhone.jpg";
-import hallowNights from "@/assets/hallow-nights-min.jpg";
-import eagle from "@/assets/this_is_eagull.png";
+import curiousBlue from "/public/assets/backgrounds/curious_blue-min.png";
+import backgroundBlack from "/public/assets/backgrounds/wicked_black-min.png";
+import hazyGreen from "/public/assets/backgrounds/green_haze-min.png";
+import wordmark from "/public/assets/FONT_WITH_MF_2024.png";
+import bananaPhone from "/public/assets/bananaPhone.jpg";
+import hallowNights from "/public/assets/hallow-nights-min.jpg";
+import eagle from "/public/assets/this_is_eagull.png";
 
 import styles from "./index.module.scss";
 
+import slides from "../../data/aboutImages";
+
 import TextLink from "@/components/TextLink";
 import { H4, Paragraph } from "@/components/Typography";
+import YouTubePlayer from "@/components/YoutubePlayer";
+import PageHead from "@/components/PageHead";
 
 export default function About() {
   return (
     <div>
-      <div
-        className={styles.Container}
-        style={{ backgroundImage: `url(${blackBackground.src})` }}
-      >
+      <PageHead
+        page="About"
+        image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
+        description="Learn more about Wicked Woods Music Festival"
+        url="wickedwoods.ca/about"
+      />
+      <div className={styles.Container}>
         <div className={styles.Hero}>
           <Image
             alt="Hallow stage at night with lasers"
             src={hallowNights}
             style={{
               objectFit: "cover",
+              objectPosition: "bottom",
             }}
             fill
             loading="eager"
@@ -49,6 +57,12 @@ export default function About() {
             fill
           />
         </div>
+        <div
+          className={styles.Gallery}
+          style={{ backgroundImage: `url(${backgroundBlack.src})` }}
+        >
+          <Gallery images={slides} targetRowHeight={300} />
+        </div>
         <div>
           <div
             className={styles.Description}
@@ -64,13 +78,6 @@ export default function About() {
                 Nestled on the edge of the Canadian Rockies, our intimate
                 festival is just minutes from Fairmont Hot Springs BC
                 overlooking the Colombia Valley.
-              </Paragraph>
-
-              <Paragraph>
-                We aim to provide a safe and welcoming space for all individuals
-                to express their individuality alongside diverse performances,
-                awe-inspiring art installations, and educational workshops, all
-                curated to create a sense of discovery and wonder.
               </Paragraph>
               <Paragraph>
                 We strongly value community, expression, and connection both
@@ -93,8 +100,12 @@ export default function About() {
               />
             </div>
           </div>
-          <div className={styles.Gallery}>
-            <Gallery />
+
+          <div
+            className={styles.VideoWrapper}
+            style={{ backgroundImage: `url(${backgroundBlack.src})` }}
+          >
+            <YouTubePlayer videoId="rDy_c3OvYxE" />
           </div>
           <div
             className={styles.Contact}

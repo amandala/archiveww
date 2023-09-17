@@ -19,6 +19,12 @@
   position: relative;
 }
 
+.VideoWrapper {
+  background-color: $wickedBlack;
+  margin: 0 auto;
+  padding: 24px;
+}
+
 .TextWrapper {
   z-index: 80;
 }
@@ -75,8 +81,8 @@
 }
 
 .Gallery {
-  margin: 20px 20px 0;
-  padding-bottom: 20px;
+  position: relative;
+  padding: 20px;
 }
 
 .Bear {
@@ -105,6 +111,10 @@
 
   .EagleContainer {
     top: -25%;
+  }
+
+  .VideoWrapper {
+    padding: 100px 24px;
   }
 }
 

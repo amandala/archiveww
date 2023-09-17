@@ -1,13 +1,18 @@
 import Image from "next/image";
 
 import styles from "./index.module.scss";
-import greenHazeBackground from "@/assets/backgrounds/green_haze.png";
-import ww from "@/assets/WW_ALPHA.png";
+import greenHazeBackground from "/public/assets/backgrounds/green_haze-min.png";
 import { JumboHeading, Paragraph } from "../Typography";
 
-import beaver from "@/assets/Beavz3.png";
+import beaver from "/public/assets/Beavz3.png";
 
-export default function UnderConstruction() {
+export default function UnderConstruction({
+  title = "Under Construction",
+  text = "We're rebuilding our website and haven't completed this page yet.",
+}: {
+  title?: string;
+  text?: string;
+}) {
   return (
     <>
       <div className={styles.Wrapper}>
@@ -18,20 +23,8 @@ export default function UnderConstruction() {
           fill
         />
         <div className={styles.Content}>
-          <div className={styles.LogoWrapper}>
-            <Image src={ww} alt="wicked woods logo" priority width={200} />
-          </div>
-          <JumboHeading>Under Construction</JumboHeading>
-          <Paragraph>
-            We&apos;re rebuilding our website and haven&apos;t completed this
-            page yet.
-          </Paragraph>
-          <Paragraph>
-            Follow us on Social Media for exciting updates very soon!
-          </Paragraph>
-          {/* <div className={styles.ButtonWrapper}>
-          <Button href="/">Go back home</Button>
-        </div> */}
+          <JumboHeading>{title}</JumboHeading>
+          <Paragraph>{text}</Paragraph>
         </div>
         <div className={styles.BeavsWrapper}>
           <Image

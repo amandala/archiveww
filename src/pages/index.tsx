@@ -1,22 +1,17 @@
-import Head from "next/head";
-
-import UnderConstruction from "@/components/UnderConstruction";
+import SunsetScene from "@/components/SunsetScene";
+import PageHead from "@/components/PageHead";
 
 export default function Home() {
   return (
     <>
-      <Head key="index">
-        <title>Wicked Woods Music Festival</title>
-        <meta
-          name="description"
-          content="A music and arts festival in the heart of the Colombia Valley, just outside of Fairmont BC."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <PageHead
+        page="Home"
+        image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
+        description="A three day arts and music festival located in the Colombia Valley just outside Fairmont BC, Canada."
+        url="wickedwoods.ca"
+      />
       <main>
-        <UnderConstruction />
-        {/* <SunsetScene /> */}
+        <SunsetScene />
       </main>
     </>
   );

@@ -5,7 +5,7 @@
   text-decoration: none;
   outline: none;
   color: $wickedWhite;
-  font-size: 1rem;
+  font-size: 18px;
 
   &::before {
     content: "";
@@ -23,5 +23,11 @@
   &:hover::before,
   &:focus::before {
     transform: scaleX(1);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Link {
+    font-size: 16px;
   }
 }
