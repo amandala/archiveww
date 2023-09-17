@@ -3,7 +3,6 @@ import { JumboHeading, Paragraph, H2 } from "@/components/Typography";
 import Image from "next/image";
 import PageHead from "@/components/PageHead";
 import WW_Sandy_Brown from "/public/assets/WW-sandy_brown.png";
-import search from "/public/assets/search_icon2.png";
 
 import faqs from "./questions.json";
 
@@ -62,19 +61,6 @@ export default function CodeOfConduct() {
             style={{ textAlign: "center" }}
           >
             <label style={{ display: "inline-flex" }}>
-              <Image
-                src={search}
-                alt="Magnifying glass"
-                priority
-                width={50}
-                height={50}
-                style={{
-                  margin: "0 auto",
-                  maxWidth: "150px",
-                  height: "auto",
-                  padding: 0,
-                }}
-              />
               <input
                 placeholder="Enter a search term"
                 className={styles.SearchInput}

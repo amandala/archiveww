@@ -5,7 +5,6 @@ import greenHazeBackground from "/public/assets/backgrounds/green_haze-min.png";
 import { JumboHeading, Paragraph } from "../Typography";
 
 import beaver from "/public/assets/Beavz3.png";
-// import Button from "../Button";
 
 export default function UnderConstruction() {
   return (
@@ -20,17 +19,12 @@ export default function UnderConstruction() {
             We&apos;re rebuilding our website and haven&apos;t completed this
             page yet.
           </Paragraph>
-
-          {/* <div className={styles.ButtonWrapper}>
-            <Button href="/">Go home</Button>
-          </div> */}
         </div>
         <div className={styles.BeavsWrapper}>
           <Image
             alt="Beaver in a yellow hard hat"
             src={beaver}
             priority
-            // fill
             style={{
               objectFit: "contain",
               paddingLeft: 20,
