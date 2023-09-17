@@ -10,13 +10,21 @@
   justify-content: flex-start;
   flex-direction: column;
   padding: 90px 24px 0;
-  overflow: hidden;
+  background-color: $greenHaze;
+  min-height: 100vh;
+  position: relative;
 }
 
 .BeavsWrapper {
   position: absolute;
   bottom: 0;
   max-width: 600px;
+  z-index: 5;
+  bottom: -50px;
+}
+
+.TreeWrapper {
+  opacity: 0.5;
 }
 
 .Heading {
@@ -33,4 +41,11 @@
 
 .Content {
   z-index: 20;
+}
+
+@media screen and (min-width: 1200px) {
+  .TreeWrapper {
+    display: block;
+    opacity: 1;
+  }
 }

@@ -1,17 +1,20 @@
 import "@/styles/globals.scss";
+import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
 import { dinCondensed } from "@/styles/fonts";
-import { Analytics } from "@vercel/analytics/react";
 import cx from "classnames";
-// import Footer from "@/components/Footer";
+import { Navbar } from "@/components/Nav/Navbar";
+import Footer from "@/components/Footer";
+
+import styles from "@/styles/App.module.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={cx(dinCondensed.className)}>
-      {/* <Navbar /> */}
+    <div className={cx(dinCondensed.className, styles.App)}>
+      <Navbar />
       <Component {...pageProps} />
+      <Footer />
       <Analytics />
-      {/* <Footer /> */}
     </div>
   );
 }

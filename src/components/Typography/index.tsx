@@ -1,6 +1,6 @@
 import React from "react";
 
-import { dinBold, dinBlack } from "@/styles/fonts";
+import { dinBold, chunkyHeart, dinBlack } from "@/styles/fonts";
 import styles from "./index.module.scss";
 import cx from "classnames";
 
@@ -13,5 +13,15 @@ export function Paragraph({ children }: { children: React.ReactNode }) {
 }
 
 export function JumboHeading({ children }: { children: React.ReactNode }) {
-  return <h1 className={cx(dinBlack.className, styles.Jumbo)}>{children}</h1>;
+  return (
+    <h1 className={cx(chunkyHeart.className, styles.Jumbo)}>{children}</h1>
+  );
+}
+
+export function H1({ children }: { children: React.ReactNode }) {
+  return <h1 className={cx(dinBlack.className, styles.H1)}>{children}</h1>;
+}
+
+export function H2({ children }: { children: React.ReactNode }) {
+  return <h1 className={cx(dinBlack.className, styles.H2)}>{children}</h1>;
 }

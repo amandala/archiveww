@@ -5,6 +5,7 @@
   font-weight: 400;
   font-size: 1.2rem;
   margin-bottom: 8px;
+  color: $wickedWhite;
 }
 
 .Text {
@@ -21,9 +22,30 @@
   margin-bottom: 24px;
 }
 
+.H1 {
+  font-size: 1.5rem;
+  color: $wickedWhite;
+  margin-bottom: 24px;
+}
+
+.H2 {
+  font-size: 1.3rem;
+  color: $wickedWhite;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
 @media screen and (min-width: 1200px) {
   .Jumbo {
     font-size: 5rem;
     letter-spacing: 2px;
+  }
+
+  .Four {
+    display: block;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: $wickedWhite;
   }
 }
