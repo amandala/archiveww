@@ -6,7 +6,13 @@ import { JumboHeading, Paragraph } from "../Typography";
 
 import beaver from "/public/assets/Beavz3.png";
 
-export default function UnderConstruction() {
+export default function UnderConstruction({
+  title = "Under Construction",
+  text = "We're rebuilding our website and haven't completed this page yet.",
+}: {
+  title?: string;
+  text?: string;
+}) {
   return (
     <>
       <div
@@ -14,11 +20,8 @@ export default function UnderConstruction() {
         style={{ backgroundImage: `url(${greenHazeBackground.src})` }}
       >
         <div className={styles.Content}>
-          <JumboHeading>Under Construction</JumboHeading>
-          <Paragraph>
-            We&apos;re rebuilding our website and haven&apos;t completed this
-            page yet.
-          </Paragraph>
+          <JumboHeading>{title}</JumboHeading>
+          <Paragraph>{text}</Paragraph>
         </div>
         <div className={styles.BeavsWrapper}>
           <Image

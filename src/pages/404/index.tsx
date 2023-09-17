@@ -10,7 +10,10 @@ export default function FourOhFour() {
         description="Page not found. We've rebuilt our website and some urls have changed. Visit wickedwoods.ca for the most up to date information."
         url="wickedwoods.ca"
       />
-      <UnderConstruction />
+      <UnderConstruction
+        title="404"
+        text="Page not found. We've rebuilt our website and some urls have changed."
+      />
     </>
   );
 }

@@ -10,6 +10,10 @@ export function FestivalNav() {
           href: "/about",
         },
         {
+          text: "Lineup",
+          href: "/lineup",
+        },
+        {
           text: "FAQ",
           href: "/faq",
         },
@@ -21,10 +25,6 @@ export function FestivalNav() {
           text: "Camping",
           href: "/camping",
         },
-        // {
-        //   text: "Info Hub",
-        //   href: "/workshops",
-        // },
       ]}
     />
   );
@@ -39,10 +39,6 @@ export function ExperienceNav() {
           text: "Past Lineups",
           href: "/past-events",
         },
-        // {
-        //   text: "2024 Lineup",
-        //   href: "/lineup",
-        // },
         {
           text: "Stages",
           href: "/stages",
