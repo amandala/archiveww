@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./index.module.scss";
 
 import wordmark from "/public/assets/FONT_WITH_MF_2024.png";
-// import datestamp from "/public/assets/DATE_STAMP2024.png";
+import datestamp from "/public/assets/DATE_STAMP2024.png";
 
 import sky from "/public/assets/sunsetScene/PAPER_fun_ASSETS_8_back-min.png";
 import sun from "/public/assets/sunsetScene/PAPER_fun_ASSETS_Sun-min.png";
@@ -42,7 +42,7 @@ export default function SunsetScene() {
                   fill
                 />
               </div>
-              {/* <div className={styles.DatestampWrapper}>
+              <div className={styles.DatestampWrapper}>
                 <Image
                   alt="August 29 to September 1 2024"
                   src={datestamp}
@@ -55,7 +55,7 @@ export default function SunsetScene() {
                   }}
                   fill
                 />
-              </div> */}
+              </div>
             </div>
             <div className={styles.Sun}>
               <Image

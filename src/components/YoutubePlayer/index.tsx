@@ -6,14 +6,17 @@ import styles from "./index.module.scss";
 // import YouTubePlaylist from "@codesweetly/react-youtube-playlist";
 
 const YouTubePlayer = ({ videoId, opts }: { videoId: string; opts?: any }) => {
-  // Set up event handlers
   const onReady = (event: { target: any }) => {
-    // Access the player instance
     const player = event.target;
 
-    // For example, you can automatically play the video
     player.mute();
     player.playVideo();
+  };
+
+  const onEnd = (event: { target: any }) => {
+    const player = event.target;
+
+    if (opts.loop && opts.loop === 1) player.playVideo();
   };
 
   const onError = (error: any) => {
@@ -33,7 +36,8 @@ const YouTubePlayer = ({ videoId, opts }: { videoId: string; opts?: any }) => {
       videoId={videoId}
       onReady={onReady}
       onError={onError}
-      opts={{ iv_load_policy: 3, rel: 0, ...opts }}
+      onEnd={onEnd}
+      opts={{ iv_load_policy: 3, rel: 0, ...opts, loop: 1 }}
     />
   );
 };
