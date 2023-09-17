@@ -34,9 +34,6 @@ export const Navbar = () => {
 
   return (
     <div className={styles.NavWrapper}>
-      {/* <Link className={styles.HomeLink} href="/" onClick={closeNav}>
-        <Image src={ww} width={50} height={50} alt="Orange WW logo" />
-      </Link> */}
       <nav
         className={cx(styles.Nav, {
           [styles.NavOpen]: menuOpen,
