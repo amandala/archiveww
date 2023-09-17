@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { JumboHeading, Paragraph, H2 } from "@/components/Typography";
 import Image from "next/image";
 import PageHead from "@/components/PageHead";
-import WW_Sandy_Brown from "/public/assets/WW -sandy brown.png";
+import WW_Sandy_Brown from "/public/assets/WW-sandy_brown.png";
 import search from "/public/assets/search_icon2.png";
 
 import faqs from "./questions.json";

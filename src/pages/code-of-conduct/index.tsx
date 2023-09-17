@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./index.module.scss";
 import Link from "next/link";
 import PageHead from "@/components/PageHead";
-import WW_Sandy_Brown from "/public/assets/WW -sandy brown.png";
+import WW_Sandy_Brown from "/public/assets/WW-sandy_brown.png";
 
 export default function CodeOfConduct() {
   return (

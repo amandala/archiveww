@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
 import { dinCondensed } from "@/styles/fonts";
 import cx from "classnames";
-import { Navbar } from "@/components/Navbar";
+import { Navbar } from "@/components/Nav/Navbar";
 import Footer from "@/components/Footer";
 
 import styles from "@/styles/App.module.scss";
