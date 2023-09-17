@@ -15,7 +15,6 @@ import valley from "/public/assets/sunsetScene/PAPER_fun_ASSETS_valley-min.png";
 import hills from "/public/assets/sunsetScene/PAPER_fun_ASSETS_rollinghills-min.png";
 import grasses from "/public/assets/sunsetScene/PAPER_fun_ASSETS_grasses-min.png";
 import mountains from "/public/assets/sunsetScene/PAPER_fun_ASSETS_mountains-min.png";
-// import cloudTop from "/public/assets/sunsetScene/cloudlayer_B-min.png";
 import cloud1 from "/public/assets/sunsetScene/Clouds1-min.png";
 import cloud2 from "/public/assets/sunsetScene/Clouds2-min.png";
 import cloud3 from "/public/assets/sunsetScene/Clouds3-min.png";
