@@ -42,6 +42,7 @@ export default function UnderConstruction({
               margin: "0 auto",
               width: "100%",
               height: "auto",
+              transform: "scaleX(-1)",
             }}
           />
         </div>
