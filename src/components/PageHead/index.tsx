@@ -45,7 +45,7 @@ export default function PageHead({
       />
       <link
         rel="preload"
-        href="/assets/backgrounds/moonshotbanner-min.png"
+        href="/assets/backgrounds/mooonshotbanner-min.png"
         as="image"
       />
     </Head>
