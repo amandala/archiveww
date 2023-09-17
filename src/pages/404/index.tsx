@@ -7,7 +7,7 @@ export default function FourOhFour() {
       <PageHead
         page="404 - Page Not Found"
         image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
-        description="Page not found. Visit wickedwoods.ca"
+        description="Page not found. We've rebuilt our website and some urls have changed. Visit wickedwoods.ca for the most up to date information."
         url="wickedwoods.ca"
       />
       <UnderConstruction />
