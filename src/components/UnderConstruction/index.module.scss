@@ -11,7 +11,7 @@
   flex-direction: column;
   padding: 90px 24px 0;
   background-color: $greenHaze;
-  min-height: 100vh;
+  min-height: 80vh;
   position: relative;
 }
 
@@ -44,6 +44,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .Wrapper {
+    min-height: 100vh;
+  }
+
   .TreeWrapper {
     display: block;
     opacity: 1;
