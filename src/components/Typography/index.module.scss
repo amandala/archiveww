@@ -6,6 +6,7 @@
   font-size: 1.2rem;
   margin-bottom: 8px;
   color: $wickedWhite;
+  transition: 1.5s;
 }
 
 .Text {
@@ -14,18 +15,21 @@
   margin: 0 auto;
   margin-bottom: 24px;
   font-size: 1.2rem;
+  transition: 1.5s;
 }
 
 .Jumbo {
   font-size: 3rem;
   color: $wickedWhite;
   margin-bottom: 24px;
+  transition: 1.5s;
 }
 
 .H1 {
   font-size: 1.5rem;
   color: $wickedWhite;
   margin-bottom: 24px;
+  transition: 1.5s;
 }
 
 .H2 {
@@ -33,6 +37,12 @@
   color: $wickedWhite;
   font-weight: 400;
   margin-bottom: 24px;
+  transition: 1.5s;
+}
+
+.Dark {
+  color: $wickedBlack;
+  transition: 1.5s;
 }
 
 @media screen and (min-width: 1200px) {
