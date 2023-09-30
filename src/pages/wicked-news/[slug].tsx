@@ -34,11 +34,13 @@ export default function WickedNewsArticle() {
         <H2 dark={!nightMode}>{article?.subtitle}</H2>
         <Paragraph dark={!nightMode}>{article?.published}</Paragraph>
       </div>
-      {article?.text.map((paragraph) => (
-        <Paragraph dark={!nightMode} key={paragraph.slice(3, 10)}>
-          {paragraph}
-        </Paragraph>
-      ))}
+      <div className={styles.Content}>
+        {article?.text.map((paragraph) => (
+          <Paragraph dark={!nightMode} key={paragraph.slice(3, 10)}>
+            {paragraph}
+          </Paragraph>
+        ))}
+      </div>
     </div>
   );
 }
