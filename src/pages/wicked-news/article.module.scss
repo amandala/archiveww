@@ -1,0 +1,56 @@
+@import "@/styles/variables.module.scss";
+
+.Page {
+  background-color: $wickedWhite;
+  padding-bottom: 100px;
+  transition: 1.5s;
+
+  &Night {
+    background-color: $prussianBlue;
+  }
+}
+
+.TitleWrapper {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.nightToggle {
+  width: 55px;
+  height: 55px;
+  padding: 2px;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 0;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nightToggle:hover,
+.nightToggle:active {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.moon {
+  background-color: transparent;
+  box-shadow: -6px 1px 0 3px #fdd462;
+  border-left: 3px solid #d19c29;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  margin-top: 0px;
+  transition: 2s;
+}
+
+.sun {
+  background-color: #fdd462;
+  box-shadow: 2px 0px 0px 1px #d19c29;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  transition: 2s;
+}

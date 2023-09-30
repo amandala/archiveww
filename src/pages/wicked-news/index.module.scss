@@ -15,32 +15,26 @@
   position: relative;
 }
 
-.BeavsWrapper {
-  position: absolute;
-  bottom: 0;
-  max-width: 600px;
-  z-index: 5;
-  bottom: -50px;
-}
-
-.Heading {
-  color: $wickedWhite;
-}
-
-.ButtonWrapper {
-  margin-top: 36px;
-}
-
-.LogoWrapper {
-  margin-bottom: 24px;
-}
-
 .Content {
-  z-index: 20;
+  z-index: 10;
 }
 
-@media screen and (min-width: 1200px) {
-  .Wrapper {
-    min-height: 100vh;
+.TreesWrapper {
+  z-index: 1;
+}
+
+.Articles {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.CoverImage {
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 900px) {
+  .Articles {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
