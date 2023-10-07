@@ -66,6 +66,10 @@ export function SocialNav() {
       title="Social"
       links={[
         {
+          text: "Blog",
+          href: "/wicked-news",
+        },
+        {
           text: "Instagram",
           target: "_blank",
           href: "https://www.instagram.com/wickedwoodsmusicfestival/",
@@ -79,16 +83,6 @@ export function SocialNav() {
           text: "YouTube",
           target: "_blank",
           href: "https://www.youtube.com/channel/UCf9jtHeCdWzm5Jw5EJRgUkQ",
-        },
-        {
-          text: "SoundCloud",
-          target: "_blank",
-          href: "https://soundcloud.com/wickedwoodsmusicfestival",
-        },
-        {
-          text: "Spotify",
-          target: "_blank",
-          href: "https://open.spotify.com/user/3143apwuohawnuw3ujlij3ihrgbm",
         },
       ]}
     />
