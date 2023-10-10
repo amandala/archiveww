@@ -1,0 +1,19 @@
+@import "@/styles/variables.module.scss";
+.Wrapper {
+  position: relative;
+  padding: 90px 24px;
+  background-color: $orientBlue;
+  -webkit-mask-image: url("/assets/backgrounds/papergrit.png");
+  mask-image: url("/assets/backgrounds/papergrit.png");
+}
+
+.Content {
+  max-width: 900px;
+  margin: 0 auto;
+  z-index: 5;
+  position: relative;
+}
+
+.HeaderWrapper {
+  text-align: center;
+}

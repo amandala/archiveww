@@ -15,21 +15,21 @@
   margin: 0 auto;
   margin-bottom: 24px;
   font-size: 1.2rem;
-  transition: 1.5s;
+  transition: 1.5s color;
 }
 
 .Jumbo {
   font-size: 3rem;
   color: $wickedWhite;
   margin-bottom: 24px;
-  transition: 1.5s;
+  transition: 1.5s color;
 }
 
 .H1 {
   font-size: 1.5rem;
   color: $wickedWhite;
   margin-bottom: 24px;
-  transition: 1.5s;
+  transition: 1.5s color;
 }
 
 .H2 {
@@ -37,12 +37,35 @@
   color: $wickedWhite;
   font-weight: 400;
   margin-bottom: 24px;
-  transition: 1.5s;
+  transition: 1.5s color;
 }
 
 .Dark {
   color: $wickedBlack;
-  transition: 1.5s;
+  transition: 1.5s color;
+}
+
+.OList,
+.ListItem {
+  color: $wickedWhite;
+  font-weight: 100;
+  font-size: 1.2rem;
+  transition: 1.5s color;
+}
+
+.OList {
+  margin-left: 50px;
+  margin-bottom: 36px;
+}
+
+.OList {
+  .OList {
+    margin-bottom: 0;
+  }
+}
+
+.ListItem {
+  margin-bottom: 8px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -59,7 +82,8 @@
     color: $wickedWhite;
   }
 
-  .Text {
+  .Text,
+  .OList {
     font-size: 1.3rem;
     font-weight: 200;
   }
