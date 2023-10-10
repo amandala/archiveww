@@ -162,19 +162,6 @@ export default function About() {
               </li>
             </ul>
           </div>
-          {/* <div className={styles.Bear}>
-            <Image
-              src={bear}
-              placeholder="blur"
-              quality={100}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              style={{
-                objectFit: "cover",
-              }}
-              alt="bear"
-            />
-          </div> */}
         </div>
       </div>
     </div>

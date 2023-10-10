@@ -73,3 +73,37 @@ export function H2({
     </h1>
   );
 }
+
+export function OList({
+  children,
+  dark = false,
+  type,
+}: {
+  children: React.ReactNode;
+  dark?: boolean;
+  type?: "a" | "i" | "1" | "A" | "I";
+}) {
+  return (
+    <ol type={type} className={cx(styles.OList, { [styles.Dark]: dark })}>
+      {children}
+    </ol>
+  );
+}
+
+export function ListItem({
+  children,
+  dark = false,
+}: {
+  children: React.ReactNode;
+  dark?: boolean;
+}) {
+  return (
+    <li
+      className={cx(styles.ListItem, {
+        [styles.Dark]: dark,
+      })}
+    >
+      {children}
+    </li>
+  );
+}

@@ -1,231 +1,354 @@
-// import { H2, H4, JumboHeading, Paragraph } from "@/components/Typography";
-// import Image from "next/image";
-// import styles from "./index.module.scss";
-// import Link from "next/link";
-// import PageHead from "@/components/PageHead";
-// import WW_Sandy_Brown from "/public/assets/WW-sandy_brown.png";
-import UnderConstruction from "@/components/UnderConstruction";
+import {
+  H2,
+  H4,
+  Paragraph,
+  OList,
+  ListItem,
+  JumboHeading,
+} from "@/components/Typography";
+import Image from "next/image";
+import styles from "./index.module.scss";
+import PageHead from "@/components/PageHead";
+import WW_Sandy_Brown from "/public/assets/WW-sandy_brown.png";
 
 export default function CodeOfConduct() {
   return (
-    <UnderConstruction />
-    // <div className={styles.Wrapper}>
-    //   <PageHead
-    //     page="Code of Conduct"
-    //     image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
-    //     description="Wicked Woods Music Festival is committed to providing a safe,
-    //       respectful and welcoming environment for all, regardless of race,
-    //       national or ethnic origin, colour, religion, sex, gender identity or
-    //       expression, sexual orientation, age or mental or physical disability."
-    //     url="wickedwoods.ca/code-of-conduct"
-    //   />
-    //   <div className={styles.Content}>
-    //     <Image
-    //       src={WW_Sandy_Brown}
-    //       alt="Sandy Brown Wicked Woods Logo"
-    //       priority
-    //       style={{
-    //         margin: "0 auto",
-    //         maxWidth: "300px",
-    //         height: "auto",
-    //         display: "block",
-    //         padding: "20px",
-    //       }}
-    //     />
-    //     <div className={styles.HeaderWrapper}>
-    //       <JumboHeading>Code of Conduct</JumboHeading>
-    //     </div>
-    //     <Paragraph>
-    //       Wicked Woods Music Festival is committed to providing a safe,
-    //       respectful and welcoming environment for all, regardless of race,
-    //       national or ethnic origin, colour, religion, sex, gender identity or
-    //       expression, sexual orientation, age or mental or physical disability.
-    //     </Paragraph>
-    //     <H2>Prohibited Items</H2>
-    //     <Paragraph>
-    //       All persons entering the site are subject to a search for illegal and
-    //       or unauthorized items which are explicitly forbidden on the Site and
-    //       are subject to confiscation. Illegal or unauthorized items include but
-    //       are not limited to: glass, alcoholic beverages, illegal substances,
-    //       pets, drone recording devices, laser pointers, axes, weapons or
-    //       objects that could be used as weapons. : weapons such as guns, knives,
-    //       axes, and other dangerous objects that can act like a weapon; other
-    //       prohibited items include illegal substances, alcoholic beverages,
-    //       glass, animals/pets, drone recording devices, laser pointers, and any
-    //       other items that could be considered dangerous, subject to
-    //       security&apos;s discretion.
-    //     </Paragraph>
-    //     <H2>Confidential and Proprietary Information Protection</H2>
-    //     <Paragraph>
-    //       Included because of reasonable and justifiable infringements on
-    //       applicable Human Rights legislation in Canada protecting a person
-    //       against discrimination based on that person’s ‘record of conviction’.
-    //       Therefore; Wicked Woods Music Festival does not enforce criminal
-    //       record checks, therefore hearsay does not apply at WWMF. That being
-    //       said an individual can not, and will not be removed based on the
-    //       verbal complaint of another and said complaint can not be the reason a
-    //       person is removed from Wicked Woods Music Festival. Unless an
-    //       Individual at the festival is not complying with the Code of Conduct,
-    //       then said individual is allowed to be at WWMF.
-    //     </Paragraph>
-    //     <Paragraph>
-    //       Acts of Defamation will not be tolerated in any aspect or form.
-    //       Defamation is the oral or written communication of a false statement
-    //       about another that unjustly harms their reputation. This may include,
-    //       but is not limited to; an individual or group making unpleasant
-    //       comments about a third party that he or she knows to be false. Such
-    //       statements can only be made out of malice, to harm others. Acts of
-    //       Slander may include but are not limited to; making unfavourable
-    //       comments about WWMF or the Wicked Woods team or anyone in attendance.
-    //       Acts of Slander will not be tolerated and could lead to the removal
-    //       and/or a permanent ban from any or all WWMF events effective
-    //       immediately.
-    //     </Paragraph>
-    //     <H2>Lost and Found Items</H2>
-    //     <Paragraph>
-    //       Wicked Woods Music Festival is not held responsible for any lost,
-    //       damaged or stolen items. Lost and found items can be located at the
-    //       human resources building downtown at Wicked Woods Music Festival. Lost
-    //       items left behind are not the responsibility of Wicked Woods and are
-    //       therefore considered abandoned.
-    //     </Paragraph>
-    //     <Paragraph>
-    //       All lost and found items will be available for retrieval during the
-    //       event and three days post-event. If an item has been lost or stolen a
-    //       report can be made at human resources, with a name and phone number to
-    //       contact if said items are found. Wicked Woods Music Festival is not
-    //       responsible for the mailing and or costs associated with the mailing
-    //       out of any lost and found items that were not retrieved at the
-    //       festival grounds. All festival goers are responsible for their
-    //       property and ensuring their belongings are locked up and in a safe
-    //       place.{" "}
-    //     </Paragraph>
-    //     <H2>Fire Prevention</H2>
-    //     <Paragraph>
-    //       NO OPEN FLAME of any kind will be permitted at WWMF. Anyone found in
-    //       contravention of a Government fire prohibition or Wicked Woods Fire
-    //       Prevention Policy may be fined up to $1,150. If your fire escapes and
-    //       results in a wildfire, you may be fined anywhere from $100,000 to $1
-    //       million and be sentenced to one year in prison. Review the full list
-    //       of wildfire-related violation fines in B.C. through the Government of
-    //       British Columbia website. This is included but is not limited to,
-    //       barbeques, propane fires, stoves, torches, and unapproved fire
-    //       performance gear.
-    //     </Paragraph>
-    //     <H2>Misconduct, Harassment, and Assault</H2>
-    //     <Paragraph>
-    //       Social Misconduct will not be tolerated by WWMF, Examples of such
-    //       conduct might include offensive posts or comments meant to
-    //       intentionally harm someone&apos;s reputation or posts that could
-    //       contribute to a hostile environment on the basis of race, sex,
-    //       disability, religion, financial status or any other status protected
-    //       by law or company policy. In cases of corruption, theft, embezzlement,
-    //       or other unlawful behaviour, immediate removal from the festival
-    //       grounds and a permanent ban will be given, along with the possibility
-    //       of legal action being taken.
-    //     </Paragraph>
-    //     <Paragraph>
-    //       Acts of sexual discrimination, intimidation, harassment and assault
-    //       are not tolerated by WWMF at any time. Wicked Woods withholds a
-    //       commitment to address sexual violence and rape culture and to
-    //       counteract harmful stereotypes and attitudes that come with this
-    //       difficult and very real topic.
-    //     </Paragraph>
-    //     <Paragraph>
-    //       Unacceptable behaviour includes intimidating, harassing, abusive,
-    //       discriminatory, derogatory or demeaning conduct, creating potential
-    //       fire risks, putting others or yourself at risk, and theft.
-    //     </Paragraph>
-    //     <Paragraph>
-    //       Harassment is a course of vexatious comments or unwelcome conduct.
-    //       Harassment includes offensive oral or written remarks, gestures,
-    //       display of images or other conduct that demeans, belittles, insults,
-    //       derides or humiliates an individual or group, or perpetuates or
-    //       reinforces pejorative stereotypes.
-    //     </Paragraph>
-    //     <Paragraph>
-    //       Sexual harassment is a vexatious comment or unwelcome conduct because
-    //       of sex, sexual orientation, gender identity or expression.Sexual
-    //       harassment includes unnecessary physical contact, unwanted touching,
-    //       intrusive sexual questions, unwanted comments of a sexual nature,
-    //       malicious comments about bodies or appearance, and unwelcome sexual
-    //       solicitations or advances.
-    //     </Paragraph>
-    //     <Paragraph>
-    //       Staff are informed about post-assault protocols, the risk of sexually
-    //       transmitted infection in cases of sexual assault, and the need for
-    //       survivors to seek medical treatment such as post-exposure prophylaxis,
-    //       a preventative disease treatment.
-    //     </Paragraph>
-    //     <Paragraph>
-    //       Wicked Woods has effective responses to sexual assault which include
-    //       providing compassionate, nonjudgmental and trauma-informed care to
-    //       survivors through our medical team, as well as referral to hospital,
-    //       sexual assault support services (e.g., community-based victim
-    //       services) and police if desired.
-    //     </Paragraph>
-    //     <Paragraph>
-    //       Survivors of sexual violence can get support through{" "}
-    //       <Link href="https://victimLinkbc.ca">VictimLinkbc.ca</Link> or
-    //       1-800-563-0808 Be a part of the prevention and help to cease the large
-    //       volumes of harassment that happen at events like this. Keep an eye on
-    //       your peers, and contribute to this not only through refraining from
-    //       engaging in harassive behaviour yourself, but by supporting others you
-    //       see experiencing forms of harassment, or feeling unsafe notions at any
-    //       time.
-    //     </Paragraph>
-    //     <Paragraph>
-    //       Wicked Woods Staff is always available, and ready to help participants
-    //       and crew members contact venue security or first aid who can assist to
-    //       contact local law enforcement, providing escorts, or otherwise
-    //       assisting those experiencing harassment to feel safe during their time
-    //       at WWMF.
-    //     </Paragraph>
-    //     <Paragraph>
-    //       Wicked Woods Music Festival reserves the right to non-disclosure of
-    //       any concerns received within an incident report. This is to ensure the
-    //       privacy and confidentiality of those involved. As such, any actions
-    //       taken to keep Wicked Woods crew members, vendors and/or patrons safe
-    //       and in alignment with our values will be carried out at our
-    //       discretion.
-    //     </Paragraph>
-    //     <H2>Dismissal and Banning of Offenders</H2>
-    //     <Paragraph>
-    //       Unacceptable behaviour and failure to comply with the code of conduct
-    //       will not be tolerated. And could lead to immediate removal from the
-    //       festival grounds with a 400 DAY restriction from the festival grounds,
-    //       or a permanent ban from all future events hosted by WWMF effective
-    //       immediately. Event organizers may take any action they deem
-    //       appropriate, including expulsion without refund, and potential
-    //       involvement of Law Enforcement Authorities.
-    //     </Paragraph>
-    //     <Paragraph>
-    //       Wicked Woods Music Festival values all participants, patrons, crew,
-    //       volunteers and everyone that makes this show possible every year, we
-    //       always want to ensure the absolute safety of everyone who attends our
-    //       festival. As stated previously if you or someone you know notices,
-    //       sees or hears about any violations of the Wicked Woods Code of Conduct
-    //       or instances of sexual misconduct, they are required to contact an
-    //       event crew member, and or security guard immediately.
-    //     </Paragraph>
-    //     <Paragraph>
-    //       Patrons and Staff must conduct themselves at all times in a manner
-    //       consistent with the values of WWMF. Be considerate, respectful, and
-    //       collaborative Refrain from demeaning, discriminatory or harassing
-    //       behaviour. Be mindful of your surroundings and your fellow
-    //       participants. Alert event security if you witness unacceptable
-    //       behaviour.
-    //     </Paragraph>
-    //     <H4>
-    //       BY PARTICIPATING IN WICKED WOODS MUSIC FESTIVAL YOU ARE TO COMPLY AND
-    //       ADHERE TO THIS CODE OF CONDUCT TO ENSURE A SAFE AND COMFORTABLE
-    //       ENVIRONMENT FOR ALL IN ATTENDANCE AT WICKED WOODS MUSIC FESTIVAL AND
-    //       ALL RELATED SOCIAL EVENTS. FAILURE TO COMPLY MAY RESULT IN IMMEDIATE
-    //       REMOVAL FROM THE FESTIVAL GROUNDS, WITH A 400-DAY MINIMUM RESTRICTION
-    //       TO RE-ENTER. FAILURE TO COMPLY MAY ALSO LEAD TO A PERMANENT BAN FROM
-    //       WICKED WOODS MUSIC FESTIVAL AND ALL ASSOCIATED EVENTS.
-    //     </H4>
-    //   </div>
-    // </div>
+    <div className={styles.Wrapper}>
+      <PageHead
+        page="Code of Conduct"
+        image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
+        description="Wicked Woods Music Festival is committed to providing a safe,
+          respectful and welcoming environment for all, regardless of race,
+          national or ethnic origin, colour, religion, sex, gender identity or
+          expression, sexual orientation, age or mental or physical disability."
+        url="wickedwoods.ca/code-of-conduct"
+      />
+      <div className={styles.Content}>
+        <Image
+          src={WW_Sandy_Brown}
+          alt="Sandy Brown Wicked Woods Logo"
+          priority
+          style={{
+            margin: "0 auto",
+            maxWidth: "300px",
+            height: "auto",
+            display: "block",
+            padding: "20px",
+          }}
+        />
+        <div className={styles.HeaderWrapper}>
+          <JumboHeading>Code of Conduct</JumboHeading>
+        </div>
+        <H2>General Terms</H2>
+        <Paragraph>
+          The Wicked Woods Music Festival, hereinafter referred to as &quot;The
+          Festival&quot;, is committed to fostering an environment that is
+          inclusive, respectful, and secure for all attendees. This Code of
+          Conduct establishes the guidelines we expect all participants to
+          follow, ensuring that The Festival remains a vibrant, celebratory, and
+          safe space for all.
+        </Paragraph>
+        <H2>1. Prohibited Items and Security Measures</H2>
+        <OList type="a">
+          <ListItem>
+            All attendees are subject to thorough security checks upon entering
+            the festival grounds for everyone&apos;s safety.
+          </ListItem>
+          <ListItem>
+            Unauthorized, illicit, or potentially hazardous items will be
+            confiscated.
+          </ListItem>
+          <ListItem>
+            Prohibited items include, but are not limited to: weapons,
+            controlled substances, unauthorized alcoholic beverages, glass
+            containers, pets (with the exception of certified service animals),
+            unauthorized recording equipment, laser pointers, and any other
+            items deemed potentially harmful or disruptive by security
+            personnel.
+          </ListItem>
+        </OList>
+        <H2>2. Confidentiality and Non-Discrimination Policy</H2>
+        <OList type="a">
+          <ListItem>
+            The Festival values and respects the intrinsic rights of all
+            individuals. Discrimination of any kind is strictly forbidden.
+          </ListItem>
+          <ListItem>
+            Attendees will not be excluded or removed based on unverified
+            allegations or insinuations.
+          </ListItem>
+          <ListItem>
+            All attendees have the right to partake in The Festival&apos;s
+            activities, provided they adhere to this Code of Conduct.
+          </ListItem>
+        </OList>
+        <H2>3. Defamation and Slander</H2>
+        <OList type="a">
+          <ListItem>
+            Defamatory statements, whether oral or written, that could damage
+            the reputation of an individual or associated entity, are strictly
+            prohibited.
+          </ListItem>
+          <ListItem>
+            Malicious acts or statements targeted at any individual, The
+            Festival, or its affiliates will be dealt with gravely.
+          </ListItem>
+          <ListItem>
+            Offenders risk immediate ejection, a permanent ban from subsequent
+            WWMF events, and potential legal ramifications.
+          </ListItem>
+        </OList>
+        <H2>4. Lost and Found Protocol</H2>
+        <OList type="a">
+          <ListItem>
+            The Festival offers a Lost and Found service located at the human
+            resources building within the festival site. However, we are not
+            responsible for lost, damaged, or stolen personal belongings.
+          </ListItem>
+          <ListItem>
+            Items not claimed within three days after the event may be disposed
+            of at the discretion of The Festival.
+          </ListItem>
+          <ListItem>
+            Reporting lost items should be done with a comprehensive description
+            and contact details. Note: Return mailing costs for unclaimed items
+            will not be covered by The Festival.
+          </ListItem>
+        </OList>
+        <H2>5. Fire Prevention and Compliance</H2>
+        <OList type="a">
+          <ListItem>
+            Open flames are unequivocally banned at The Festival.
+          </ListItem>
+          <ListItem>
+            Violators of this rule, or those causing significant fire hazards,
+            might be subjected to legal and financial consequences as mandated
+            by local regulations.
+          </ListItem>
+          <ListItem>
+            Items such as barbecues, propane devices, torches, and non-approved
+            fire equipment are prohibited.
+          </ListItem>
+        </OList>
+        <H2>6. Health, Safety, and Security Protocols</H2>
+        <OList type="a">
+          <ListItem>
+            The well-being of attendees is our topmost priority. Suspicious or
+            perilous behaviors should be reported to festival crew members or
+            security personnel immediately.
+          </ListItem>
+          <ListItem>
+            Distinguished by their unique uniforms, our crew and security are
+            proficient in managing situations to ensure attendee safety.
+          </ListItem>
+        </OList>
+        <H2>7. Accessibility Commitment</H2>
+        <OList type="a">
+          <ListItem>
+            To promote inclusivity, The Festival offers a designated
+            Accessibility Zone for attendees with mobility challenges. For
+            additional support, kindly refer to our information booth.
+          </ListItem>
+        </OList>
+        <H2>8. Sanctuary Provision</H2>
+        <OList type="a">
+          <ListItem>
+            The Sanctuary, open around the clock, offers a serene space for
+            attendees needing a moment of respite, overseen by empathetic
+            volunteers.
+          </ListItem>
+        </OList>
+        <H2>9. Outreach, Education, and Security</H2>
+        <OList type="a">
+          <ListItem>
+            The Festival&apos;s Outreach Team is on hand for health, safety, and
+            informational needs. They can provide guidance on safety protocols,
+            directions, and general event details.
+          </ListItem>
+        </OList>
+        <Paragraph>
+          This Code of Conduct is legally enforceable. Breaches may lead to
+          immediate eviction from the festival premises without compensation and
+          potential legal actions. We encourage attendees to act with
+          consideration, respect, and embody the ethos of The Festival for the
+          enjoyment of all present.
+        </Paragraph>
+        <H2>Misconduct, Harassment, and Assault</H2>
+        <Paragraph>
+          The Wicked Woods Music Festival stands firm against all forms of
+          misconduct, discrimination, and harassment. We anticipate all
+          attendees to interact with mutual respect and adhere faithfully to the
+          guidelines provided. Breaches of these guidelines may result in
+          immediate repercussions, including potential legal implications.
+        </Paragraph>
+        <H2>1. Social Misconduct</H2>
+        <OList type="a">
+          <ListItem>
+            The Festival strictly forbids any form of social misconduct.
+          </ListItem>
+          <ListItem>
+            Actions that may be deemed as such include, but aren&apos;t
+            restricted to: malicious or derogatory posts, comments targeting an
+            individual&apos;s reputation, or creating an adverse environment
+            based on any characteristic protected by laws or festival policies.
+          </ListItem>
+          <ListItem>
+            Engaging in corruption, theft, embezzlement, or any unauthorized
+            behaviors may lead to immediate eviction, a lasting ban, and
+            possible legal actions.
+          </ListItem>
+        </OList>
+        <H2>2. Sexual Discrimination, Harassment, and Assault</H2>
+        <OList type="a">
+          <ListItem>
+            The Festival has zero tolerance for sexual discrimination,
+            harassment, or assault.
+          </ListItem>
+          <ListItem>
+            We are committed to tackling issues of sexual violence and
+            challenging harmful stereotypes around this critical concern.
+          </ListItem>
+          <ListItem>
+            Impermissible behaviors encompass derogatory comments, creating
+            safety risks, endangering oneself or others, and theft.
+          </ListItem>
+        </OList>
+        <H2>3. Definition of Harassment</H2>
+        <OList type="a">
+          <ListItem>
+            Harassment consists of repeated or offensive comments or actions,
+            including verbal or written remarks, gestures, or images that
+            demean, insult, or intimidate based on bias or prejudice.
+          </ListItem>
+          <ListItem>
+            Sexual harassment refers to unsolicited behaviors rooted in sex,
+            sexual orientation, gender identity, or expression, such as
+            unwarranted physical contact, intrusive inquiries about personal sex
+            life, or inappropriate remarks about one&apos;s physical appearance.
+          </ListItem>
+        </OList>
+        <H2>4. Post-Assault Protocols</H2>
+        <OList type="a">
+          <ListItem>
+            The Festival&apos;s team receives extensive training on post-assault
+            procedures, including potential risks of sexually transmitted
+            infections from assaults and the critical nature of medical
+            interventions like post-exposure prophylaxis.
+          </ListItem>
+          <ListItem>
+            We are dedicated to providing victims of sexual assault with
+            comprehensive, compassionate, unbiased, and trauma-informed support.
+          </ListItem>
+          <ListItem>
+            Support includes immediate medical care, referrals to appropriate
+            medical facilities or sexual assault services, and collaboration
+            with law enforcement if necessary.
+          </ListItem>
+        </OList>
+        <H2>5. Support for Survivors</H2>
+        <OList type="a">
+          <ListItem>
+            Individuals impacted by sexual violence can access assistance
+            through VictimLinkbc.ca or by dialing 1-800-563-0808.
+          </ListItem>
+          <ListItem>
+            Attendees are encouraged to not only avoid misconduct but to also
+            proactively aid others who might be subjected to harassment or feel
+            threatened. Collective vigilance and mutual respect can
+            significantly minimize such occurrences.
+          </ListItem>
+          <ListItem>
+            Festival personnel, identifiable by their uniforms, stand ready to
+            help attendees by coordinating with venue security, offering
+            escorts, or delivering any required support to ensure
+            everyone&apos;s safety.
+          </ListItem>
+        </OList>
+        <H2>6. Confidentiality and Non-Disclosure</H2>
+        <OList type="a">
+          <ListItem>
+            Respecting the privacy of our attendees, staff, and vendors, The
+            Festival maintains the confidentiality of incident specifics and
+            does not publicly disclose detailed reports.
+          </ListItem>
+          <ListItem>
+            Responses to raised concerns will always prioritize everyone&apos;s
+            safety and resonate with The Festival&apos;s core principles.
+            Decisions regarding interventions and subsequent actions rest solely
+            with The Festival&apos;s leadership.
+          </ListItem>
+        </OList>
+        <H2>Dismissal and Banning of Offenders</H2>
+        <H2>1. Consequences for Non-compliance</H2>
+        <OList type="a">
+          <ListItem>
+            Attendees found in breach of the Wicked Woods Music Festival&apos;s
+            Code of Conduct, or any acts of misconduct, will be subject to
+            immediate repercussions.
+          </ListItem>
+          <ListItem>
+            Violations might lead to an immediate ejection from the festival
+            grounds, along with a 400-day exclusion from accessing the venue.
+          </ListItem>
+          <ListItem>
+            Chronic or grave offenses may warrant a lifetime ban from any future
+            events organized under the Wicked Woods Music Festival banner.
+          </ListItem>
+        </OList>
+        <H2>2. Organizer&apos;s Discretion</H2>
+        <OList type="a">
+          <ListItem>
+            The Festival&apos;s management holds the right to take necessary
+            measures to maintain the safety and decorum of the festival,
+            inclusive of evictions without offering a refund.
+          </ListItem>
+          <ListItem>
+            In instances where the transgression is criminal, the management
+            holds the right to collaborate with legal authorities.
+          </ListItem>
+        </OList>
+        <H2>3. Ensuring Safety and Reporting</H2>
+        <OList type="a">
+          <ListItem>
+            The Festival deeply values the participation and contributions of
+            every attendee, crew member, volunteer, and patron. Our foremost
+            priority is establishing a safe milieu for all.
+          </ListItem>
+          <ListItem>
+            Attendees, upon witnessing or being informed of any breaches of the
+            Code of Conduct or any inappropriate behavior, should promptly alert
+            a festival crew member or security staff.
+          </ListItem>
+        </OList>
+        <H2>4. Expected Behavior</H2>
+        <OList type="a">
+          <ListItem>
+            Every attendee and staff member is anticipated to resonate with and
+            manifest the values championed by the Wicked Woods Music Festival
+            throughout the event&apos;s duration.
+          </ListItem>
+          <ListItem>
+            We expect attendees to maintain an environment of mutual respect and
+            cooperation. All demeaning, discriminatory, or harassing behaviors
+            are unequivocally prohibited.
+          </ListItem>
+          <ListItem>
+            We urge everyone to remain aware of their environment and the
+            well-being of their fellow festival-goers. Immediate reporting of
+            any unsuitable behaviors to event security is highly encouraged.
+          </ListItem>
+        </OList>
+        <H2>Acknowledgment and Adherence</H2>
+        <Paragraph>
+          BY PARTICIPATING IN THE WICKED WOODS MUSIC FESTIVAL, EACH ATTENDEE
+          PLEDGES TO RIGOROUSLY UPHOLD THIS CODE OF CONDUCT. Preserving a safe
+          and collegial atmosphere for all involved is paramount. Non-compliance
+          with these guidelines may culminate in immediate eviction, a 400-day
+          barring period, or potentially an indefinite ban from all events
+          linked with the Wicked Woods Music Festival.
+        </Paragraph>
+        <H4>Revised September 14, 2023</H4>
+      </div>
+    </div>
   );
 }
