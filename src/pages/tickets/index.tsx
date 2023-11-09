@@ -4,6 +4,7 @@ import PageHead from "@/components/PageHead";
 import { JumboHeading, H1, H2, H3, Paragraph } from "@/components/Typography";
 
 import curiousBlue from "/public/assets/WW-curious_blue.png";
+import sunne from "/public/assets/sunnE.png";
 
 import styles from "./index.module.scss";
 
@@ -23,6 +24,13 @@ export default function Tickets() {
           <section>
             <H1>General Admission</H1>
             <div className={styles.TicketTier}>
+              <Image
+                alt="placeholder"
+                src={sunne}
+                width={200}
+                height={200}
+                className={styles.SunnE}
+              />
               <Image
                 alt="placeholder"
                 src={curiousBlue}
