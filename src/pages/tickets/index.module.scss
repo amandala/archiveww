@@ -1,0 +1,89 @@
+@import "@/styles/variables.module.scss";
+
+.Wrapper {
+  position: relative;
+  padding: 90px 24px;
+  background-color: $orientBlue;
+  -webkit-mask-image: url("/assets/backgrounds/papergrit.png");
+  mask-image: url("/assets/backgrounds/papergrit.png");
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.Content {
+  max-width: 900px;
+  margin: 0 auto;
+  z-index: 5;
+  position: relative;
+
+  [class*="Typography_Jumbo"] {
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    margin-bottom: 32px;
+  }
+
+  section {
+    margin-bottom: 50px;
+    background-color: $wickedBlack;
+    padding: 24px;
+    text-align: center;
+
+    [class*="Typography_Text"] {
+      padding: 0 12px 0;
+    }
+
+    div {
+      margin-bottom: 18px;
+
+      h2 {
+        margin-bottom: 4px;
+      }
+    }
+
+    div.TicketTier {
+      margin-bottom: 18px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  .CampLot {
+    font-size: 2rem;
+    color: $mandyPink;
+  }
+}
+
+.Glamping {
+  color: $greenHaze;
+}
+
+.FirstServe {
+  color: $sandyBrown;
+}
+
+.Reserved {
+  color: $burntSienna;
+}
+
+.ReadySet {
+  color: $curiousBlue;
+}
+
+@media screen and (min-width: 900px) {
+  .CampLot {
+    font-size: 2.5rem;
+    color: $mandyPink;
+  }
+
+  .CampGrid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

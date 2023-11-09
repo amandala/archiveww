@@ -50,7 +50,7 @@ export default function CodeOfConduct() {
               padding: "20px",
             }}
           />
-          <JumboHeading>Frequently Asked Questions</JumboHeading>
+          <JumboHeading>FAQ</JumboHeading>
         </div>
         <div className={styles.SearchWrapper}>
           <form
