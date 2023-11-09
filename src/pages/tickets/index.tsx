@@ -61,20 +61,17 @@ export default function Tickets() {
           </section>
           <section>
             <H1>Add Ons</H1>
-            {/* <div className={styles.CampGrid}> */}
-            <div>
+            <div className={styles.CampGrid}>
               <div className={styles.Option}>
                 <Paragraph>Wednesday early entry</Paragraph>
                 <JumboHeading className={styles.Price}>$65</JumboHeading>
               </div>
-            </div>
-            <div>
+
               <div className={styles.Option}>
-                <Paragraph>Weekend shower access</Paragraph>
+                <Paragraph>Weekend shower pass</Paragraph>
                 <JumboHeading className={styles.Price}>$32</JumboHeading>
               </div>
             </div>
-            {/* </div> */}
           </section>
           <section>
             <H1>Parking & Camping</H1>

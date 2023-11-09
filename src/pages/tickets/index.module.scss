@@ -126,7 +126,7 @@
 
   .Option {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto 100px;
 
     [class*="Typography_Text"] {
       text-align: left;
