@@ -4,8 +4,8 @@
   position: relative;
   padding: 90px 24px;
   background-color: $orientBlue;
-  -webkit-mask-image: url("/assets/backgrounds/papergrit.png");
-  mask-image: url("/assets/backgrounds/papergrit.png");
+  // -webkit-mask-image: url("/assets/backgrounds/papergrit.png");
+  // mask-image: url("/assets/backgrounds/papergrit.png");
 
   h1 {
     text-align: center;
@@ -19,7 +19,7 @@
   position: relative;
 
   [class*="Typography_Jumbo"] {
-    margin-bottom: 24px;
+    margin: 0;
   }
 
   h1 {
@@ -28,7 +28,7 @@
 
   section {
     margin-bottom: 50px;
-    background-color: $wickedBlack;
+    background-color: $prussianBlue;
     padding: 24px;
     text-align: center;
 
@@ -40,7 +40,7 @@
       margin-bottom: 24px;
 
       @media screen and (min-width: 900px) {
-        margin-bottom: 50px;
+        margin-bottom: 24px;
       }
 
       h2 {
@@ -60,30 +60,54 @@
   .CampLot {
     font-size: 2rem;
     color: $mandyPink;
+    margin-bottom: 18px;
+
+    [class*="Typography_Text"] {
+      text-align: left;
+    }
+  }
+}
+
+.Option {
+  display: flex;
+  flex-basis: 70%;
+
+  [class*="Typography_Text"] {
+    text-align: left;
   }
 }
 
 .Glamping {
   color: $greenHaze;
+  margin-bottom: 16px;
 }
 
 .FirstServe {
   color: $sandyBrown;
+  margin-bottom: 16px;
 }
 
 .Reserved {
   color: $burntSienna;
+  margin-bottom: 16px;
 }
 
 .ReadySet {
   color: $curiousBlue;
+  margin-bottom: 16px;
 }
 
 .Price {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 @media screen and (min-width: 900px) {
+  .Content {
+    section {
+      padding: 42px;
+    }
+  }
+
   .CampLot {
     font-size: 2.5rem;
     color: $mandyPink;
@@ -97,6 +121,15 @@
 
   .Price {
     margin-top: 10px;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
+  }
+
+  .Option {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    [class*="Typography_Text"] {
+      text-align: left;
+    }
   }
 }

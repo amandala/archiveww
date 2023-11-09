@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import PageHead from "@/components/PageHead";
 import { JumboHeading, H1, H2, H3, Paragraph } from "@/components/Typography";
-import cloud1 from "/public/assets/sunsetScene/Clouds1-min.png";
 
 import curiousBlue from "/public/assets/WW-curious_blue.png";
 
@@ -11,10 +10,7 @@ import styles from "./index.module.scss";
 export default function Tickets() {
   return (
     <div className={styles.Wrapper}>
-      <div
-        className={styles.CloudTop}
-        style={{ backgroundImage: `url(${cloud1.src})` }}
-      >
+      <div>
         <PageHead
           page="Tickets"
           image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
@@ -65,21 +61,20 @@ export default function Tickets() {
           </section>
           <section>
             <H1>Add Ons</H1>
+            {/* <div className={styles.CampGrid}> */}
             <div>
-              <H2>Early Entry</H2>
-              <Paragraph>
-                Gain early entry onto the festival grounds Wednesday August 28
-              </Paragraph>
-              <JumboHeading className={styles.Price}>$65</JumboHeading>
+              <div className={styles.Option}>
+                <Paragraph>Wednesday early entry</Paragraph>
+                <JumboHeading className={styles.Price}>$65</JumboHeading>
+              </div>
             </div>
             <div>
-              <H2>Showers</H2>
-              <Paragraph>
-                Access the shower trailer throughout the weekend at designated
-                times.
-              </Paragraph>
-              <JumboHeading className={styles.Price}>$32</JumboHeading>
+              <div className={styles.Option}>
+                <Paragraph>Weekend shower access</Paragraph>
+                <JumboHeading className={styles.Price}>$32</JumboHeading>
+              </div>
             </div>
+            {/* </div> */}
           </section>
           <section>
             <H1>Parking & Camping</H1>
@@ -88,26 +83,26 @@ export default function Tickets() {
               <div className={styles.CampGrid}>
                 <div>
                   <H3 className={styles.FirstServe}>First serve basis</H3>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>Regular Vehicle/RV Pass under 21 feet</Paragraph>
                     <JumboHeading className={styles.Price}>$80</JumboHeading>
                   </div>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>Large Vehicle/RV Pass 21-40 feet</Paragraph>
-                    <JumboHeading className={styles.Price}>$80</JumboHeading>
+                    <JumboHeading className={styles.Price}>$160</JumboHeading>
                   </div>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>Mega Vehicle/RV Pass 41 feet and over</Paragraph>
                     <JumboHeading className={styles.Price}>$300</JumboHeading>
                   </div>
                 </div>
                 <div>
                   <H3 className={styles.Reserved}>Reserved Camping</H3>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>Reserved Campsite 14x21 - No Power</Paragraph>
                     <JumboHeading className={styles.Price}>$400</JumboHeading>
                   </div>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>
                       Reserved Campsite 14x41 feet - No Power
                     </Paragraph>
@@ -116,7 +111,7 @@ export default function Tickets() {
                 </div>
                 <div>
                   <H3 className={styles.ReadySet}>Ready Set Camp</H3>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>
                       Five-person tent set up for 2 people with air matress and
                       pump
@@ -126,7 +121,7 @@ export default function Tickets() {
                 </div>
                 <div>
                   <H3 className={styles.Glamping}>Glamping</H3>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>
                       Glamping 10x10&apos; and 5m Bell Tent{" "}
                     </Paragraph>
@@ -142,11 +137,11 @@ export default function Tickets() {
               <div className={styles.CampGrid}>
                 <div>
                   <H3 className={styles.FirstServe}>First serve basis</H3>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>Regular Vehicle/RV Pass under 21 feet</Paragraph>
                     <JumboHeading className={styles.Price}>$70</JumboHeading>
                   </div>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>
                       Large Vehicle/RV Pass Hidden Ridge 21-30 feet
                     </Paragraph>
@@ -155,10 +150,12 @@ export default function Tickets() {
                 </div>
                 <div>
                   <H3 className={styles.Glamping}>Glamping</H3>
-                  <Paragraph>
-                    Glamping 10x10&apos; lot and 5m Bell Tent
-                  </Paragraph>
-                  <JumboHeading className={styles.Price}>$910</JumboHeading>
+                  <div className={styles.Option}>
+                    <Paragraph>
+                      Glamping 10x10&apos; lot and 5m Bell Tent
+                    </Paragraph>
+                    <JumboHeading className={styles.Price}>$910</JumboHeading>
+                  </div>
                 </div>
               </div>
             </div>
@@ -169,22 +166,22 @@ export default function Tickets() {
               <div className={styles.CampGrid}>
                 <div>
                   <H3 className={styles.FirstServe}>First serve basis</H3>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>Regular Vehicle/RV Pass under 21 feet</Paragraph>
                     <JumboHeading className={styles.Price}>$60</JumboHeading>
                   </div>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>Large Vehicle/RV Pass 21-40 feet</Paragraph>
                     <JumboHeading className={styles.Price}>$120</JumboHeading>
                   </div>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>Mega Vehicle/RV Pass 41 feet and over</Paragraph>
                     <JumboHeading className={styles.Price}>$180</JumboHeading>
                   </div>
                 </div>
                 <div>
                   <H3 className={styles.Glamping}>Glamping</H3>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>
                       Glamping 20x20&apos; and 5m Bell Tent with power
                     </Paragraph>
@@ -195,23 +192,23 @@ export default function Tickets() {
             </div>
             <div>
               <JumboHeading className={styles.CampLot}>
-                Eagles Nest
+                Eagle&apos;s Nest
               </JumboHeading>
               <div className={styles.CampGrid}>
                 <div>
                   <H3 className={styles.Reserved}>Reserved Camping</H3>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>Powered 16x50 foot RV site</Paragraph>
                     <JumboHeading className={styles.Price}>$1200</JumboHeading>
                   </div>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>Powered 30x30 foot RV site</Paragraph>
                     <JumboHeading className={styles.Price}>$1050</JumboHeading>
                   </div>
                 </div>
                 <div>
                   <H3 className={styles.Glamping}>Glamping</H3>
-                  <div>
+                  <div className={styles.Option}>
                     <Paragraph>
                       Glamour Glamping 10x10&apos; and 5m Bell Tent with power
                     </Paragraph>
