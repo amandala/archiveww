@@ -21,10 +21,6 @@ export function FestivalNav() {
           text: "Tickets",
           href: "/tickets",
         },
-        {
-          text: "Camping",
-          href: "/camping",
-        },
       ]}
     />
   );

@@ -31,15 +31,22 @@ export function Paragraph({
 export function JumboHeading({
   children,
   dark = false,
+  className,
 }: {
   children: React.ReactNode;
   dark?: boolean;
+  className?: string;
 }) {
   return (
     <h1
-      className={cx(chunkyHeart.className, styles.Jumbo, {
-        [styles.Dark]: dark,
-      })}
+      className={cx(
+        chunkyHeart.className,
+        styles.Jumbo,
+        {
+          [styles.Dark]: dark,
+        },
+        className
+      )}
     >
       {children}
     </h1>
@@ -68,9 +75,32 @@ export function H2({
   dark?: boolean;
 }) {
   return (
-    <h1 className={cx(dinBlack.className, styles.H2, { [styles.Dark]: dark })}>
+    <h2 className={cx(dinBlack.className, styles.H2, { [styles.Dark]: dark })}>
       {children}
-    </h1>
+    </h2>
+  );
+}
+
+export function H3({
+  children,
+  dark = false,
+  className,
+}: {
+  children: React.ReactNode;
+  dark?: boolean;
+  className?: string;
+}) {
+  return (
+    <h3
+      className={cx(
+        dinBlack.className,
+        styles.H3,
+        { [styles.Dark]: dark },
+        className
+      )}
+    >
+      {children}
+    </h3>
   );
 }
 
