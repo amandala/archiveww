@@ -5,12 +5,17 @@ import { JumboHeading, H1, H2, H3, Paragraph } from "@/components/Typography";
 
 import curiousBlue from "/public/assets/WW-curious_blue.png";
 import sunne from "/public/assets/sunnE.png";
+import orientBlueBg from "/public/assets/backgrounds/orient_blue-min.png";
+import prussianBlueBG from "/public/assets/backgrounds/prussian_blue-min.png";
 
 import styles from "./index.module.scss";
 
 export default function Tickets() {
   return (
-    <div className={styles.Wrapper}>
+    <div
+      className={styles.Wrapper}
+      style={{ backgroundImage: `url(${orientBlueBg.src})` }}
+    >
       <div>
         <PageHead
           page="Tickets"
@@ -21,7 +26,7 @@ export default function Tickets() {
         <div className={styles.Content}>
           <JumboHeading>2024 Ticket Info</JumboHeading>
           <H1>Tickets on sale Nov. 17</H1>
-          <section>
+          <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
             <H1>General Admission</H1>
             <div className={styles.TicketTier}>
               <Image
@@ -67,7 +72,7 @@ export default function Tickets() {
               </span>
             </div>
           </section>
-          <section>
+          <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
             <H1>Add Ons</H1>
             <div className={styles.CampGrid}>
               <div className={styles.Option}>
@@ -81,7 +86,7 @@ export default function Tickets() {
               </div>
             </div>
           </section>
-          <section>
+          <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
             <H1>Parking & Camping</H1>
             <div>
               <JumboHeading className={styles.CampLot}>Juniper</JumboHeading>
