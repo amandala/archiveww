@@ -114,13 +114,11 @@ export default function Tickets() {
                 <div>
                   <H3 className={styles.Reserved}>Reserved Camping</H3>
                   <div className={styles.Option}>
-                    <Paragraph>Reserved Campsite 14x21, no power</Paragraph>
+                    <Paragraph>Reserved Campsite 14x21</Paragraph>
                     <JumboHeading className={styles.Price}>$400</JumboHeading>
                   </div>
                   <div className={styles.Option}>
-                    <Paragraph>
-                      Reserved Campsite 14x41 feet - No power
-                    </Paragraph>
+                    <Paragraph>Reserved Campsite 14x41 feet</Paragraph>
                     <JumboHeading className={styles.Price}>$700</JumboHeading>
                   </div>
                 </div>
@@ -128,7 +126,7 @@ export default function Tickets() {
                   <H3 className={styles.ReadySet}>Ready Set Camp</H3>
                   <div className={styles.Option}>
                     <Paragraph>
-                      Five-person tent set up for 2 people with air matress and
+                      Five-person tent set up for 2 people with air mattress and
                       pump
                     </Paragraph>
                     <JumboHeading className={styles.Price}>$600</JumboHeading>
