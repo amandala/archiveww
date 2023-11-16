@@ -72,7 +72,7 @@ export default function Tickets() {
               </span>
             </div>
             <Paragraph>
-              GA Tickets allows access between Friday and Monday
+              GA Tickets allow access between Friday and Monday
             </Paragraph>
           </section>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
