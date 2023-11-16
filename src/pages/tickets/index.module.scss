@@ -104,8 +104,24 @@
 
 .SunnE {
   position: absolute;
-  top: -320px;
+  top: -325px;
   left: 40%;
+
+  @media screen and (min-width: 900px) {
+    position: absolute;
+    top: -320px;
+    left: 75%;
+    width: 300px;
+    height: 300px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: -380px;
+    left: 89%;
+    width: 500px;
+    height: 500px;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -113,14 +129,6 @@
     section {
       padding: 42px;
     }
-  }
-
-  .SunnE {
-    position: absolute;
-    top: -320px;
-    left: 75%;
-    width: 300px;
-    height: 300px;
   }
 
   .CampLot {
@@ -146,15 +154,5 @@
     [class*="Typography_Text"] {
       text-align: left;
     }
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .SunnE {
-    position: absolute;
-    top: -380px;
-    left: 89%;
-    width: 500px;
-    height: 500px;
   }
 }

@@ -3,7 +3,6 @@ import Image from "next/image";
 import PageHead from "@/components/PageHead";
 import { JumboHeading, H1, H2, H3, Paragraph } from "@/components/Typography";
 
-import curiousBlue from "/public/assets/WW-curious_blue.png";
 import sunne from "/public/assets/sunnE.png";
 import orientBlueBg from "/public/assets/backgrounds/orient_blue-min.png";
 import prussianBlueBG from "/public/assets/backgrounds/prussian_blue-min.png";
@@ -24,10 +23,11 @@ export default function Tickets() {
           url="wickedwoods.ca/tickets"
         />
         <div className={styles.Content}>
-          <JumboHeading>2024 Ticket Info</JumboHeading>
-          <H1>Tickets on sale Nov. 17</H1>
+          <JumboHeading>2024 Tickets</JumboHeading>
+          <H1>On Sale Dec. 1</H1>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
             <H1>General Admission</H1>
+
             <div className={styles.TicketTier}>
               <Image
                 alt="placeholder"
@@ -36,47 +36,50 @@ export default function Tickets() {
                 height={200}
                 className={styles.SunnE}
               />
-              <Image
+              {/* <Image
                 alt="placeholder"
                 src={curiousBlue}
                 width={100}
                 height={100}
-              />
+              /> */}
               <span>
                 <H2>Tier 1</H2>
                 <JumboHeading className={styles.Price}>$320</JumboHeading>
               </span>
             </div>
             <div className={styles.TicketTier}>
-              <Image
+              {/* <Image
                 alt="placeholder"
                 src={curiousBlue}
                 width={100}
                 height={100}
-              />
+              /> */}
               <span>
                 <H2>Tier 2</H2>
                 <JumboHeading className={styles.Price}>$345</JumboHeading>
               </span>
             </div>
             <div className={styles.TicketTier}>
-              <Image
+              {/* <Image
                 alt="placeholder"
                 src={curiousBlue}
                 width={100}
                 height={100}
-              />
+              /> */}
               <span>
                 <H2>Tier 3</H2>
                 <JumboHeading className={styles.Price}>$375</JumboHeading>
               </span>
             </div>
+            <Paragraph>
+              GA Tickets allows access between Friday and Monday
+            </Paragraph>
           </section>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
             <H1>Add Ons</H1>
             <div className={styles.CampGrid}>
               <div className={styles.Option}>
-                <Paragraph>Wednesday early entry</Paragraph>
+                <Paragraph>Thursday early entry</Paragraph>
                 <JumboHeading className={styles.Price}>$65</JumboHeading>
               </div>
 
@@ -89,7 +92,9 @@ export default function Tickets() {
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
             <H1>Parking & Camping</H1>
             <div>
-              <JumboHeading className={styles.CampLot}>Juniper</JumboHeading>
+              <JumboHeading className={styles.CampLot}>
+                Juniper Lot
+              </JumboHeading>
               <div className={styles.CampGrid}>
                 <div>
                   <H3 className={styles.FirstServe}>First serve basis</H3>
@@ -109,12 +114,12 @@ export default function Tickets() {
                 <div>
                   <H3 className={styles.Reserved}>Reserved Camping</H3>
                   <div className={styles.Option}>
-                    <Paragraph>Reserved Campsite 14x21 - No Power</Paragraph>
+                    <Paragraph>Reserved Campsite 14x21, no power</Paragraph>
                     <JumboHeading className={styles.Price}>$400</JumboHeading>
                   </div>
                   <div className={styles.Option}>
                     <Paragraph>
-                      Reserved Campsite 14x41 feet - No Power
+                      Reserved Campsite 14x41 feet - No power
                     </Paragraph>
                     <JumboHeading className={styles.Price}>$700</JumboHeading>
                   </div>
@@ -132,9 +137,7 @@ export default function Tickets() {
                 <div>
                   <H3 className={styles.Glamping}>Glamping</H3>
                   <div className={styles.Option}>
-                    <Paragraph>
-                      Glamping 10x10&apos; and 5m Bell Tent{" "}
-                    </Paragraph>
+                    <Paragraph>Juniper Lot Glamping</Paragraph>
                     <JumboHeading className={styles.Price}>$980</JumboHeading>
                   </div>
                 </div>
@@ -161,9 +164,7 @@ export default function Tickets() {
                 <div>
                   <H3 className={styles.Glamping}>Glamping</H3>
                   <div className={styles.Option}>
-                    <Paragraph>
-                      Glamping 10x10&apos; lot and 5m Bell Tent
-                    </Paragraph>
+                    <Paragraph>Hidden Ridge Glamping</Paragraph>
                     <JumboHeading className={styles.Price}>$910</JumboHeading>
                   </div>
                 </div>
@@ -192,9 +193,8 @@ export default function Tickets() {
                 <div>
                   <H3 className={styles.Glamping}>Glamping</H3>
                   <div className={styles.Option}>
-                    <Paragraph>
-                      Glamping 20x20&apos; and 5m Bell Tent with power
-                    </Paragraph>
+                    <Paragraph>Raven&apos;s Nest Glamping with power</Paragraph>
+
                     <JumboHeading className={styles.Price}>$860</JumboHeading>
                   </div>
                 </div>
@@ -220,7 +220,7 @@ export default function Tickets() {
                   <H3 className={styles.Glamping}>Glamping</H3>
                   <div className={styles.Option}>
                     <Paragraph>
-                      Glamour Glamping 10x10&apos; and 5m Bell Tent with power
+                      Eagle&apos;s Nest Glamour Glamping with power
                     </Paragraph>
                     <JumboHeading className={styles.Price}>$1455</JumboHeading>
                   </div>
