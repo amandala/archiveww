@@ -1,9 +1,16 @@
 import Image from "next/image";
 
+import cx from "classnames";
+
 import PageHead from "@/components/PageHead";
 import { JumboHeading, H1, H2, Paragraph } from "@/components/Typography";
 
-import sunne from "/public/assets/sunnE.png";
+import tent from "/public/assets/tent.png";
+import sunne from "/public/assets/sunnE_2.png";
+import raabWink from "/public/assets/raabwink.gif";
+import largeVeh from "/public/assets/LargeVehicle.png";
+import regularVeh from "/public/assets/RegularVehicle.png";
+import MegaVeh from "/public/assets/MegaVehicle.png";
 import orientBlueBg from "/public/assets/backgrounds/orient_blue-min.png";
 import prussianBlueBG from "/public/assets/backgrounds/prussian_blue-min.png";
 
@@ -60,6 +67,13 @@ export default function Tickets() {
                 <JumboHeading className={styles.Price}>$375</JumboHeading>
               </span>
             </div>
+            <Image
+              alt="Raab the rabbit"
+              src={raabWink}
+              width={200}
+              height={200}
+              className={styles.Raab}
+            />
           </section>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
             <JumboHeading className={styles.SectionHeading}>
@@ -86,6 +100,27 @@ export default function Tickets() {
             </div>
           </section>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
+            <Image
+              alt="Car"
+              src={regularVeh}
+              width={200}
+              height={200}
+              className={cx(styles.Vehicle, styles.Car)}
+            />
+            <Image
+              alt="RV"
+              src={largeVeh}
+              width={200}
+              height={200}
+              className={cx(styles.Vehicle, styles.RV)}
+            />
+            <Image
+              alt="Buss"
+              src={MegaVeh}
+              width={200}
+              height={200}
+              className={cx(styles.Vehicle, styles.Buss)}
+            />
             <JumboHeading className={styles.SectionHeading}>
               Park n&apos; Camp
             </JumboHeading>
@@ -179,13 +214,20 @@ export default function Tickets() {
             </div>
           </section>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
+            <Image
+              alt="Tent"
+              src={tent}
+              width={200}
+              height={200}
+              className={cx(styles.Vehicle, styles.Tent)}
+            />
             <JumboHeading className={styles.SectionHeading}>
               Camping Packages
             </JumboHeading>
             <Paragraph className={styles.SectionInfo}>
               Elevate your Wicked Woods camping experience with one of our new
               Camping or Glamping Packages. Each package includes a regular
-              vehcile pass. If you plan to bring a larger vehicle on site, you
+              vehicle pass. If you plan to bring a larger vehicle on site, you
               will be required to purchase the appropriate sized vehicle pass in
               addition to your package.
             </Paragraph>

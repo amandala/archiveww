@@ -15,9 +15,10 @@
   position: relative;
 
   section {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     background-color: $prussianBlue;
     padding: 24px;
+    position: relative;
 
     div.TicketTier {
       margin-bottom: 18px;
@@ -75,25 +76,113 @@
   align-self: flex-end;
 }
 
+.Vehicle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+
+  @media screen and (min-width: 900px) {
+    width: 250px;
+    height: 250px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.Car {
+  top: -90px;
+  left: 0;
+
+  @media screen and (min-width: 900px) {
+    top: -120px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: -150px;
+  }
+}
+
+.RV {
+  top: -90px;
+  right: 0;
+
+  @media screen and (min-width: 900px) {
+    top: -130px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: -160px;
+  }
+}
+
+.Buss {
+  bottom: -80px;
+  right: 0;
+
+  @media screen and (min-width: 900px) {
+    bottom: -110px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: -140px;
+  }
+}
+
+.Tent {
+  top: -100px;
+  left: 0;
+
+  @media screen and (min-width: 900px) {
+    top: -150px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: -150px;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.Raab {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  width: 125px;
+  height: 125px;
+
+  @media screen and (min-width: 900px) {
+    width: 250px;
+    height: 250px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .SunnE {
   position: absolute;
-  top: -325px;
+  top: -520px;
   left: 40%;
 
   @media screen and (min-width: 900px) {
     position: absolute;
-    top: -450px;
-    left: 75%;
-    width: 300px;
-    height: 300px;
+    top: -550px;
+    left: 65%;
+    width: 400px;
+    height: 400px;
   }
 
   @media screen and (min-width: 1280px) {
     position: absolute;
-    top: -380px;
+    top: -580px;
     left: 89%;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
   }
 }
 
@@ -101,6 +190,7 @@
   .Content {
     section {
       padding: 42px;
+      margin-bottom: 100px;
     }
   }
 
@@ -137,7 +227,6 @@
   }
 
   .PageTitle {
-    font-size: 4rem;
     margin-bottom: 12px;
     text-align: center;
   }
