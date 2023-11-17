@@ -17,6 +17,12 @@
 
 .Content {
   padding: 0 20px;
+  margin: 0 auto;
+  max-width: 900px;
+
+  p {
+    margin-bottom: 12px;
+  }
 }
 
 .nightToggle {

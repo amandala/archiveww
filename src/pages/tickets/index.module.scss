@@ -6,10 +6,6 @@
   background-color: $orientBlue;
   // -webkit-mask-image: url("/assets/backgrounds/papergrit.png");
   // mask-image: url("/assets/backgrounds/papergrit.png");
-
-  h1 {
-    text-align: center;
-  }
 }
 
 .Content {
@@ -18,88 +14,65 @@
   z-index: 5;
   position: relative;
 
-  [class*="Typography_Jumbo"] {
-    margin: 0;
-  }
-
-  h1 {
-    margin-bottom: 32px;
-  }
-
   section {
     margin-bottom: 50px;
     background-color: $prussianBlue;
     padding: 24px;
-    text-align: center;
-
-    [class*="Typography_Text"] {
-      padding: 0 12px 0;
-    }
-
-    div {
-      margin-bottom: 24px;
-
-      @media screen and (min-width: 900px) {
-        margin-bottom: 24px;
-      }
-
-      h2 {
-        margin-bottom: 4px;
-      }
-    }
 
     div.TicketTier {
       margin-bottom: 18px;
       display: flex;
       flex-direction: row;
-      align-items: center;
       justify-content: space-around;
       position: relative;
-    }
-  }
-
-  .CampLot {
-    font-size: 2rem;
-    color: $mandyPink;
-    margin-bottom: 18px;
-
-    [class*="Typography_Text"] {
-      text-align: left;
+      text-align: center;
     }
   }
 }
 
-.Option {
-  display: flex;
-  flex-basis: 70%;
+.PageTitle {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.CampLotTitle {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.9rem;
+  color: $burntSienna;
+}
+
+.SectionInfo {
+  margin-bottom: 50px;
+}
+
+.SectionHeading {
+  font-size: 2rem;
+  color: $mandyPink;
+  margin-bottom: 24px;
+  text-align: center;
 
   [class*="Typography_Text"] {
     text-align: left;
   }
 }
 
-.Glamping {
-  color: $greenHaze;
-  margin-bottom: 16px;
-}
+.Option {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px dotted $wickedWhite;
 
-.FirstServe {
-  color: $sandyBrown;
-  margin-bottom: 16px;
-}
-
-.Reserved {
-  color: $burntSienna;
-  margin-bottom: 16px;
-}
-
-.ReadySet {
-  color: $curiousBlue;
-  margin-bottom: 16px;
+  [class*="Typography_Text"] {
+    text-align: left;
+  }
 }
 
 .Price {
   font-size: 2.2rem;
+  align-self: flex-end;
 }
 
 .SunnE {
@@ -109,7 +82,7 @@
 
   @media screen and (min-width: 900px) {
     position: absolute;
-    top: -320px;
+    top: -450px;
     left: 75%;
     width: 300px;
     height: 300px;
@@ -131,28 +104,41 @@
     }
   }
 
+  .SectionInfo {
+    margin-bottom: 50px;
+  }
+
   .CampLot {
-    font-size: 2.5rem;
+    margin-bottom: 100px;
+  }
+
+  .SectionHeading {
+    font-size: 3rem;
     color: $mandyPink;
-  }
-
-  .CampGrid {
-    display: grid;
-    gap: 40px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .Price {
-    margin-top: 10px;
-    font-size: 2.4rem;
+    margin-bottom: 30px;
   }
 
   .Option {
-    display: grid;
-    grid-template-columns: auto 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted $wickedWhite;
 
-    [class*="Typography_Text"] {
-      text-align: left;
+    span {
+      h2 {
+        margin-bottom: 12px;
+      }
     }
+  }
+
+  .Price {
+    margin-top: 0px;
+    font-size: 2.4rem;
+  }
+
+  .PageTitle {
+    font-size: 4rem;
+    margin-bottom: 12px;
+    text-align: center;
   }
 }

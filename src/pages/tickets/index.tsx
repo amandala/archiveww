@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import PageHead from "@/components/PageHead";
-import { JumboHeading, H1, H2, H3, Paragraph } from "@/components/Typography";
+import { JumboHeading, H1, H2, Paragraph } from "@/components/Typography";
 
 import sunne from "/public/assets/sunnE.png";
 import orientBlueBg from "/public/assets/backgrounds/orient_blue-min.png";
@@ -23,11 +23,18 @@ export default function Tickets() {
           url="wickedwoods.ca/tickets"
         />
         <div className={styles.Content}>
-          <JumboHeading>2024 Tickets</JumboHeading>
-          <H1>On Sale Dec. 1</H1>
+          <JumboHeading className={styles.PageTitle}>2024 Tickets</JumboHeading>
+          <JumboHeading className={styles.SectionHeading}>
+            On Sale Dec. 1
+          </JumboHeading>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
-            <H1>General Admission</H1>
-
+            <JumboHeading className={styles.SectionHeading}>
+              General Admission
+            </JumboHeading>
+            <Paragraph className={styles.SectionInfo}>
+              GA Tickets are valid for entry Friday August 30, 2024 and can be
+              used for re-entry until Monday August 1, 2024.
+            </Paragraph>
             <div className={styles.TicketTier}>
               <Image
                 alt="placeholder"
@@ -36,192 +43,265 @@ export default function Tickets() {
                 height={200}
                 className={styles.SunnE}
               />
-              {/* <Image
-                alt="placeholder"
-                src={curiousBlue}
-                width={100}
-                height={100}
-              /> */}
               <span>
                 <H2>Tier 1</H2>
                 <JumboHeading className={styles.Price}>$320</JumboHeading>
               </span>
             </div>
             <div className={styles.TicketTier}>
-              {/* <Image
-                alt="placeholder"
-                src={curiousBlue}
-                width={100}
-                height={100}
-              /> */}
               <span>
                 <H2>Tier 2</H2>
                 <JumboHeading className={styles.Price}>$345</JumboHeading>
               </span>
             </div>
             <div className={styles.TicketTier}>
-              {/* <Image
-                alt="placeholder"
-                src={curiousBlue}
-                width={100}
-                height={100}
-              /> */}
               <span>
                 <H2>Tier 3</H2>
                 <JumboHeading className={styles.Price}>$375</JumboHeading>
               </span>
             </div>
-            <Paragraph>
-              GA Tickets allow access between Friday and Monday
-            </Paragraph>
           </section>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
-            <H1>Add Ons</H1>
+            <JumboHeading className={styles.SectionHeading}>
+              Add Ons
+            </JumboHeading>
             <div className={styles.CampGrid}>
               <div className={styles.Option}>
-                <Paragraph>Thursday early entry</Paragraph>
+                <span>
+                  <H2>Thursday early entry</H2>
+                  <Paragraph>Valid for entry August 29, 2024</Paragraph>
+                </span>
                 <JumboHeading className={styles.Price}>$65</JumboHeading>
               </div>
 
               <div className={styles.Option}>
-                <Paragraph>Weekend shower pass</Paragraph>
+                <span>
+                  <H2>Weekend shower pass</H2>
+                  <Paragraph>
+                    Grants weekend shower access at designated pass-holder times
+                  </Paragraph>
+                </span>
                 <JumboHeading className={styles.Price}>$32</JumboHeading>
               </div>
             </div>
           </section>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
-            <H1>Parking & Camping</H1>
-            <div>
-              <JumboHeading className={styles.CampLot}>
-                Juniper Lot
-              </JumboHeading>
+            <JumboHeading className={styles.SectionHeading}>
+              Park n&apos; Camp
+            </JumboHeading>
+            <Paragraph className={styles.SectionInfo}>
+              A vehicle pass is required for all vehicles entering the festival
+              site. If you wish to camp with your vehicle or RV, you must
+              purchase a vehicle pass of the appropriate size. Vehicle passes
+              include tow vehicle and trailer.
+            </Paragraph>
+            <div className={styles.CampLot}>
+              <H1 className={styles.CampLotTitle}>Juniper Lot</H1>
               <div className={styles.CampGrid}>
                 <div>
-                  <H3 className={styles.FirstServe}>First serve basis</H3>
                   <div className={styles.Option}>
-                    <Paragraph>Regular Vehicle/RV Pass under 21 feet</Paragraph>
+                    <span>
+                      <H2>Regular Vehicle Pass</H2>
+                      <Paragraph>under 21 feet</Paragraph>
+                    </span>
                     <JumboHeading className={styles.Price}>$80</JumboHeading>
                   </div>
                   <div className={styles.Option}>
-                    <Paragraph>Large Vehicle/RV Pass 21-40 feet</Paragraph>
+                    <span>
+                      <H2>Large Vehicle Pass</H2>
+                      <Paragraph>21-40 feet, including tow vehicle</Paragraph>
+                    </span>
                     <JumboHeading className={styles.Price}>$160</JumboHeading>
                   </div>
                   <div className={styles.Option}>
-                    <Paragraph>Mega Vehicle/RV Pass 41 feet and over</Paragraph>
+                    <span>
+                      <H2>Mega Vehicle Pass</H2>
+                      <Paragraph>
+                        41 feet and over, including tow vehicle
+                      </Paragraph>
+                    </span>
+
                     <JumboHeading className={styles.Price}>$300</JumboHeading>
                   </div>
                 </div>
-                <div>
-                  <H3 className={styles.Reserved}>Reserved Camping</H3>
-                  <div className={styles.Option}>
-                    <Paragraph>Reserved Campsite 14x21</Paragraph>
-                    <JumboHeading className={styles.Price}>$400</JumboHeading>
-                  </div>
-                  <div className={styles.Option}>
-                    <Paragraph>Reserved Campsite 14x41 feet</Paragraph>
-                    <JumboHeading className={styles.Price}>$700</JumboHeading>
-                  </div>
-                </div>
-                <div>
-                  <H3 className={styles.ReadySet}>Ready Set Camp</H3>
-                  <div className={styles.Option}>
-                    <Paragraph>
-                      Five-person tent set up for 2 people with air mattress and
-                      pump
-                    </Paragraph>
-                    <JumboHeading className={styles.Price}>$600</JumboHeading>
-                  </div>
-                </div>
-                <div>
-                  <H3 className={styles.Glamping}>Glamping</H3>
-                  <div className={styles.Option}>
-                    <Paragraph>Juniper Lot Glamping</Paragraph>
-                    <JumboHeading className={styles.Price}>$980</JumboHeading>
-                  </div>
-                </div>
               </div>
             </div>
-            <div>
-              <JumboHeading className={styles.CampLot}>
-                Hidden Ridge
-              </JumboHeading>
+            <div className={styles.CampLot}>
+              <H1 className={styles.CampLotTitle}>Hidden Ridge</H1>
               <div className={styles.CampGrid}>
                 <div>
-                  <H3 className={styles.FirstServe}>First serve basis</H3>
                   <div className={styles.Option}>
-                    <Paragraph>Regular Vehicle/RV Pass under 21 feet</Paragraph>
+                    <span>
+                      <H2>Regular Vehicle Pass</H2>
+                      <Paragraph>under 21 feet</Paragraph>
+                    </span>
                     <JumboHeading className={styles.Price}>$70</JumboHeading>
                   </div>
                   <div className={styles.Option}>
-                    <Paragraph>
-                      Large Vehicle/RV Pass Hidden Ridge 21-30 feet
-                    </Paragraph>
+                    <span>
+                      <H2>Large Vehicle Pass</H2>
+                      <Paragraph>21-40 feet, including tow vehicle</Paragraph>
+                    </span>
                     <JumboHeading className={styles.Price}>$115</JumboHeading>
                   </div>
                 </div>
-                <div>
-                  <H3 className={styles.Glamping}>Glamping</H3>
-                  <div className={styles.Option}>
-                    <Paragraph>Hidden Ridge Glamping</Paragraph>
-                    <JumboHeading className={styles.Price}>$910</JumboHeading>
-                  </div>
-                </div>
               </div>
             </div>
-            <div>
-              <JumboHeading className={styles.CampLot}>
-                Raven&apos;s Nest
-              </JumboHeading>
+            <div className={styles.CampLot}>
+              <H1 className={styles.CampLotTitle}>Raven&apos;s Nest</H1>
               <div className={styles.CampGrid}>
                 <div>
-                  <H3 className={styles.FirstServe}>First serve basis</H3>
                   <div className={styles.Option}>
-                    <Paragraph>Regular Vehicle/RV Pass under 21 feet</Paragraph>
+                    <span>
+                      <H2>Regular Vehicle Pass</H2>
+                      <Paragraph>under 21 feet</Paragraph>
+                    </span>
                     <JumboHeading className={styles.Price}>$60</JumboHeading>
                   </div>
                   <div className={styles.Option}>
-                    <Paragraph>Large Vehicle/RV Pass 21-40 feet</Paragraph>
+                    <span>
+                      <H2>Large Vehicle Pass</H2>
+                      <Paragraph>21-40 feet, including tow vehicle</Paragraph>
+                    </span>
                     <JumboHeading className={styles.Price}>$120</JumboHeading>
                   </div>
                   <div className={styles.Option}>
-                    <Paragraph>Mega Vehicle/RV Pass 41 feet and over</Paragraph>
+                    <span>
+                      <H2>Mega Vehicle Pass</H2>
+                      <Paragraph>
+                        41 feet and over, including tow vehicle
+                      </Paragraph>
+                    </span>
                     <JumboHeading className={styles.Price}>$180</JumboHeading>
-                  </div>
-                </div>
-                <div>
-                  <H3 className={styles.Glamping}>Glamping</H3>
-                  <div className={styles.Option}>
-                    <Paragraph>Raven&apos;s Nest Glamping with power</Paragraph>
-
-                    <JumboHeading className={styles.Price}>$860</JumboHeading>
                   </div>
                 </div>
               </div>
             </div>
-            <div>
-              <JumboHeading className={styles.CampLot}>
-                Eagle&apos;s Nest
-              </JumboHeading>
+          </section>
+          <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
+            <JumboHeading className={styles.SectionHeading}>
+              Camping Packages
+            </JumboHeading>
+            <Paragraph className={styles.SectionInfo}>
+              Elevate your Wicked Woods camping experience with one of our new
+              Camping or Glamping Packages. Each package includes a regular
+              vehcile pass. If you plan to bring a larger vehicle on site, you
+              will be required to purchase the appropriate sized vehicle pass in
+              addition to your package.
+            </Paragraph>
+            <div className={styles.CampLot}>
+              <H1 className={styles.CampLotTitle}>Juniper Lot</H1>
               <div className={styles.CampGrid}>
                 <div>
-                  <H3 className={styles.Reserved}>Reserved Camping</H3>
                   <div className={styles.Option}>
-                    <Paragraph>Powered 16x50 foot RV site</Paragraph>
-                    <JumboHeading className={styles.Price}>$1200</JumboHeading>
+                    <span>
+                      <H2>Regular Reserved Camping Package</H2>
+                      <Paragraph>
+                        Reserved 20&apos;x20&apos; Campsite in Juniper Lot.
+                        Includes one regular vehicle pass.
+                      </Paragraph>
+                    </span>
+                    <JumboHeading className={styles.Price}>$400</JumboHeading>
                   </div>
                   <div className={styles.Option}>
-                    <Paragraph>Powered 30x30 foot RV site</Paragraph>
-                    <JumboHeading className={styles.Price}>$1050</JumboHeading>
+                    <span>
+                      <H2>Large Reserved Camping Package</H2>
+                      <Paragraph>
+                        Reserved 20&apos;x40&apos; Campsite in Juniper Lot.
+                        Includes one regular vehicle pass.
+                      </Paragraph>
+                    </span>
+                    <JumboHeading className={styles.Price}>$700</JumboHeading>
+                  </div>
+                  <div className={styles.Option}>
+                    <span>
+                      <H2>Ready-Set-Camp Package</H2>
+                      <Paragraph>
+                        Pre-Assembled Campsite in Juniper Lot. Features a
+                        five-person tent, including air mattress, bedding, and
+                        pump. Max two people. Includes one regular vehicle pass.
+                      </Paragraph>
+                    </span>
+                    <JumboHeading className={styles.Price}>$600</JumboHeading>
                   </div>
                 </div>
-                <div>
-                  <H3 className={styles.Glamping}>Glamping</H3>
-                  <div className={styles.Option}>
+                <div className={styles.Option}>
+                  <span>
+                    <H2>Glamping Package</H2>
                     <Paragraph>
-                      Eagle&apos;s Nest Glamour Glamping with power
+                      Basic Glamping Package in Juniper. Features a
+                      Pre-Assembled 5 meter Bell Tent. Includes one regular
+                      vehicle pass and early entry for two people.
                     </Paragraph>
-                    <JumboHeading className={styles.Price}>$1455</JumboHeading>
-                  </div>
+                  </span>
+                  <JumboHeading className={styles.Price}>$980</JumboHeading>
+                </div>
+              </div>
+            </div>
+            <div className={styles.CampLot}>
+              <H1 className={styles.CampLotTitle}>Hidden Ridge</H1>
+              <div className={styles.CampGrid}>
+                <div className={styles.Option}>
+                  <span>
+                    <H2>Glamping Package</H2>
+                    <Paragraph>
+                      Basic Glamping Package in Hidden Ridge with 5 meter Bell
+                      Tent. Includes one regular vehicle pass and early entry
+                      for two people.
+                    </Paragraph>
+                  </span>
+                  <JumboHeading className={styles.Price}>$910</JumboHeading>
+                </div>
+              </div>
+            </div>
+            <div className={styles.CampLot}>
+              <H1 className={styles.CampLotTitle}>Raven&apos;s Nest</H1>
+              <div className={styles.CampGrid}>
+                <div className={styles.Option}>
+                  <span>
+                    <H2>Glamping Package</H2>
+                    <Paragraph>
+                      Basic Glamping Package in Raven&apos;s Nest with 5m Bell
+                      Tent. Includes one regular vehicle pass.
+                    </Paragraph>
+                  </span>
+                  <JumboHeading className={styles.Price}>$860</JumboHeading>
+                </div>
+              </div>
+            </div>
+            <div className={styles.CampLot}>
+              <H1 className={styles.CampLotTitle}>Eagle&apos;s Nest</H1>
+              <div className={styles.CampGrid}>
+                <div className={styles.Option}>
+                  <span>
+                    <H2>Powered RV Package</H2>
+                    <Paragraph>
+                      Reserved 16&apos;x50&apos; Powered RV Site in Eagle&apos;s
+                      Nest. Includes one regular vehicle pass.
+                    </Paragraph>
+                  </span>
+                  <JumboHeading className={styles.Price}>$1200</JumboHeading>
+                </div>
+                <div className={styles.Option}>
+                  <span>
+                    <H2>Large Reserved Campsite Package</H2>
+                    <Paragraph>
+                      Reserved 30&apos;x30&apos; Campsite in Eagle&apos;s Nest.
+                      Includes one regular vehicle pass.
+                    </Paragraph>
+                  </span>
+                  <JumboHeading className={styles.Price}>$1050</JumboHeading>
+                </div>
+                <div className={styles.Option}>
+                  <span>
+                    <H2>Glamour Glamping Package</H2>
+                    <Paragraph>
+                      Glamour Glamping Package in Eagle&apos;s Nest with 5m Bell
+                      Tent and power. Includes one regular vehicle pass and
+                      early entry for two people.
+                    </Paragraph>
+                  </span>
+                  <JumboHeading className={styles.Price}>$1455</JumboHeading>
                 </div>
               </div>
             </div>

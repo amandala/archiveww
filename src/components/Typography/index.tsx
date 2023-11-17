@@ -21,11 +21,17 @@ export function H4({
 export function Paragraph({
   children,
   dark = false,
+  className,
 }: {
   children: React.ReactNode;
   dark?: boolean;
+  className?: string;
 }) {
-  return <p className={cx(styles.Text, { [styles.Dark]: dark })}>{children}</p>;
+  return (
+    <p className={cx(styles.Text, { [styles.Dark]: dark }, className)}>
+      {children}
+    </p>
+  );
 }
 
 export function JumboHeading({
@@ -56,12 +62,21 @@ export function JumboHeading({
 export function H1({
   children,
   dark = false,
+  className,
 }: {
   children: React.ReactNode;
   dark?: boolean;
+  className?: string;
 }) {
   return (
-    <h1 className={cx(dinBlack.className, styles.H1, { [styles.Dark]: dark })}>
+    <h1
+      className={cx(
+        dinBlack.className,
+        styles.H1,
+        { [styles.Dark]: dark },
+        className
+      )}
+    >
       {children}
     </h1>
   );
