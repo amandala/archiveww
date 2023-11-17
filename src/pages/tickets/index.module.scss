@@ -166,19 +166,25 @@
 
 .SunnE {
   position: absolute;
-  top: -520px;
-  left: 40%;
+  top: -550px;
+  left: 65%;
 
-  @media screen and (min-width: 900px) {
-    position: absolute;
+  // display: none;
+
+  @media screen and (min-width: 432px) {
+    display: block;
     top: -550px;
     left: 65%;
     width: 400px;
     height: 400px;
   }
 
+  @media screen and (min-width: 900px) {
+    top: -550px;
+    left: 65%;
+  }
+
   @media screen and (min-width: 1280px) {
-    position: absolute;
     top: -580px;
     left: 89%;
     width: 600px;

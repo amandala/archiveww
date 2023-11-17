@@ -26,7 +26,7 @@ export default function Tickets() {
         <PageHead
           page="Tickets"
           image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
-          description="2024 Tickets on Sale November 17"
+          description="2024 Tickets on Sale December 1"
           url="wickedwoods.ca/tickets"
         />
         <div className={styles.Content}>
