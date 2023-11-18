@@ -19,6 +19,10 @@
   position: relative;
 }
 
+.DescriptionText {
+  margin-bottom: 12px;
+}
+
 .VideoWrapper {
   background-color: $wickedBlack;
   margin: 0 auto;
@@ -45,7 +49,7 @@
   width: 200px;
   height: 200px;
   right: 0;
-  top: -14%;
+  top: -20%;
 }
 
 .Contact {
@@ -110,19 +114,37 @@
   }
 
   .EagleContainer {
-    top: -25%;
+    top: -60px;
+    right: -50px;
+    width: 400px;
+    height: 400px;
   }
 
   .VideoWrapper {
     padding: 100px 24px;
   }
+
+  .Description {
+    display: grid;
+    grid-template-columns: 70% 300px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .TextWrapper {
+    max-width: 1400px;
+    margin-left: 100px;
+  }
+
+  .DescriptionText {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
   .EagleContainer {
-    top: 0;
+    top: -240px;
     right: 0%;
-    width: 400px;
-    height: 400px;
+    width: 700px;
+    height: 700px;
   }
 }

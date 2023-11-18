@@ -48,6 +48,14 @@
 .Question {
   margin-bottom: 24px;
   border-bottom: 1px solid $wickedWhite;
+
+  h2 {
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
 }
 
 .SearchTermNote {

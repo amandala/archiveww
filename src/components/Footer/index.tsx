@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import { useWindowSize } from "@/helpers/useWindowSize";
 
+import raabWink from "/public/assets/raabwink.gif";
 import tree1 from "/public/assets/Tree_1.png";
 import tree2 from "/public/assets/Tree_2.png";
 import tree3 from "/public/assets/Tree_3.png";
@@ -55,6 +56,13 @@ export default function Footer() {
               right: "-80%",
               objectFit: windowSize.width <= 500 ? "cover" : "contain",
             }}
+          />
+          <Image
+            alt="Raab the rabbit"
+            src={raabWink}
+            width={200}
+            height={200}
+            className={styles.Raab}
           />
         </div>
       </div>

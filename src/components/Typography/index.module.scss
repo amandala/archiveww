@@ -11,24 +11,22 @@
 
 .Text {
   color: $wickedWhite;
-  max-width: 900px;
-  margin: 0 auto;
-  margin-bottom: 24px;
   font-size: 1.2rem;
   transition: 1.5s color;
+  margin-bottom: 12px;
 }
 
 .Jumbo {
   font-size: 3rem;
   color: $wickedWhite;
-  margin-bottom: 24px;
+  letter-spacing: 2.5px;
   transition: 1.5s color;
+  margin-bottom: 24px;
 }
 
 .H1 {
   font-size: 1.5rem;
   color: $wickedWhite;
-  margin-bottom: 24px;
   transition: 1.5s color;
 }
 
@@ -36,7 +34,16 @@
   font-size: 1.3rem;
   color: $wickedWhite;
   font-weight: 400;
-  margin-bottom: 24px;
+  transition: 1.5s color;
+}
+
+.H3 {
+  font-size: 1rem;
+  color: $wickedWhite;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
   transition: 1.5s color;
 }
 

@@ -18,12 +18,12 @@ export function FestivalNav() {
           href: "/faq",
         },
         {
-          text: "Tickets",
+          text: "Ticket Info",
           href: "/tickets",
         },
         {
-          text: "Camping",
-          href: "/camping",
+          text: "Blog",
+          href: "/wicked-news",
         },
       ]}
     />
@@ -65,10 +65,6 @@ export function SocialNav() {
     <NavColumn
       title="Social"
       links={[
-        {
-          text: "Blog",
-          href: "/wicked-news",
-        },
         {
           text: "Instagram",
           target: "_blank",
