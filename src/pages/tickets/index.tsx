@@ -360,7 +360,7 @@ export default function Tickets() {
                     <H2>Camping Cooler Rental</H2>
                     <Paragraph>
                       Keep it cool. Enjoy the convenience of picking up your
-                      camping cooler on-site at our HR office. Cooler rentals
+                      camping cooler on-site at our HR office.
                     </Paragraph>
                   </span>
                   <JumboHeading className={styles.Price}>$50</JumboHeading>
