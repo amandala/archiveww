@@ -345,7 +345,8 @@ export default function Tickets() {
                     <H2>Glamour Glamping Package</H2>
                     <Paragraph>
                       Glamour Glamping Package in Eagle&apos;s Nest with 5m Bell
-                      Tent and power. Includes one regular vehicle pass.
+                      Tent and power. Includes one regular vehicle pass and
+                      early entry for two people.
                     </Paragraph>
                   </span>
                   <JumboHeading className={styles.Price}>$1455</JumboHeading>
