@@ -131,9 +131,8 @@ export default function Tickets() {
               Park n&apos; Camp
             </JumboHeading>
             <Paragraph className={styles.SectionInfo}>
-              A vehicle pass is required for all vehicles entering the festival
-              site. A vehcile pass is required to bring a vehicle past the GA
-              camping area.
+              A vehcile pass is required to bring a vehicle past the GA camping
+              area.
             </Paragraph>
             <div className={styles.CampLot}>
               <H1 className={styles.CampLotTitle}>Juniper Lot</H1>
@@ -231,10 +230,12 @@ export default function Tickets() {
             </JumboHeading>
             <Paragraph className={styles.SectionInfo}>
               Elevate your Wicked Woods camping experience with one of our new
-              Camping or Glamping Packages. Each package includes a regular
-              vehicle pass. If you plan to bring a larger vehicle on site, you
-              will be required to purchase the appropriate sized vehicle pass in
-              addition to your package.
+              Camping or Glamping Packages.
+            </Paragraph>
+            <Paragraph className={styles.SectionInfo}>
+              Each package includes a regular vehicle pass. If you plan to bring
+              a larger vehicle on site, you will be required to purchase the
+              appropriate sized vehicle pass in addition to your package.
             </Paragraph>
             <div className={styles.CampLot}>
               <H1 className={styles.CampLotTitle}>Juniper Lot</H1>
