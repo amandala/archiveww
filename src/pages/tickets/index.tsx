@@ -52,7 +52,7 @@ export default function Tickets() {
             </JumboHeading>
             <Paragraph className={styles.SectionInfo}>
               GA Tickets are valid for entry Friday August 30, 2024 and can be
-              used for re-entry until Monday August 1, 2024.
+              used for re-entry until Monday September 1, 2024.
             </Paragraph>
             <div className={styles.TicketTier}>
               <Image
@@ -361,7 +361,7 @@ export default function Tickets() {
                     <H2>Camping Cooler Rental</H2>
                     <Paragraph>
                       Keep it cool. Enjoy the convenience of picking up your
-                      camping cooler on-site at our HR office. Cooler rentals
+                      camping cooler on-site at our HR office.
                     </Paragraph>
                   </span>
                   <JumboHeading className={styles.Price}>$50</JumboHeading>
