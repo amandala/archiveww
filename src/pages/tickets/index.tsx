@@ -52,7 +52,7 @@ export default function Tickets() {
             </JumboHeading>
             <Paragraph className={styles.SectionInfo}>
               GA Tickets are valid for entry Friday August 30, 2024 and can be
-              used for re-entry until Monday August 1, 2024.
+              used for re-entry until Monday September 1, 2024.
             </Paragraph>
             <div className={styles.TicketTier}>
               <Image
