@@ -385,7 +385,7 @@ export default function Tickets() {
                       sheets, a pillow, and blanket on-site at our HR office.
                     </Paragraph>
                   </span>
-                  <JumboHeading className={styles.Price}>$100</JumboHeading>
+                  <JumboHeading className={styles.Price}>$70</JumboHeading>
                 </div>
               </div>
             </div>
