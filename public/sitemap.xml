@@ -9,7 +9,7 @@
     </url>
     <url>
         <loc>https://wickedwoods.ca/about</loc>
-        <lastmod>2023-09-16</lastmod>
+        <lastmod>2023-11-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -24,6 +24,10 @@
     <url>
         <loc>https://wickedwoods.ca/code-of-conduct</loc>
         <lastmod>2023-09-16</lastmod>
+    </url>
+    <url>
+        <loc>https://wickedwoods.ca/contact</loc>
+        <lastmod>2023-11-18</lastmod>
     </url>
     <url>
         <loc>https://wickedwoods.ca/faq</loc>
@@ -51,7 +55,7 @@
     </url>
     <url>
         <loc>https://wickedwoods.ca/tickets</loc>
-        <lastmod>2023-09-16</lastmod>
+        <lastmod>2023-11-18</lastmod>
     </url>
     <url>
         <loc>https://wickedwoods.ca/vendors</loc>
