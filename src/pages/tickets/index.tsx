@@ -7,7 +7,6 @@ import { JumboHeading, H1, H2, Paragraph } from "@/components/Typography";
 
 import tent from "/public/assets/tent.png";
 import sunne from "/public/assets/sunnE_2.png";
-import raabWink from "/public/assets/raabwink.gif";
 import largeVeh from "/public/assets/LargeVehicle.png";
 import regularVeh from "/public/assets/RegularVehicle.png";
 import MegaVeh from "/public/assets/MegaVehicle.png";
@@ -80,13 +79,6 @@ export default function Tickets() {
                 <JumboHeading className={styles.Price}>$375</JumboHeading>
               </span>
             </div>
-            <Image
-              alt="Raab the rabbit"
-              src={raabWink}
-              width={200}
-              height={200}
-              className={styles.Raab}
-            />
           </section>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
             <JumboHeading className={styles.SectionHeading}>
@@ -105,7 +97,8 @@ export default function Tickets() {
                 <span>
                   <H2>Weekend shower pass</H2>
                   <Paragraph>
-                    Grants weekend shower access at designated pass-holder times
+                    Grants weekend shower access. Limited quantities. Showers
+                    open 8:00am - 8:00pm daily.
                   </Paragraph>
                 </span>
                 <JumboHeading className={styles.Price}>$32</JumboHeading>
@@ -156,7 +149,7 @@ export default function Tickets() {
                   <div className={styles.Option}>
                     <span>
                       <H2>Large Vehicle Pass</H2>
-                      <Paragraph>21-40 feet, including tow vehicle</Paragraph>
+                      <Paragraph>21-41 feet, including tow vehicle</Paragraph>
                     </span>
                     <JumboHeading className={styles.Price}>$160</JumboHeading>
                   </div>
@@ -187,7 +180,7 @@ export default function Tickets() {
                   <div className={styles.Option}>
                     <span>
                       <H2>Large Vehicle Pass</H2>
-                      <Paragraph>21-40 feet, including tow vehicle</Paragraph>
+                      <Paragraph>21-41 feet, including tow vehicle</Paragraph>
                     </span>
                     <JumboHeading className={styles.Price}>$115</JumboHeading>
                   </div>
@@ -208,7 +201,7 @@ export default function Tickets() {
                   <div className={styles.Option}>
                     <span>
                       <H2>Large Vehicle Pass</H2>
-                      <Paragraph>21-40 feet, including tow vehicle</Paragraph>
+                      <Paragraph>21-41 feet, including tow vehicle</Paragraph>
                     </span>
                     <JumboHeading className={styles.Price}>$120</JumboHeading>
                   </div>
@@ -271,9 +264,9 @@ export default function Tickets() {
                     <span>
                       <H2>Ready-Set-Camp Package</H2>
                       <Paragraph>
-                        Pre-Assembled Campsite in Juniper Lot. Features a
-                        five-person tent, including air mattress, bedding, and
-                        pump. Max two people. Includes one regular vehicle pass.
+                        Pre-Assembled Campsite in Juniper Lot. Includes a
+                        five-person tent, air mattress, bedding, and pump. Max
+                        two people. Includes one regular vehicle pass.
                       </Paragraph>
                     </span>
                     <JumboHeading className={styles.Price}>$600</JumboHeading>
@@ -283,9 +276,9 @@ export default function Tickets() {
                   <span>
                     <H2>Glamping Package</H2>
                     <Paragraph>
-                      Basic Glamping Package in Juniper. Features a
-                      Pre-Assembled 5 meter Bell Tent. Includes one regular
-                      vehicle pass and early entry for two people.
+                      Glamping Package in Juniper Lot with 5 meter bell tent.
+                      Includes one regular vehicle pass and early entry for two
+                      people.
                     </Paragraph>
                   </span>
                   <JumboHeading className={styles.Price}>$980</JumboHeading>
@@ -299,9 +292,9 @@ export default function Tickets() {
                   <span>
                     <H2>Glamping Package</H2>
                     <Paragraph>
-                      Basic Glamping Package in Hidden Ridge with 5 meter Bell
-                      Tent. Includes one regular vehicle pass and early entry
-                      for two people.
+                      Glamping Package in Hidden Ridge with 5 meter bell tent.
+                      Includes one regular vehicle pass and early entry for two
+                      people.
                     </Paragraph>
                   </span>
                   <JumboHeading className={styles.Price}>$910</JumboHeading>
@@ -315,8 +308,9 @@ export default function Tickets() {
                   <span>
                     <H2>Glamping Package</H2>
                     <Paragraph>
-                      Basic Glamping Package in Raven&apos;s Nest with 5m Bell
-                      Tent. Includes one regular vehicle pass.
+                      Glamping Package in Raven&apos;s Nest with 5 meter bell
+                      tent. Includes one regular vehicle pass and early entry
+                      for two people.
                     </Paragraph>
                   </span>
                   <JumboHeading className={styles.Price}>$860</JumboHeading>
@@ -351,11 +345,45 @@ export default function Tickets() {
                     <H2>Glamour Glamping Package</H2>
                     <Paragraph>
                       Glamour Glamping Package in Eagle&apos;s Nest with 5m Bell
-                      Tent and power. Includes one regular vehicle pass and
-                      early entry for two people.
+                      Tent and power. Includes one regular vehicle pass.
                     </Paragraph>
                   </span>
                   <JumboHeading className={styles.Price}>$1455</JumboHeading>
+                </div>
+              </div>
+            </div>
+            <div className={styles.CampLot}>
+              <H1 className={styles.CampLotTitle}>Camping Package Add-ons</H1>
+              <div className={styles.CampGrid}>
+                <div className={styles.Option}>
+                  <span>
+                    <H2>Camping Cooler Rental</H2>
+                    <Paragraph>
+                      Keep it cool. Enjoy the convenience of picking up your
+                      camping cooler on-site at our HR office. Cooler rentals
+                    </Paragraph>
+                  </span>
+                  <JumboHeading className={styles.Price}>$30</JumboHeading>
+                </div>
+                <div className={styles.Option}>
+                  <span>
+                    <H2>Camping Chair Rental</H2>
+                    <Paragraph>
+                      Take a load off. Enjoy the convenience of picking up your
+                      camping chair on-site at our HR office.
+                    </Paragraph>
+                  </span>
+                  <JumboHeading className={styles.Price}>$50</JumboHeading>
+                </div>
+                <div className={styles.Option}>
+                  <span>
+                    <H2>Bedding Rental</H2>
+                    <Paragraph>
+                      Rest and relax. Enjoy the convenience of of picking up
+                      sheets, a pillow, and blanket on-site at our HR office.
+                    </Paragraph>
+                  </span>
+                  <JumboHeading className={styles.Price}>$100</JumboHeading>
                 </div>
               </div>
             </div>
@@ -368,6 +396,7 @@ export default function Tickets() {
           padding: "20px",
           marginLeft: "-24px",
           marginRight: "-24px",
+          position: "relative",
         }}
       >
         <Gallery images={galleryImages} targetRowHeight={300} />
