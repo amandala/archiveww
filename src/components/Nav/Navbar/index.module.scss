@@ -3,8 +3,6 @@
 .NavWrapper {
   position: absolute;
   top: 0;
-  width: 100%;
-  z-index: 98;
 }
 
 .MainNavLogo {
@@ -21,10 +19,15 @@
 .Nav {
   position: fixed;
   top: 0;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  z-index: 98;
 
   &Open {
     height: 100%;
+    display: block;
   }
 }
 
