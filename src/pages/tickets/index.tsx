@@ -13,8 +13,21 @@ import regularVeh from "/public/assets/RegularVehicle.png";
 import MegaVeh from "/public/assets/MegaVehicle.png";
 import orientBlueBg from "/public/assets/backgrounds/orient_blue-min.png";
 import prussianBlueBG from "/public/assets/backgrounds/prussian_blue-min.png";
+import black from "/public/assets/backgrounds/wicked_black-min.png";
+
+import Gallery from "@/components/Gallery";
 
 import styles from "./index.module.scss";
+
+const images = require.context("/public/assets/gallery/camping", true);
+const imageList = images.keys().map((image) => images(image));
+const galleryImages = imageList.map((image) => {
+  return {
+    src: image.default.src,
+    width: image.default.width,
+    height: image.default.height,
+  };
+});
 
 export default function Tickets() {
   return (
@@ -31,7 +44,7 @@ export default function Tickets() {
         />
         <div className={styles.Content}>
           <JumboHeading className={styles.PageTitle}>2024 Tickets</JumboHeading>
-          <JumboHeading className={styles.SectionHeading}>
+          <JumboHeading className={styles.TicketDate}>
             On Sale Dec. 1
           </JumboHeading>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
@@ -126,9 +139,8 @@ export default function Tickets() {
             </JumboHeading>
             <Paragraph className={styles.SectionInfo}>
               A vehicle pass is required for all vehicles entering the festival
-              site. If you wish to camp with your vehicle or RV, you must
-              purchase a vehicle pass of the appropriate size. Vehicle passes
-              include tow vehicle and trailer.
+              site. A vehcile pass is required to bring a vehicle past the GA
+              camping area.
             </Paragraph>
             <div className={styles.CampLot}>
               <H1 className={styles.CampLotTitle}>Juniper Lot</H1>
@@ -349,6 +361,16 @@ export default function Tickets() {
             </div>
           </section>
         </div>
+      </div>
+      <div
+        style={{
+          backgroundImage: `url(${black.src})`,
+          padding: "20px",
+          marginLeft: "-24px",
+          marginRight: "-24px",
+        }}
+      >
+        <Gallery images={galleryImages} targetRowHeight={300} />
       </div>
     </div>
   );

@@ -8,17 +8,20 @@ import backgroundBlack from "/public/assets/backgrounds/wicked_black-min.png";
 import hazyGreen from "/public/assets/backgrounds/green_haze-min.png";
 import wordmark from "/public/assets/FONT_WITH_MF_2024.png";
 import bananaPhone from "/public/assets/bananaPhone.jpg";
-import hallowNights from "/public/assets/hallow-nights-min.jpg";
+import heroImage from "/public/assets/skyvalley.jpg";
 import eagle from "/public/assets/this_is_eagull.png";
-
-import styles from "./index.module.scss";
-
-import slides from "../../data/aboutImages";
 
 import TextLink from "@/components/TextLink";
 import { H4, Paragraph } from "@/components/Typography";
 import YouTubePlayer from "@/components/YoutubePlayer";
 import PageHead from "@/components/PageHead";
+
+import { generateGalleryImages } from "@/helpers/generateGalleryImages";
+
+import styles from "./index.module.scss";
+
+const galleryA = require.context(`/public/assets/gallery/about/top`, true);
+const galleryB = require.context(`/public/assets/gallery/about/b`, true);
 
 export default function About() {
   return (
@@ -33,7 +36,7 @@ export default function About() {
         <div className={styles.Hero}>
           <Image
             alt="Hallow stage at night with lasers"
-            src={hallowNights}
+            src={heroImage}
             style={{
               objectFit: "cover",
               objectPosition: "bottom",
@@ -61,7 +64,10 @@ export default function About() {
           className={styles.Gallery}
           style={{ backgroundImage: `url(${backgroundBlack.src})` }}
         >
-          <Gallery images={slides} targetRowHeight={300} />
+          <Gallery
+            images={generateGalleryImages(galleryA)}
+            targetRowHeight={300}
+          />
         </div>
         <div>
           <div
@@ -69,17 +75,17 @@ export default function About() {
             style={{ backgroundImage: `url(${curiousBlue.src})` }}
           >
             <div className={styles.TextWrapper}>
-              <Paragraph>
+              <Paragraph className={styles.DescriptionText}>
                 Held on traditional unceded territory of the Akisqnuk First
                 Nation, Wicked Woods Music and Arts Festival is is an annual
                 celebration of life through sight & sound.
               </Paragraph>
-              <Paragraph>
+              <Paragraph className={styles.DescriptionText}>
                 Nestled on the edge of the Canadian Rockies, our intimate
                 festival is just minutes from Fairmont Hot Springs BC
                 overlooking the Colombia Valley.
               </Paragraph>
-              <Paragraph>
+              <Paragraph className={styles.DescriptionText}>
                 We strongly value community, expression, and connection both
                 with our fellow humans and the land on which we gather.
               </Paragraph>
@@ -106,6 +112,15 @@ export default function About() {
             style={{ backgroundImage: `url(${backgroundBlack.src})` }}
           >
             <YouTubePlayer videoId="v1bZlwG434Y" opts={{ loop: 1 }} />
+          </div>
+          <div
+            className={styles.Gallery}
+            style={{ backgroundImage: `url(${backgroundBlack.src})` }}
+          >
+            <Gallery
+              images={generateGalleryImages(galleryB)}
+              targetRowHeight={200}
+            />
           </div>
           <div
             className={styles.Contact}

@@ -3,9 +3,9 @@
 .Wrapper {
   position: relative;
   padding: 90px 24px;
-  // background-color: $orientBlue;
-  // -webkit-mask-image: url("/assets/backgrounds/papergrit.png");
-  // mask-image: url("/assets/backgrounds/papergrit.png");
+  background-color: $orientBlue;
+  -webkit-mask-image: url("/assets/backgrounds/papergrit.png");
+  mask-image: url("/assets/backgrounds/papergrit.png");
 }
 
 .Content {
@@ -13,6 +13,14 @@
   margin: 0 auto;
   z-index: 5;
   position: relative;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    margin-bottom: 14px;
+  }
 }
 
 .HeaderWrapper {

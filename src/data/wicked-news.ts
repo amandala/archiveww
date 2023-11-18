@@ -28,7 +28,7 @@ export const wickedNewsData = [
     published: "April 2, 2023",
     cover: festivalTotemsCover,
     title: "Festival Totems",
-    subtitle: "A cretaive way to stand out in the crowd",
+    subtitle: "A creative way to stand out in the crowd",
     photos: [
       bigSpoon,
       glutenfree,

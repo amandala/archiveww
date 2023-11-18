@@ -2,7 +2,7 @@
 
 .Wrapper {
   position: relative;
-  padding: 90px 24px;
+  padding: 90px 24px 0;
   background-color: $orientBlue;
   // -webkit-mask-image: url("/assets/backgrounds/papergrit.png");
   // mask-image: url("/assets/backgrounds/papergrit.png");
@@ -45,6 +45,12 @@
 
 .SectionInfo {
   margin-bottom: 50px;
+}
+
+.TicketDate {
+  color: $burntSienna;
+  text-align: center;
+  font-size: 3rem;
 }
 
 .SectionHeading {
