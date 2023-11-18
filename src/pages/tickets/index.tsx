@@ -363,7 +363,7 @@ export default function Tickets() {
                       camping cooler on-site at our HR office. Cooler rentals
                     </Paragraph>
                   </span>
-                  <JumboHeading className={styles.Price}>$30</JumboHeading>
+                  <JumboHeading className={styles.Price}>$50</JumboHeading>
                 </div>
                 <div className={styles.Option}>
                   <span>
@@ -373,7 +373,7 @@ export default function Tickets() {
                       camping chair on-site at our HR office.
                     </Paragraph>
                   </span>
-                  <JumboHeading className={styles.Price}>$50</JumboHeading>
+                  <JumboHeading className={styles.Price}>$30</JumboHeading>
                 </div>
                 <div className={styles.Option}>
                   <span>
