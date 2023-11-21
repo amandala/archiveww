@@ -92,7 +92,7 @@ export function ContactNav() {
       links={[
         {
           text: "Directory",
-          href: "/about#directory",
+          href: "/contact",
         },
         {
           text: "Code of Conduct",

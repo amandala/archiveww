@@ -2,7 +2,6 @@
 
 .Container {
   padding: 100 0 0;
-  min-height: 100vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,10 +32,8 @@
   z-index: 80;
 }
 
-.Description,
-.Contact {
+.Description {
   padding: 70px 24px;
-
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -50,31 +47,6 @@
   height: 200px;
   right: 0;
   top: -20%;
-}
-
-.Contact {
-  color: $wickedWhite;
-  text-align: center;
-
-  margin: 0 auto;
-
-  h2 {
-    margin-bottom: 24px;
-  }
-
-  ul {
-    list-style: none;
-    text-align: left;
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  li {
-    margin-top: 10px;
-    margin-bottom: 24px;
-    font-size: 1rem;
-  }
 }
 
 .Value {
@@ -102,17 +74,6 @@
 }
 
 @media screen and (min-width: 900px) {
-  .Contact {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 36px;
-    ul {
-      text-align: left;
-      margin: 0;
-    }
-  }
-
   .EagleContainer {
     top: -60px;
     right: -50px;
