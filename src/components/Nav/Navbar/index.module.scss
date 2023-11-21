@@ -37,8 +37,9 @@
   display: flex;
   position: relative;
   background-position: center top;
-  padding-top: 25%;
+  padding-top: 24px;
   background-color: $wickedBlack;
+  overflow-x: scroll;
 }
 
 .items {
@@ -73,7 +74,7 @@
     flex-direction: column;
     height: 100vh;
     background-position: right;
-    padding-left: 20%;
+    padding-left: 48px;
   }
   .items:nth-child(1) {
     margin-top: 90px;
