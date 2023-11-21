@@ -40,6 +40,7 @@
   padding-top: 24px;
   background-color: $wickedBlack;
   overflow-x: scroll;
+  align-items: center;
 }
 
 .items {
@@ -75,6 +76,7 @@
     height: 100vh;
     background-position: right;
     padding-left: 48px;
+    padding-top: 24px;
   }
   .items:nth-child(1) {
     margin-top: 90px;
