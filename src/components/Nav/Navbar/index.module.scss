@@ -39,7 +39,6 @@
   background-position: center top;
   padding-top: 24px;
   background-color: $wickedBlack;
-  overflow-x: scroll;
   align-items: center;
 }
 
@@ -76,7 +75,8 @@
     height: 100vh;
     background-position: right;
     padding-left: 48px;
-    padding-top: 24px;
+    padding-top: 48px;
+    align-items: flex-start;
   }
   .items:nth-child(1) {
     margin-top: 90px;
