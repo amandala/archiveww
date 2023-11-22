@@ -381,7 +381,7 @@ export default function Tickets() {
                   <span>
                     <H2>Bedding Rental</H2>
                     <Paragraph>
-                      Rest and relax. Enjoy the convenience of of picking up
+                      Rest and relax. Enjoy the convenience of picking up
                       sheets, a pillow, and blanket on-site at our HR office.
                     </Paragraph>
                   </span>
