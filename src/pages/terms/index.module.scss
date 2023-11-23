@@ -2,10 +2,13 @@
 
 .Wrapper {
   position: relative;
-  padding: 90px 24px;
-  background-color: $orientBlue;
-  -webkit-mask-image: url("/assets/backgrounds/papergrit.png");
-  mask-image: url("/assets/backgrounds/papergrit.png");
+  padding: 30px 24px;
+  background-color: $prussianBlue;
+}
+
+.Logo {
+  width: 150px;
+  height: 150px;
 }
 
 .Content {
@@ -25,4 +28,9 @@
 
 .HeaderWrapper {
   text-align: center;
+}
+
+.Ack {
+  text-align: center;
+  margin-bottom: 48px;
 }
