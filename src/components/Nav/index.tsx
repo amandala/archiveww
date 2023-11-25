@@ -91,6 +91,10 @@ export function ContactNav() {
       title="Contact"
       links={[
         {
+          text: "Newsletter",
+          href: "/subscribe",
+        },
+        {
           text: "Directory",
           href: "/contact",
         },
@@ -105,10 +109,6 @@ export function ContactNav() {
         {
           text: "Volunteer",
           href: "/volunteer",
-        },
-        {
-          text: "Jobs",
-          href: "/jobs",
         },
       ]}
     />
