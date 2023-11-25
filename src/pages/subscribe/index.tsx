@@ -9,6 +9,7 @@ import formBackground from "/public/assets/backgrounds/orient_blue-min.png";
 import cx from "classnames";
 
 import styles from "./index.module.scss";
+import PageHead from "@/components/PageHead";
 
 const Subscribe = () => {
   const [email, setEmail] = useState("");
@@ -22,6 +23,13 @@ const Subscribe = () => {
       className={styles.Wrapper}
       style={{ backgroundImage: `url(${pageBackground.src})` }}
     >
+      <PageHead
+        page="Newsletter Signup"
+        image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
+        description="Sign up for our mailing list and be the first to hear about ticket
+          sales, applications, and other exciting news about our upcoming event."
+        url="wickedwoods.ca/subscribe"
+      />
       <div id="mc_embed_signup">
         <JumboHeading>Newsletter Sign-up</JumboHeading>
         <Paragraph className={styles.Desc}>
