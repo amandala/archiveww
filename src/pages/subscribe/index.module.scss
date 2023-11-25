@@ -1,0 +1,75 @@
+@import "@/styles/variables.module.scss";
+
+.Wrapper {
+  padding: 90px 24px;
+  background-color: $orientBlue;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Desc {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+}
+
+.Form {
+  background-color: $greenHaze;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 6px;
+  padding: 24px;
+  text-align: left;
+  filter: drop-shadow(1px 1px 1px $wickedBlack);
+}
+
+.Field {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+  font-size: 16px;
+
+  label {
+    padding-bottom: 4px;
+    color: $wickedWhite;
+  }
+
+  input {
+    height: 40px;
+    font-size: 20px;
+    padding: 2px;
+    outline-color: $sandyBrown;
+  }
+}
+
+.Button {
+  margin-top: 24px;
+  padding: 12px 12px 10px;
+  background-color: $burntSienna;
+  border: 0;
+  color: $wickedWhite;
+  font-size: 24px;
+  width: 100%;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 2ms;
+  outline-color: $sandyBrown;
+  filter: drop-shadow(1px 1px 1px $wickedBlack);
+
+  :hover,
+  :focus {
+    cursor: pointer;
+    background-color: $sandyBrown;
+  }
+}
+
+.ButtonWrapper {
+  display: flex;
+
+  :hover,
+  :focus {
+    cursor: pointer;
+  }
+}
