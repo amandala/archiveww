@@ -643,8 +643,8 @@ export default function Terms() {
                 download here:{" "}
                 <a href="https://www.wickedwoods.ca/download_waiver.pdf">
                   https://www.wickedwoods.ca/download_waiver.pdf
-                </a>{" "}
-                Please take the time to download this document and review the
+                </a>
+                . Please take the time to download this document and review the
                 same with a lawyer if you are unsure of the meaning and
                 implications of any of its terms. By digitally signing this
                 Agreement, you acknowledge that you have had time to inform
