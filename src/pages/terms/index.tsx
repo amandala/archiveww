@@ -641,8 +641,8 @@ export default function Terms() {
               <Bold>
                 This Release of Liability and Waiver Agreement is available for
                 download here:{" "}
-                <a href="https://www.wickedwoods.ca/download_waiver">
-                  https://www.wickedwoods.ca/download_waiver
+                <a href="https://www.wickedwoods.ca/download_waiver.pdf">
+                  https://www.wickedwoods.ca/download_waiver.pdf
                 </a>{" "}
                 Please take the time to download this document and review the
                 same with a lawyer if you are unsure of the meaning and
