@@ -72,12 +72,8 @@
   margin-bottom: 36px;
 }
 
-.UList {
-  margin-bottom: 36px;
-}
-
 .OList {
-  margin-left: 20px;
+  margin-left: 16px;
 
   .OList {
     margin-bottom: 0;
@@ -89,6 +85,14 @@
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 800px) {
+  .OList {
+    margin-left: 40px;
+    .OList {
+      margin-left: 40px;
+    }
+  }
+}
 @media screen and (min-width: 1200px) {
   .Jumbo {
     font-size: 5rem;
@@ -105,12 +109,5 @@
 
   .Text {
     font-size: 1.3rem;
-  }
-
-  .OList {
-    margin-left: 50px;
-    .UList {
-      margin-left: 24px;
-    }
   }
 }

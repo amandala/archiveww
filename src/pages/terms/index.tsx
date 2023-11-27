@@ -286,8 +286,13 @@ export default function Terms() {
                 rules and regulations. Participants must consent to reasonable
                 examination & searches to ensure compliance with all provincial
                 & federal laws, and facility rules & regulations. Please ensure
-                you have consulted the banned items ListItem:
-                https://www.wickedwoods.ca/code-of-conduct
+                you have consulted the banned items{" "}
+                <a
+                  href="https://www.wickedwoods.ca/code-of-conduct"
+                  target="_blank"
+                >
+                  wickedwoods.ca/code-of-conduct
+                </a>
               </Paragraph>
             </ListItem>
             <ListItem>
@@ -449,7 +454,7 @@ export default function Terms() {
                   href="https://www.wickedwoods.ca/code-of-conduct"
                   target="_blank"
                 >
-                  https://www.wickedwoods.ca/code-of-conduct
+                  wickedwoods.ca/code-of-conduct
                 </a>
               </Paragraph>
               <Paragraph>
@@ -572,7 +577,7 @@ export default function Terms() {
                   href="https://www.wickedwoods.ca/code-of-conduct"
                   target="_blank"
                 >
-                  https://www.wickedwoods.ca/code-of-conduct
+                  wickedwoods.ca/code-of-conduct
                 </a>
                 .
               </Paragraph>
