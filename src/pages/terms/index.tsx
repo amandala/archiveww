@@ -68,7 +68,7 @@ export default function Terms() {
             with the WW Music and Art Society (&quot;WW Society&quot;) for entry
             into the 2024 Wicked Woods Music Festival (the &quot;Event&quot;),
             which is held at the Raven&apos;s Nest Resort and Campground, which
-            is located 4km north of Fairmont Hot Springs, British Columbia on
+            is located 4 km north of Fairmont Hot Springs, British Columbia on
             Hwy #93 and #95 (the &quot;Property&quot;). A map of the Event
             location is provided on our website. Please ensure that you have
             read and understood the Event Rules and Policies. WW Society will
@@ -93,7 +93,7 @@ export default function Terms() {
                 <Bold>Exchanges and Refunds:</Bold> WW Society offers no
                 exchange or refunds for tickets purchased for the Event,
                 including advanced ticket sales, and whether the Event is
-                terminated early, cancelled due to extreme weather, forest fire,
+                terminated early, canceled due to extreme weather, forest fire,
                 acts of nature, government regulation or other conditions beyond
                 the control of WW Society. Please ensure that you will be able
                 to attend the Event prior to purchasing your tickets.
@@ -316,7 +316,7 @@ export default function Terms() {
                     Participants must only set up their campsite within that
                     designated space. Those failing to do so will be asked to
                     reconfigure their equipment to comply with this rule or risk
-                    having their service cancelled with no refund.
+                    having their service canceled with no refund.
                   </Paragraph>
                 </ListItem>
                 <ListItem>
@@ -333,11 +333,9 @@ export default function Terms() {
                   <Paragraph>
                     <Bold>Parking Passes: </Bold>Unless otherwise specified,
                     each Parking Pass is allocated a single parking spot.
-                    Parking will be assigned on a first-come, first-serve basis
-                    and all guests should be prepared to use the Free Parking
-                    Lot if necessary. Participants&apos; vehicles found parked
-                    in unauthorized locations will be towed at the owner&apos;s
-                    expense.
+                    Parking will be assigned on a first-come, first-serve basis.
+                    Participants&apos; vehicles found parked in unauthorized
+                    locations will be towed at the owner&apos;s expense.
                   </Paragraph>
                 </ListItem>
               </OList>
@@ -416,7 +414,7 @@ export default function Terms() {
                   <Paragraph>
                     <Bold>Cancellation of Payment Plan: </Bold>Cancellation of a
                     Payment Plan order must be made PRIOR to the final
-                    installment owing. Orders can only be cancelled while in the
+                    installment owing. Orders can only be canceled while in the
                     agreed-upon payment schedule. Once the final payment has
                     been made, there is no cancellation option available to the
                     Participant. Cancellations will not result in a refund but
@@ -426,8 +424,8 @@ export default function Terms() {
                 </ListItem>
                 <ListItem>
                   <Paragraph>
-                    <Bold>Credit of Cancelled Payment Plan: </Bold>If a Payment
-                    Plan is cancelled WITHIN the agreed upon payment schedule
+                    <Bold>Credit of Canceled Payment Plan: </Bold>If a Payment
+                    Plan is canceled WITHIN the agreed upon payment schedule
                     (before all installments have been completed), WW Society
                     may issue a credit to the Participant&apos;s online account
                     for future Event purchases.
@@ -476,7 +474,7 @@ export default function Terms() {
             British Columbia Society and located at the Raven&apos;s Nest Resort
             and Campground on Highway #95 in British Columbia
             (&quot;Property&quot;), and for other good and valuable
-            consideration, Participant agrees to all Terms set forth in this
+            consideration, the Participant agrees to all Terms set forth in this
             Agreement.
           </Paragraph>
           <Paragraph>
@@ -592,7 +590,7 @@ export default function Terms() {
             </ListItem>
             <ListItem>
               <Paragraph>
-                <Bold>COVID - 19.</Bold> Participant acknowledges that the
+                <Bold>COVID - 19.</Bold> The Participant acknowledges that the
                 COVID-19 virus is highly contagious and may result in serious
                 injury or death. As a condition of your ticket purchase, and by
                 entering the Event you voluntarily agree to assume all risks and
