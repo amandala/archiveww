@@ -286,8 +286,13 @@ export default function Terms() {
                 rules and regulations. Participants must consent to reasonable
                 examination & searches to ensure compliance with all provincial
                 & federal laws, and facility rules & regulations. Please ensure
-                you have consulted the banned items ListItem:
-                https://www.wickedwoods.ca/code-of-conduct
+                you have consulted the banned items{" "}
+                <a
+                  href="https://www.wickedwoods.ca/code-of-conduct"
+                  target="_blank"
+                >
+                  wickedwoods.ca/code-of-conduct
+                </a>
               </Paragraph>
             </ListItem>
             <ListItem>
@@ -449,7 +454,7 @@ export default function Terms() {
                   href="https://www.wickedwoods.ca/code-of-conduct"
                   target="_blank"
                 >
-                  https://www.wickedwoods.ca/code-of-conduct
+                  wickedwoods.ca/code-of-conduct
                 </a>
               </Paragraph>
               <Paragraph>
@@ -509,7 +514,7 @@ export default function Terms() {
             </ListItem>
             <ListItem>
               <Paragraph>
-                <Bold>Participant&apos;s Representations.</Bold>
+                <Bold>Participant&apos;s Representations. </Bold>
                 Participant acknowledges and represents that: (1) Participant is
                 qualified to participate in the Activities and is 19 years of
                 age or older; (2) Participant will at all times wear appropriate
@@ -572,7 +577,7 @@ export default function Terms() {
                   href="https://www.wickedwoods.ca/code-of-conduct"
                   target="_blank"
                 >
-                  https://www.wickedwoods.ca/code-of-conduct
+                  wickedwoods.ca/code-of-conduct
                 </a>
                 .
               </Paragraph>
@@ -636,10 +641,9 @@ export default function Terms() {
             </ListItem>
             <Paragraph>
               <Bold>
-                This Release of Liability and Waiver Agreement is available for
-                download here:{" "}
+                This Release of Liability and Waiver Agreement is available for{" "}
                 <a href="https://www.wickedwoods.ca/download_waiver.pdf">
-                  https://www.wickedwoods.ca/download_waiver.pdf
+                  download here
                 </a>
                 . Please take the time to download this document and review the
                 same with a lawyer if you are unsure of the meaning and

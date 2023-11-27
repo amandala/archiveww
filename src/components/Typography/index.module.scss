@@ -69,24 +69,15 @@
 }
 
 .OList {
-  margin-left: 50px;
-  margin-bottom: 36px;
-}
-
-.UList {
-  // margin-left: 50px;
   margin-bottom: 36px;
 }
 
 .OList {
-  .UList {
-    margin-left: 24px;
-  }
-}
+  margin-left: 16px;
 
-.OList {
   .OList {
     margin-bottom: 0;
+    margin-left: 24px;
   }
 }
 
@@ -94,6 +85,14 @@
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 800px) {
+  .OList {
+    margin-left: 40px;
+    .OList {
+      margin-left: 40px;
+    }
+  }
+}
 @media screen and (min-width: 1200px) {
   .Jumbo {
     font-size: 5rem;
