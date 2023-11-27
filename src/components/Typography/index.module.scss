@@ -7,7 +7,6 @@
   margin-bottom: 8px;
   color: $wickedWhite;
   transition: 1.5s;
-  filter: drop-shadow(1px 1px 1px $wickedBlack);
 }
 
 .Text {
@@ -15,7 +14,12 @@
   font-size: 1.2rem;
   transition: 1.5s color;
   margin-bottom: 12px;
-  filter: drop-shadow(1px 1px 1px $wickedBlack);
+}
+
+.Bold {
+  display: inline;
+  font-size: 1.2rem;
+  transition: 1.5s color;
 }
 
 .Jumbo {
@@ -31,7 +35,6 @@
   font-size: 1.5rem;
   color: $wickedWhite;
   transition: 1.5s color;
-  filter: drop-shadow(1px 1px 1px $wickedBlack);
 }
 
 .H2 {
@@ -39,7 +42,6 @@
   color: $wickedWhite;
   font-weight: 400;
   transition: 1.5s color;
-  filter: drop-shadow(1px 1px 1px $wickedBlack);
 }
 
 .H3 {
@@ -50,7 +52,6 @@
   text-transform: uppercase;
   margin-bottom: 12px;
   transition: 1.5s color;
-  filter: drop-shadow(1px 1px 1px $wickedBlack);
 }
 
 .Dark {
@@ -59,6 +60,7 @@
 }
 
 .OList,
+.UList,
 .ListItem {
   color: $wickedWhite;
   font-weight: 100;
@@ -71,6 +73,17 @@
   margin-bottom: 36px;
 }
 
+.UList {
+  // margin-left: 50px;
+  margin-bottom: 36px;
+}
+
+.OList {
+  .UList {
+    margin-left: 24px;
+  }
+}
+
 .OList {
   .OList {
     margin-bottom: 0;
@@ -79,7 +92,6 @@
 
 .ListItem {
   margin-bottom: 8px;
-  filter: drop-shadow(1px 1px 1px $wickedBlack);
 }
 
 @media screen and (min-width: 1200px) {
@@ -96,9 +108,7 @@
     color: $wickedWhite;
   }
 
-  .Text,
-  .OList {
+  .Text {
     font-size: 1.3rem;
-    font-weight: 200;
   }
 }

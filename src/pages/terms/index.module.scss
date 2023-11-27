@@ -12,6 +12,9 @@
 }
 
 .Content {
+  background-color: $prussianBlue;
+  border-radius: 6px;
+  padding: 20px;
   max-width: 900px;
   margin: 0 auto;
   z-index: 5;
@@ -28,9 +31,12 @@
 
 .HeaderWrapper {
   text-align: center;
+  padding: 20px;
+
+  margin: 0 auto;
 }
 
 .Ack {
   text-align: center;
-  margin-bottom: 48px;
+  margin: 48px 0;
 }

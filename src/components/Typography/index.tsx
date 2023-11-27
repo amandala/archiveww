@@ -135,6 +135,18 @@ export function OList({
   );
 }
 
+export function UList({
+  children,
+  dark = false,
+}: {
+  children: React.ReactNode;
+  dark?: boolean;
+}) {
+  return (
+    <ul className={cx(styles.UList, { [styles.Dark]: dark })}>{children}</ul>
+  );
+}
+
 export function ListItem({
   children,
   dark = false,
@@ -146,6 +158,24 @@ export function ListItem({
     <li
       className={cx(styles.ListItem, {
         [styles.Dark]: dark,
+      })}
+    >
+      {children}
+    </li>
+  );
+}
+
+export function Bold({
+  children,
+  dark = false,
+}: {
+  children: React.ReactNode;
+  dark?: boolean;
+}) {
+  return (
+    <li
+      className={cx(styles.Bold, dinBold.className, {
+        [styles.Bold]: dark,
       })}
     >
       {children}
