@@ -10,10 +10,14 @@ import Image from "next/image";
 import styles from "./index.module.scss";
 import PageHead from "@/components/PageHead";
 import WW_Sandy_Brown from "/public/assets/WW-sandy_brown.png";
+import background from "/public/assets/backgrounds/prussian_blue-min.png";
 
 export default function CodeOfConduct() {
   return (
-    <div className={styles.Wrapper}>
+    <div
+      className={styles.Wrapper}
+      style={{ backgroundImage: `url(${background.src})` }}
+    >
       <PageHead
         page="Code of Conduct"
         image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
@@ -23,22 +27,22 @@ export default function CodeOfConduct() {
           expression, sexual orientation, age or mental or physical disability."
         url="wickedwoods.ca/code-of-conduct"
       />
+      <Image
+        src={WW_Sandy_Brown}
+        alt="Sandy Brown Wicked Woods Logo"
+        priority
+        style={{
+          margin: "0 auto",
+          maxWidth: "200px",
+          height: "auto",
+          display: "block",
+          padding: "20px",
+        }}
+      />
+      <div className={styles.HeaderWrapper}>
+        <JumboHeading>Code of Conduct</JumboHeading>
+      </div>
       <div className={styles.Content}>
-        <Image
-          src={WW_Sandy_Brown}
-          alt="Sandy Brown Wicked Woods Logo"
-          priority
-          style={{
-            margin: "0 auto",
-            maxWidth: "300px",
-            height: "auto",
-            display: "block",
-            padding: "20px",
-          }}
-        />
-        <div className={styles.HeaderWrapper}>
-          <JumboHeading>Code of Conduct</JumboHeading>
-        </div>
         <H2>General Terms</H2>
         <Paragraph>
           The Wicked Woods Music Festival, hereinafter referred to as &quot;The

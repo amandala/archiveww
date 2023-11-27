@@ -3,9 +3,7 @@
 .Wrapper {
   position: relative;
   padding: 90px 24px;
-  background-color: $orientBlue;
-  -webkit-mask-image: url("/assets/backgrounds/papergrit.png");
-  mask-image: url("/assets/backgrounds/papergrit.png");
+  background-color: $prussianBlue;
 }
 
 .Content {
@@ -13,6 +11,8 @@
   margin: 0 auto;
   z-index: 5;
   position: relative;
+  background-color: $prussianBlue;
+  padding: 24px;
 
   h1 {
     margin-bottom: 30px;
