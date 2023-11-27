@@ -4,6 +4,10 @@
   position: relative;
   padding: 30px 24px;
   background-color: $prussianBlue;
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 .Logo {

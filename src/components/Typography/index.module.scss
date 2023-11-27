@@ -69,24 +69,19 @@
 }
 
 .OList {
-  margin-left: 50px;
   margin-bottom: 36px;
 }
 
 .UList {
-  // margin-left: 50px;
   margin-bottom: 36px;
 }
 
 .OList {
-  .UList {
-    margin-left: 24px;
-  }
-}
+  margin-left: 20px;
 
-.OList {
   .OList {
     margin-bottom: 0;
+    margin-left: 24px;
   }
 }
 
@@ -110,5 +105,12 @@
 
   .Text {
     font-size: 1.3rem;
+  }
+
+  .OList {
+    margin-left: 50px;
+    .UList {
+      margin-left: 24px;
+    }
   }
 }
