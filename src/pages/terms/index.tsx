@@ -24,7 +24,7 @@ export default function Terms() {
       <PageHead
         page="Terms"
         image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
-        description="Wicked Woods Music Festival Terms and Conditions."
+        description="Wicked Woods Music Festival Terms of Service and Release of Liability and Waiver Agreement."
         url="wickedwoods.ca/terms"
       />
       <div className={styles.HeaderWrapper}>
