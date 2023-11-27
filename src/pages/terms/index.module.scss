@@ -2,13 +2,19 @@
 
 .Wrapper {
   position: relative;
-  padding: 90px 24px;
-  background-color: $orientBlue;
-  -webkit-mask-image: url("/assets/backgrounds/papergrit.png");
-  mask-image: url("/assets/backgrounds/papergrit.png");
+  padding: 30px 24px;
+  background-color: $prussianBlue;
+}
+
+.Logo {
+  width: 150px;
+  height: 150px;
 }
 
 .Content {
+  background-color: $prussianBlue;
+  border-radius: 6px;
+  padding: 20px;
   max-width: 900px;
   margin: 0 auto;
   z-index: 5;
@@ -25,4 +31,12 @@
 
 .HeaderWrapper {
   text-align: center;
+  padding: 20px;
+
+  margin: 0 auto;
+}
+
+.Ack {
+  text-align: center;
+  margin: 48px 0;
 }
