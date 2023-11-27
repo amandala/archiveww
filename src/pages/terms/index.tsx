@@ -460,7 +460,6 @@ export default function Terms() {
               </Paragraph>
             </ListItem>
           </OList>
-          <H4>Revised November 22, 2023</H4>
         </div>
         <div>
           <H2>Release of Liability and Waiver Agreement</H2>
@@ -652,6 +651,7 @@ export default function Terms() {
             </Paragraph>
           </OList>
         </div>
+        <H4>Revised November 22, 2023</H4>
       </div>
     </div>
   );
