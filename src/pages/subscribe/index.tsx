@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { JumboHeading, Paragraph } from "@/components/Typography";
+import { Bold, JumboHeading, Paragraph } from "@/components/Typography";
 import { dinBlack } from "@/styles/fonts";
 
 import pageBackground from "/public/assets/backgrounds/green_haze-min.png";
@@ -119,6 +119,50 @@ const Subscribe = () => {
                 tabIndex={-1}
                 value=""
               />
+            </div>
+            <div
+              className={cx(
+                styles.Field,
+                styles.Categories,
+                "mc-field-group input-group"
+              )}
+            >
+              <Paragraph>
+                <Bold>Categories </Bold>
+              </Paragraph>
+              <ul>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="group[2021][1]"
+                    id="mce-group[2021]-2021-0"
+                    value=""
+                  />
+                  <label htmlFor="mce-group[2021]-2021-0">
+                    Ways to get involved
+                  </label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="group[2021][2]"
+                    id="mce-group[2021]-2021-1"
+                    value=""
+                  />
+                  <label htmlFor="mce-group[2021]-2021-1">
+                    2024 Event Details and Offers
+                  </label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="group[2021][4]"
+                    id="mce-group[2021]-2021-2"
+                    value=""
+                  />
+                  <label htmlFor="mce-group[2021]-2021-2">Everything!</label>
+                </li>
+              </ul>
             </div>
             <div className={styles.ButtonWrapper}>
               <input

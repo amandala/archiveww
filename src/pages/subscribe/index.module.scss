@@ -41,6 +41,25 @@
     padding: 2px;
     outline-color: $sandyBrown;
   }
+
+  strong {
+    color: $wickedWhite;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+    }
+  }
+}
+
+.Categories {
+  margin-top: 16px;
 }
 
 .Button {
