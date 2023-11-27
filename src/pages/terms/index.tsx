@@ -2,13 +2,10 @@ import {
   H2,
   H4,
   Paragraph,
-  // OList,
-  // ListItem,
   JumboHeading,
   ListItem,
   OList,
   Bold,
-  UList,
 } from "@/components/Typography";
 import Image from "next/image";
 import PageHead from "@/components/PageHead";
@@ -135,94 +132,109 @@ export default function Terms() {
               <Paragraph>
                 <Bold>Data Collection Clause for Event Website:</Bold>
               </Paragraph>
-              <Paragraph>Types of Data Collected</Paragraph>
-              <Paragraph>
-                We may collect the following types of personal and non-personal
-                information from users:
-              </Paragraph>
-              <UList>
+              <OList type="a">
                 <ListItem>
-                  Personal Information: Name, email address, phone number,
-                  postal address, and any other information voluntarily provided
-                  by users during registration or ticket purchase.
+                  <Paragraph>
+                    <Bold>Types of Data Collected: </Bold>
+                    We may collect the following types of personal and
+                    non-personal information from users:
+                  </Paragraph>
+                  <OList type="i">
+                    <ListItem>
+                      Personal Information: Name, email address, phone number,
+                      postal address, and any other information voluntarily
+                      provided by users during registration or ticket purchase.
+                    </ListItem>
+                    <ListItem>
+                      Non-Personal Information: Browser information, device
+                      type, IP address, cookies, and usage data collected
+                      through analytics tools.
+                    </ListItem>
+                  </OList>
                 </ListItem>
                 <ListItem>
-                  Non-Personal Information: Browser information, device type, IP
-                  address, cookies, and usage data collected through analytics
-                  tools.
-                </ListItem>
-              </UList>
-              <Paragraph>Purpose of Data Collection</Paragraph>
-              <Paragraph>
-                We collect user data for the following purposes:
-              </Paragraph>
-              <UList>
-                <ListItem>
-                  Event Registration: To facilitate event registration and
-                  ticket purchase. Communication: To send event updates,
-                  confirmations, and important information related to the event.
-                </ListItem>
-                <ListItem>
-                  Analytics: To analyze user behavior on our website and improve
-                  our services.
-                </ListItem>
-                <ListItem>
-                  Marketing: To send promotional materials or offers related to
-                  our events with user consent.
-                </ListItem>
-              </UList>
-              <Paragraph>Data Sharing</Paragraph>
-              <Paragraph>
-                We may share user data with the following third parties:
-              </Paragraph>
-              <UList>
-                <ListItem>
-                  Event Organizers: Information provided during event
-                  registration may be shared with the event organizers.
+                  <Paragraph>
+                    <Bold>Purpose of Data Collection: </Bold> We collect user
+                    data for the following purposes:
+                  </Paragraph>
+                  <OList type="i">
+                    <ListItem>
+                      Event Registration: To facilitate event registration and
+                      ticket purchase. Communication: To send event updates,
+                      confirmations, and important information related to the
+                      event.
+                    </ListItem>
+                    <ListItem>
+                      Analytics: To analyze user behavior on our website and
+                      improve our services.
+                    </ListItem>
+                    <ListItem>
+                      Marketing: To send promotional materials or offers related
+                      to our events with user consent.
+                    </ListItem>
+                  </OList>
                 </ListItem>
                 <ListItem>
-                  Service Providers: We may use third-party service providers
-                  for payment processing, analytics, and marketing. These
-                  providers may have access to user data as necessary for their
-                  services.
-                </ListItem>
-              </UList>
-              <Paragraph>Data Security</Paragraph>
-              <Paragraph>
-                We take reasonable measures to protect user data. However,
-                please be aware that no method of online transmission or storage
-                is entirely secure.
-              </Paragraph>
-              <Paragraph>User Rights</Paragraph>
-              <Paragraph>
-                Users have the following rights regarding their data:
-              </Paragraph>
-              <UList>
-                <ListItem>
-                  Access: Users can request access to their personal data we
-                  have collected.
+                  <Paragraph>
+                    <Bold>Data Sharing: </Bold>We may share user data with the
+                    following third parties:
+                  </Paragraph>
+
+                  <OList type="i">
+                    <ListItem>
+                      Event Organizers: Information provided during event
+                      registration may be shared with the event organizers.
+                    </ListItem>
+                    <ListItem>
+                      Service Providers: We may use third-party service
+                      providers for payment processing, analytics, and
+                      marketing. These providers may have access to user data as
+                      necessary for their services.
+                    </ListItem>
+                  </OList>
                 </ListItem>
                 <ListItem>
-                  Rectification: Users can request corrections to inaccurate
-                  data.
+                  <Paragraph>
+                    <Bold>Data Security: </Bold>We take reasonable measures to
+                    protect user data. However, please be aware that no method
+                    of online transmission or storage is entirely secure.
+                  </Paragraph>
                 </ListItem>
                 <ListItem>
-                  Deletion: Users can request the deletion of their data,
-                  subject to legal obligations.
+                  <Paragraph>
+                    <Bold>User Rights</Bold>
+                    Users have the following rights regarding their data:
+                  </Paragraph>
+                  <OList type="i">
+                    <ListItem>
+                      Access: Users can request access to their personal data we
+                      have collected.
+                    </ListItem>
+                    <ListItem>
+                      Rectification: Users can request corrections to inaccurate
+                      data.
+                    </ListItem>
+                    <ListItem>
+                      Deletion: Users can request the deletion of their data,
+                      subject to legal obligations.
+                    </ListItem>
+                    <ListItem>
+                      Opt-out: Users can opt-out of receiving marketing
+                      communications.
+                    </ListItem>
+                  </OList>
                 </ListItem>
                 <ListItem>
-                  Opt-out: Users can opt-out of receiving marketing
-                  communications.
+                  <Paragraph>
+                    <Bold>Cookies and Tracking Technologies</Bold>
+                    We use cookies and similar tracking technologies to enhance
+                    the user experience and gather information about user
+                    interactions with our website. By using our website and
+                    providing your information, you agree to the terms outlined
+                    in this data collection clause and our privacy policy.
+                  </Paragraph>
                 </ListItem>
-              </UList>
-              <Paragraph>Cookies and Tracking Technologies</Paragraph>
-              <Paragraph>
-                We use cookies and similar tracking technologies to enhance the
-                user experience and gather information about user interactions
-                with our website. By using our website and providing your
-                information, you agree to the terms outlined in this data
-                collection clause and our privacy policy.
-              </Paragraph>
+              </OList>
             </ListItem>
             <ListItem>
               <Paragraph>
