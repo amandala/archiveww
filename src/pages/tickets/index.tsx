@@ -3,7 +3,7 @@ import Image from "next/image";
 import cx from "classnames";
 
 import PageHead from "@/components/PageHead";
-import { JumboHeading, H1, H2, Paragraph } from "@/components/Typography";
+import { JumboHeading, H1, H2, Paragraph, Bold } from "@/components/Typography";
 
 import tent from "/public/assets/tent.png";
 import sunne from "/public/assets/sunnE_2.png";
@@ -13,6 +13,7 @@ import MegaVeh from "/public/assets/MegaVehicle.png";
 import orientBlueBg from "/public/assets/backgrounds/orient_blue-min.png";
 import prussianBlueBG from "/public/assets/backgrounds/prussian_blue-min.png";
 import black from "/public/assets/backgrounds/wicked_black-min.png";
+import siteMap from "/public/assets/public-map.png";
 
 import Gallery from "@/components/Gallery";
 
@@ -106,6 +107,57 @@ export default function Tickets() {
             </div>
           </section>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
+            <div className={styles.CampGrid}>
+              <Gallery targetRowHeight={400} images={[siteMap]} />
+              <div className={styles.Zones}>
+                <div>
+                  <span>
+                    <Paragraph>
+                      <Bold>Juniper</Bold> is the closest camping to the stages,
+                      ideal for those who want to be amongst the action. Juniper
+                      is our most sought after zone and is one of the first
+                      zones to sell out!
+                    </Paragraph>
+                  </span>
+                </div>
+
+                <div>
+                  <span>
+                    <Paragraph>
+                      <Bold>Hidden Ridge</Bold> is a short walk to the stages
+                      but gives you a little more distance from the party. This
+                      zone is heavily treed and nice for those seeking a shady
+                      spot.
+                    </Paragraph>
+                  </span>
+                </div>
+
+                <div>
+                  <span>
+                    <Paragraph>
+                      <Bold>Raven&apos;s Nest</Bold> is perfect for those
+                      wanting a quieter camp zone to take a break from the bass.
+                      It takes roughly 15 minutes to walk to Raven&spos;s Nest
+                      from downtown, so bring a water bottle for the trek!
+                    </Paragraph>
+                  </span>
+                </div>
+
+                <div>
+                  <span>
+                    <Paragraph>
+                      <Bold>Eagle&apos;s Nest</Bold> is set along the ridge
+                      overlooking the valley with a bit more privacy, beautiful
+                      views, and a close proximity to downtown. We have limited
+                      space in Eagle&apos;s Nest and these sites get scooped up
+                      quickly!
+                    </Paragraph>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
             <Image
               alt="Car"
               src={regularVeh}
@@ -131,11 +183,11 @@ export default function Tickets() {
               Park n&apos; Camp
             </JumboHeading>
             <Paragraph className={styles.SectionInfo}>
-              A vehcile pass is required to bring a vehicle past the GA camping
+              A vehicle pass is required to bring a vehicle past the GA camping
               area.
             </Paragraph>
             <div className={styles.CampLot}>
-              <H1 className={styles.CampLotTitle}>Juniper Lot</H1>
+              <H1 className={styles.CampLotTitle}>Juniper</H1>
               <div className={styles.CampGrid}>
                 <div>
                   <div className={styles.Option}>
@@ -238,15 +290,15 @@ export default function Tickets() {
               appropriate sized vehicle pass in addition to your package.
             </Paragraph>
             <div className={styles.CampLot}>
-              <H1 className={styles.CampLotTitle}>Juniper Lot</H1>
+              <H1 className={styles.CampLotTitle}>Juniper</H1>
               <div className={styles.CampGrid}>
                 <div>
                   <div className={styles.Option}>
                     <span>
                       <H2>Regular Reserved Camping Package</H2>
                       <Paragraph>
-                        Reserved 20&apos;x20&apos; Campsite in Juniper Lot.
-                        Includes one regular vehicle pass.
+                        Reserved 20&apos;x20&apos; Campsite in Juniper. Includes
+                        one regular vehicle pass.
                       </Paragraph>
                     </span>
                     <JumboHeading className={styles.Price}>$400</JumboHeading>
@@ -255,8 +307,8 @@ export default function Tickets() {
                     <span>
                       <H2>Large Reserved Camping Package</H2>
                       <Paragraph>
-                        Reserved 20&apos;x40&apos; Campsite in Juniper Lot.
-                        Includes one regular vehicle pass.
+                        Reserved 20&apos;x40&apos; Campsite in Juniper. Includes
+                        one regular vehicle pass.
                       </Paragraph>
                     </span>
                     <JumboHeading className={styles.Price}>$700</JumboHeading>
@@ -265,7 +317,7 @@ export default function Tickets() {
                     <span>
                       <H2>Ready-Set-Camp Package</H2>
                       <Paragraph>
-                        Pre-Assembled Campsite in Juniper Lot. Includes a
+                        Pre-Assembled Campsite in Juniper. Includes a
                         five-person tent, air mattress, bedding, and pump. Max
                         two people. Includes one regular vehicle pass.
                       </Paragraph>
@@ -277,7 +329,7 @@ export default function Tickets() {
                   <span>
                     <H2>Glamping Package</H2>
                     <Paragraph>
-                      Glamping Package in Juniper Lot with 5 meter bell tent.
+                      Glamping Package in Juniper with 5 meter bell tent.
                       Includes one regular vehicle pass and early entry for two
                       people.
                     </Paragraph>
@@ -326,7 +378,8 @@ export default function Tickets() {
                     <H2>Powered RV Package</H2>
                     <Paragraph>
                       Reserved 16&apos;x50&apos; Powered RV Site in Eagle&apos;s
-                      Nest. Includes one regular vehicle pass.
+                      Nest. Includes one mega vehicle pass. Limit of one RV per
+                      site.
                     </Paragraph>
                   </span>
                   <JumboHeading className={styles.Price}>$1200</JumboHeading>
@@ -343,9 +396,9 @@ export default function Tickets() {
                 </div>
                 <div className={styles.Option}>
                   <span>
-                    <H2>Glamour Glamping Package</H2>
+                    <H2>Prime Glamping Package</H2>
                     <Paragraph>
-                      Glamour Glamping Package in Eagle&apos;s Nest with 5m Bell
+                      Prime Glamping Package in Eagle&apos;s Nest with 5m Bell
                       Tent and power. Includes one regular vehicle pass and
                       early entry for two people.
                     </Paragraph>
@@ -381,11 +434,12 @@ export default function Tickets() {
                   <span>
                     <H2>Bedding Rental</H2>
                     <Paragraph>
-                      Rest and relax. Enjoy the convenience of picking up
-                      sheets, a pillow, and blanket on-site at our HR office.
+                      Rest and relax. Enjoy the convenience of picking up Queen
+                      sheets, two pillows, and a Queen blanket on-site at our HR
+                      office.
                     </Paragraph>
                   </span>
-                  <JumboHeading className={styles.Price}>$70</JumboHeading>
+                  <JumboHeading className={styles.Price}>$90</JumboHeading>
                 </div>
               </div>
             </div>
