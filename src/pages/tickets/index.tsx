@@ -115,7 +115,8 @@ export default function Tickets() {
                     <Paragraph>
                       <Bold>Juniper</Bold> is the closest camping to the stages,
                       ideal for those who want to be amongst the action. Juniper
-                      is one of the first zones to sell out!
+                      is our most sought after zone and is one of the first
+                      zones to sell out!
                     </Paragraph>
                   </span>
                 </div>
@@ -124,7 +125,9 @@ export default function Tickets() {
                   <span>
                     <Paragraph>
                       <Bold>Hidden Ridge</Bold> is a short walk to the stages
-                      but gives you a little more distance from the party.
+                      but gives you a little more distance from the party. This
+                      zone is heavily treed and nice for those seeking a shady
+                      spot.
                     </Paragraph>
                   </span>
                 </div>
@@ -134,6 +137,8 @@ export default function Tickets() {
                     <Paragraph>
                       <Bold>Raven&apos;s Nest</Bold> is perfect for those
                       wanting a quieter camp zone to take a break from the bass.
+                      It takes roughly 15 minutes to walk to Raven&spos;s Nest
+                      from downtown, so bring a water bottle for the trek!
                     </Paragraph>
                   </span>
                 </div>
