@@ -137,7 +137,7 @@ export default function Tickets() {
                     <Paragraph>
                       <Bold>Raven&apos;s Nest</Bold> is perfect for those
                       wanting a quieter camp zone to take a break from the bass.
-                      It takes roughly 15 minutes to walk to Raven&spos;s Nest
+                      It takes roughly 15 minutes to walk to Raven&apos;s Nest
                       from downtown, so bring a water bottle for the trek!
                     </Paragraph>
                   </span>
