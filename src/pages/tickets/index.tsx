@@ -391,9 +391,9 @@ export default function Tickets() {
                 </div>
                 <div className={styles.Option}>
                   <span>
-                    <H2>Premier Glamping Package</H2>
+                    <H2>Prime Glamping Package</H2>
                     <Paragraph>
-                      Premier Glamping Package in Eagle&apos;s Nest with 5m Bell
+                      Prime Glamping Package in Eagle&apos;s Nest with 5m Bell
                       Tent and power. Includes one regular vehicle pass and
                       early entry for two people.
                     </Paragraph>
