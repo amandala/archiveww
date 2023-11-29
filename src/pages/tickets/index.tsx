@@ -12,6 +12,8 @@ import regularVeh from "/public/assets/RegularVehicle.png";
 import MegaVeh from "/public/assets/MegaVehicle.png";
 import orientBlueBg from "/public/assets/backgrounds/orient_blue-min.png";
 import prussianBlueBG from "/public/assets/backgrounds/prussian_blue-min.png";
+
+import mandyPinkBg from "/public/assets/backgrounds/mandy_pink-min.png";
 import black from "/public/assets/backgrounds/wicked_black-min.png";
 import siteMap from "/public/assets/public-map.png";
 
@@ -44,9 +46,16 @@ export default function Tickets() {
         />
         <div className={styles.Content}>
           <JumboHeading className={styles.PageTitle}>2024 Tickets</JumboHeading>
-          <JumboHeading className={styles.TicketDate}>
-            On Sale Dec. 1
-          </JumboHeading>
+          <div
+            className={styles.PaymentPlans}
+            style={{ backgroundImage: `url(${mandyPinkBg.src})` }}
+          >
+            <H2>Payment Plans Available!</H2>
+            <Paragraph>
+              Secure your ticket on a payment plan and spread out the cost over
+              multiple payments.
+            </Paragraph>
+          </div>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
             <JumboHeading className={styles.SectionHeading}>
               General Admission
@@ -55,6 +64,7 @@ export default function Tickets() {
               GA Tickets are valid for entry Friday August 30, 2024 and can be
               used for re-entry until Monday September 1, 2024.
             </Paragraph>
+
             <div className={styles.TicketTier}>
               <Image
                 alt="placeholder"
@@ -98,8 +108,8 @@ export default function Tickets() {
                 <span>
                   <H2>Weekend shower pass</H2>
                   <Paragraph>
-                    Grants weekend shower access. Limited quantities. Showers
-                    open 8:00am - 8:00pm daily.
+                    Grants weekend shower access. Showers open 8:00am - 8:00pm
+                    daily.
                   </Paragraph>
                 </span>
                 <JumboHeading className={styles.Price}>$32</JumboHeading>

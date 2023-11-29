@@ -4,8 +4,18 @@
   position: relative;
   padding: 90px 24px 0;
   background-color: $orientBlue;
-  // -webkit-mask-image: url("/assets/backgrounds/papergrit.png");
-  // mask-image: url("/assets/backgrounds/papergrit.png");
+}
+
+.PaymentPlans {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 45px;
+  padding: 20px;
+
+  h2 {
+    margin-bottom: 12px;
+  }
 }
 
 .Content {
@@ -166,8 +176,6 @@
   top: -550px;
   left: 65%;
 
-  // display: none;
-
   @media screen and (min-width: 432px) {
     display: block;
     top: -550px;
@@ -178,14 +186,14 @@
 
   @media screen and (min-width: 900px) {
     top: -550px;
-    left: 65%;
+    left: 70%;
   }
 
   @media screen and (min-width: 1280px) {
-    top: -580px;
-    left: 89%;
-    width: 600px;
-    height: 600px;
+    top: -680px;
+    left: 79%;
+    width: 800px;
+    height: 800px;
   }
 }
 
@@ -232,5 +240,12 @@
   .PageTitle {
     margin-bottom: 12px;
     text-align: center;
+  }
+
+  .TicketsWrapper {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
   }
 }
