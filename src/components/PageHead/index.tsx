@@ -1,15 +1,18 @@
 import Head from "next/head";
+import { ReactNode } from "react";
 
 export default function PageHead({
   page,
   image = "https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3",
   description,
   url,
+  pixel,
 }: {
   page: string;
   image: string;
   description: string;
   url: string;
+  pixel?: ReactNode;
 }) {
   const title = `${page} - Wicked Woods Music Festival`;
   return (
@@ -48,6 +51,7 @@ export default function PageHead({
         href="/assets/backgrounds/mooonshotbanner-min.png"
         as="image"
       />
+      {pixel}
     </Head>
   );
 }
