@@ -297,7 +297,9 @@ export default function Tickets() {
             <Paragraph className={styles.SectionInfo}>
               Each package includes a regular vehicle pass. If you plan to bring
               a larger vehicle on site, you will be required to purchase the
-              appropriate sized vehicle pass in addition to your package.
+              appropriate sized vehicle pass in addition to your package. Please
+              note that you will also be required to purchase a GA ticket for
+              entry to the festival.
             </Paragraph>
             <div className={styles.CampLot}>
               <H1 className={styles.CampLotTitle}>Juniper</H1>
@@ -340,8 +342,8 @@ export default function Tickets() {
                     <H2>Glamping Package</H2>
                     <Paragraph>
                       Glamping Package in Juniper with 5 meter bell tent.
-                      Includes one regular vehicle pass and early entry for two
-                      people.
+                      Include a queen bed fully set up with bedding for two, one
+                      regular vehicle pass, and early entry for two people.
                     </Paragraph>
                   </span>
                   <JumboHeading className={styles.Price}>$980</JumboHeading>
@@ -356,8 +358,8 @@ export default function Tickets() {
                     <H2>Glamping Package</H2>
                     <Paragraph>
                       Glamping Package in Hidden Ridge with 5 meter bell tent.
-                      Includes one regular vehicle pass and early entry for two
-                      people.
+                      Includes a queen bed fully set up with bedding for two,
+                      one regular vehicle pass, and early entry for two people.
                     </Paragraph>
                   </span>
                   <JumboHeading className={styles.Price}>$910</JumboHeading>
@@ -372,8 +374,9 @@ export default function Tickets() {
                     <H2>Glamping Package</H2>
                     <Paragraph>
                       Glamping Package in Raven&apos;s Nest with 5 meter bell
-                      tent. Includes one regular vehicle pass and early entry
-                      for two people.
+                      tent. Includes a queen bed fully set up with bedding for
+                      two, one regular vehicle pass, and early entry for two
+                      people.
                     </Paragraph>
                   </span>
                   <JumboHeading className={styles.Price}>$860</JumboHeading>
@@ -409,8 +412,9 @@ export default function Tickets() {
                     <H2>Prime Glamping Package</H2>
                     <Paragraph>
                       Prime Glamping Package in Eagle&apos;s Nest with 5m Bell
-                      Tent and power. Includes one regular vehicle pass and
-                      early entry for two people.
+                      Tent and power. Includes a queen bed fully set up with
+                      bedding for two, one regular vehicle pass, and early entry
+                      for two people.
                     </Paragraph>
                   </span>
                   <JumboHeading className={styles.Price}>$1455</JumboHeading>
