@@ -1,0 +1,16 @@
+@import "@/styles/variables.module.scss";
+
+.TicketButton {
+  padding: 20px;
+  font-size: 18px;
+  background-color: $greenHaze;
+  border: 0;
+  z-index: 99;
+  text-transform: uppercase;
+  color: $wickedWhite;
+
+  a:hover,
+  a:focus {
+    color: $wickedBlack;
+  }
+}

@@ -20,6 +20,7 @@ import siteMap from "/public/assets/public-map.png";
 import Gallery from "@/components/Gallery";
 
 import styles from "./index.module.scss";
+import TicketButton from "@/components/TicketButton";
 
 const images = require.context("/public/assets/gallery/camping", true);
 const imageList = images.keys().map((image) => images(image));
@@ -46,6 +47,7 @@ export default function Tickets() {
         />
         <div className={styles.Content}>
           <JumboHeading className={styles.PageTitle}>2024 Tickets</JumboHeading>
+
           <div
             className={styles.PaymentPlans}
             style={{ backgroundImage: `url(${mandyPinkBg.src})` }}
@@ -55,6 +57,9 @@ export default function Tickets() {
               Secure your ticket on a payment plan and spread out the cost over
               multiple payments.
             </Paragraph>
+          </div>
+          <div className={styles.TicketButtonWrapper}>
+            <TicketButton />
           </div>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
             <JumboHeading className={styles.SectionHeading}>

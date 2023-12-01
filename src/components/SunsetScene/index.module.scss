@@ -80,6 +80,16 @@
   top: 0;
 }
 
+.TicketButtonWrap {
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .CloudTop {
   animation: slideOff 50s;
   top: -450px;
