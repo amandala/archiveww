@@ -18,6 +18,8 @@ import cloud3 from "/public/assets/sunsetScene/Clouds3-min.png";
 import cloud4 from "/public/assets/sunsetScene/Clouds4-min.png";
 import cloud5 from "/public/assets/sunsetScene/Clouds5-min.png";
 
+import TicketButton from "../TicketButton";
+
 export default function SunsetScene() {
   return (
     <>
@@ -27,6 +29,9 @@ export default function SunsetScene() {
           <div className={styles.Sky}>
             <div className={styles.Overlay}>
               <div className={styles.WordmarkWrapper}>
+                <div className={styles.TicketButtonWrap}>
+                  <TicketButton />
+                </div>
                 <Image
                   alt="Wicked Woods Music Festival"
                   src={wordmark}
