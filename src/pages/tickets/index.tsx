@@ -342,8 +342,8 @@ export default function Tickets() {
                     <H2>Glamping Package</H2>
                     <Paragraph>
                       Glamping Package in Juniper with 5 meter bell tent.
-                      Include a queen bed fully set up with bedding for two, one
-                      regular vehicle pass, and early entry for two people.
+                      Includes a queen bed fully set up with bedding for two,
+                      one regular vehicle pass, and early entry for two people.
                     </Paragraph>
                   </span>
                   <JumboHeading className={styles.Price}>$980</JumboHeading>
