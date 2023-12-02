@@ -13,7 +13,7 @@ import MegaVeh from "/public/assets/MegaVehicle.png";
 import orientBlueBg from "/public/assets/backgrounds/orient_blue-min.png";
 import prussianBlueBG from "/public/assets/backgrounds/prussian_blue-min.png";
 
-import mandyPinkBg from "/public/assets/backgrounds/mandy_pink-min.png";
+import ppbackground from "/public/assets/backgrounds/sandy_brown-min.png";
 import black from "/public/assets/backgrounds/wicked_black-min.png";
 import siteMap from "/public/assets/public-map.png";
 
@@ -47,10 +47,12 @@ export default function Tickets() {
         />
         <div className={styles.Content}>
           <JumboHeading className={styles.PageTitle}>2024 Tickets</JumboHeading>
-
+          <div className={styles.TicketButtonWrapper}>
+            <TicketButton />
+          </div>
           <div
             className={styles.PaymentPlans}
-            style={{ backgroundImage: `url(${mandyPinkBg.src})` }}
+            style={{ backgroundImage: `url(${ppbackground.src})` }}
           >
             <H2>Payment Plans Available!</H2>
             <Paragraph>
@@ -58,9 +60,7 @@ export default function Tickets() {
               multiple payments.
             </Paragraph>
           </div>
-          <div className={styles.TicketButtonWrapper}>
-            <TicketButton />
-          </div>
+
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
             <JumboHeading className={styles.SectionHeading}>
               General Admission
@@ -463,6 +463,9 @@ export default function Tickets() {
               </div>
             </div>
           </section>
+        </div>
+        <div className={styles.TicketButtonWrapper}>
+          <TicketButton />
         </div>
       </div>
       <div

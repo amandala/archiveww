@@ -1,4 +1,7 @@
 import styles from "./index.module.scss";
+import Image from "next/image";
+
+import ticketButton from "/public/assets/TICKET_CLOUD.png";
 
 const TicketButton = () => {
   return (
@@ -7,7 +10,7 @@ const TicketButton = () => {
       href="https://tickets.wickedwoods.ca"
       target="_blank"
     >
-      Buy Tickets
+      <Image src={ticketButton} alt="Buy tickets" />
     </a>
   );
 };

@@ -3,11 +3,15 @@
 .TicketButton {
   padding: 20px;
   font-size: 18px;
-  background-color: $greenHaze;
   border: 0;
   z-index: 99;
   text-transform: uppercase;
   color: $wickedWhite;
+
+  img {
+    width: 300px;
+    height: auto;
+  }
 
   a:hover,
   a:focus {

@@ -85,9 +85,36 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 300px;
+  top: 250px;
   margin-left: auto;
   margin-right: auto;
+
+  a {
+    img {
+      width: 200px;
+      height: auto;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    a {
+      img {
+        width: 250px;
+        height: auto;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    top: 320px;
+
+    a {
+      img {
+        width: 400px;
+        height: auto;
+      }
+    }
+  }
 }
 
 .CloudTop {
