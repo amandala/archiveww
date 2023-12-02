@@ -22,6 +22,7 @@ import Gallery from "@/components/Gallery";
 
 import styles from "./index.module.scss";
 import TicketButton from "@/components/TicketButton";
+import Link from "next/link";
 
 const images = require.context("/public/assets/gallery/camping", true);
 const imageList = images.keys().map((image) => images(image));
@@ -50,16 +51,6 @@ export default function Tickets() {
           <JumboHeading className={styles.PageTitle}>2024 Tickets</JumboHeading>
           <div className={styles.TicketButtonWrapper}>
             <TicketButton />
-          </div>
-          <div
-            className={styles.PaymentPlans}
-            style={{ backgroundImage: `url(${ppbackground.src})` }}
-          >
-            <H2>Payment Plans Available!</H2>
-            <Paragraph>
-              Secure your ticket on a payment plan and spread out the cost over
-              multiple payments.
-            </Paragraph>
           </div>
 
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
@@ -99,6 +90,19 @@ export default function Tickets() {
               </div>
             </div>
           </section>
+          <div
+            className={styles.PaymentPlans}
+            style={{ backgroundImage: `url(${ppbackground.src})` }}
+          >
+            <H2>Payment Plans Available!</H2>
+            <Paragraph>
+              Secure your ticket on a payment plan and spread out the cost over
+              multiple months.{" "}
+              <Link href="/terms#payment-plan">
+                <Bold>Learn More</Bold>
+              </Link>
+            </Paragraph>
+          </div>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
             <JumboHeading className={styles.SectionHeading}>
               Add Ons
