@@ -346,6 +346,7 @@ export default function Terms() {
               </OList>
             </ListItem>
             <ListItem>
+              <span id="payment-plan" />
               <Paragraph>
                 <Bold>Payment Plan: </Bold>WW Society offers Event tickets,
                 Parking Pass, and Camping Package sales on an installment basis
