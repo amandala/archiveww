@@ -31,7 +31,6 @@
     position: relative;
 
     div.TicketTier {
-      margin-bottom: 18px;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -62,6 +61,17 @@
   color: $burntSienna;
   text-align: center;
   font-size: 3rem;
+}
+
+.TierWrapper {
+  @media screen and (min-width: 500px) {
+    display: flex;
+    justify-content: space-around;
+
+    .Price {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .SectionHeading {
@@ -99,6 +109,9 @@
 .Price {
   font-size: 2.2rem;
   align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Vehicle {
