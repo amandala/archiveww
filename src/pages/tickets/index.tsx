@@ -4,6 +4,7 @@ import cx from "classnames";
 
 import PageHead from "@/components/PageHead";
 import { JumboHeading, H1, H2, Paragraph, Bold } from "@/components/Typography";
+import { SoldOutStamp } from "@/components/SoldOutStamp";
 
 import tent from "/public/assets/tent.png";
 import sunne from "/public/assets/sunnE_2.png";
@@ -69,31 +70,33 @@ export default function Tickets() {
               GA Tickets are valid for entry Friday August 30, 2024 and can be
               used for re-entry until Sunday September 1, 2024.
             </Paragraph>
-
-            <div className={styles.TicketTier}>
-              <Image
-                alt="placeholder"
-                src={sunne}
-                width={200}
-                height={200}
-                className={styles.SunnE}
-              />
-              <span>
-                <H2>Tier 1</H2>
-                <JumboHeading className={styles.Price}>$320</JumboHeading>
-              </span>
-            </div>
-            <div className={styles.TicketTier}>
-              <span>
-                <H2>Tier 2</H2>
-                <JumboHeading className={styles.Price}>$345</JumboHeading>
-              </span>
-            </div>
-            <div className={styles.TicketTier}>
-              <span>
-                <H2>Tier 3</H2>
-                <JumboHeading className={styles.Price}>$375</JumboHeading>
-              </span>
+            <Image
+              alt="placeholder"
+              src={sunne}
+              width={200}
+              height={200}
+              className={styles.SunnE}
+            />
+            <div className={styles.TierWrapper}>
+              <div className={styles.TicketTier}>
+                <span>
+                  <H2>Tier 1</H2>
+                  <JumboHeading className={styles.Price}>$320</JumboHeading>
+                  <SoldOutStamp />
+                </span>
+              </div>
+              <div className={styles.TicketTier}>
+                <span>
+                  <H2>Tier 2</H2>
+                  <JumboHeading className={styles.Price}>$345</JumboHeading>
+                </span>
+              </div>
+              <div className={styles.TicketTier}>
+                <span>
+                  <H2>Tier 3</H2>
+                  <JumboHeading className={styles.Price}>$375</JumboHeading>
+                </span>
+              </div>
             </div>
           </section>
           <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
@@ -318,7 +321,10 @@ export default function Tickets() {
                         one regular vehicle pass.
                       </Paragraph>
                     </span>
-                    <JumboHeading className={styles.Price}>$400</JumboHeading>
+                    <JumboHeading className={styles.Price}>
+                      $400
+                      <SoldOutStamp />
+                    </JumboHeading>
                   </div>
                   <div className={styles.Option}>
                     <span>
@@ -394,13 +400,16 @@ export default function Tickets() {
                 <div className={styles.Option}>
                   <span>
                     <H2>Powered RV Package</H2>
+
                     <Paragraph>
                       Reserved 16&apos;x50&apos; Powered RV Site in Eagle&apos;s
                       Nest. Includes one mega vehicle pass. Limit of one RV per
                       site.
                     </Paragraph>
                   </span>
-                  <JumboHeading className={styles.Price}>$1200</JumboHeading>
+                  <JumboHeading className={styles.Price}>
+                    $1200 <SoldOutStamp />
+                  </JumboHeading>
                 </div>
                 <div className={styles.Option}>
                   <span>
