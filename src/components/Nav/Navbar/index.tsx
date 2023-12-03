@@ -10,7 +10,8 @@ import ww from "/public/assets/WW-off_white.png";
 import burger from "/public/assets/burger_menu_icon.png";
 import close from "/public/assets/X_menu_icon.png";
 import background from "/public/assets/backgrounds/mooonshotbanner-min.png";
-import { ExperienceNav, FestivalNav, ContactNav } from "..";
+import { ExperienceNav, FestivalNav, ContactNav, SocialNav } from "..";
+import { JumboHeading } from "@/components/Typography";
 
 export const Navbar = () => {
   const router = useRouter();
@@ -39,18 +40,29 @@ export const Navbar = () => {
         })}
       >
         {menuOpen && (
-          <ul
-            className={styles.list}
+          <div
+            className={styles.NavItems}
             style={{
               backgroundImage: menuOpen ? `url(${background.src})` : "",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
             }}
           >
-            <FestivalNav />
-            <ExperienceNav />
-            <ContactNav />
-          </ul>
+            <Link
+              href="https://tickets.wickedwoods.ca"
+              className={styles.TicketLink}
+            >
+              <JumboHeading>Buy Tickets</JumboHeading>
+            </Link>
+            <ul className={styles.list}>
+              <FestivalNav />
+              <ExperienceNav />
+              <ContactNav />
+              <span className={styles.Social}>
+                <SocialNav />
+              </span>
+            </ul>
+          </div>
         )}
 
         <Link className={styles.MainNavLogo} href="/" onClick={closeNav}>

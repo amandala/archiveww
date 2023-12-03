@@ -11,7 +11,7 @@ export default function NavColumn({
 }) {
   return (
     <div className={styles.Column}>
-      <H4>{title}</H4>
+      <H4 className={styles.NavHeading}>{title}</H4>
       <ul className={styles.List}>
         {links.map((link) => {
           return (

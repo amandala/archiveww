@@ -5,9 +5,12 @@
   margin-bottom: 32px;
 }
 
+.NavHeading {
+  color: $sandyBrown;
+}
+
 @media screen and (min-width: 500px) {
   .Column {
-    margin: 0 auto;
     text-align: left;
   }
 }
