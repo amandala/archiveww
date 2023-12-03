@@ -7,12 +7,21 @@ import cx from "classnames";
 export function H4({
   children,
   dark = false,
+  className,
 }: {
   children: React.ReactNode;
   dark?: boolean;
+  className?: string;
 }) {
   return (
-    <h4 className={cx(dinBold.className, styles.Four, { [styles.Dark]: dark })}>
+    <h4
+      className={cx(
+        dinBold.className,
+        styles.Four,
+        { [styles.Dark]: dark },
+        className
+      )}
+    >
       {children}
     </h4>
   );
