@@ -23,6 +23,7 @@ import Gallery from "@/components/Gallery";
 import styles from "./index.module.scss";
 import TicketButton from "@/components/TicketButton";
 import Link from "next/link";
+import classNames from "classnames";
 
 const images = require.context("/public/assets/gallery/camping", true);
 const imageList = images.keys().map((image) => images(image));
@@ -72,7 +73,11 @@ export default function Tickets() {
               <div className={styles.TicketTier}>
                 <span>
                   <H2>Tier 1</H2>
-                  <JumboHeading className={styles.Price}>$320</JumboHeading>
+                  <JumboHeading
+                    className={classNames(styles.Price, styles.PriceSoldOut)}
+                  >
+                    $320
+                  </JumboHeading>
                   <SoldOutStamp />
                 </span>
               </div>
@@ -98,7 +103,10 @@ export default function Tickets() {
             <Paragraph>
               Secure your ticket on a payment plan and spread out the cost over
               multiple months.{" "}
-              <Link href="/terms#payment-plan">
+              <Link
+                href="/terms#payment-plan"
+                style={{ display: "block", marginTop: "8px" }}
+              >
                 <Bold>Learn More</Bold>
               </Link>
             </Paragraph>
