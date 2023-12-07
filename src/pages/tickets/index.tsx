@@ -214,8 +214,8 @@ export default function Tickets() {
               Park n&apos; Camp
             </JumboHeading>
             <Paragraph className={styles.SectionInfo}>
-              A vehicle pass is required to bring a vehicle past the GA camping
-              area.
+              A vehicle pass is required to bring a vehicle past the free
+              parking lot.
             </Paragraph>
             <div className={styles.CampLot}>
               <H1 className={styles.CampLotTitle}>Juniper</H1>
