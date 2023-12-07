@@ -24,6 +24,7 @@ import styles from "./index.module.scss";
 import TicketButton from "@/components/TicketButton";
 import Link from "next/link";
 import classNames from "classnames";
+import { LowStockStamp } from "@/components/LowStockStamp";
 
 const images = require.context("/public/assets/gallery/camping", true);
 const imageList = images.keys().map((image) => images(image));
@@ -369,7 +370,10 @@ export default function Tickets() {
                       one regular vehicle pass, and early entry for two people.
                     </Paragraph>
                   </span>
-                  <JumboHeading className={styles.Price}>$980</JumboHeading>
+                  <JumboHeading className={styles.Price}>
+                    $980
+                    <LowStockStamp />
+                  </JumboHeading>
                 </div>
               </div>
             </div>
@@ -431,7 +435,10 @@ export default function Tickets() {
                       Includes one regular vehicle pass.
                     </Paragraph>
                   </span>
-                  <JumboHeading className={styles.Price}>$1050</JumboHeading>
+                  <JumboHeading className={styles.Price}>
+                    $1050
+                    <LowStockStamp />
+                  </JumboHeading>
                 </div>
                 <div className={styles.Option}>
                   <span>
