@@ -297,11 +297,12 @@ export default function Terms() {
             </ListItem>
             <ListItem>
               <Paragraph>
-                <Bold>Alcohol and illegal substances: </Bold>Wicked Woods Music
-                Festival prohibits guests from bringing alcohol onto the Event
-                site. Any alcohol found in searches will be confiscated and
-                dumped. Additionally, matters involving illegal substances will
-                be turned over to the RCMP.
+                <Bold>Alcohol and Illegal Substances:</Bold>
+                Wicked Woods Music Festival prohibits guests from bringing
+                alcohol onto the Event site. Any alcohol found in searches will
+                be confiscated and dumped. Additionally, any matters involving
+                illegal substances, which are in violation of BC legislation,
+                will be turned over to the RCMP.
               </Paragraph>
             </ListItem>
             <ListItem>
@@ -643,7 +644,7 @@ export default function Terms() {
             <Paragraph>
               <Bold>
                 This Release of Liability and Waiver Agreement is available for{" "}
-                <a href="https://www.wickedwoods.ca/download_waiver.pdf">
+                <a href="https://www.wickedwoods.ca/WWMF_Release_of_Liability_and_Waiver_Agreement_Revised_2023-11-30.pdf">
                   download here
                 </a>
                 . Please take the time to download this document and review the
@@ -656,7 +657,7 @@ export default function Terms() {
             </Paragraph>
           </OList>
         </div>
-        <H4>Revised November 22, 2023</H4>
+        <H4>Revised December 12, 2023</H4>
       </div>
     </div>
   );
