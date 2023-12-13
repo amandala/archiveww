@@ -657,7 +657,7 @@ export default function Terms() {
             </Paragraph>
           </OList>
         </div>
-        <H4>Revised November 22, 2023</H4>
+        <H4>Revised December 12, 2023</H4>
       </div>
     </div>
   );
