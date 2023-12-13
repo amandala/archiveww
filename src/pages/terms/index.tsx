@@ -644,7 +644,7 @@ export default function Terms() {
             <Paragraph>
               <Bold>
                 This Release of Liability and Waiver Agreement is available for{" "}
-                <a href="https://www.wickedwoods.ca/download_waiver.pdf">
+                <a href="https://www.wickedwoods.ca/WWMF_Release_of_Liability_and_Waiver_Agreement_Revised_2023-11-30.pdf">
                   download here
                 </a>
                 . Please take the time to download this document and review the
