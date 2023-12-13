@@ -297,11 +297,12 @@ export default function Terms() {
             </ListItem>
             <ListItem>
               <Paragraph>
-                <Bold>Alcohol and illegal substances: </Bold>Wicked Woods Music
-                Festival prohibits guests from bringing alcohol onto the Event
-                site. Any alcohol found in searches will be confiscated and
-                dumped. Additionally, matters involving illegal substances will
-                be turned over to the RCMP.
+                <Bold>Alcohol and Illegal Substances:</Bold>
+                Wicked Woods Music Festival prohibits guests from bringing
+                alcohol onto the Event site. Any alcohol found in searches will
+                be confiscated and dumped. Additionally, any matters involving
+                illegal substances, which are in violation of BC legislation,
+                will be turned over to the RCMP.
               </Paragraph>
             </ListItem>
             <ListItem>
