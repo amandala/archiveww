@@ -9,13 +9,22 @@
 .Content {
   position: relative;
   z-index: 20;
-  max-width: 900px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 24px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   padding-bottom: 200px;
+
+  @media screen and (min-width: 500px) {
+    gap: 24px;
+  }
+
+  @media screen and (min-width: 900px) {
+    max-width: 750px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   @media screen and (min-width: 1024px) {
     padding-bottom: 0px;
@@ -53,10 +62,6 @@
 }
 
 @media screen and (min-width: 500px) {
-  .Content {
-    gap: 24px;
-  }
-
   .Column {
     margin: 0 auto;
     text-align: left;
@@ -64,10 +69,6 @@
 }
 
 @media screen and (min-width: 900px) {
-  .Content {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
   .Tree {
     object-fit: "cover";
   }
@@ -76,7 +77,25 @@
 .Raab {
   position: absolute;
   bottom: -5px;
-  left: 90px;
+  left: 75px;
+  width: 125px;
+  height: 125px;
+
+  @media screen and (min-width: 900px) {
+    width: 75px;
+    height: 75px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.Dixon {
+  position: absolute;
+  bottom: -5px;
+  left: 105px;
   width: 125px;
   height: 125px;
 
@@ -97,11 +116,20 @@
   left: 10px;
   height: 300px;
   width: 174px;
+  z-index: 5;
 
   @media screen and (min-width: 1024px) {
     height: 200px;
     width: auto;
     transform: scaleX(-1);
     left: 85%;
+  }
+}
+
+.XmasTree {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: block;
   }
 }

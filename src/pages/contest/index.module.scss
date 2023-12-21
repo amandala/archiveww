@@ -1,20 +1,51 @@
 @import "@/styles/variables.module.scss";
 
-.Holiday {
-  color: #ba0000;
-}
-
-.Flier {
-  width: 100vw;
-  height: auto;
-}
-
 .Wrapper {
   padding: 0 0 90px;
   background-color: $greenHaze;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 900px) {
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+  }
+}
+
+.Holiday {
+  color: $guardsmenRed;
+}
+
+.Content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 900px) {
+    padding: 40px;
+    flex-direction: row;
+    gap: 75px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+    p {
+      text-align: left;
+    }
+  }
+}
+
+.Flier {
+  height: 100%;
+  width: 100%;
 }
 
 .Desc {
@@ -94,7 +125,7 @@
 .Button {
   margin-top: 24px;
   padding: 12px 12px 10px;
-  background-color: #ba0000;
+  background-color: $guardsmenRed;
   border: 0;
   color: $wickedWhite;
   font-size: 24px;
@@ -103,13 +134,13 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: all 2ms;
-  outline-color: #ba0000;
+  outline-color: $guardsmenRed;
   filter: drop-shadow(1px 1px 1px $wickedBlack);
 
   :hover,
   :focus {
     cursor: pointer;
-    background-color: #ba0000;
+    background-color: $guardsmenRed;
   }
 }
 

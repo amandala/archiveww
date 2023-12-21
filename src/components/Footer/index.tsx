@@ -36,7 +36,7 @@ export default function Footer() {
             style={{
               margin: "0 auto",
               left: "-90%",
-              objectFit: windowSize.width <= 500 ? "cover" : "contain",
+              objectFit: windowSize.width <= 650 ? "cover" : "contain",
             }}
           />
           <Image
@@ -48,7 +48,7 @@ export default function Footer() {
               left: "-80%",
               bottom: "0",
               zIndex: 2,
-              objectFit: windowSize.width <= 500 ? "cover" : "contain",
+              objectFit: windowSize.width <= 650 ? "cover" : "contain",
             }}
           />
           <Image
@@ -58,9 +58,10 @@ export default function Footer() {
             style={{
               margin: "0 auto",
               right: "-90%",
-              objectFit: windowSize.width <= 500 ? "cover" : "contain",
+              objectFit: windowSize.width <= 650 ? "cover" : "contain",
             }}
           />
+
           <Image
             alt="A tree"
             src={xmasTree}
@@ -69,12 +70,15 @@ export default function Footer() {
               margin: "0 auto",
               right: "-85%",
               bottom: "0",
+              zIndex: 2,
               objectFit: windowSize.width <= 500 ? "cover" : "contain",
             }}
           />
+
           <Image
             alt="A tree"
             src={xmasTree}
+            className={styles.XmasTree}
             fill
             style={{
               margin: "0 auto",
@@ -86,6 +90,7 @@ export default function Footer() {
           <Image
             alt="A tree"
             src={xmasTree}
+            className={styles.XmasTree}
             fill
             style={{
               margin: "0 auto",
@@ -102,7 +107,7 @@ export default function Footer() {
             style={{
               margin: "0 auto",
               right: "-70%",
-              objectFit: windowSize.width <= 500 ? "cover" : "contain",
+              objectFit: windowSize.width <= 650 ? "cover" : "contain",
             }}
           />
           {/* <Image
@@ -118,7 +123,7 @@ export default function Footer() {
             style={{
               zIndex: 3,
             }}
-            className={styles.Raab}
+            className={styles.Dixon}
           />
           <Image
             alt="Meesey the moose"
