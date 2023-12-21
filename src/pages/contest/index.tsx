@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 import {
-  Bold,
   H1,
   JumboHeading,
   ListItem,
@@ -54,8 +53,8 @@ const Subscribe = () => {
           </JumboHeading>
           <Paragraph className={styles.Desc}>
             Sign up for the Wicked Woods Music Festival mailing list to enter
-            for your chance to win <Bold>1 ticket + early entry</Bold> for
-            Wicked Woods Music Festival August 30 - September 1, 2024.
+            for your chance to win 1 ticket + early entry for Wicked Woods Music
+            Festival August 30 - September 1, 2024.
           </Paragraph>
 
           <form
@@ -181,7 +180,7 @@ const Subscribe = () => {
             </ListItem>
             <ListItem>
               Submissions of this form for entry into the contest are allowed
-              between 8pm MST to 12am MST on December 23, 2023.
+              between 8pm and midnight.
             </ListItem>
             <ListItem>
               You will be given a contest ticket for each entry into the
@@ -196,12 +195,10 @@ const Subscribe = () => {
               on behalf of Sub Chakra.
             </ListItem>
             <ListItem>
-              The draw will take place after 12pm MST on December 23, 2024.
-            </ListItem>
-            <ListItem>
-              The winner will be announced at the show on the night of December
-              23, 2024. The winner will also be sent an email from Wicked Woods
-              Music Festival with instructions on how to claim their prize.
+              The draw will take place at midnight, and the winner will be
+              announced at the show. The winner will also be sent an email from
+              Wicked Woods Music Festival with instructions on how to claim
+              their prize.
             </ListItem>
           </UList>
         </div>
