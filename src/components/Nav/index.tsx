@@ -52,7 +52,7 @@ export function ExperienceNav() {
           href: "/workshops",
         },
         {
-          text: "Art Installations",
+          text: "Installations",
           href: "/art",
         },
       ]}
@@ -103,7 +103,7 @@ export function ContactNav() {
           href: "/code-of-conduct",
         },
         {
-          text: "Terms & Conditions",
+          text: "Terms",
           href: "/terms",
         },
         {
