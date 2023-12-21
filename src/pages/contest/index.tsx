@@ -78,7 +78,6 @@ const Subscribe = () => {
                   id="mce-EMAIL"
                   required={true}
                   value={email}
-                  readOnly
                   onChange={(v) => setEmail(v.target.value)}
                 />
                 <span id="mce-EMAIL-HELPERTEXT" className="helper_text"></span>
