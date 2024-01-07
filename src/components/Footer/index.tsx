@@ -3,12 +3,10 @@ import Image from "next/image";
 
 import { useWindowSize } from "@/helpers/useWindowSize";
 
-// import raabWink from "/public/assets/raabwink.gif";
-import xmasDixon from "/public/assets/xmasDixon.png";
+import raabWink from "/public/assets/raabwink.gif";
 import tree1 from "/public/assets/Tree_1.png";
 import tree2 from "/public/assets/Tree_2.png";
 import tree3 from "/public/assets/Tree_3.png";
-import xmasTree from "/public/assets/xmastree.png";
 import meesey from "/public/assets/meesey.png";
 import pageBackground from "/public/assets/backgrounds/orient_blue-min.png";
 import { ExperienceNav, FestivalNav, ContactNav, SocialNav } from "../Nav";
@@ -45,7 +43,19 @@ export default function Footer() {
             fill
             style={{
               margin: "0 auto",
-              left: "-80%",
+              left: "-99%",
+              bottom: "0",
+              zIndex: 2,
+              objectFit: windowSize.width <= 650 ? "cover" : "contain",
+            }}
+          />
+          <Image
+            alt="A tree"
+            src={tree3}
+            fill
+            style={{
+              margin: "0 auto",
+              left: "-69%",
               bottom: "0",
               zIndex: 2,
               objectFit: windowSize.width <= 650 ? "cover" : "contain",
@@ -64,7 +74,7 @@ export default function Footer() {
 
           <Image
             alt="A tree"
-            src={xmasTree}
+            src={tree1}
             fill
             style={{
               margin: "0 auto",
@@ -77,8 +87,7 @@ export default function Footer() {
 
           <Image
             alt="A tree"
-            src={xmasTree}
-            className={styles.XmasTree}
+            src={tree2}
             fill
             style={{
               margin: "0 auto",
@@ -89,8 +98,7 @@ export default function Footer() {
           />
           <Image
             alt="A tree"
-            src={xmasTree}
-            className={styles.XmasTree}
+            src={tree3}
             fill
             style={{
               margin: "0 auto",
@@ -106,25 +114,18 @@ export default function Footer() {
             fill
             style={{
               margin: "0 auto",
-              right: "-70%",
+              right: "-80%",
               objectFit: windowSize.width <= 650 ? "cover" : "contain",
             }}
           />
-          {/* <Image
+          <Image
             alt="Raab the rabbit"
             src={raabWink}
             width={200}
             height={200}
             className={styles.Raab}
-          /> */}
-          <Image
-            alt="Dixon the Christmas duck"
-            src={xmasDixon}
-            style={{
-              zIndex: 3,
-            }}
-            className={styles.Dixon}
           />
+
           <Image
             alt="Meesey the moose"
             src={meesey}
