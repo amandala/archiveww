@@ -1,5 +1,5 @@
 import PageHead from "@/components/PageHead";
-import UnderConstruction from "@/components/UnderConstruction";
+import { PageWrapper } from "@/components/PageWrapper";
 
 export default function Volunteer() {
   return (
@@ -10,7 +10,10 @@ export default function Volunteer() {
         description="Information on Wicked Woods volunteer roles and applications"
         url="wickedwoods.ca/volunteer"
       />
-      <UnderConstruction />
+
+      <PageWrapper>
+        <div>Hey</div>
+      </PageWrapper>
     </>
   );
 }
