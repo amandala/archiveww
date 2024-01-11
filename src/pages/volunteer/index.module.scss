@@ -1,5 +1,6 @@
 .Page {
   display: flex;
+  flex-direction: column;
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
@@ -7,10 +8,6 @@
 
   h1 {
     margin-bottom: 20px;
-  }
-
-  @media screen and (min-width: 900px) {
-    flex-direction: column;
   }
 }
 
