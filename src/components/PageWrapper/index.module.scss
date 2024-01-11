@@ -1,0 +1,10 @@
+@import "@/styles/variables.module.scss";
+
+.Wrapper {
+  position: relative;
+  padding: 90px 24px;
+
+  @media screen and (min-width: 900px) {
+    padding: 90px 45px;
+  }
+}
