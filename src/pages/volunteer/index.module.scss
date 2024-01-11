@@ -1,0 +1,53 @@
+.Page {
+  display: flex;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+.PageInfo {
+  display: flex;
+  flex-basis: 60% auto;
+  gap: 24px;
+  flex-direction: column;
+
+  @media screen and (min-width: 900px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+  }
+}
+
+.GalleryWrapper {
+  width: 100%;
+}
+
+.Main {
+  @media screen and (min-width: 900px) {
+    flex-basis: 60%;
+  }
+}
+
+.Perks {
+  h1 {
+    margin-bottom: 8px;
+    display: inline;
+  }
+
+  p {
+    display: inline;
+  }
+
+  div {
+    margin-bottom: 24px;
+  }
+}
