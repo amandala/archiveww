@@ -33,10 +33,11 @@ export default function Volunteer() {
               <div>
                 <Paragraph>
                   Are you ready to be part of the heartbeat behind an
-                  unforgettable music experience? We&apos;re calling on
+                  unforgettably wicked experience? We&apos;re calling on
                   passionate individuals like YOU to join our volunteer team for
-                  the upcoming Wicked Woods Music Festival! Get ready to be
-                  immersed in a world of music, nature, and vibrant energy.
+                  the upcoming Wicked Woods Music Festival, August 30 -
+                  September 1, 2024! Get ready to be immersed in a world of
+                  music, creativity, nature, and vibrant energy.
                 </Paragraph>
                 <Paragraph>
                   Keep your eyes on our social media for the application release
@@ -49,8 +50,8 @@ export default function Volunteer() {
               <div>
                 <H1>Experience the Magic ✨ </H1>
                 <Paragraph>
-                  Immerse yourself in the thrill of live music surrounded by the
-                  beauty of the great outdoors.
+                  Immerse yourself in the thrill of live event production and
+                  help create the magic.
                 </Paragraph>
               </div>
               <div>
