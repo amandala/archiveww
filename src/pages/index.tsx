@@ -1,5 +1,5 @@
-import SunsetScene from "@/components/SunsetScene";
 import PageHead from "@/components/PageHead";
+import AboutPage from "@/components/about";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         url="wickedwoods.ca"
       />
       <main>
-        <SunsetScene />
+        <AboutPage />
       </main>
     </>
   );

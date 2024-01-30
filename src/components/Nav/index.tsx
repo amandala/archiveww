@@ -6,10 +6,6 @@ export function FestivalNav() {
       title="Festival"
       links={[
         {
-          text: "About",
-          href: "/about",
-        },
-        {
           text: "Lineup",
           href: "/lineup",
         },
@@ -22,8 +18,8 @@ export function FestivalNav() {
           href: "/tickets",
         },
         {
-          text: "Blog",
-          href: "/wicked-news",
+          text: "Get Involved",
+          href: "/get-involved",
         },
       ]}
     />
@@ -43,18 +39,18 @@ export function ExperienceNav() {
           text: "Stages",
           href: "/stages",
         },
-        {
-          text: "Vendors",
-          href: "/vendors",
-        },
-        {
-          text: "Workshops",
-          href: "/workshops",
-        },
-        {
-          text: "Installations",
-          href: "/art",
-        },
+        // {
+        //   text: "Vendors",
+        //   href: "/vendors",
+        // },
+        // {
+        //   text: "Workshops",
+        //   href: "/workshops",
+        // },
+        // {
+        //   text: "Installations",
+        //   href: "/art",
+        // },
       ]}
     />
   );
@@ -79,6 +75,10 @@ export function SocialNav() {
           text: "YouTube",
           target: "_blank",
           href: "https://www.youtube.com/channel/UCf9jtHeCdWzm5Jw5EJRgUkQ",
+        },
+        {
+          text: "Blog",
+          href: "/wicked-news",
         },
       ]}
     />
@@ -105,10 +105,6 @@ export function ContactNav() {
         {
           text: "Terms",
           href: "/terms",
-        },
-        {
-          text: "Volunteer",
-          href: "/volunteer",
         },
       ]}
     />
