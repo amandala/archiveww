@@ -7,12 +7,17 @@ import Link from "next/link";
 export default function Button({
   children,
   href,
+  className,
 }: {
   children: React.ReactNode;
   href: string;
+  className?: string;
 }) {
   return (
-    <Link className={cx(chunkyHeart.className, styles.Link)} href={href}>
+    <Link
+      className={cx(chunkyHeart.className, styles.Link, className)}
+      href={href}
+    >
       <button className={cx(styles.Button)}>{children}</button>
     </Link>
   );

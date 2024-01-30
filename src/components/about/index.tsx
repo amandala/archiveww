@@ -6,6 +6,7 @@ import Gallery from "@/components/Gallery";
 import curiousBlue from "/public/assets/backgrounds/curious_blue-min.png";
 import backgroundBlack from "/public/assets/backgrounds/wicked_black-min.png";
 import wordmark from "/public/assets/FONT_WITH_MF_2024.png";
+import datestamp from "/public/assets/DATE_STAMP2024.png";
 import heroImage from "/public/assets/skyvalley.jpg";
 import eagle from "/public/assets/this_is_eagull.png";
 
@@ -16,47 +17,42 @@ import PageHead from "@/components/PageHead";
 import { generateGalleryImages } from "@/helpers/generateGalleryImages";
 
 import styles from "./index.module.scss";
+import TicketButton from "@/components/TicketButton";
 
 const galleryA = require.context(`/public/assets/gallery/about/top`, true);
 const galleryB = require.context(`/public/assets/gallery/about/b`, true);
 
-export default function About() {
+export default function AboutPage() {
   return (
     <div>
       <PageHead
-        page="About"
+        page="Home"
         image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
-        description="Learn more about Wicked Woods Music Festival"
-        url="wickedwoods.ca/about"
+        description="A three day arts and music festival located in the Colombia Valley just outside Fairmont BC, Canada."
+        url="wickedwoods.ca"
       />
       <div className={styles.Container}>
-        <div className={styles.Hero}>
-          <Image
-            alt="Hallow stage at night with lasers"
-            src={heroImage}
-            style={{
-              objectFit: "cover",
-              objectPosition: "bottom",
-            }}
-            fill
-            loading="eager"
-            priority
-            placeholder="blur"
-          />
+        <div
+          className={styles.Hero}
+          style={{ backgroundImage: `url(${heroImage.src})` }}
+        >
           <Image
             alt="Wicked Woods Music Festival Wordmark Logo"
             src={wordmark}
-            style={{
-              objectFit: "contain",
-              zIndex: 20,
-              paddingLeft: 20,
-              paddingRight: 20,
-              maxWidth: 800,
-              margin: "0 auto",
-            }}
+            className={styles.Wordmark}
             fill
           />
+          <Image
+            alt="Wicked Woods Music Festival Wordmark Logo"
+            src={datestamp}
+            className={styles.DateStamp}
+            fill
+          />
+          <div className={styles.Button}>
+            <TicketButton />
+          </div>
         </div>
+
         <div
           className={styles.Gallery}
           style={{ backgroundImage: `url(${backgroundBlack.src})` }}
@@ -97,7 +93,7 @@ export default function About() {
                   zIndex: 20,
                   paddingLeft: 20,
                   paddingRight: 20,
-                  maxWidth: 800,
+                  maxWidth: 500,
                   margin: "0 auto",
                 }}
               />
@@ -108,7 +104,7 @@ export default function About() {
             className={styles.VideoWrapper}
             style={{ backgroundImage: `url(${backgroundBlack.src})` }}
           >
-            <YouTubePlayer videoId="v1bZlwG434Y" opts={{ loop: 1 }} />
+            <YouTubePlayer videoId="Ofp6omfL4r4" opts={{ loop: 1 }} />
           </div>
           <div
             className={styles.Gallery}
