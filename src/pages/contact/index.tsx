@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-import hazyGreen from "/public/assets/backgrounds/green_haze-min.png";
-
 import bananaPhone from "/public/assets/bananaPhone.jpg";
 
 import TextLink from "@/components/TextLink";
@@ -21,11 +19,7 @@ export default function Contact() {
         url="wickedwoods.ca/contact"
       />
       <div className={styles.Container}>
-        <div
-          className={styles.Contact}
-          id="directory"
-          style={{ backgroundImage: `url(${hazyGreen.src})` }}
-        >
+        <div className={styles.Contact} id="directory">
           <div>
             <h2>Contact Directory</h2>
             <Image

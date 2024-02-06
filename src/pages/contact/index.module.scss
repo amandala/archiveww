@@ -1,20 +1,16 @@
 @import "../../styles/variables.module.scss";
 
 .Container {
-  padding: 100 0 0;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
 }
 
 .Contact {
-  padding: 70px 24px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 100px 24px;
   display: flex;
   flex-direction: column;
   color: $wickedWhite;
+  background-color: $greenHaze;
 }
 
 .Contact {

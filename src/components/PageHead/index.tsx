@@ -38,16 +38,6 @@ export default function PageHead({
 
       <link
         rel="preload"
-        href="/assets/sunsetScene/PAPER_fun_ASSETS_8_back-min.png"
-        as="image"
-      />
-      <link
-        rel="preload"
-        href="/assets/sunsetScene/PAPER_fun_ASSETS_Sun-min.png"
-        as="image"
-      />
-      <link
-        rel="preload"
         href="/assets/backgrounds/mooonshotbanner-min.png"
         as="image"
       />
