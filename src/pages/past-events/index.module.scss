@@ -10,15 +10,16 @@
   position: relative;
 }
 
-.TextWrapper {
-  margin-bottom: 50px;
-}
-
 .Content {
   margin: 0 auto;
   z-index: 5;
   position: relative;
   z-index: 30;
+}
+
+.Gallery {
+  background-color: $wickedBlack;
+  padding: 20px;
 }
 
 .TitleWrapper {

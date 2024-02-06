@@ -8,17 +8,13 @@ import tree1 from "/public/assets/Tree_1.png";
 import tree2 from "/public/assets/Tree_2.png";
 import tree3 from "/public/assets/Tree_3.png";
 import meesey from "/public/assets/meesey.png";
-import pageBackground from "/public/assets/backgrounds/orient_blue-min.png";
 import { ExperienceNav, FestivalNav, ContactNav, SocialNav } from "../Nav";
 
 export default function Footer() {
   const windowSize = useWindowSize();
 
   return (
-    <div
-      className={styles.Footer}
-      style={{ backgroundImage: `url(${pageBackground.src})` }}
-    >
+    <div className={styles.Footer}>
       <div className={styles.Content}>
         <FestivalNav />
         <ExperienceNav />

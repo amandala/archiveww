@@ -1,8 +1,6 @@
-import { H1, JumboHeading, Paragraph } from "@/components/Typography";
-import Image from "next/image";
+import { H1, JumboHeading } from "@/components/Typography";
 import styles from "./index.module.scss";
 import PageHead from "@/components/PageHead";
-import background from "/public/assets/backgrounds/prussian_blue-min.png";
 import Gallery from "@/components/Gallery";
 import slides from "../../data/pastEventsImages";
 
@@ -19,14 +17,7 @@ export default function PastLineups() {
         <div className={styles.TitleWrapper}>
           <JumboHeading>Past Lineups</JumboHeading>
         </div>
-        <div className={styles.TextWrapper}>
-          <Paragraph>
-            We&apos;ve had some pretty wicked times in the woods over the years.
-            Check out some of our past lineups below. Click on a poster to open
-            it up in full screen view.
-          </Paragraph>
-        </div>
-        <div>
+        <div className={styles.Gallery}>
           <Gallery targetRowHeight={500} images={slides} />
         </div>
         <div className={styles.Playlists}>
@@ -81,14 +72,6 @@ export default function PastLineups() {
           </div>
         </div>
       </div>
-      <Image
-        className={styles.ImageWrapper}
-        src={background}
-        fill
-        alt="Blue sky"
-        priority
-        style={{ zIndex: 0 }}
-      />
     </div>
   );
 }

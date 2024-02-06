@@ -3,9 +3,6 @@ import { useState } from "react";
 import { Bold, JumboHeading, Paragraph } from "@/components/Typography";
 import { dinBlack } from "@/styles/fonts";
 
-import pageBackground from "/public/assets/backgrounds/green_haze-min.png";
-import formBackground from "/public/assets/backgrounds/orient_blue-min.png";
-
 import cx from "classnames";
 
 import styles from "./index.module.scss";
@@ -18,11 +15,7 @@ const Subscribe = () => {
   const [phone, setPhone] = useState("");
 
   return (
-    <div
-      id="mc_embed_shell"
-      className={styles.Wrapper}
-      style={{ backgroundImage: `url(${pageBackground.src})` }}
-    >
+    <div id="mc_embed_shell" className={styles.Wrapper}>
       <PageHead
         page="Newsletter Signup"
         image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
@@ -37,7 +30,6 @@ const Subscribe = () => {
           sales, applications, and other exciting news about our upcoming event.
         </Paragraph>
         <form
-          style={{ backgroundImage: `url(${formBackground.src})` }}
           action="https://wickedwoods.us21.list-manage.com/subscribe/post?u=63135e975735cb2c754206634&amp;id=92b2cb40f5&amp;f_id=00f0f2e6f0"
           method="post"
           id="mc-embedded-subscribe-form"

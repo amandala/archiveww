@@ -68,9 +68,8 @@
 }
 
 .Description {
+  background-color: $orientBlue;
   padding: 70px 24px;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   color: $wickedWhite;
@@ -94,6 +93,7 @@
 .Gallery {
   position: relative;
   padding: 20px;
+  background-color: $wickedBlack;
 }
 
 .Bear {
