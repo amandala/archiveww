@@ -11,11 +11,7 @@ import sunne from "/public/assets/sunnE_2.png";
 import largeVeh from "/public/assets/LargeVehicle.png";
 import regularVeh from "/public/assets/RegularVehicle.png";
 import MegaVeh from "/public/assets/MegaVehicle.png";
-import orientBlueBg from "/public/assets/backgrounds/orient_blue-min.png";
-import prussianBlueBG from "/public/assets/backgrounds/prussian_blue-min.png";
 
-import ppbackground from "/public/assets/backgrounds/sandy_brown-min.png";
-import black from "/public/assets/backgrounds/wicked_black-min.png";
 import siteMap from "/public/assets/public-map.png";
 
 import Gallery from "@/components/Gallery";
@@ -38,10 +34,7 @@ const galleryImages = imageList.map((image) => {
 
 export default function Tickets() {
   return (
-    <div
-      className={styles.Wrapper}
-      style={{ backgroundImage: `url(${orientBlueBg.src})` }}
-    >
+    <div className={styles.Wrapper}>
       <div>
         <PageHead
           page="Tickets"
@@ -55,7 +48,7 @@ export default function Tickets() {
             <TicketButton />
           </div>
 
-          <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
+          <section>
             <JumboHeading className={styles.SectionHeading}>
               General Admission
             </JumboHeading>
@@ -96,10 +89,7 @@ export default function Tickets() {
               </div>
             </div>
           </section>
-          <div
-            className={styles.PaymentPlans}
-            style={{ backgroundImage: `url(${ppbackground.src})` }}
-          >
+          <div className={styles.PaymentPlans}>
             <H2>Payment Plans Available!</H2>
             <Paragraph>
               Secure your ticket on a payment plan and spread out the cost over
@@ -112,7 +102,7 @@ export default function Tickets() {
               </Link>
             </Paragraph>
           </div>
-          <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
+          <section>
             <JumboHeading className={styles.SectionHeading}>
               Add Ons
             </JumboHeading>
@@ -137,7 +127,7 @@ export default function Tickets() {
               </div>
             </div>
           </section>
-          <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
+          <section>
             <div className={styles.CampGrid}>
               <Gallery targetRowHeight={400} images={[siteMap]} />
               <div className={styles.Zones}>
@@ -188,7 +178,7 @@ export default function Tickets() {
               </div>
             </div>
           </section>
-          <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
+          <section>
             <Image
               alt="Car"
               src={regularVeh}
@@ -300,7 +290,7 @@ export default function Tickets() {
               </div>
             </div>
           </section>
-          <section style={{ backgroundImage: `url(${prussianBlueBG.src})` }}>
+          <section>
             <Image
               alt="Tent"
               src={tent}
@@ -498,14 +488,14 @@ export default function Tickets() {
       </div>
       <div
         style={{
-          backgroundImage: `url(${black.src})`,
-          padding: "20px",
           marginLeft: "-24px",
           marginRight: "-24px",
           position: "relative",
         }}
       >
-        <Gallery images={galleryImages} targetRowHeight={300} />
+        <div className={styles.Gallery}>
+          <Gallery images={galleryImages} targetRowHeight={300} />
+        </div>
       </div>
     </div>
   );

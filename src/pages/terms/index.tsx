@@ -11,16 +11,11 @@ import Image from "next/image";
 import PageHead from "@/components/PageHead";
 import WW_Sandy_Brown from "/public/assets/WW-sandy_brown.png";
 
-import background from "/public/assets/backgrounds/prussian_blue-min.png";
-
 import styles from "./index.module.scss";
 
 export default function Terms() {
   return (
-    <div
-      className={styles.Wrapper}
-      style={{ backgroundImage: `url(${background.src})` }}
-    >
+    <div className={styles.Wrapper}>
       <PageHead
         page="Terms"
         image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"

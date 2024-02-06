@@ -1,7 +1,6 @@
 import Gallery from "@/components/Gallery";
 import PageHead from "@/components/PageHead";
 import { PageWrapper } from "@/components/PageWrapper";
-import background from "/public/assets/backgrounds/prussian_blue-min.png";
 import { H1, JumboHeading, Paragraph } from "@/components/Typography";
 
 const images = require.context("/public/assets/gallery/vendors", true);
@@ -25,7 +24,7 @@ export default function Vendors() {
         description="Information on Wicked Woods vendors and vendor applications"
         url="wickedwoods.ca/vendors"
       />
-      <div style={{ backgroundImage: `url(${background?.src})` }}>
+      <div>
         <PageWrapper className={styles.Page}>
           <div className={styles.PageInfo}>
             <div className={styles.Main}>

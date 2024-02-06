@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import greenHazeBackground from "/public/assets/backgrounds/green_haze-min.png";
 import { JumboHeading, Paragraph } from "../Typography";
 
 import beaver from "/public/assets/Beavz3.png";
@@ -18,12 +17,6 @@ export default function UnderConstruction({
   return (
     <>
       <div className={styles.Wrapper}>
-        <Image
-          src={greenHazeBackground}
-          priority
-          alt="Green construction paper background"
-          fill
-        />
         <div className={styles.Content}>
           <JumboHeading>{title}</JumboHeading>
           <Paragraph>{text}</Paragraph>

@@ -3,8 +3,6 @@ import Image from "next/image";
 
 import Gallery from "@/components/Gallery";
 
-import curiousBlue from "/public/assets/backgrounds/curious_blue-min.png";
-import backgroundBlack from "/public/assets/backgrounds/wicked_black-min.png";
 import wordmark from "/public/assets/FONT_WITH_MF_2024.png";
 import datestamp from "/public/assets/DATE_STAMP2024.png";
 import heroImage from "/public/assets/skyvalley.jpg";
@@ -53,20 +51,14 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div
-          className={styles.Gallery}
-          style={{ backgroundImage: `url(${backgroundBlack.src})` }}
-        >
+        <div className={styles.Gallery}>
           <Gallery
             images={generateGalleryImages(galleryA)}
             targetRowHeight={300}
           />
         </div>
         <div>
-          <div
-            className={styles.Description}
-            style={{ backgroundImage: `url(${curiousBlue.src})` }}
-          >
+          <div className={styles.Description}>
             <div className={styles.TextWrapper}>
               <Paragraph className={styles.DescriptionText}>
                 Held on traditional unceded territory of the Akisqnuk First
@@ -100,16 +92,10 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div
-            className={styles.VideoWrapper}
-            style={{ backgroundImage: `url(${backgroundBlack.src})` }}
-          >
+          <div className={styles.VideoWrapper}>
             <YouTubePlayer videoId="Ofp6omfL4r4" opts={{ loop: 1 }} />
           </div>
-          <div
-            className={styles.Gallery}
-            style={{ backgroundImage: `url(${backgroundBlack.src})` }}
-          >
+          <div className={styles.Gallery}>
             <Gallery
               images={generateGalleryImages(galleryB)}
               targetRowHeight={200}
