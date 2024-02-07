@@ -18,8 +18,8 @@ export function FestivalNav() {
           href: "/tickets",
         },
         {
-          text: "Get Involved",
-          href: "/get-involved",
+          text: "Apply",
+          href: "/apply",
         },
       ]}
     />
