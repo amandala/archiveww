@@ -8,6 +8,10 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://wickedwoods.ca/apply</loc>
+        <lastmod>2024-02-06</lastmod>
+    </url>
+    <url>
         <loc>https://wickedwoods.ca/art</loc>
         <lastmod>2023-09-16</lastmod>
     </url>
@@ -50,10 +54,6 @@
     <url>
         <loc>https://wickedwoods.ca/vendors</loc>
         <lastmod>2023-09-16</lastmod>
-    </url>
-    <url>
-        <loc>https://wickedwoods.ca/get-involved</loc>
-        <lastmod>2024-01-29</lastmod>
     </url>
     <url>
         <loc>https://wickedwoods.ca/workshops</loc>

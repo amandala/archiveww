@@ -4,29 +4,6 @@ import { dinBold, chunkyHeart, dinBlack } from "@/styles/fonts";
 import styles from "./index.module.scss";
 import cx from "classnames";
 
-export function H4({
-  children,
-  dark = false,
-  className,
-}: {
-  children: React.ReactNode;
-  dark?: boolean;
-  className?: string;
-}) {
-  return (
-    <h4
-      className={cx(
-        dinBold.className,
-        styles.Four,
-        { [styles.Dark]: dark },
-        className
-      )}
-    >
-      {children}
-    </h4>
-  );
-}
-
 export function Paragraph({
   children,
   dark = false,
@@ -125,6 +102,29 @@ export function H3({
     >
       {children}
     </h3>
+  );
+}
+
+export function H4({
+  children,
+  dark = false,
+  className,
+}: {
+  children: React.ReactNode;
+  dark?: boolean;
+  className?: string;
+}) {
+  return (
+    <h4
+      className={cx(
+        dinBold.className,
+        styles.H4,
+        { [styles.Dark]: dark },
+        className
+      )}
+    >
+      {children}
+    </h4>
   );
 }
 

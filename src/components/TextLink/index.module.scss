@@ -26,6 +26,10 @@
   }
 }
 
+.Para {
+  display: inline-block;
+}
+
 @media screen and (max-width: 900px) {
   .Link {
     font-size: 16px;

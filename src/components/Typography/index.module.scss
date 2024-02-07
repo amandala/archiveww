@@ -1,9 +1,45 @@
 @import "@/styles/variables.module.scss";
 
-.Four {
+.Jumbo {
+  font-size: 33px;
+  line-height: 36px;
+  color: $wickedWhite;
+  letter-spacing: 2.5px;
+  transition: 1.5s color;
+}
+
+.H1 {
+  font-size: 33px;
+  line-height: 36px;
+  color: $wickedWhite;
+  transition: 1.5s color;
+}
+
+.H2 {
+  font-size: 27px;
+  line-height: 30px;
+  color: $wickedWhite;
+  font-weight: 400;
+  transition: 1.5s color;
+}
+
+.H3 {
+  font-size: 27px;
+  line-height: 30px;
+  color: $wickedWhite;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  transition: 1.5s color;
+  font-weight: bold;
+}
+
+.H4 {
+  font-size: 24px;
+  line-height: 27px;
   display: block;
   font-weight: 400;
-  font-size: 1.2rem;
   margin-bottom: 8px;
   color: $wickedWhite;
   transition: 1.5s;
@@ -11,46 +47,14 @@
 
 .Text {
   color: $wickedWhite;
-  font-size: 1.2rem;
+  font-size: 18px;
   transition: 1.5s color;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .Bold {
   display: inline;
-  font-size: 1.2rem;
-  transition: 1.5s color;
-}
-
-.Jumbo {
-  font-size: 3rem;
-  color: $wickedWhite;
-  letter-spacing: 2.5px;
-  transition: 1.5s color;
-  filter: drop-shadow(1px 1px 1px $wickedBlack);
-}
-
-.H1 {
-  font-size: 1.5rem;
-  color: $wickedWhite;
-  transition: 1.5s color;
-}
-
-.H2 {
-  font-size: 1.3rem;
-  line-height: 1.4rem;
-  color: $wickedWhite;
-  font-weight: 400;
-  transition: 1.5s color;
-}
-
-.H3 {
-  font-size: 1rem;
-  color: $wickedWhite;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+  font-weight: bold;
   transition: 1.5s color;
 }
 
@@ -64,7 +68,7 @@
 .ListItem {
   color: $wickedWhite;
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 18px;
   transition: 1.5s color;
 }
 
@@ -93,21 +97,38 @@
     }
   }
 }
+
 @media screen and (min-width: 1200px) {
   .Jumbo {
-    font-size: 5rem;
-    letter-spacing: 2px;
+    font-size: 52px;
+    line-height: 53px;
   }
 
-  .Four {
-    display: block;
-    font-weight: 400;
-    font-size: 1.4rem;
-    margin-bottom: 8px;
-    color: $wickedWhite;
+  .H1 {
+    font-size: 47px;
+    line-height: 50px;
   }
 
-  .Text {
-    font-size: 1.3rem;
+  .H2 {
+    font-size: 39px;
+    line-height: 42px;
+  }
+
+  .H3 {
+    font-size: 33px;
+    line-height: 37px;
+  }
+
+  .H4 {
+    font-size: 27px;
+    line-height: 30px;
+  }
+
+  .Text,
+  .OList,
+  .UList,
+  .ListItem {
+    font-size: 24px;
+    line-height: 28px;
   }
 }

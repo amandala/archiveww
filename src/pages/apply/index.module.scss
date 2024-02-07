@@ -1,0 +1,80 @@
+@import "@/styles/variables.module.scss";
+
+.Page {
+  margin: 0 auto;
+  background-color: $orientBlue;
+}
+
+.Title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.PageContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Intro {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Tables {
+  margin: 40px 0 0;
+  h2 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}
+
+.Table {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 70px 70px;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.GalleryWrapper {
+  width: 100%;
+  padding: 20px 20px;
+  background-color: $wickedBlack;
+}
+
+.Perks {
+  h1 {
+    margin-bottom: 8px;
+    display: inline;
+  }
+
+  p {
+    display: inline;
+  }
+
+  div {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .Tables {
+    display: flex;
+    gap: 140px;
+    justify-content: center;
+    padding: 100px 0 0;
+
+    h2 {
+      margin-bottom: 32px;
+    }
+  }
+
+  .Table {
+    grid-template-columns: 1fr 100px 100px;
+  }
+}
