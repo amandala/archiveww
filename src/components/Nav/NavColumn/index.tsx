@@ -16,7 +16,11 @@ export default function NavColumn({
         {links.map((link) => {
           return (
             <li key={link.href}>
-              <TextLink target={link.target} href={link.href}>
+              <TextLink
+                target={link.target}
+                href={link.href}
+                className={styles.Link}
+              >
                 {link.text}
               </TextLink>
             </li>

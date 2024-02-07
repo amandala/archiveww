@@ -4,7 +4,7 @@ import Image from "next/image";
 import bananaPhone from "/public/assets/bananaPhone.jpg";
 
 import TextLink from "@/components/TextLink";
-import { H4 } from "@/components/Typography";
+import { H4, JumboHeading } from "@/components/Typography";
 import PageHead from "@/components/PageHead";
 
 import styles from "./index.module.scss";
@@ -21,7 +21,9 @@ export default function Contact() {
       <div className={styles.Container}>
         <div className={styles.Contact} id="directory">
           <div>
-            <h2>Contact Directory</h2>
+            <JumboHeading className={styles.Heading}>
+              Contact Directory
+            </JumboHeading>
             <Image
               src={bananaPhone}
               width={330}

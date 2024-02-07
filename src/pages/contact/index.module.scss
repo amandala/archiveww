@@ -9,13 +9,19 @@
   padding: 100px 24px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   color: $wickedWhite;
   background-color: $greenHaze;
+}
+
+.Heading {
+  margin-bottom: 20px;
 }
 
 .Contact {
   color: $wickedWhite;
   text-align: center;
+  align-items: center;
 
   margin: 0 auto;
 
@@ -42,8 +48,8 @@
   .Contact {
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    gap: 36px;
+
+    gap: 50px;
     ul {
       text-align: left;
       margin: 0;

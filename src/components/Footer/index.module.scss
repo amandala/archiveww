@@ -18,17 +18,15 @@
   gap: 24px;
   padding-bottom: 200px;
 
-  @media screen and (min-width: 500px) {
-    gap: 24px;
-  }
-
   @media screen and (min-width: 900px) {
-    max-width: 750px;
+    max-width: 550px;
     grid-template-columns: repeat(4, 1fr);
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     padding-bottom: 0px;
+    max-width: 850px;
+    gap: 40px;
   }
 }
 
