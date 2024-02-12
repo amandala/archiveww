@@ -4,6 +4,7 @@ import styles from "./index.module.scss";
 import { Paragraph, JumboHeading, Bold, H1 } from "@/components/Typography";
 
 import Gallery from "@/components/Gallery";
+import PlaylistsEmbed from "@/components/PlaylistsEmbed";
 
 export default function Stages() {
   return (
@@ -134,6 +135,7 @@ export default function Stages() {
             </div>
           </div>
         </div>
+        <PlaylistsEmbed />
       </PageWrapper>
     </>
   );
