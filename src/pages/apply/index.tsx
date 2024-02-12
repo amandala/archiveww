@@ -146,6 +146,18 @@ export default function Apply() {
 
                   <div>
                     <Paragraph>
+                      <Bold>Medical</Bold>
+                    </Paragraph>
+                  </div>
+                  <div>
+                    <Paragraph>Feb 20</Paragraph>
+                  </div>
+                  <div>
+                    <Paragraph>Aug 16</Paragraph>
+                  </div>
+
+                  <div>
+                    <Paragraph>
                       <Bold>Vendor</Bold>
                     </Paragraph>
                   </div>

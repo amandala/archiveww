@@ -2,17 +2,20 @@
 
 .List {
   list-style: none;
-  margin-bottom: 32px;
 }
 
 .NavHeading {
   color: $sandyBrown;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 22px;
 }
 
 .Link {
-  font-size: 20px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 18px;
+
+  margin-bottom: 8px;
 }
 
 @media screen and (min-width: 500px) {

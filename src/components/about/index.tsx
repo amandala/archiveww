@@ -26,7 +26,7 @@ export default function AboutPage() {
       <PageHead
         page="Home"
         image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
-        description="A three day arts and music festival located in the Colombia Valley just outside Fairmont BC, Canada."
+        description="A three day arts and music festival located in the Columbia Valley just outside Fairmont BC, Canada."
         url="wickedwoods.ca"
       />
       <div className={styles.Container}>
@@ -68,7 +68,7 @@ export default function AboutPage() {
               <Paragraph className={styles.DescriptionText}>
                 Nestled on the edge of the Canadian Rockies, our intimate
                 festival is just minutes from Fairmont Hot Springs BC
-                overlooking the Colombia Valley.
+                overlooking the Columbia Valley.
               </Paragraph>
               <Paragraph className={styles.DescriptionText}>
                 We strongly value community, expression, and connection both
