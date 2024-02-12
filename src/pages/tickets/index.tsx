@@ -223,7 +223,10 @@ export default function Tickets() {
                       <H2>Large Vehicle Pass</H2>
                       <Paragraph>21-41 feet, including tow vehicle</Paragraph>
                     </span>
-                    <JumboHeading className={styles.Price}>$160</JumboHeading>
+                    <JumboHeading className={styles.Price}>
+                      $160
+                      <LowStockStamp />
+                    </JumboHeading>
                   </div>
                   <div className={styles.Option}>
                     <span>
@@ -254,7 +257,10 @@ export default function Tickets() {
                       <H2>Large Vehicle Pass</H2>
                       <Paragraph>21-41 feet, including tow vehicle</Paragraph>
                     </span>
-                    <JumboHeading className={styles.Price}>$115</JumboHeading>
+                    <JumboHeading className={styles.Price}>
+                      $115
+                      <LowStockStamp />
+                    </JumboHeading>
                   </div>
                 </div>
               </div>
