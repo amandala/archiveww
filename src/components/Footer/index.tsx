@@ -1,9 +1,7 @@
 import styles from "./index.module.scss";
-// import Image from "next/image";
 
-// import { useWindowSize } from "@/helpers/useWindowSize";
 import trees from "/public/assets/backgrounds/trees-min.png";
-
+import sky from "/public/assets/backgrounds/sky_background-min.png";
 import { ExperienceNav, FestivalNav, ContactNav, SocialNav } from "../Nav";
 
 export default function Footer() {
@@ -11,14 +9,19 @@ export default function Footer() {
 
   return (
     <div
-      className={styles.Footer}
-      style={{ backgroundImage: `url(${trees.src})` }}
+      className={styles.FooterWrapper}
+      style={{ backgroundImage: `url(${sky.src})` }}
     >
-      <div className={styles.Content}>
-        <FestivalNav />
-        <ExperienceNav />
-        <SocialNav />
-        <ContactNav />
+      <div
+        className={styles.Footer}
+        style={{ backgroundImage: `url(${trees.src})` }}
+      >
+        <div className={styles.Content}>
+          <FestivalNav />
+          <ExperienceNav />
+          <SocialNav />
+          <ContactNav />
+        </div>
       </div>
     </div>
   );
