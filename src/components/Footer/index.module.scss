@@ -5,6 +5,11 @@
   padding: 20px;
   position: relative;
   background-color: $wickedBlack;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
 }
 
 .Content {
@@ -16,7 +21,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
-  padding-bottom: 200px;
 
   @media screen and (min-width: 900px) {
     max-width: 550px;
@@ -44,5 +48,9 @@
   .Column {
     margin: 0 auto;
     text-align: left;
+  }
+
+  .Footer {
+    height: 400px;
   }
 }
