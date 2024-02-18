@@ -1,7 +1,9 @@
 import Gallery from "@/components/Gallery";
 import PageHead from "@/components/PageHead";
 import { PageWrapper } from "@/components/PageWrapper";
-import { JumboHeading, Paragraph, H2, Bold } from "@/components/Typography";
+import { JumboHeading, Paragraph, H2, Bold, H4 } from "@/components/Typography";
+
+import wolf from "/public/assets/backgrounds/wolfMoon.png";
 
 const images = require.context("/public/assets/gallery/crew", true);
 const imageList = images.keys().map((image) => images(image));
@@ -14,6 +16,7 @@ const galleryImages = imageList.map((image) => {
 });
 
 import styles from "./index.module.scss";
+import Link from "next/link";
 
 export default function Apply() {
   return (
@@ -25,7 +28,10 @@ export default function Apply() {
         url="wickedwoods.ca/apply"
       />
       <div>
-        <PageWrapper className={styles.Page}>
+        <PageWrapper
+          className={styles.Page}
+          style={{ backgroundImage: `url(${wolf.src})` }}
+        >
           <div className={styles.PageContent}>
             <JumboHeading className={styles.Title}>
               Apply at Wicked Woods
@@ -62,7 +68,12 @@ export default function Apply() {
                     </Paragraph>
                   </div>
                   <div>
-                    <Paragraph>Feb 18</Paragraph>
+                    <Link
+                      target="_blank"
+                      href="https://forms.gle/eDE1mPP8VvcpW1DH6"
+                    >
+                      <H4 className={styles.ApplyLink}>Apply</H4>
+                    </Link>
                   </div>
                   <div>
                     <Paragraph>Mar 5</Paragraph>
@@ -74,7 +85,12 @@ export default function Apply() {
                     </Paragraph>
                   </div>
                   <div>
-                    <Paragraph>Feb 18</Paragraph>
+                    <Link
+                      target="_blank"
+                      href="https://forms.gle/1AFa9Y42snj27Wro8"
+                    >
+                      <H4 className={styles.ApplyLink}>Apply</H4>
+                    </Link>
                   </div>
                   <div>
                     <Paragraph>Mar 30</Paragraph>
@@ -86,7 +102,12 @@ export default function Apply() {
                     </Paragraph>
                   </div>
                   <div>
-                    <Paragraph>Feb 18</Paragraph>
+                    <Link
+                      target="_blank"
+                      href="https://forms.gle/8ETUpR86m9mQae7w9"
+                    >
+                      <H4 className={styles.ApplyLink}>Apply</H4>
+                    </Link>
                   </div>
                   <div>
                     <Paragraph>Jun 5</Paragraph>
@@ -98,7 +119,12 @@ export default function Apply() {
                     </Paragraph>
                   </div>
                   <div>
-                    <Paragraph>Feb 18</Paragraph>
+                    <Link
+                      target="_blank"
+                      href="https://forms.gle/Ar78ZjpDREQckhAp6"
+                    >
+                      <H4 className={styles.ApplyLink}>Apply</H4>
+                    </Link>
                   </div>
                   <div>
                     <Paragraph>Jun 5</Paragraph>

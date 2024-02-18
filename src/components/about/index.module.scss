@@ -57,10 +57,16 @@
   font-size: 16px;
 }
 
+.DescriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: $wickedBlack;
+}
+
 .VideoWrapper {
   background-color: $wickedBlack;
   margin: 0 auto;
-  padding: 24px;
+  width: 100vw;
 }
 
 .TextWrapper {
@@ -68,19 +74,11 @@
 }
 
 .Description {
-  background-color: $orientBlue;
+  background-color: $wickedBlack;
   padding: 70px 24px;
   display: flex;
   flex-direction: column;
   color: $wickedWhite;
-}
-
-.EagleContainer {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  right: 0;
-  top: -20%;
 }
 
 .Value {
@@ -96,12 +94,6 @@
   background-color: $wickedBlack;
 }
 
-.Bear {
-  min-height: 100vw;
-  width: 100vw;
-  position: relative;
-}
-
 @media screen and (min-width: 500px) {
   .Hero {
     height: 600px;
@@ -109,20 +101,13 @@
 }
 
 @media screen and (min-width: 900px) {
-  .EagleContainer {
-    top: -60px;
-    right: -50px;
-    width: 400px;
-    height: 400px;
-  }
-
   .VideoWrapper {
     padding: 100px 24px;
   }
 
-  .Description {
-    display: grid;
-    grid-template-columns: 70% 300px;
+  .DescriptionWrapper {
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -136,12 +121,5 @@
     font-size: 20px;
     margin-bottom: 20px;
     max-width: 900px;
-  }
-
-  .EagleContainer {
-    top: -240px;
-    right: 0%;
-    width: 700px;
-    height: 700px;
   }
 }

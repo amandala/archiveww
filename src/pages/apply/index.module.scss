@@ -2,7 +2,8 @@
 
 .Page {
   margin: 0 auto;
-  background-color: $orientBlue;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Title {
@@ -56,6 +57,13 @@
 
   div {
     margin-bottom: 24px;
+  }
+}
+
+.ApplyLink {
+  color: #fcd703;
+  :hover {
+    text-decoration: underline;
   }
 }
 

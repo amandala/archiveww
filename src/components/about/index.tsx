@@ -6,8 +6,6 @@ import Gallery from "@/components/Gallery";
 import wordmark from "/public/assets/FONT_WITH_MF_2024.png";
 import datestamp from "/public/assets/DATE_STAMP2024.png";
 import heroImage from "/public/assets/skyvalley.jpg";
-import eagle from "/public/assets/this_is_eagull.png";
-
 import { Paragraph } from "@/components/Typography";
 import YouTubePlayer from "@/components/YoutubePlayer";
 import PageHead from "@/components/PageHead";
@@ -57,7 +55,7 @@ export default function AboutPage() {
             targetRowHeight={300}
           />
         </div>
-        <div>
+        <div className={styles.DescriptionWrapper}>
           <div className={styles.Description}>
             <div className={styles.TextWrapper}>
               <Paragraph className={styles.DescriptionText}>
@@ -75,23 +73,7 @@ export default function AboutPage() {
                 with our fellow humans and the land on which we gather.
               </Paragraph>
             </div>
-            <div className={styles.EagleContainer}>
-              <Image
-                alt="Eagle"
-                src={eagle}
-                fill
-                style={{
-                  objectFit: "contain",
-                  zIndex: 20,
-                  paddingLeft: 20,
-                  paddingRight: 20,
-                  maxWidth: 500,
-                  margin: "0 auto",
-                }}
-              />
-            </div>
           </div>
-
           <div className={styles.VideoWrapper}>
             <YouTubePlayer videoId="Ofp6omfL4r4" opts={{ loop: 1 }} />
           </div>
