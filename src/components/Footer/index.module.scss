@@ -4,7 +4,7 @@
   color: $wickedWhite;
   padding: 20px;
   position: relative;
-  background-color: $prussianBlue;
+  background-color: $wickedBlack;
 }
 
 .Content {
@@ -40,87 +40,9 @@
   margin-bottom: 32px;
 }
 
-.Trees {
-  position: absolute;
-  height: 90%;
-  width: 100%;
-  bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.TreesRelative {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-.Tree {
-  object-fit: "contain";
-}
-
 @media screen and (min-width: 500px) {
   .Column {
     margin: 0 auto;
     text-align: left;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .Tree {
-    object-fit: "cover";
-  }
-}
-
-.Raab {
-  position: absolute;
-  bottom: -5px;
-  left: 75px;
-  width: 125px;
-  height: 125px;
-
-  @media screen and (min-width: 900px) {
-    width: 75px;
-    height: 75px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 90px;
-    height: 90px;
-  }
-}
-
-.Dixon {
-  position: absolute;
-  bottom: -5px;
-  left: 105px;
-  width: 125px;
-  height: 125px;
-
-  @media screen and (min-width: 900px) {
-    width: 75px;
-    height: 75px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 90px;
-    height: 90px;
-  }
-}
-
-.Meesey {
-  position: absolute;
-  bottom: -20px;
-  left: 10px;
-  height: 300px;
-  width: 174px;
-  z-index: 5;
-
-  @media screen and (min-width: 1024px) {
-    height: 200px;
-    width: auto;
-    transform: scaleX(-1);
-    left: 85%;
   }
 }

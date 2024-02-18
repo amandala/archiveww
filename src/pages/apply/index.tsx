@@ -3,6 +3,8 @@ import PageHead from "@/components/PageHead";
 import { PageWrapper } from "@/components/PageWrapper";
 import { JumboHeading, Paragraph, H2, Bold, H4 } from "@/components/Typography";
 
+import wolf from "/public/assets/backgrounds/wolfMoon.png";
+
 const images = require.context("/public/assets/gallery/crew", true);
 const imageList = images.keys().map((image) => images(image));
 const galleryImages = imageList.map((image) => {
@@ -26,7 +28,10 @@ export default function Apply() {
         url="wickedwoods.ca/apply"
       />
       <div>
-        <PageWrapper className={styles.Page}>
+        <PageWrapper
+          className={styles.Page}
+          style={{ backgroundImage: `url(${wolf.src})` }}
+        >
           <div className={styles.PageContent}>
             <JumboHeading className={styles.Title}>
               Apply at Wicked Woods
