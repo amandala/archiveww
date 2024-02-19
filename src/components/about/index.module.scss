@@ -1,12 +1,19 @@
 @import "../../styles/variables.module.scss";
 
+.HideMobile {
+  display: none;
+}
+
 .Container {
-  padding: 100 0 0;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   background-color: $wickedBlack;
+}
+
+.PageContent {
+  padding: 24px 24px;
 }
 
 .Hero {
@@ -16,31 +23,33 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
 }
 
-.DateStamp {
-  object-fit: contain;
-  z-index: 20;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 400px;
-  margin: 0 auto;
-  margin-top: 80px;
+.Date {
+  padding-top: 24px;
+}
+
+.LogoWrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .Wordmark {
   object-fit: contain;
-  z-index: 20;
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 600px;
-  margin: 0 auto;
-  top: 30%;
+  max-width: 200px;
+  height: 250px;
 }
 
 .Button {
   margin: 0 auto;
-  position: absolute;
   display: flex;
   justify-content: center;
   bottom: 5%;
@@ -50,11 +59,14 @@
 
 .Description {
   position: relative;
+  background-color: $wickedBlack;
+  display: flex;
+  flex-direction: column;
+  color: $wickedWhite;
 }
 
 .DescriptionText {
   margin-bottom: 12px;
-  font-size: 16px;
 }
 
 .DescriptionWrapper {
@@ -66,19 +78,11 @@
 .VideoWrapper {
   background-color: $wickedBlack;
   margin: 0 auto;
-  width: 100vw;
+  margin: 50px 0;
 }
 
 .TextWrapper {
   z-index: 80;
-}
-
-.Description {
-  background-color: $wickedBlack;
-  padding: 70px 24px;
-  display: flex;
-  flex-direction: column;
-  color: $wickedWhite;
 }
 
 .Value {
@@ -90,16 +94,15 @@
 
 .Gallery {
   position: relative;
-  padding: 20px;
   background-color: $wickedBlack;
 }
 
 .Applications {
   background-color: $wickedBlack;
-  margin: 0;
-  padding: 24px;
-  max-width: 900px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 48px;
 }
 
 .ApplyButton {
@@ -122,34 +125,40 @@
     height: 600px;
   }
 
-  .Applications {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 24px;
+  .Wordmark {
+    height: 400px;
+    max-width: 400px;
   }
 }
 
 @media screen and (min-width: 900px) {
-  .VideoWrapper {
-    padding: 100px 24px;
-  }
-
   .DescriptionWrapper {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .Application {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Applications {
+    max-width: 900px;
+    margin: 100px auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .TextWrapper {
-    max-width: 1400px;
-    margin-left: 100px;
   }
 
   .DescriptionText {
     font-size: 20px;
     margin-bottom: 20px;
-    max-width: 900px;
   }
 }
