@@ -11,8 +11,6 @@ import { H3, JumboHeading, Paragraph } from "@/components/Typography";
 import YouTubePlayer from "@/components/YoutubePlayer";
 import PageHead from "@/components/PageHead";
 
-import sky from "/public/assets/backgrounds/sky_background-min.png";
-
 import { generateGalleryImages } from "@/helpers/generateGalleryImages";
 
 import styles from "./index.module.scss";
@@ -87,10 +85,7 @@ export default function AboutPage() {
               </div>
 
               <Link href="/apply">
-                <div
-                  style={{ backgroundImage: `url(${sky.src})` }}
-                  className={styles.ApplyButton}
-                >
+                <div className={styles.ApplyButton}>
                   <JumboHeading className={styles.ApButt}>APPLY</JumboHeading>
                 </div>
               </Link>
@@ -102,10 +97,7 @@ export default function AboutPage() {
               </div>
 
               <Link href="/apply">
-                <div
-                  style={{ backgroundImage: `url(${sky.src})` }}
-                  className={styles.ApplyButton}
-                >
+                <div className={styles.ApplyButton}>
                   <JumboHeading className={styles.ApButt}>APPLY</JumboHeading>
                 </div>
               </Link>
