@@ -9,7 +9,6 @@
 
 .Footer {
   color: $wickedWhite;
-  padding: 20px;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,22 +19,24 @@
 
 .Content {
   position: relative;
-  z-index: 20;
   max-width: 400px;
   margin: 0 auto;
   padding: 24px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+  height: 400px;
 
   @media screen and (min-width: 900px) {
     max-width: 550px;
     grid-template-columns: repeat(4, 1fr);
+    padding-top: 150px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 0px;
-    max-width: 850px;
+    padding-top: 200px;
+    max-width: 1200px;
     gap: 40px;
   }
 }
@@ -50,13 +51,9 @@
   margin-bottom: 32px;
 }
 
-@media screen and (min-width: 500px) {
-  .Column {
-    margin: 0 auto;
-    text-align: left;
-  }
-
-  .Footer {
-    height: 400px;
-  }
-}
+// @media screen and (min-width: 500px) {
+//   .Column {
+//     margin: 0 auto;
+//     text-align: left;
+//   }
+// }
