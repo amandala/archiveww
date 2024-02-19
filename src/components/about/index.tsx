@@ -6,14 +6,17 @@ import Gallery from "@/components/Gallery";
 import wordmark from "/public/assets/FONT_WITH_MF_2024.png";
 import datestamp from "/public/assets/DATE_STAMP2024.png";
 import heroImage from "/public/assets/skyvalley.jpg";
-import { Paragraph } from "@/components/Typography";
+import { JumboHeading, Paragraph } from "@/components/Typography";
 import YouTubePlayer from "@/components/YoutubePlayer";
 import PageHead from "@/components/PageHead";
+
+import sky from "/public/assets/backgrounds/sky_background-min.png";
 
 import { generateGalleryImages } from "@/helpers/generateGalleryImages";
 
 import styles from "./index.module.scss";
 import TicketButton from "@/components/TicketButton";
+import Link from "next/link";
 
 const galleryA = require.context(`/public/assets/gallery/about/top`, true);
 const galleryB = require.context(`/public/assets/gallery/about/b`, true);
@@ -77,12 +80,28 @@ export default function AboutPage() {
           <div className={styles.VideoWrapper}>
             <YouTubePlayer videoId="Ofp6omfL4r4" opts={{ loop: 1 }} />
           </div>
+
           <div className={styles.Gallery}>
             <Gallery
               images={generateGalleryImages(galleryB)}
               targetRowHeight={200}
             />
           </div>
+        </div>
+        <div className={styles.Applications}>
+          <div>
+            <JumboHeading>Calling all Creatives!!</JumboHeading>
+            <Paragraph>Our Creative Applications are NOW OPEN!</Paragraph>
+          </div>
+
+          <Link href="/apply">
+            <div
+              style={{ backgroundImage: `url(${sky.src})` }}
+              className={styles.ApplyButton}
+            >
+              <JumboHeading className={styles.ApButt}>APPLY</JumboHeading>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
