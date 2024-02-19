@@ -145,46 +145,64 @@ export default function Apply() {
                       <Bold>Closed</Bold>
                     </Paragraph>
                   </div>
-
                   <div>
                     <Paragraph>
                       <Bold>Volunteer</Bold>
                     </Paragraph>
                   </div>
                   <div>
-                    <Paragraph>Feb 20</Paragraph>
+                    <Paragraph>
+                      <Link
+                        target="_blank"
+                        href="https://wickedwoods.festivalpro.com/form/YeUmaINdacVkTKJElLNP/55"
+                      >
+                        <H4 className={styles.ApplyLink}>Apply</H4>
+                      </Link>
+                    </Paragraph>
                   </div>
                   <div>
                     <Paragraph>Aug 16</Paragraph>
                   </div>
-
                   <div>
                     <Paragraph>
                       <Bold>Health & Safety</Bold>
                     </Paragraph>
                   </div>
+
                   <div>
-                    <Paragraph>Feb 20</Paragraph>
+                    <Paragraph>
+                      <Link
+                        target="_blank"
+                        href="https://forms.gle/WF9zyFKmPQna48c27"
+                      >
+                        <H4 className={styles.ApplyLink}>Apply</H4>
+                      </Link>
+                    </Paragraph>
                   </div>
                   <div>
                     <Paragraph>Aug 16</Paragraph>
                   </div>
-
                   <div>
                     <Paragraph>
                       <Bold>Medical</Bold>
                     </Paragraph>
                   </div>
                   <div>
-                    <Paragraph>Feb 20</Paragraph>
+                    <Paragraph>
+                      <Link
+                        target="_blank"
+                        href="https://forms.gle/fzXypi6ayfb5uy6L8"
+                      >
+                        <H4 className={styles.ApplyLink}>Apply</H4>
+                      </Link>
+                    </Paragraph>
                   </div>
                   <div>
                     <Paragraph>Aug 16</Paragraph>
                   </div>
-
                   <div>
                     <Paragraph>
-                      <Bold>Vendor</Bold>
+                      <Bold>Food Vendor</Bold>
                     </Paragraph>
                   </div>
                   <div>
@@ -193,34 +211,20 @@ export default function Apply() {
                   <div>
                     <Paragraph>Jun 5</Paragraph>
                   </div>
-
+                  <div>
+                    <Paragraph>
+                      <Bold>Artisan/Service Vendor</Bold>
+                    </Paragraph>
+                  </div>
+                  <div>
+                    <Paragraph>Feb 20</Paragraph>
+                  </div>
+                  <div>
+                    <Paragraph>Jun 5</Paragraph>
+                  </div>
                   <div>
                     <Paragraph>
                       <Bold>Media</Bold>
-                    </Paragraph>
-                  </div>
-                  <div>
-                    <Paragraph>Feb 20</Paragraph>
-                  </div>
-                  <div>
-                    <Paragraph>Jun 5</Paragraph>
-                  </div>
-
-                  <div>
-                    <Paragraph>
-                      <Bold>Site Decor</Bold>
-                    </Paragraph>
-                  </div>
-                  <div>
-                    <Paragraph>Feb 20</Paragraph>
-                  </div>
-                  <div>
-                    <Paragraph>Jun 5</Paragraph>
-                  </div>
-
-                  <div>
-                    <Paragraph>
-                      <Bold>Street Team</Bold>
                     </Paragraph>
                   </div>
                   <div>
