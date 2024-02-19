@@ -206,7 +206,14 @@ export default function Apply() {
                     </Paragraph>
                   </div>
                   <div>
-                    <Paragraph>Feb 20</Paragraph>
+                    <Paragraph>
+                      <Link
+                        target="_blank"
+                        href="https://wickedwoods.festivalpro.com/form/xqlPYujpSEejASbAEjQB/55"
+                      >
+                        <H4 className={styles.ApplyLink}>Apply</H4>
+                      </Link>
+                    </Paragraph>
                   </div>
                   <div>
                     <Paragraph>Jun 5</Paragraph>
@@ -217,7 +224,14 @@ export default function Apply() {
                     </Paragraph>
                   </div>
                   <div>
-                    <Paragraph>Feb 20</Paragraph>
+                    <Paragraph>
+                      <Link
+                        target="_blank"
+                        href="https://wickedwoods.festivalpro.com/form/ECrAQsJmcSCZMnUegMpO/55"
+                      >
+                        <H4 className={styles.ApplyLink}>Apply</H4>
+                      </Link>
+                    </Paragraph>
                   </div>
                   <div>
                     <Paragraph>Jun 5</Paragraph>
@@ -228,7 +242,14 @@ export default function Apply() {
                     </Paragraph>
                   </div>
                   <div>
-                    <Paragraph>Feb 20</Paragraph>
+                    <Paragraph>
+                      <Link
+                        target="_blank"
+                        href="https://forms.gle/P7ocG2J5FuzS3txT8"
+                      >
+                        <H4 className={styles.ApplyLink}>Apply</H4>
+                      </Link>
+                    </Paragraph>
                   </div>
                   <div>
                     <Paragraph>Jun 5</Paragraph>
