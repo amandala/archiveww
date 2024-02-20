@@ -12,6 +12,8 @@ import largeVeh from "/public/assets/LargeVehicle.png";
 import regularVeh from "/public/assets/RegularVehicle.png";
 import MegaVeh from "/public/assets/MegaVehicle.png";
 
+import background from "/public/assets/backgrounds/sky_background-min.png";
+
 import siteMap from "/public/assets/public-map.png";
 
 import Gallery from "@/components/Gallery";
@@ -34,7 +36,10 @@ const galleryImages = imageList.map((image) => {
 
 export default function Tickets() {
   return (
-    <div className={styles.Wrapper}>
+    <div
+      className={styles.Wrapper}
+      style={{ backgroundImage: `url(${background.src})` }}
+    >
       <div>
         <PageHead
           page="Tickets"
