@@ -80,7 +80,9 @@ export default function AboutPage() {
           <div className={styles.Applications}>
             <div className={styles.Application}>
               <div>
-                <JumboHeading>Calling all Creatives!!</JumboHeading>
+                <JumboHeading className={styles.ApplicationText}>
+                  Calling all Creatives
+                </JumboHeading>
                 <Paragraph>Our Creative Applications are NOW OPEN!</Paragraph>
               </div>
 
@@ -92,8 +94,10 @@ export default function AboutPage() {
             </div>
             <div className={styles.Application}>
               <div>
-                <JumboHeading>Join the Crew!</JumboHeading>
-                <Paragraph>Our Crew Applications open Feb.20th!</Paragraph>
+                <JumboHeading className={styles.ApplicationText}>
+                  Join our wicked Crew
+                </JumboHeading>
+                <Paragraph>Our Crew Applications are NOW OPEN!</Paragraph>
               </div>
 
               <Link href="/apply">

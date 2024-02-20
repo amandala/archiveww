@@ -103,6 +103,11 @@
   flex-direction: column;
   gap: 50px;
   margin-bottom: 48px;
+  border-width: 13px 13px 13px 13px;
+  border-style: dotted;
+  border-color: $waterLeafBlue;
+  border-style: dotted;
+  padding: 48px;
 }
 
 .ApplyButton {
@@ -113,6 +118,10 @@
   align-items: center;
   justify-content: center;
   background-color: $delugePurple;
+}
+
+.ApplicationText {
+  margin-bottom: 10px;
 }
 
 .ApButt {
@@ -149,7 +158,7 @@
   }
 
   .Applications {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 100px auto;
   }
 }
