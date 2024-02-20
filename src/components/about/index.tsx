@@ -83,7 +83,11 @@ export default function AboutPage() {
                 <JumboHeading className={styles.ApplicationText}>
                   Calling all Creatives
                 </JumboHeading>
-                <Paragraph>Our Creative Applications are NOW OPEN!</Paragraph>
+                <Paragraph>
+                  We are accepting applications for Music, Art, Performance, and
+                  Workshops. Apply today to showcase your creativity at the
+                  Wickedest party in the Woods.
+                </Paragraph>
               </div>
 
               <Link href="/apply">
@@ -97,7 +101,11 @@ export default function AboutPage() {
                 <JumboHeading className={styles.ApplicationText}>
                   Join our wicked Crew
                 </JumboHeading>
-                <Paragraph>Our Crew Applications are NOW OPEN!</Paragraph>
+                <Paragraph>
+                  Our beloved crew are the real magic behind Wicked Woods. It
+                  takes hundreds of passionate individuals to put on our party.
+                  Apply today and help create the best Wicked Woods yet!
+                </Paragraph>
               </div>
 
               <Link href="/apply">
