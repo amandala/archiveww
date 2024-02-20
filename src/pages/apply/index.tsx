@@ -56,7 +56,7 @@ export default function Apply() {
                       <Bold>Open</Bold>
                     </Paragraph>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>
                       <Bold>Closed</Bold>
                     </Paragraph>
@@ -75,7 +75,7 @@ export default function Apply() {
                       <H4 className={styles.ApplyLink}>Apply</H4>
                     </Link>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Mar 5</Paragraph>
                   </div>
 
@@ -92,7 +92,7 @@ export default function Apply() {
                       <H4 className={styles.ApplyLink}>Apply</H4>
                     </Link>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Mar 30</Paragraph>
                   </div>
 
@@ -109,7 +109,7 @@ export default function Apply() {
                       <H4 className={styles.ApplyLink}>Apply</H4>
                     </Link>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Jun 5</Paragraph>
                   </div>
 
@@ -126,7 +126,7 @@ export default function Apply() {
                       <H4 className={styles.ApplyLink}>Apply</H4>
                     </Link>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Jun 5</Paragraph>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ export default function Apply() {
                       <Bold>Open</Bold>
                     </Paragraph>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>
                       <Bold>Closed</Bold>
                     </Paragraph>
@@ -160,7 +160,7 @@ export default function Apply() {
                       </Link>
                     </Paragraph>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Aug 16</Paragraph>
                   </div>
                   <div>
@@ -179,7 +179,7 @@ export default function Apply() {
                       </Link>
                     </Paragraph>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Aug 16</Paragraph>
                   </div>
                   <div>
@@ -197,7 +197,7 @@ export default function Apply() {
                       </Link>
                     </Paragraph>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Aug 16</Paragraph>
                   </div>
                   <div>
@@ -215,7 +215,7 @@ export default function Apply() {
                       </Link>
                     </Paragraph>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Jun 5</Paragraph>
                   </div>
                   <div>
@@ -233,7 +233,7 @@ export default function Apply() {
                       </Link>
                     </Paragraph>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Jun 5</Paragraph>
                   </div>
                   <div>
@@ -251,7 +251,7 @@ export default function Apply() {
                       </Link>
                     </Paragraph>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Jun 5</Paragraph>
                   </div>
                 </div>

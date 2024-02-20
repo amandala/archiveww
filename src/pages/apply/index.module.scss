@@ -1,5 +1,9 @@
 @import "@/styles/variables.module.scss";
 
+.HideMobileSmall {
+  display: none;
+}
+
 .Page {
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -33,7 +37,7 @@
 .Table {
   display: grid;
   gap: 24px;
-  grid-template-columns: 1fr 70px 70px;
+  grid-template-columns: 1fr 70px;
   max-width: 650px;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -64,6 +68,18 @@
   color: #fcd703;
   :hover {
     text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .HideMobileSmall {
+    display: block;
+  }
+
+  .Table {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 70px 75px;
   }
 }
 
