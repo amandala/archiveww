@@ -56,7 +56,7 @@ export default function Apply() {
                       <Bold>Open</Bold>
                     </Paragraph>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>
                       <Bold>Closed</Bold>
                     </Paragraph>
@@ -75,7 +75,7 @@ export default function Apply() {
                       <H4 className={styles.ApplyLink}>Apply</H4>
                     </Link>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Mar 5</Paragraph>
                   </div>
 
@@ -92,13 +92,13 @@ export default function Apply() {
                       <H4 className={styles.ApplyLink}>Apply</H4>
                     </Link>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Mar 30</Paragraph>
                   </div>
 
                   <div>
                     <Paragraph>
-                      <Bold>Installations</Bold>
+                      <Bold>Art & Installations</Bold>
                     </Paragraph>
                   </div>
                   <div>
@@ -109,7 +109,7 @@ export default function Apply() {
                       <H4 className={styles.ApplyLink}>Apply</H4>
                     </Link>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Jun 5</Paragraph>
                   </div>
 
@@ -126,7 +126,7 @@ export default function Apply() {
                       <H4 className={styles.ApplyLink}>Apply</H4>
                     </Link>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Jun 5</Paragraph>
                   </div>
                 </div>
@@ -140,93 +140,118 @@ export default function Apply() {
                       <Bold>Open</Bold>
                     </Paragraph>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>
                       <Bold>Closed</Bold>
                     </Paragraph>
                   </div>
-
                   <div>
                     <Paragraph>
                       <Bold>Volunteer</Bold>
                     </Paragraph>
                   </div>
                   <div>
-                    <Paragraph>Feb 20</Paragraph>
+                    <Paragraph>
+                      <Link
+                        target="_blank"
+                        href="https://wickedwoods.festivalpro.com/form/YeUmaINdacVkTKJElLNP/55"
+                      >
+                        <H4 className={styles.ApplyLink}>Apply</H4>
+                      </Link>
+                    </Paragraph>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Aug 16</Paragraph>
                   </div>
-
                   <div>
                     <Paragraph>
                       <Bold>Health & Safety</Bold>
                     </Paragraph>
                   </div>
+
                   <div>
-                    <Paragraph>Feb 20</Paragraph>
+                    <Paragraph>
+                      <Link
+                        target="_blank"
+                        href="https://forms.gle/WF9zyFKmPQna48c27"
+                      >
+                        <H4 className={styles.ApplyLink}>Apply</H4>
+                      </Link>
+                    </Paragraph>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Aug 16</Paragraph>
                   </div>
-
                   <div>
                     <Paragraph>
                       <Bold>Medical</Bold>
                     </Paragraph>
                   </div>
                   <div>
-                    <Paragraph>Feb 20</Paragraph>
+                    <Paragraph>
+                      <Link
+                        target="_blank"
+                        href="https://forms.gle/fzXypi6ayfb5uy6L8"
+                      >
+                        <H4 className={styles.ApplyLink}>Apply</H4>
+                      </Link>
+                    </Paragraph>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Aug 16</Paragraph>
                   </div>
-
                   <div>
                     <Paragraph>
-                      <Bold>Vendor</Bold>
+                      <Bold>Food Vendor</Bold>
                     </Paragraph>
                   </div>
                   <div>
-                    <Paragraph>Feb 20</Paragraph>
+                    <Paragraph>
+                      <Link
+                        target="_blank"
+                        href="https://wickedwoods.festivalpro.com/form/xqlPYujpSEejASbAEjQB/55"
+                      >
+                        <H4 className={styles.ApplyLink}>Apply</H4>
+                      </Link>
+                    </Paragraph>
                   </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Jun 5</Paragraph>
                   </div>
-
+                  <div>
+                    <Paragraph>
+                      <Bold>Artisan/Service Vendor</Bold>
+                    </Paragraph>
+                  </div>
+                  <div>
+                    <Paragraph>
+                      <Link
+                        target="_blank"
+                        href="https://wickedwoods.festivalpro.com/form/ECrAQsJmcSCZMnUegMpO/55"
+                      >
+                        <H4 className={styles.ApplyLink}>Apply</H4>
+                      </Link>
+                    </Paragraph>
+                  </div>
+                  <div className={styles.HideMobileSmall}>
+                    <Paragraph>Jun 5</Paragraph>
+                  </div>
                   <div>
                     <Paragraph>
                       <Bold>Media</Bold>
                     </Paragraph>
                   </div>
                   <div>
-                    <Paragraph>Feb 20</Paragraph>
-                  </div>
-                  <div>
-                    <Paragraph>Jun 5</Paragraph>
-                  </div>
-
-                  <div>
                     <Paragraph>
-                      <Bold>Site Decor</Bold>
+                      <Link
+                        target="_blank"
+                        href="https://forms.gle/P7ocG2J5FuzS3txT8"
+                      >
+                        <H4 className={styles.ApplyLink}>Apply</H4>
+                      </Link>
                     </Paragraph>
                   </div>
-                  <div>
-                    <Paragraph>Feb 20</Paragraph>
-                  </div>
-                  <div>
-                    <Paragraph>Jun 5</Paragraph>
-                  </div>
-
-                  <div>
-                    <Paragraph>
-                      <Bold>Street Team</Bold>
-                    </Paragraph>
-                  </div>
-                  <div>
-                    <Paragraph>Feb 20</Paragraph>
-                  </div>
-                  <div>
+                  <div className={styles.HideMobileSmall}>
                     <Paragraph>Jun 5</Paragraph>
                   </div>
                 </div>

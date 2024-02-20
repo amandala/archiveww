@@ -5,6 +5,8 @@ import { dinBlack } from "@/styles/fonts";
 
 import cx from "classnames";
 
+import background from "/public/assets/backgrounds/sky_background-min.png";
+
 import styles from "./index.module.scss";
 import PageHead from "@/components/PageHead";
 
@@ -15,7 +17,11 @@ const Subscribe = () => {
   const [phone, setPhone] = useState("");
 
   return (
-    <div id="mc_embed_shell" className={styles.Wrapper}>
+    <div
+      id="mc_embed_shell"
+      className={styles.Wrapper}
+      style={{ backgroundImage: `url(${background.src})` }}
+    >
       <PageHead
         page="Newsletter Signup"
         image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"

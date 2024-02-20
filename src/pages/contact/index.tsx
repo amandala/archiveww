@@ -7,6 +7,8 @@ import TextLink from "@/components/TextLink";
 import { H4, JumboHeading } from "@/components/Typography";
 import PageHead from "@/components/PageHead";
 
+import background from "/public/assets/backgrounds/sky_background-min.png";
+
 import styles from "./index.module.scss";
 
 export default function Contact() {
@@ -18,7 +20,10 @@ export default function Contact() {
         description="Find email addresses to our departments on our contact page"
         url="wickedwoods.ca/contact"
       />
-      <div className={styles.Container}>
+      <div
+        className={styles.Container}
+        style={{ backgroundImage: `url(${background.src})` }}
+      >
         <div className={styles.Contact} id="directory">
           <div>
             <JumboHeading className={styles.Heading}>

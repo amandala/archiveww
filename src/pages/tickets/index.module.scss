@@ -3,7 +3,10 @@
 .Wrapper {
   position: relative;
   padding: 90px 24px 0;
-  background-color: $orientBlue;
+  background-color: $wickedBlack;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .PaymentPlans {
@@ -12,15 +15,15 @@
   text-align: center;
   padding: 20px;
   margin-bottom: 40px;
-  background-color: $sandyBrown;
+  background-color: $stratosBlue;
 
   h2 {
     margin-bottom: 12px;
-    color: $orientBlue;
+    color: $wickedWhite;
   }
 
   p {
-    color: $orientBlue;
+    color: $wickedWhite;
     margin-bottom: 0;
   }
 }
@@ -33,7 +36,7 @@
 
   section {
     margin-bottom: 40px;
-    background-color: $prussianBlue;
+    background-color: $wickedBlack;
     padding: 24px;
     position: relative;
 
@@ -46,7 +49,7 @@
       margin-bottom: 24px;
 
       h2 {
-        color: $mandyPink;
+        color: $gigasPurple;
       }
     }
   }
@@ -66,7 +69,7 @@
   text-align: center;
   margin-bottom: 50px;
   font-size: 1.9rem;
-  color: $burntSienna;
+  color: $delugePurple;
 }
 
 .SectionInfo {
@@ -75,7 +78,7 @@
 }
 
 .TicketDate {
-  color: $burntSienna;
+  color: $delugePurple;
   text-align: center;
   font-size: 3rem;
 }
@@ -93,7 +96,7 @@
 
 .SectionHeading {
   font-size: 2rem;
-  color: $mandyPink;
+  color: $gigasPurple;
   margin-bottom: 24px;
   text-align: center;
 
@@ -180,6 +183,7 @@
 .Buss {
   bottom: -80px;
   right: 0;
+  z-index: 20;
 
   @media screen and (min-width: 900px) {
     bottom: -110px;
@@ -202,32 +206,6 @@
     top: -150px;
     width: 250px;
     height: 250px;
-  }
-}
-
-.SunnE {
-  position: absolute;
-  top: -150px;
-  right: -10%;
-  z-index: -1;
-  width: 250px;
-  height: 250px;
-
-  @media screen and (min-width: 430px) {
-    display: block;
-    top: -250px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    top: -270px;
-    width: 200px;
-    height: 200px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    top: -250px;
-    width: 300px;
-    height: 300px;
   }
 }
 
@@ -255,7 +233,7 @@
 
   .SectionHeading {
     font-size: 3rem;
-    color: $mandyPink;
+    color: $gigasPurple;
     margin-bottom: 30px;
   }
 

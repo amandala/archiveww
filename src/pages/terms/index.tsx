@@ -9,7 +9,7 @@ import {
 } from "@/components/Typography";
 import Image from "next/image";
 import PageHead from "@/components/PageHead";
-import WW_Sandy_Brown from "/public/assets/WW-sandy_brown.png";
+import logo from "/public/assets/2024logo.png";
 
 import styles from "./index.module.scss";
 
@@ -25,7 +25,7 @@ export default function Terms() {
       <div className={styles.HeaderWrapper}>
         <Image
           className={styles.Logo}
-          src={WW_Sandy_Brown}
+          src={logo}
           alt="Sandy Brown Wicked Woods Logo"
           priority
           style={{

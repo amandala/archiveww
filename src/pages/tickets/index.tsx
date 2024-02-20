@@ -7,10 +7,11 @@ import { JumboHeading, H1, H2, Paragraph, Bold } from "@/components/Typography";
 import { SoldOutStamp } from "@/components/SoldOutStamp";
 
 import tent from "/public/assets/tent.png";
-import sunne from "/public/assets/sunnE_2.png";
 import largeVeh from "/public/assets/LargeVehicle.png";
 import regularVeh from "/public/assets/RegularVehicle.png";
 import MegaVeh from "/public/assets/MegaVehicle.png";
+
+import background from "/public/assets/backgrounds/sky_background-min.png";
 
 import siteMap from "/public/assets/public-map.png";
 
@@ -34,7 +35,10 @@ const galleryImages = imageList.map((image) => {
 
 export default function Tickets() {
   return (
-    <div className={styles.Wrapper}>
+    <div
+      className={styles.Wrapper}
+      style={{ backgroundImage: `url(${background.src})` }}
+    >
       <div>
         <PageHead
           page="Tickets"
@@ -56,13 +60,6 @@ export default function Tickets() {
               GA Tickets are valid for entry Friday August 30, 2024 and can be
               used for re-entry until Sunday September 1, 2024.
             </Paragraph>
-            <Image
-              alt="placeholder"
-              src={sunne}
-              width={200}
-              height={200}
-              className={styles.SunnE}
-            />
             <div className={styles.TierWrapper}>
               <div className={styles.TicketTier}>
                 <span>
