@@ -98,7 +98,7 @@ export default function Apply() {
 
                   <div>
                     <Paragraph>
-                      <Bold>Installations</Bold>
+                      <Bold>Art & Installations</Bold>
                     </Paragraph>
                   </div>
                   <div>
