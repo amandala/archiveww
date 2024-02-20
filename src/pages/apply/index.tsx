@@ -209,7 +209,7 @@ export default function Apply() {
                     <Paragraph>
                       <Link
                         target="_blank"
-                        href="https://wickedwoods.festivalpro.com/form/xqlPYujpSEejASbAEjQB/55"
+                        href="https://wickedwoods.festivalpro.com/form/ECrAQsJmcSCZMnUegMpO/55"
                       >
                         <H4 className={styles.ApplyLink}>Apply</H4>
                       </Link>
@@ -227,7 +227,7 @@ export default function Apply() {
                     <Paragraph>
                       <Link
                         target="_blank"
-                        href="https://wickedwoods.festivalpro.com/form/ECrAQsJmcSCZMnUegMpO/55"
+                        href="https://wickedwoods.festivalpro.com/form/xqlPYujpSEejASbAEjQB/55"
                       >
                         <H4 className={styles.ApplyLink}>Apply</H4>
                       </Link>
