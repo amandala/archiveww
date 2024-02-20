@@ -2,10 +2,12 @@
 
 .Wrapper {
   padding: 90px 24px;
-  background-color: $greenHaze;
+  background-color: $wickedBlack;
   text-align: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  border-bottom: 20px solid $wickedBlack;
 }
 
 .Desc {
@@ -15,7 +17,7 @@
 }
 
 .Form {
-  background-color: $orientBlue;
+  background-color: $wickedBlack;
   max-width: 500px;
   margin: 0 auto;
   border-radius: 6px;
@@ -39,7 +41,7 @@
     height: 40px;
     font-size: 20px;
     padding: 2px;
-    outline-color: $sandyBrown;
+    outline-color: $gigasPurple;
   }
 
   strong {
@@ -65,7 +67,7 @@
 .Button {
   margin-top: 24px;
   padding: 12px 12px 10px;
-  background-color: $burntSienna;
+  background-color: $delugePurple;
   border: 0;
   color: $wickedWhite;
   font-size: 24px;

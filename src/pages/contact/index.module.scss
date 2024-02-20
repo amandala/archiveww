@@ -3,6 +3,11 @@
 .Container {
   width: 100%;
   position: relative;
+  background-color: $wickedBlack;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 20px solid $wickedBlack;
 }
 
 .Contact {
@@ -11,7 +16,6 @@
   flex-direction: column;
   justify-content: center;
   color: $wickedWhite;
-  background-color: $greenHaze;
 }
 
 .Heading {

@@ -3,7 +3,11 @@
 .Wrapper {
   position: relative;
   padding: 90px 24px;
-  background-color: $prussianBlue;
+  background-color: $wickedBlack;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 20px solid $wickedBlack;
 }
 
 .Content {

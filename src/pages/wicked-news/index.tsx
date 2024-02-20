@@ -1,4 +1,3 @@
-import BunchOfTrees from "@/components/BunchOfTrees";
 import { JumboHeading } from "@/components/Typography";
 
 import { wickedNewsData } from "@/data/wicked-news";
@@ -6,9 +5,14 @@ import styles from "./index.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
+import background from "/public/assets/backgrounds/sky_background-min.png";
+
 export default function WickedNews() {
   return (
-    <div className={styles.Wrapper}>
+    <div
+      className={styles.Wrapper}
+      style={{ backgroundImage: `url(${background.src})` }}
+    >
       <div className={styles.Content}>
         <JumboHeading>Wicked News</JumboHeading>
         <div className={styles.Articles}>
@@ -28,9 +32,6 @@ export default function WickedNews() {
             );
           })}
         </div>
-      </div>
-      <div className={styles.TreesWrapper}>
-        <BunchOfTrees />
       </div>
     </div>
   );

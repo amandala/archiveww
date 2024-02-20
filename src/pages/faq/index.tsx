@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import { JumboHeading, Paragraph, H2 } from "@/components/Typography";
 import Image from "next/image";
 import PageHead from "@/components/PageHead";
-import WW_Sandy_Brown from "/public/assets/WW-sandy_brown.png";
+import logo from "/public/assets/2024logo.png";
 
 import faqs from "./questions.json";
+import background from "/public/assets/backgrounds/sky_background-min.png";
 
 import styles from "./index.module.scss";
 
@@ -29,7 +30,10 @@ export default function CodeOfConduct() {
   }, [searchQuery]);
 
   return (
-    <div className={styles.Wrapper}>
+    <div
+      className={styles.Wrapper}
+      style={{ backgroundImage: `url(${background.src})` }}
+    >
       <PageHead
         page="FAQ"
         image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
@@ -39,12 +43,12 @@ export default function CodeOfConduct() {
       <div className={styles.Content}>
         <div style={{ textAlign: "center" }}>
           <Image
-            src={WW_Sandy_Brown}
-            alt="Sandy Brown Wicked Woods Logo"
+            src={logo}
+            alt="Wicked Woods Logo"
             priority
             style={{
               margin: "0 auto",
-              maxWidth: "150px",
+              maxWidth: "200px",
               height: "auto",
               display: "block",
               padding: "20px",

@@ -9,7 +9,7 @@ import {
 import Image from "next/image";
 import styles from "./index.module.scss";
 import PageHead from "@/components/PageHead";
-import WW_Sandy_Brown from "/public/assets/WW-sandy_brown.png";
+import logo from "/public/assets/2024logo.png";
 
 export default function CodeOfConduct() {
   return (
@@ -24,12 +24,12 @@ export default function CodeOfConduct() {
         url="wickedwoods.ca/code-of-conduct"
       />
       <Image
-        src={WW_Sandy_Brown}
+        src={logo}
         alt="Sandy Brown Wicked Woods Logo"
         priority
         style={{
           margin: "0 auto",
-          maxWidth: "200px",
+          maxWidth: "300px",
           height: "auto",
           display: "block",
           padding: "20px",

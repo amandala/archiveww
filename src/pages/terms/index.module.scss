@@ -3,20 +3,15 @@
 .Wrapper {
   position: relative;
   padding: 30px 24px;
-  background-color: $prussianBlue;
+  background-color: $wickedBlack;
 
   a {
     text-decoration: underline;
   }
 }
 
-.Logo {
-  width: 150px;
-  height: 150px;
-}
-
 .Content {
-  background-color: $prussianBlue;
+  background-color: $wickedBlack;
   border-radius: 6px;
   padding: 20px;
   max-width: 900px;
