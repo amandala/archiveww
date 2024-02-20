@@ -7,12 +7,16 @@
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
   padding: 90px 24px 0;
-  background-color: $greenHaze;
-  min-height: 80vh;
+  background-color: $wickedBlack;
+  min-height: 60vh;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 20px solid $wickedBlack;
 }
 
 .BeavsWrapper {
@@ -40,7 +44,4 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .Wrapper {
-    min-height: 100vh;
-  }
 }

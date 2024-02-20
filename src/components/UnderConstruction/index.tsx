@@ -1,11 +1,8 @@
-import Image from "next/image";
-
 import { JumboHeading, Paragraph } from "../Typography";
 
-import beaver from "/public/assets/Beavz3.png";
+import wolf from "/public/assets/backgrounds/wolfMoon.png";
 
 import styles from "./index.module.scss";
-import BunchOfTrees from "../BunchOfTrees";
 
 export default function UnderConstruction({
   title = "Under Construction",
@@ -16,29 +13,14 @@ export default function UnderConstruction({
 }) {
   return (
     <>
-      <div className={styles.Wrapper}>
+      <div
+        className={styles.Wrapper}
+        style={{ backgroundImage: `url(${wolf.src})` }}
+      >
         <div className={styles.Content}>
           <JumboHeading>{title}</JumboHeading>
           <Paragraph>{text}</Paragraph>
         </div>
-        <div className={styles.BeavsWrapper}>
-          <Image
-            alt="Beaver in a yellow hard hat"
-            src={beaver}
-            priority
-            style={{
-              objectFit: "contain",
-              paddingLeft: 20,
-              paddingRight: 20,
-              maxWidth: 800,
-              margin: "0 auto",
-              width: "100%",
-              height: "auto",
-              transform: "scaleX(-1)",
-            }}
-          />
-        </div>
-        <BunchOfTrees />
       </div>
     </>
   );
