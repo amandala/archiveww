@@ -5,6 +5,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  padding-top: 40px;
 }
 
 .Footer {
@@ -12,7 +13,6 @@
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   align-items: center;
 }
@@ -25,17 +25,15 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
-  height: 500px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 900px) {
     max-width: 550px;
     grid-template-columns: repeat(4, 1fr);
-    padding-top: 150px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 0px;
-    padding-top: 200px;
     max-width: 1200px;
     gap: 40px;
   }
