@@ -94,7 +94,7 @@ export default function CodeOfConduct() {
             ) : null}
             {filteredFaqs.map((faq) => {
               return (
-                <div className={styles.Question} key={faq.id}>
+                <div className={styles.Question} key={faq.question}>
                   <H2>{faq.question}</H2>
                   <Paragraph>{faq.answer}</Paragraph>
                 </div>
