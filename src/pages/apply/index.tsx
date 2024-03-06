@@ -63,7 +63,11 @@ export default function Apply() {
                       <Bold>Music</Bold>
                     </Paragraph>
                   </div>
-                  <div></div>
+                  <div>
+                    <Paragraph>
+                      <Bold>------</Bold>
+                    </Paragraph>
+                  </div>
                   <div className={styles.HideMobileSmall}>
                     <Paragraph>Mar 5</Paragraph>
                   </div>
