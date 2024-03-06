@@ -51,11 +51,7 @@ export default function Apply() {
                 <H2>Creative Applications</H2>
                 <div className={styles.Table}>
                   <div></div>
-                  <div>
-                    <Paragraph>
-                      <Bold>Open</Bold>
-                    </Paragraph>
-                  </div>
+                  <div></div>
                   <div className={styles.HideMobileSmall}>
                     <Paragraph>
                       <Bold>Closed</Bold>
@@ -68,12 +64,9 @@ export default function Apply() {
                     </Paragraph>
                   </div>
                   <div>
-                    <Link
-                      target="_blank"
-                      href="https://forms.gle/eDE1mPP8VvcpW1DH6"
-                    >
-                      <H4 className={styles.ApplyLink}>Apply</H4>
-                    </Link>
+                    <Paragraph>
+                      <Bold>------</Bold>
+                    </Paragraph>
                   </div>
                   <div className={styles.HideMobileSmall}>
                     <Paragraph>Mar 5</Paragraph>
@@ -135,11 +128,7 @@ export default function Apply() {
                 <H2>Crew Applications</H2>
                 <div className={styles.Table}>
                   <div></div>
-                  <div>
-                    <Paragraph>
-                      <Bold>Open</Bold>
-                    </Paragraph>
-                  </div>
+                  <div></div>
                   <div className={styles.HideMobileSmall}>
                     <Paragraph>
                       <Bold>Closed</Bold>
