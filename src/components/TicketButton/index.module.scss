@@ -1,10 +1,20 @@
 @import "@/styles/variables.module.scss";
 
 .TicketButton {
-  padding: 20px;
-  font-size: 18px;
   border: 0;
   transition: transform 2s ease-in-out;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  button {
+    font-size: 24px;
+    padding: 20px 30px;
+    letter-spacing: 1.2px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 30px;
+    }
+  }
 
   :hover,
   :focus {
