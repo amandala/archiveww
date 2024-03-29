@@ -1,20 +1,17 @@
 import React from "react";
-import Image from "next/image";
 
 import cx from "classnames";
 
 import Gallery from "@/components/Gallery";
 
-import logo from "/public/assets/2024logo.png";
-import heroImage from "/public/assets/skyvalley.jpg";
-import { H3, JumboHeading, Paragraph } from "@/components/Typography";
+import { JumboHeading, Paragraph } from "@/components/Typography";
 import YouTubePlayer from "@/components/YoutubePlayer";
 import PageHead from "@/components/PageHead";
 
 import { generateGalleryImages } from "@/helpers/generateGalleryImages";
 
 import styles from "./index.module.scss";
-import TicketButton from "@/components/TicketButton";
+// import TicketButton from "@/components/TicketButton";
 import Link from "next/link";
 
 const galleryA = require.context(`/public/assets/gallery/about/top`, true);
@@ -30,22 +27,13 @@ export default function AboutPage() {
         url="wickedwoods.ca"
       />
       <div className={styles.Container}>
-        <div
-          className={styles.Hero}
-          style={{ backgroundImage: `url(${heroImage.src})` }}
-        >
-          <div className={styles.LogoWrapper}>
-            <Image
-              alt="Wicked Woods Music Festival Logo"
-              src={logo}
-              className={styles.Wordmark}
-            />
-          </div>
-          <H3 className={styles.Date}>August 30 - September 1</H3>
-          <div className={styles.Button}>
-            <TicketButton />
-          </div>
+        <div className={styles.Hero}>
+          <video autoPlay muted className={styles.HeroVid}>
+            <source src="/assets/heroAnimation.mp4" type="video/mp4" />
+            Your browser does not support embedded video
+          </video>
         </div>
+
         <div className={styles.PageContent}>
           <div className={styles.DescriptionWrapper}>
             <div className={styles.Description}>
