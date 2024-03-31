@@ -1,37 +1,28 @@
 @import "@/styles/variables.module.scss";
 
 .TicketButton {
-  border: 0;
-  transition: transform 2s ease-in-out;
   padding: 20px;
   margin-bottom: 20px;
 
   button {
+    transition: background-color 1000ms linear;
     font-size: 24px;
     padding: 20px 30px;
     letter-spacing: 1.2px;
+    background-color: $gigasPurple;
+    color: $wickedWhite;
+    text-transform: uppercase;
+    border: 2px solid $wickedWhite !important;
 
     @media screen and (min-width: 1024px) {
-      font-size: 30px;
+      font-size: 40px;
     }
   }
 
   :hover,
   :focus {
-    transform: scale(1.05);
-    transition: transform 50ms ease-in-out;
-  }
-
-  text-transform: uppercase;
-  color: $wickedWhite;
-
-  img {
-    width: 300px;
-    height: auto;
-  }
-
-  a:hover,
-  a:focus {
-    color: $wickedBlack;
+    background-color: $delugePurple;
+    transition: background-color 1000ms linear;
+    border: 2px solid $wickedWhite;
   }
 }

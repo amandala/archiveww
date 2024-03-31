@@ -15,6 +15,7 @@ import { generateGalleryImages } from "@/helpers/generateGalleryImages";
 import styles from "./index.module.scss";
 // import TicketButton from "@/components/TicketButton";
 import Link from "next/link";
+import TicketButton from "../TicketButton";
 
 const galleryA = require.context(`/public/assets/gallery/about/top`, true);
 const galleryB = require.context(`/public/assets/gallery/about/b`, true);
@@ -40,7 +41,9 @@ export default function AboutPage() {
             Your browser does not support embedded video
           </video>
         </div>
-
+        <div className={styles.TicketButton}>
+          <TicketButton />
+        </div>
         <div className={styles.PageContent}>
           <div className={styles.DescriptionWrapper}>
             <div className={styles.Description}>

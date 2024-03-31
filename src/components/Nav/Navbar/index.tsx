@@ -11,7 +11,7 @@ import burger from "/public/assets/burger_menu_icon.png";
 import close from "/public/assets/X_menu_icon.png";
 import background from "/public/assets/backgrounds/wolfMoon.png";
 import { ExperienceNav, FestivalNav, ContactNav, SocialNav } from "..";
-import { JumboHeading } from "@/components/Typography";
+import TicketButton from "@/components/TicketButton";
 
 export const Navbar = () => {
   const router = useRouter();
@@ -48,12 +48,9 @@ export const Navbar = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <Link
-              href="https://tickets.wickedwoods.ca"
-              className={styles.TicketLink}
-            >
-              <JumboHeading>Buy Tickets</JumboHeading>
-            </Link>
+            <div className={styles.TicketButton}>
+              <TicketButton />
+            </div>
             <div className={styles.list}>
               <FestivalNav />
               <ExperienceNav />
