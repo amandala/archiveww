@@ -8,6 +8,8 @@ import { JumboHeading, Paragraph } from "@/components/Typography";
 import YouTubePlayer from "@/components/YoutubePlayer";
 import PageHead from "@/components/PageHead";
 
+import bgStatic from "public/assets/backgrounds/bg-static.png";
+
 import { generateGalleryImages } from "@/helpers/generateGalleryImages";
 
 import styles from "./index.module.scss";
@@ -28,7 +30,12 @@ export default function AboutPage() {
       />
       <div className={styles.Container}>
         <div className={styles.Hero}>
-          <video autoPlay muted className={styles.HeroVid}>
+          <video
+            autoPlay
+            muted
+            className={styles.HeroVid}
+            poster={bgStatic.src}
+          >
             <source src="/assets/heroAnimation.mp4" type="video/mp4" />
             Your browser does not support embedded video
           </video>
