@@ -233,7 +233,9 @@ export default function Tickets() {
                       </Paragraph>
                     </span>
 
-                    <JumboHeading className={styles.Price}>$300</JumboHeading>
+                    <JumboHeading className={styles.Price}>
+                      $300 <LowStockStamp />
+                    </JumboHeading>
                   </div>
                 </div>
               </div>
