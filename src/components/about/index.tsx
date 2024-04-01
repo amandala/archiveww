@@ -36,6 +36,8 @@ export default function AboutPage() {
             muted
             className={styles.HeroVid}
             poster={bgStatic.src}
+            width="100vw"
+            height="auto"
           >
             <source src="/assets/heroAnimation.mp4" type="video/mp4" />
             Your browser does not support embedded video
