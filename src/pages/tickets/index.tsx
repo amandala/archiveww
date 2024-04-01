@@ -233,7 +233,9 @@ export default function Tickets() {
                       </Paragraph>
                     </span>
 
-                    <JumboHeading className={styles.Price}>$300</JumboHeading>
+                    <JumboHeading className={styles.Price}>
+                      $300 <LowStockStamp />
+                    </JumboHeading>
                   </div>
                 </div>
               </div>
@@ -340,7 +342,10 @@ export default function Tickets() {
                         one regular vehicle pass.
                       </Paragraph>
                     </span>
-                    <JumboHeading className={styles.Price}>$700</JumboHeading>
+                    <JumboHeading className={styles.Price}>
+                      $700
+                      <LowStockStamp />
+                    </JumboHeading>
                   </div>
                   <div className={styles.Option}>
                     <span>
@@ -430,7 +435,7 @@ export default function Tickets() {
                   </span>
                   <JumboHeading className={styles.Price}>
                     $1050
-                    <LowStockStamp />
+                    <SoldOutStamp />
                   </JumboHeading>
                 </div>
                 <div className={styles.Option}>
