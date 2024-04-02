@@ -13,7 +13,6 @@ import bgStatic from "public/assets/backgrounds/bg-static.png";
 import { generateGalleryImages } from "@/helpers/generateGalleryImages";
 
 import styles from "./index.module.scss";
-// import TicketButton from "@/components/TicketButton";
 import Link from "next/link";
 import TicketButton from "../TicketButton";
 
@@ -38,6 +37,7 @@ export default function AboutPage() {
             poster={bgStatic.src}
             width="100vw"
             height="auto"
+            playsInline
           >
             <source src="/assets/heroAnimation.mp4" type="video/mp4" />
             Your browser does not support embedded video
