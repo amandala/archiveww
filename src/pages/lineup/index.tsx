@@ -28,6 +28,7 @@ export default function Lineup() {
               width={300}
               height={300}
               className={styles.Spotlight}
+              placeholder="blur"
             />
             <Image
               src={snrk}
@@ -35,6 +36,7 @@ export default function Lineup() {
               width={300}
               height={300}
               className={styles.Spotlight}
+              placeholder="blur"
             />
             <Image
               src={wreckno}
@@ -42,6 +44,7 @@ export default function Lineup() {
               width={300}
               height={300}
               className={styles.Spotlight}
+              placeholder="blur"
             />
           </div>
         </div>
