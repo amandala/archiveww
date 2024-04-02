@@ -1,5 +1,11 @@
 import PageHead from "@/components/PageHead";
-import UnderConstruction from "@/components/UnderConstruction";
+import Image from "next/image";
+import styles from "./index.module.scss";
+
+import nostalgix from "/public/assets/spotlights/nostalgix.png";
+import wreckno from "/public/assets/spotlights/wreckno.png";
+import snrk from "/public/assets/spotlights/snrk.png";
+import { JumboHeading } from "@/components/Typography";
 
 export default function Lineup() {
   return (
@@ -10,7 +16,39 @@ export default function Lineup() {
         description="Follow us on social media for 2024 lineup announcements."
         url="wickedwoods.ca/lineup"
       />
-      <UnderConstruction />
+      <div className={styles.Wrapper}>
+        <div className={styles.DotWrapper}>
+          <JumboHeading className={styles.Heading}>
+            2024 Headliners
+          </JumboHeading>
+          <div className={styles.Headliners}>
+            <Image
+              src={nostalgix}
+              alt="Nostalgix spotlight"
+              width={300}
+              height={300}
+              className={styles.Spotlight}
+            />
+            <Image
+              src={snrk}
+              alt="Nostalgix spotlight"
+              width={300}
+              height={300}
+              className={styles.Spotlight}
+            />
+            <Image
+              src={wreckno}
+              alt="Nostalgix spotlight"
+              width={300}
+              height={300}
+              className={styles.Spotlight}
+            />
+          </div>
+        </div>
+        <JumboHeading className={styles.Heading}>
+          Full Lineup Dropping Soon
+        </JumboHeading>
+      </div>
     </>
   );
 }

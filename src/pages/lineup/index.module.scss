@@ -1,0 +1,108 @@
+@import "../../styles/variables.module.scss";
+
+.Wrapper {
+  background-color: $wickedBlack;
+  padding: 24px;
+}
+
+.DotWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 48px;
+  border-width: 8px;
+  border-style: dotted;
+  border-color: $waterLeafBlue;
+  padding: 20px;
+  margin-top: 40px;
+  padding: 24px;
+}
+
+.Headliners {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Spotlight {
+  width: 200px;
+  height: 200px;
+}
+
+.Heading {
+  text-align: center;
+}
+
+@media screen and (min-width: 400px) {
+  .Spotlight {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Wrapper {
+    padding: 60px;
+    min-height: 70vh;
+  }
+
+  .DotWrapper {
+    padding: 20px;
+    margin-top: 60px;
+    padding: 60px;
+  }
+
+  .Spotlight {
+    width: 500px;
+    height: 500px;
+  }
+
+  .Headliners {
+    gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Spotlight {
+    width: 800px;
+    height: 800px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Spotlight {
+    width: 300px;
+    height: 300px;
+  }
+
+  .Headliners {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .Spotlight {
+    width: 350px;
+    height: 350px;
+  }
+
+  .Headliners {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .Spotlight {
+    width: 450px;
+    height: 450px;
+  }
+
+  .Headliners {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
