@@ -6,7 +6,7 @@ import cx from "classnames";
 import styles from "./index.module.scss";
 import Image from "next/image";
 
-import ww from "/public/assets/WW-off_white.png";
+import ww from "/public/assets/ww_white.png";
 import burger from "/public/assets/burger_menu_icon.png";
 import close from "/public/assets/X_menu_icon.png";
 import background from "/public/assets/backgrounds/wolfMoon.png";
@@ -66,8 +66,9 @@ export const Navbar = () => {
           <Image
             style={{ marginRight: "10px" }}
             src={ww}
-            height={50}
+            height={30}
             alt="WW logo"
+            priority
           />
         </Link>
         <button onClick={toggleNav} className={styles.btn}>
