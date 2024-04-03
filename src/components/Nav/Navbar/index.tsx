@@ -66,8 +66,9 @@ export const Navbar = () => {
           <Image
             style={{ marginRight: "10px" }}
             src={ww}
-            height={50}
+            height={30}
             alt="WW logo"
+            priority
           />
         </Link>
         <button onClick={toggleNav} className={styles.btn}>
