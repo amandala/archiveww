@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { JumboHeading, Paragraph, H2 } from "@/components/Typography";
+import { JumboHeading, Paragraph, H2, Bold } from "@/components/Typography";
 import Image from "next/image";
 import PageHead from "@/components/PageHead";
 import logo from "/public/assets/2024logo.png";
@@ -8,6 +8,16 @@ import faqs from "./questions.json";
 import background from "/public/assets/backgrounds/sky_background-min.png";
 
 import styles from "./index.module.scss";
+
+interface FAQItem {
+  section: string;
+  question: string;
+  answer: string;
+}
+
+interface GroupedData {
+  [section: string]: FAQItem[];
+}
 
 export default function CodeOfConduct() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -28,6 +38,18 @@ export default function CodeOfConduct() {
       setFilteredFaqs(filteredItems);
     }
   }, [searchQuery]);
+
+  const groupDataBySection = (filteredFaqs: FAQItem[]): GroupedData => {
+    return filteredFaqs.reduce((acc: GroupedData, obj: FAQItem) => {
+      const { section } = obj;
+      if (!acc[section]) {
+        acc[section] = [];
+      }
+      acc[section].push(obj);
+      return acc;
+    }, {});
+  };
+  const groupedData: GroupedData = groupDataBySection(filteredFaqs);
 
   return (
     <div>
@@ -85,21 +107,27 @@ export default function CodeOfConduct() {
               </div>
             )}
           </div>
-
           <div>
             {filteredFaqs.length < 1 ? (
               <Paragraph>
                 There are no matches for your search term. Please try again.
               </Paragraph>
             ) : null}
-            {filteredFaqs.map((faq) => {
-              return (
-                <div className={styles.Question} key={faq.question}>
-                  <H2>{faq.question}</H2>
-                  <Paragraph>{faq.answer}</Paragraph>
+            {Object.keys(groupedData).map((section, index) => (
+              <div key={index} className={styles.Section}>
+                <H2 className={styles.SectionHeading}>{section}</H2>
+                <div>
+                  {groupedData[section].map((item, i) => (
+                    <div key={i} className={styles.Question}>
+                      <Paragraph>
+                        <Bold>{item.question}</Bold>
+                      </Paragraph>
+                      <Paragraph>{item.answer}</Paragraph>
+                    </div>
+                  ))}
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </div>
