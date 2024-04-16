@@ -8,11 +8,17 @@ import faqs from "./questions.json";
 import background from "/public/assets/backgrounds/sky_background-min.png";
 
 import styles from "./index.module.scss";
+import Link from "next/link";
 
 interface FAQItem {
   section: string;
   question: string;
   answer: string;
+  link?: {
+    url: string;
+    linkText: string;
+    external: boolean;
+  };
 }
 
 interface GroupedData {
@@ -123,6 +129,15 @@ export default function CodeOfConduct() {
                         <Bold>{item.question}</Bold>
                       </Paragraph>
                       <Paragraph>{item.answer}</Paragraph>
+                      {item.link && (
+                        <Link
+                          className={styles.Link}
+                          href={item.link.url}
+                          target={item.link.external ? "_blank" : "_top"}
+                        >
+                          {item.link.linkText}
+                        </Link>
+                      )}
                     </div>
                   ))}
                 </div>

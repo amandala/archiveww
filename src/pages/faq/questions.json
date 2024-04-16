@@ -2,18 +2,33 @@
   {
     "section": "Tickets",
     "question": "When are tickets on sale?",
-    "answer": "Tickets are on sale NOW! Head over to tickets.wickedwoods.ca to purchase. We have detailed information on camping packages on our tickets page at wickedwoods.ca/tickets"
+    "answer": "Tickets are on sale NOW! Head over to tickets.wickedwoods.ca to purchase. We have detailed information on camping packages on our tickets page at wickedwoods.ca/tickets",
+    "link": {
+      "url": "https://tickets.wickedwoods.ca",
+      "linkText": "tickets.wickedwoods.ca",
+      "external": true
+    }
   },
 
   {
     "section": "Important Dates",
     "question": "When are Performer, Artist, Vendor, Volunteer, and Staff applications open?",
-    "answer": "All 2024 applications are now open on our website at wickedwoods.ca/apply."
+    "answer": "All 2024 applications are now open on our website. Please refer to the dates on the Apply page for each specific application's closing date.",
+    "link": {
+      "url": "https://wickedwoods.ca/apply",
+      "linkText": "wickedwoods.ca/apply",
+      "external": true
+    }
   },
   {
     "section": "Tickets",
     "question": "What is your refund policy?",
-    "answer": "Please refer to our Terms and Conditions for our refund policy. The Terms and Conditions can be accessed via our website footer."
+    "answer": "Please refer to our Terms and Conditions for our refund policy. The Terms and Conditions can be accessed via our website footer.",
+    "link": {
+      "url": "https://wickedwoods.ca/terms",
+      "linkText": "wickedwoods.ca/terms",
+      "external": true
+    }
   },
   {
     "section": "Important Dates",
@@ -28,7 +43,12 @@
   {
     "section": "Online Ticket Portal",
     "question": "Can I transfer my digital ticket?",
-    "answer": "Wicked Woods digital tickets can be transferred to another name via your ticket portal. The name on the ticket must match the name on a Government issued piece of ID for entry. Wicked Woods does not assume any liability when presented with an invalid ticket at the front gate.  We encourage you to buy from reputable sources.  We have set up a ticket exchange group on Facebook for those wanting to buy or sell tickets."
+    "answer": "Wicked Woods digital tickets can be transferred to another name via your ticket portal. The name on the ticket must match the name on a Government issued piece of ID for entry. Wicked Woods does not assume any liability when presented with an invalid ticket at the front gate.  We encourage you to buy from reputable sources.  We have set up a ticket exchange group on Facebook for those wanting to buy or sell tickets.",
+    "link": {
+      "url": "https://portal.wickedwoods.ca",
+      "linkText": "portal.wickedwoods.ca",
+      "external": true
+    }
   },
   {
     "section": "What to expect",
@@ -38,7 +58,12 @@
   {
     "section": "What to expect",
     "question": "Do you have fancy camping?",
-    "answer": "Wicked Woods offers Glamping Packages through our ticket sale portal. Our package includes a fully setup 3 meter diameter bell tent, comfy queen size bed with sheets, and a decorated lit up area. You can add on extra items like bedding, water container, cooler, camping chairs, etc when purcahsing your Glamping."
+    "answer": "Wicked Woods offers Glamping Packages through our ticket sale portal. Our package includes a fully setup 3 meter diameter bell tent, comfy queen size bed with sheets, and a decorated lit up area. You can add on extra items like bedding, water container, cooler, camping chairs, etc when purcahsing your Glamping.",
+    "link": {
+      "url": "https://tickets.wickedwoods.ca",
+      "linkText": "tickets.wickedwoods.ca",
+      "external": true
+    }
   },
   {
     "section": "What to expect",

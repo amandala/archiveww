@@ -53,9 +53,20 @@
   font-size: 50px;
 }
 
+.Link {
+  display: block;
+  padding-bottom: 24px;
+  font-size: 24px;
+  color: $mandyPink;
+  font-weight: 600;
+  align-self: flex-end;
+}
+
 .Question {
   margin-bottom: 24px;
   border-bottom: 1px solid $wickedWhite;
+  display: flex;
+  flex-direction: column;
 
   h2 {
     margin-bottom: 12px;
