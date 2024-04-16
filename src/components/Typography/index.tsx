@@ -71,12 +71,21 @@ export function H1({
 export function H2({
   children,
   dark = false,
+  className,
 }: {
   children: React.ReactNode;
   dark?: boolean;
+  className?: string;
 }) {
   return (
-    <h2 className={cx(dinBlack.className, styles.H2, { [styles.Dark]: dark })}>
+    <h2
+      className={cx(
+        dinBlack.className,
+        styles.H2,
+        { [styles.Dark]: dark },
+        className
+      )}
+    >
       {children}
     </h2>
   );
