@@ -5,7 +5,6 @@ import PageHead from "@/components/PageHead";
 import logo from "/public/assets/2024logo.png";
 
 import faqs from "./questions.json";
-import background from "/public/assets/backgrounds/sky_background-min.png";
 
 import styles from "./index.module.scss";
 import Link from "next/link";
@@ -59,10 +58,7 @@ export default function CodeOfConduct() {
 
   return (
     <div>
-      <div
-        className={styles.Wrapper}
-        style={{ backgroundImage: `url(${background.src})` }}
-      >
+      <div className={styles.Wrapper}>
         <PageHead
           page="FAQ"
           image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
