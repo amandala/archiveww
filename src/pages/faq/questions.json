@@ -2,10 +2,10 @@
   {
     "section": "Tickets",
     "question": "When are tickets on sale?",
-    "answer": "Tickets are on sale NOW! Head over to tickets.wickedwoods.ca to purchase. We have detailed information on camping packages on our tickets page at wickedwoods.ca/tickets",
+    "answer": "Tickets are on sale NOW! Head over to our brand new ticket site to purchase. We have detailed information on camping packages on our tickets page.",
     "link": {
-      "url": "https://tickets.wickedwoods.ca",
-      "linkText": "tickets.wickedwoods.ca",
+      "url": "https://wickedwoods.ca/tickets",
+      "linkText": "wickedwoods.ca/tickets",
       "external": true
     }
   },
@@ -60,8 +60,8 @@
     "question": "Do you have fancy camping?",
     "answer": "Wicked Woods offers Glamping Packages through our ticket sale portal. Our package includes a fully setup 3 meter diameter bell tent, comfy queen size bed with sheets, and a decorated lit up area. You can add on extra items like bedding, water container, cooler, camping chairs, etc when purcahsing your Glamping.",
     "link": {
-      "url": "https://tickets.wickedwoods.ca",
-      "linkText": "tickets.wickedwoods.ca",
+      "url": "https://wickedwoods.ca/tickets",
+      "linkText": "wickedwoods.ca/tickets",
       "external": true
     }
   },
@@ -93,7 +93,7 @@
   {
     "section": "What to expect",
     "question": "Is there cell phone service?",
-    "answer": "Yes, there is cell phone service on site. The signal varries across carriers. but there is generally at least one bar for each carrier."
+    "answer": "Yes, there is cell phone service on site. The signal varies across carriers. but there is generally at least one bar for each carrier."
   },
   {
     "section": "What to expect",
