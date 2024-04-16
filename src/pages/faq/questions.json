@@ -1,11 +1,118 @@
 [
   {
     "section": "Tickets",
-    "question": "When are tickets on sale?",
+    "question": "How do I buy a ticket?",
     "answer": "Tickets are on sale NOW! Head over to our brand new ticket site to purchase. We have detailed information on camping packages on our tickets page.",
     "link": {
       "url": "https://wickedwoods.ca/tickets",
       "linkText": "wickedwoods.ca/tickets",
+      "external": true
+    }
+  },
+  {
+    "section": "Tickets",
+    "question": "What does my ticket include?",
+    "answer": "Your General Admission Festival Ticket includes: Festival Entry on Friday, August 30th at 9:00 am (MST), Free Tent Camping in a designated zone, Free Parking in the Free Parking Zone. To elevate your experience, we offer reserved camping sites, pre-set camping packages, Glamping Packages, and Camping Add-ons for purchase on our ticket page.",
+    "link": {
+      "url": "https://wickedwoods.ca/tickets",
+      "linkText": "wickedwoods.ca/tickets",
+      "external": true
+    }
+  },
+  {
+    "section": "Tickets",
+    "question": "Does my GA ticket include early entry into the festival?",
+    "answer": "Your General Admission ticket will only allow you into the festival grounds as of Friday 9:00 am MST. For guests who wish to arrive onsite earlier, you can purchase an early entry upgrade online through our ticket site. Gates open at 9:00 on Thursday.",
+    "link": {
+      "url": "https://wickedwoods.ca/tickets",
+      "linkText": "wickedwoods.ca/tickets",
+      "external": true
+    }
+  },
+  {
+    "section": "Tickets",
+    "question": "Can I sell my ticket?",
+    "answer": "Wicked Woods does not have an official resale platform, however, you can sell your ticket through our online system, Mothership! Once you have a trusted buyer and are ready to transfer your ticket, use our online ticket portal. You'll need to use the email address associated with your order and click the 'Reset or Create Password' button if it's your first time logging in. Once you're logged in, you can view your order online, make changes to your order and transfer tickets. Please make sure you have all the correct contact details before transferring the ticket as it cannot be undone. We recommend using extreme caution when selling to a third party. Wicked Woods Music Festival is not responsible for third-party transactions.",
+    "link": {
+      "url": "https://portal.wickedwoods.ca",
+      "linkText": "portal.wickedwoods.ca",
+      "external": true
+    }
+  },
+  {
+    "section": "Tickets",
+    "question": "Can I transfer my ticket to someone else?",
+    "answer": "Yes, you can! Visit your User Portal to begin the transfer process. You can easily transfer some or all of the items on your order by clicking the 'Start a Transfer button in your User Portal. This will prompt you to fill in the new individual's legal name, email address and phone number. Please carefully review the items you are transferring before completing the transfer. Transfers cannot be undone.",
+    "link": {
+      "url": "https://portal.wickedwoods.ca",
+      "linkText": "portal.wickedwoods.ca",
+      "external": true
+    }
+  },
+  {
+    "section": "Tickets",
+    "question": "Is there a deadline to transfer tickets to someone?",
+    "answer": "No, however please ensure the ticket has been properly transferred prior to the new ticket holder arriving at the festival."
+  },
+  {
+    "section": "Tickets",
+    "question": "Can tickets be transferred more than once?",
+    "answer": "Yes, they can! Once a ticket has been transferred to your name, you will have the ability to transfer it again online through the User Portal.",
+    "link": {
+      "url": "https://portal.wickedwoods.ca",
+      "linkText": "portal.wickedwoods.ca",
+      "external": true
+    }
+  },
+
+  {
+    "section": "Tickets",
+    "question": "Can I buy tickets on site?",
+    "answer": "In the event that Wicked Woods does not sell out prior to the event starting, tickets will be available for purchase at the gate. Gate ticket sales are cash only."
+  },
+  {
+    "section": "Tickets",
+    "question": "What if I show up with a ticket in someone else's name?",
+    "answer": "If your ticket is in someone else's name, you will be denied entry. You'll need to leave the festival site OR track down a ticket that is still transferable. The name on the ticket MUST match the ID of the person using it at the festival. No exceptions."
+  },
+  {
+    "section": "Tickets",
+    "question": "Can I buy a ticket for a friend?",
+    "answer": "Yes! Tickets will be held under the original purchaser's name until you properly transfer each ticket to each friend online through our new system. You must transfer your extra tickets to your friends coming to the festival BEFORE you arrive at the gate. "
+  },
+  {
+    "section": "Tickets",
+    "question": "If I can't make it to the festival, can I return my ticket for a refund?",
+    "answer": "There is no exchange or refunds on tickets, including if the event is terminated early, canceled due to extreme weather, forest fire, acts of nature, government regulation or other conditions beyond the control of Wicked Woods Music Festival. Please ensure that you will be able to attend the festival BEFORE purchasing your tickets."
+  },
+  {
+    "section": "Tickets",
+    "question": "What is the Refundable Booking option on your ticket site?",
+    "answer": "Tickets purchased with the Refundable Booking add-on included are refundable ONLY if they meet the Terms and Conditions agreed to at time of purchase. Orders without the Refundable Booking add-on included are not eligible for refund protection. Please refer to the Refundable terms linked below for more information.",
+    "link": {
+      "url": "https://www.refundable.me/extended/en/s",
+      "linkText": "refundable.me",
+      "external": true
+    }
+  },
+  {
+    "section": "Tickets",
+    "question": "What is your refund policy?",
+    "answer": "Please refer to our Terms and Conditions for our refund policy. The Terms and Conditions can be accessed via our website footer.",
+    "link": {
+      "url": "https://wickedwoods.ca/terms",
+      "linkText": "wickedwoods.ca/terms",
+      "external": true
+    }
+  },
+
+  {
+    "section": "Online Ticket Portal",
+    "question": "Can I transfer my digital ticket?",
+    "answer": "Wicked Woods digital tickets can be transferred to another name via your ticket portal. The name on the ticket must match the name on a Government issued piece of ID for entry. Wicked Woods does not assume any liability when presented with an invalid ticket at the front gate.  We encourage you to buy from reputable sources.  We have set up a ticket exchange group on Facebook for those wanting to buy or sell tickets.",
+    "link": {
+      "url": "https://portal.wickedwoods.ca",
+      "linkText": "portal.wickedwoods.ca",
       "external": true
     }
   },
@@ -20,36 +127,13 @@
       "external": true
     }
   },
-  {
-    "section": "Tickets",
-    "question": "What is your refund policy?",
-    "answer": "Please refer to our Terms and Conditions for our refund policy. The Terms and Conditions can be accessed via our website footer.",
-    "link": {
-      "url": "https://wickedwoods.ca/terms",
-      "linkText": "wickedwoods.ca/terms",
-      "external": true
-    }
-  },
+
   {
     "section": "Important Dates",
     "question": "When can I arrive for early entry?",
     "answer": "Gate opens at 9am on Thursday August 29, 2024 for early entry. You will be required to have an early entry ticket to to enter the grounds on early entry day."
   },
-  {
-    "section": "Tickets",
-    "question": "Can I buy tickets on site?",
-    "answer": "In the event that Wicked Woods does not sell out prior to the event starting, tickets will be available for purchase at the gate. Gate ticket sales are cash only."
-  },
-  {
-    "section": "Online Ticket Portal",
-    "question": "Can I transfer my digital ticket?",
-    "answer": "Wicked Woods digital tickets can be transferred to another name via your ticket portal. The name on the ticket must match the name on a Government issued piece of ID for entry. Wicked Woods does not assume any liability when presented with an invalid ticket at the front gate.  We encourage you to buy from reputable sources.  We have set up a ticket exchange group on Facebook for those wanting to buy or sell tickets.",
-    "link": {
-      "url": "https://portal.wickedwoods.ca",
-      "linkText": "portal.wickedwoods.ca",
-      "external": true
-    }
-  },
+
   {
     "section": "What to expect",
     "question": "Do I need a parking pass?",
