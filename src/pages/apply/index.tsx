@@ -100,7 +100,7 @@ export default function Apply() {
                     </Link>
                   </div>
                   <div className={styles.HideMobileSmall}>
-                    <Paragraph>Jun 5</Paragraph>
+                    <Paragraph>May 30</Paragraph>
                   </div>
 
                   <div>
@@ -117,7 +117,7 @@ export default function Apply() {
                     </Link>
                   </div>
                   <div className={styles.HideMobileSmall}>
-                    <Paragraph>Jun 5</Paragraph>
+                    <Paragraph>Apr 30</Paragraph>
                   </div>
                 </div>
               </div>
