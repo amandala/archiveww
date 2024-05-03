@@ -16,7 +16,7 @@ export default function Lineup() {
       <PageHead
         page="2024 Lineup"
         image="https://drive.google.com/uc?export=view&id=1iLKmD6dn_beuWGj9DSJ2sJ0HeD4p0AIC&v=3"
-        description="Follow us on social media for 2024 lineup announcements."
+        description="Our 2024 Performance Lineup is WICKED! Come check it out"
         url="wickedwoods.ca/lineup"
       />
       <div className={styles.Wrapper}>
