@@ -5,6 +5,9 @@ import styles from "./index.module.scss";
 import nostalgix from "/public/assets/spotlights/nostalgix.png";
 import wreckno from "/public/assets/spotlights/wreckno.png";
 import snrk from "/public/assets/spotlights/snrk.png";
+import wuki from "/public/assets/spotlights/wuki_final.png";
+import poster from "/public/assets/posters/2024final_nologos.jpg";
+
 import { JumboHeading } from "@/components/Typography";
 
 export default function Lineup() {
@@ -17,11 +20,25 @@ export default function Lineup() {
         url="wickedwoods.ca/lineup"
       />
       <div className={styles.Wrapper}>
+        <div className={styles.PosterWrapper}>
+          <Image
+            className={styles.Poster}
+            src={poster}
+            alt="2024 Performance Lineup"
+            placeholder="blur"
+          />
+        </div>
+        <JumboHeading className={styles.Heading}>2024 Headliners</JumboHeading>
         <div className={styles.DotWrapper}>
-          <JumboHeading className={styles.Heading}>
-            2024 Headliners
-          </JumboHeading>
           <div className={styles.Headliners}>
+            <Image
+              src={wuki}
+              alt="Wuki spotlight"
+              width={300}
+              height={300}
+              className={styles.Spotlight}
+              placeholder="blur"
+            />
             <Image
               src={nostalgix}
               alt="Nostalgix spotlight"
@@ -48,9 +65,6 @@ export default function Lineup() {
             />
           </div>
         </div>
-        <JumboHeading className={styles.Heading}>
-          Full Lineup Dropping Soon
-        </JumboHeading>
       </div>
     </>
   );
