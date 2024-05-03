@@ -35,6 +35,19 @@
   text-align: center;
 }
 
+.PosterWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 24px;
+}
+
+.Poster {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 400px) {
   .Spotlight {
     width: 300px;
@@ -55,40 +68,29 @@
   }
 
   .Spotlight {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
   }
 
   .Headliners {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .Spotlight {
-    width: 800px;
-    height: 800px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
-  .Spotlight {
-    width: 300px;
-    height: 300px;
+  .Headliners {
+    grid-template-columns: repeat(4, 1fr);
   }
 
-  .Headliners {
-    flex-direction: row;
-    gap: 30px;
+  .Poster {
+    max-width: 1000px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .Spotlight {
-    width: 350px;
-    height: 350px;
-  }
-
   .Headliners {
     flex-direction: row;
     gap: 30px;
@@ -96,11 +98,6 @@
 }
 
 @media screen and (min-width: 1600px) {
-  .Spotlight {
-    width: 450px;
-    height: 450px;
-  }
-
   .Headliners {
     flex-direction: row;
     gap: 30px;
