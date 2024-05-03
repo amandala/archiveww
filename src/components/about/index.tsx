@@ -4,14 +4,14 @@ import cx from "classnames";
 
 import Gallery from "@/components/Gallery";
 
-// import Image from "next/image";
+import Image from "next/image";
 
 import { JumboHeading, Paragraph } from "@/components/Typography";
 import YouTubePlayer from "@/components/YoutubePlayer";
 import PageHead from "@/components/PageHead";
 
 import bgStatic from "public/assets/backgrounds/bg-static.png";
-// import creativeBc from "public/assets/creative_bc.png";
+import creativeBc from "public/assets/creative_bc.png";
 
 import { generateGalleryImages } from "@/helpers/generateGalleryImages";
 
@@ -118,13 +118,13 @@ export default function AboutPage() {
               </Link>
             </div>
           </div>
-          {/* <div className={styles.CreativeBcWrapper}>
+          <div className={styles.CreativeBcWrapper}>
             <Image
               className={styles.CreativeBcLogo}
               src={creativeBc}
               alt="With support from the Province of British Columbia"
             />
-          </div> */}
+          </div>
           <div className={styles.Gallery}>
             <Gallery
               images={generateGalleryImages(galleryA)}
