@@ -100,7 +100,7 @@ export default function Apply() {
                     </Link>
                   </div>
                   <div className={styles.HideMobileSmall}>
-                    <Paragraph>May 30</Paragraph>
+                    <Paragraph>June 5</Paragraph>
                   </div>
 
                   <div>
@@ -109,12 +109,9 @@ export default function Apply() {
                     </Paragraph>
                   </div>
                   <div>
-                    <Link
-                      target="_blank"
-                      href="https://forms.gle/Ar78ZjpDREQckhAp6"
-                    >
-                      <H4 className={styles.ApplyLink}>Apply</H4>
-                    </Link>
+                  <Paragraph>
+                      <Bold>------</Bold>
+                    </Paragraph>
                   </div>
                   <div className={styles.HideMobileSmall}>
                     <Paragraph>Apr 30</Paragraph>
