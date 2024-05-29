@@ -109,6 +109,9 @@ export default function Apply() {
                     </Paragraph>
                   </div>
                   <div>
+                    <Paragraph>
+                      <Bold>------</Bold>
+                    </Paragraph>
                   </div>
                   <div className={styles.HideMobileSmall}>
                     <Paragraph>Apr 30</Paragraph>
