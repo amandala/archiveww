@@ -9,6 +9,7 @@ import wuki from "/public/assets/spotlights/wuki_final.png";
 import poster from "/public/assets/posters/2024final_nologos.jpg";
 
 import { JumboHeading } from "@/components/Typography";
+import SpotifyPlaylist from "@/components/SpotifyPlaylist";
 
 export default function Lineup() {
   return (
@@ -28,6 +29,10 @@ export default function Lineup() {
             placeholder="blur"
           />
         </div>
+        <SpotifyPlaylist
+          playlistId="5Tix0DD521M3hQUnynd7wh"
+          className={styles.Playlist}
+        />
         <JumboHeading className={styles.Heading}>2024 Headliners</JumboHeading>
         <div className={styles.DotWrapper}>
           <div className={styles.Headliners}>

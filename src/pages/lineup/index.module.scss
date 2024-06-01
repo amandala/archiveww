@@ -37,9 +37,16 @@
 
 .PosterWrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 70px 24px;
+}
+
+.Playlist {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .Poster {
