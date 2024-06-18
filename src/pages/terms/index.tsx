@@ -99,11 +99,10 @@ export default function Terms() {
                 <Bold>Arrival Policy:</Bold> General Admission tickets include
                 access to the Event from 9:00 a.m. Friday, August 30th, 2024. WW
                 Society offers early access to the festival grounds from
-                Thursday, August 29th, 2024, for a fee. Early Entry Fee rates
-                will be released on the Event website prior to the festival. The
-                Ticket Gate opens at 9:00am sharp on Thursday, August 29th,
-                2024. Festival guests arriving before this time will not be
-                allowed entry into the Event.
+                Thursday, August 29th, 2024, for a fee. The Ticket Gate opens at
+                9:00am sharp on Thursday, August 29th, 2024. Festival guests
+                arriving before this time will not be allowed entry into the
+                Event.
               </Paragraph>
             </ListItem>
             <ListItem>
