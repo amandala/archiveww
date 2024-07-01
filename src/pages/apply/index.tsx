@@ -92,12 +92,9 @@ export default function Apply() {
                     </Paragraph>
                   </div>
                   <div>
-                    <Link
-                      target="_blank"
-                      href="https://forms.gle/8ETUpR86m9mQae7w9"
-                    >
-                      <H4 className={styles.ApplyLink}>Apply</H4>
-                    </Link>
+                    <Paragraph>
+                      <Bold>------</Bold>
+                    </Paragraph>
                   </div>
                   <div className={styles.HideMobileSmall}>
                     <Paragraph>June 30</Paragraph>
