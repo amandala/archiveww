@@ -19,7 +19,6 @@ import Gallery from "@/components/Gallery";
 
 import styles from "./index.module.scss";
 import TicketButton from "@/components/TicketButton";
-import Link from "next/link";
 import classNames from "classnames";
 import { LowStockStamp } from "@/components/LowStockStamp";
 
