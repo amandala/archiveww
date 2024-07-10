@@ -19,7 +19,6 @@ import Gallery from "@/components/Gallery";
 
 import styles from "./index.module.scss";
 import TicketButton from "@/components/TicketButton";
-import Link from "next/link";
 import classNames from "classnames";
 import { LowStockStamp } from "@/components/LowStockStamp";
 
@@ -86,7 +85,7 @@ export default function Tickets() {
               </div>
             </div>
           </section>
-          <div className={styles.PaymentPlans}>
+          {/* <div className={styles.PaymentPlans}>
             <H2>Payment Plans Available!</H2>
             <Paragraph>
               Secure your ticket on a payment plan and spread out the cost over
@@ -98,7 +97,7 @@ export default function Tickets() {
                 <Bold>Learn More</Bold>
               </Link>
             </Paragraph>
-          </div>
+          </div> */}
           <section>
             <JumboHeading className={styles.SectionHeading}>
               Add Ons
