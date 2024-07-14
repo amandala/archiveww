@@ -279,7 +279,10 @@ export default function Tickets() {
                       <H2>Large Vehicle Pass</H2>
                       <Paragraph>21-41 feet, including tow vehicle</Paragraph>
                     </span>
-                    <JumboHeading className={styles.Price}>$120</JumboHeading>
+                    <JumboHeading className={styles.Price}>
+                      $120
+                      <LowStockStamp />
+                    </JumboHeading>
                   </div>
                   <div className={styles.Option}>
                     <span>
@@ -288,7 +291,10 @@ export default function Tickets() {
                         41 feet and over, including tow vehicle
                       </Paragraph>
                     </span>
-                    <JumboHeading className={styles.Price}>$180</JumboHeading>
+                    <JumboHeading className={styles.Price}>
+                      $180
+                      <LowStockStamp />
+                    </JumboHeading>
                   </div>
                 </div>
               </div>
@@ -343,7 +349,7 @@ export default function Tickets() {
                     </span>
                     <JumboHeading className={styles.Price}>
                       $700
-                      <LowStockStamp />
+                      <SoldOutStamp />
                     </JumboHeading>
                   </div>
                   <div className={styles.Option}>
@@ -355,7 +361,9 @@ export default function Tickets() {
                         two people. Includes one regular vehicle pass.
                       </Paragraph>
                     </span>
-                    <JumboHeading className={styles.Price}>$600</JumboHeading>
+                    <JumboHeading className={styles.Price}>
+                      $600 <SoldOutStamp />
+                    </JumboHeading>
                   </div>
                 </div>
                 <div className={styles.Option}>
@@ -386,7 +394,9 @@ export default function Tickets() {
                       one regular vehicle pass, and early entry for two people.
                     </Paragraph>
                   </span>
-                  <JumboHeading className={styles.Price}>$910</JumboHeading>
+                  <JumboHeading className={styles.Price}>
+                    $910 <LowStockStamp />
+                  </JumboHeading>
                 </div>
               </div>
             </div>
@@ -447,7 +457,9 @@ export default function Tickets() {
                       for two people.
                     </Paragraph>
                   </span>
-                  <JumboHeading className={styles.Price}>$1455</JumboHeading>
+                  <JumboHeading className={styles.Price}>
+                    $1455 <SoldOutStamp />
+                  </JumboHeading>
                 </div>
               </div>
             </div>
