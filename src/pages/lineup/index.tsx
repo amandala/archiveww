@@ -6,7 +6,7 @@ import nostalgix from "/public/assets/spotlights/nostalgix.png";
 import wreckno from "/public/assets/spotlights/wreckno.png";
 import snrk from "/public/assets/spotlights/snrk.png";
 import wuki from "/public/assets/spotlights/wuki_final.png";
-import poster from "/public/assets/posters/2024poster.jpg";
+import poster from "/public/assets/posters/2024.jpg";
 
 import { JumboHeading } from "@/components/Typography";
 import SpotifyPlaylist from "@/components/SpotifyPlaylist";
