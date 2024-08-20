@@ -214,7 +214,10 @@ export default function Tickets() {
                       <H2>Regular Vehicle Pass</H2>
                       <Paragraph>under 21 feet</Paragraph>
                     </span>
-                    <JumboHeading className={styles.Price}>$80</JumboHeading>
+                    <JumboHeading className={styles.Price}>
+                      $80
+                      <LowStockStamp />
+                    </JumboHeading>
                   </div>
                   <div className={styles.Option}>
                     <span>
@@ -223,7 +226,7 @@ export default function Tickets() {
                     </span>
                     <JumboHeading className={styles.Price}>
                       $160
-                      <LowStockStamp />
+                      <SoldOutStamp />
                     </JumboHeading>
                   </div>
                   <div className={styles.Option}>
@@ -250,7 +253,10 @@ export default function Tickets() {
                       <H2>Regular Vehicle Pass</H2>
                       <Paragraph>under 21 feet</Paragraph>
                     </span>
-                    <JumboHeading className={styles.Price}>$70</JumboHeading>
+                    <JumboHeading className={styles.Price}>
+                      $70
+                      <LowStockStamp />
+                    </JumboHeading>
                   </div>
                   <div className={styles.Option}>
                     <span>
@@ -259,7 +265,7 @@ export default function Tickets() {
                     </span>
                     <JumboHeading className={styles.Price}>
                       $115
-                      <LowStockStamp />
+                      <SoldOutStamp />
                     </JumboHeading>
                   </div>
                 </div>
