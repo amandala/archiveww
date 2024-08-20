@@ -82,6 +82,7 @@ export default function Tickets() {
                 <span>
                   <H2>Tier 3</H2>
                   <JumboHeading className={styles.Price}>$375</JumboHeading>
+                  <LowStockStamp />
                 </span>
               </div>
             </div>
@@ -378,7 +379,7 @@ export default function Tickets() {
                   </span>
                   <JumboHeading className={styles.Price}>
                     $980
-                    <LowStockStamp />
+                    <SoldOutStamp />
                   </JumboHeading>
                 </div>
               </div>
@@ -396,7 +397,7 @@ export default function Tickets() {
                     </Paragraph>
                   </span>
                   <JumboHeading className={styles.Price}>
-                    $910 <LowStockStamp />
+                    $910 <SoldOutStamp />
                   </JumboHeading>
                 </div>
               </div>
@@ -414,7 +415,10 @@ export default function Tickets() {
                       people.
                     </Paragraph>
                   </span>
-                  <JumboHeading className={styles.Price}>$860</JumboHeading>
+                  <JumboHeading className={styles.Price}>
+                    $860
+                    <LowStockStamp />
+                  </JumboHeading>
                 </div>
               </div>
             </div>
