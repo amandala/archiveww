@@ -141,7 +141,7 @@ export default function Apply() {
                     </Paragraph>
                   </div>
                   <div className={styles.HideMobileSmall}>
-                    <Paragraph>Aug 16</Paragraph>
+                    <Paragraph>Aug 26</Paragraph>
                   </div>
                   <div>
                     <Paragraph>
@@ -160,7 +160,7 @@ export default function Apply() {
                     </Paragraph>
                   </div>
                   <div className={styles.HideMobileSmall}>
-                    <Paragraph>Aug 16</Paragraph>
+                    <Paragraph>Aug 26</Paragraph>
                   </div>
                   <div>
                     <Paragraph>
@@ -178,7 +178,7 @@ export default function Apply() {
                     </Paragraph>
                   </div>
                   <div className={styles.HideMobileSmall}>
-                    <Paragraph>Aug 16</Paragraph>
+                    <Paragraph>Aug 26</Paragraph>
                   </div>
                   <div>
                     <Paragraph>
