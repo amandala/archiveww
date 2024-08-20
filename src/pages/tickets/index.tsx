@@ -82,6 +82,7 @@ export default function Tickets() {
                 <span>
                   <H2>Tier 3</H2>
                   <JumboHeading className={styles.Price}>$375</JumboHeading>
+                  <LowStockStamp />
                 </span>
               </div>
             </div>
