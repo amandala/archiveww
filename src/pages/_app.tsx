@@ -3,8 +3,8 @@ import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
 import { dinCondensed } from "@/styles/fonts";
 import cx from "classnames";
-import { Navbar } from "@/components/Nav/Navbar";
-import Footer from "@/components/Footer";
+// import { Navbar } from "@/components/Nav/Navbar";
+// import Footer from "@/components/Footer";
 
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -29,9 +29,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <div className={cx(dinCondensed.className, styles.App)}>
-      <Navbar />
+      {/* <Navbar /> */}
       <Component {...pageProps} />
-      <Footer />
+      {/* <Footer /> */}
       <Analytics />
     </div>
   );
