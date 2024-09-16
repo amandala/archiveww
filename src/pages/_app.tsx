@@ -29,9 +29,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <div className={cx(dinCondensed.className, styles.App)}>
-      <Navbar />
+      {/* <Navbar /> */}
       <Component {...pageProps} />
-      <Footer />
+      {/* <Footer /> */}
       <Analytics />
     </div>
   );
